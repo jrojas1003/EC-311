@@ -20,3 +20,28 @@ name: syllabus
 
 ## Assignments
 
+[Achieve Online Learning]{.hi}
+{
+- You [MUST]{.h} register for the course through Achieve
+- This is where you will complete your homework 
+- It also gives you access to the digital version of the textbook
+- The course code is [code goes here]{.hp}
+- Your lowest homework grade will be dropped
+
+[Canvas Quizzes]{.hi}
+
+- Weekly quizzes that will help you get accustomed to how test questions will look
+- These are on Canvas and will be weekly 
+
+---
+
+## Expectations
+
+[Prerequisites]{.hi}
+
+- EC 201: Intro to Microeconomics
+- MATH 111: 
+    - MATH 241: Calculus 1 (Recommended but not required)
+    - I'll give you a crashcourse in what we'll need from calculus in the next lecture
+
+ 
