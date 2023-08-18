@@ -6,7 +6,7 @@ date: last-modified
 date-format: "YYYY"
 format:
     revealjs:
-        theme: [default, ../styles.scss]
+        theme: [default, styles.scss]
         slide-number: true
         footer: "EC311, Lecture 01 | Introduction and Overview"
         preview-links: auto
@@ -17,9 +17,9 @@ title-slide-attributes:
 
 # Introduction {.inverse .note}
 
-{{< include 01-prologue.qmd >}}
+{{< include 001-prologue.qmd >}}
 
 # Syllabus {.inverse .note}
 
-{{< include 02-syllabus.qmd >}}
+{{< include 002-syllabus.qmd >}}
 
