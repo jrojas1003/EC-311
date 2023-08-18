@@ -55,16 +55,27 @@ Why are we here studying microeconometrics?
 
 . . .
 
+<br> 
+
 [So Why Should You Care?]{.hii}
 
-- Consider this to be the very basics of applying market research. 
+Consider this to be the very basics of applying market research. 
 Which is incredibly important for many differnt employers:
 
-    - Government regulators
-    - Product strategists and marketers
-    - Corporate lawyers
-    - Venture capital firms
-    - Anyone interested in a market
+:::: {.columns}
+
+::: {.column width="50%"}
+- Government regulators
+- Product strategists and marketers
+- Corporate lawyers
+:::
+
+::: {.column width="50%"}
+- Venture capital firms
+- Anyone interested in a market
+:::
+
+::::
 
 . . .
 
