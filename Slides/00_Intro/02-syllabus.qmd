@@ -1,0 +1,22 @@
+---
+name: syllabus 
+---
+
+## Class Information
+
+- Schedule: Days (Time) in Classroom
+- Office Hours: Days (Time)
+- [Attendance]{.hii .big} is important to your learning experience
+    - A lot goes on in the class that may be hard to understand just from lecture slides
+
+. . .
+
+- [Lectures]{.hi}
+    - They will be dynamic, with me asking general questions and expecting answers from you
+    - I will use my iPad to write on the slides and will upload the annottated slides after class
+    - (Maybe) Will have iClicker questions that require your presence in class
+
+--- 
+
+## Assignments
+
