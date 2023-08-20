@@ -1,0 +1,31 @@
+---
+name: Why Econ
+---
+
+## Foundations
+
+What we will be learning in this course will seem simplistic and reductive to the world we actually observe
+
+But these foundations help us set up a lot of cool research (that may not even seem like it is Economics)
+
+. . .
+
+- Do international free trade agreements impact political polarization in developing countries?
+
+. . .
+
+- How does the city you live in affect your economic mobility: Evidence from Japanese Internment Camps in WWII
+
+. . .
+
+- [Other Research Here]{.hi-red}
+
+---
+
+Before we jump into Intermediate Microeconomics, we need to refresh our memories of more basic concepts from EC 201
+
+- Demand
+
+- Supply 
+
+- Economic Assumptions
