@@ -6,26 +6,228 @@ name: Why Econ
 
 What we will be learning in this course will seem simplistic and reductive to the world we actually observe
 
-But these foundations help us set up a lot of cool research (that may not even seem like it is Economics)
-
-. . .
-
-- Do international free trade agreements impact political polarization in developing countries?
-
-. . .
-
-- How does the city you live in affect your economic mobility: Evidence from Japanese Internment Camps in WWII
-
-. . .
-
-- [Other Research Here]{.hi-red}
-
----
-
-Before we jump into Intermediate Microeconomics, we need to refresh our memories of more basic concepts from EC 201
+Before we jump into Intermediate Microeconomics, we need to refresh our memories of more basic concepts from EC 201:
 
 - Demand
 
 - Supply 
 
 - Economic Assumptions
+
+# Basics Review {.inverse .note}
+
+---
+
+## Demand {.align-center}
+
+```{r} 
+library(ggplot2)
+
+# Create data for demand and supply curves
+price <- c(1, 2, 3, 4, 5)
+quantity_demanded <- c(10, 8, 6, 4, 2)
+quantity_supplied <- c(2, 4, 6, 8, 10)
+
+df <- data.frame(price, quantity_demanded, quantity_supplied)
+
+# Create demand and supply curve plot
+demand_plot <- ggplot(df, aes(x = quantity_demanded, y = price)) +
+  geom_line(color = "blue") +
+  labs(x = "Quantity", y = "Price") +
+  theme_minimal() 
+
+print(demand_plot)
+```
+
+---
+
+## Demand
+
+- [Demand]{.hp} is the [QUANTITY]{.hi} of a good that consumers want at a given [PRICE]{.hi}
+
+. . .
+
+- The [Demand Curve]{.hp} shows the [RELATIONSHIP]{.hi} between [PRICES]{.hi} and [QUANTITY]{.hi} of a good for consumers
+
+. . .
+
+We will make the distinction between [Individual Demand]{.hii} and [Market Demand]{.hii}
+
+[Individual Demand:]{.hii} Single Consumer (One Person)
+
+[Market Demand:]{.hii} All potential consumers (Everyone participating in the market)
+
+. . .
+
+[Note: The first half of the course will be about demand and how we can find it for individuals and then for an entire market]{.note .hii}
+
+---
+
+## Demand
+
+Some [Factors]{.hi} that can affect demand are:
+
+- Number of Consumers
+
+- Changes to Income
+
+- Consumer Preferences (Tastes)
+
+- The Price of Other Goods
+
+    - Complements
+    - Substitutes
+
+---
+
+## Supply {.align-center}
+
+```{r} 
+library(ggplot2)
+
+# Create data for demand and supply curves
+price <- c(1, 2, 3, 4, 5)
+quantity_demanded <- c(10, 8, 6, 4, 2)
+quantity_supplied <- c(2, 4, 6, 8, 10)
+
+df <- data.frame(price, quantity_demanded, quantity_supplied)
+
+# Create demand and supply curve plot
+supply_plot <- ggplot(df, aes(x = quantity_supplied, y = price)) +
+  geom_line(color = "red") +
+  labs(x = "Quantity", y = "Price") +
+  theme_minimal() 
+print(supply_plot)
+```
+
+---
+
+## Supply
+
+- [Supply]{.hp} is the [QUANTITY]{.hi} of goods available for sale at a given [PRICE]{.hi}
+
+. . .
+
+- The [Supply Curve]{.hp} shows the [RELATIONSHIP]{.hi} between [PRICES]{.hi} and [QUANTITY]{.hi} of a good for producers
+
+. . .
+
+We also make the distinction between [Individual Supply]{.hii} and [Market Supply]{.hii}
+
+[Individual Supply:]{.hii} A Single Producer (One Firm)
+
+[Market Supply:]{.hii} All potential producers (All firms that are participating in the market)
+
+. . .
+
+[Note: The second half of the course will deal with how producers make their decisions]{.note .hii}
+
+---
+
+## Supply
+
+Some [Factors]{.hi} that may affect supply are:
+
+- Production Costs (Cost of Raw Materials, Technology, etc.)
+
+- Number of Sellers (Number of firms in the market)
+
+- Producers outside options
+
+---
+
+## Supply & Demand {.align-center}
+
+```{r} 
+library(ggplot2)
+
+# Create data for demand and supply curves
+price <- c(1, 2, 3, 4, 5)
+quantity_demanded <- c(10, 8, 6, 4, 2)
+quantity_supplied <- c(2, 4, 6, 8, 10)
+
+df <- data.frame(price, quantity_demanded, quantity_supplied)
+
+# Create demand and supply curve plot
+supply_plot <- ggplot(df, aes(x = quantity_supplied, y = price)) +
+  geom_line(color = "red") +
+  geom_line(aes(x = quantity_demanded, y = price), color = "blue") + 
+  labs(x = "Quantity", y = "Price") +
+  theme_minimal() 
+
+print(supply_plot)
+```
+
+[Put together they give us this classic graph]{.note .hii}
+
+---
+
+## Supply & Demand
+
+Where these two are [equal to each other]{.hi-teal} (where they cross) we say it is the [market equilibrium]{.hi-teal}
+
+The third part of the course will be about variations to the [classic market equilibrium]{.hii}
+
+- What happens when the market is deep (has many producers) [(Perfect Competition)]{.hi}
+
+- What happens when the market is shallow (only one producer) [(Monopoly)]{.hi}
+
+- What about other forms of competition where firms have some market power but not total market control? [(Imperfect Competition)]{.hi}
+
+---
+
+## Models
+
+We can use all these to make very complex models of what we think the world looks like
+
+But to begin, we need to develop the basics of:
+
+- What does [Demand]{.hi} look like?
+
+- What does [Supply]{.hi} look like?
+
+- What form of [Competition]{.hi} are we in?
+
+> Once we put all of these together we are modeling a market. With a model, you can begin to analyze the effects of changes to [Model Inputs]{.hi-teal} on [Model Outputs]{.hi-bb}
+
+---
+
+## Assumptions
+
+We will work with models you have seen before and some new ones that are classified as "classical economics"
+
+. . .
+
+These require certain assumptions in order to simplify the results:
+
+- Assume that individuals are [Rational and Self-Interested]{.hii}
+
+- Assume that markets have [No Externalities and Asymmetric Information]{.hii}
+
+---
+
+## Assumptions
+
+These assumptions help make things simple and work to set a benchmark of sorts
+
+They are often good approximations of the real world but are often not exact
+
+We use these fundamental pieces of classical economics and build on top of them
+
+<br>
+
+[Note: I'm not attempting to describe the way the world works excatly, but rather give you a strating point for future endeavors]{.note .hi}
+
+---
+
+## Last Tool You Will Need
+
+We will need calculus
+
+It turns out that intermediate micro is fundamentally inseparable from multi-variate calculus
+
+. . .
+
+- I cannot show you where a demand curve comes from without using [(a tiny bit)]{.hi} of calculus
+
+So the second thing we will do is discuss the math you will need in order to follow the material 

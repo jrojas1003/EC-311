@@ -6,15 +6,15 @@ name: syllabus
 
 - Schedule: Days (Time) in Classroom
 - Office Hours: Days (Time)
-- [Attendance]{.hii .big} is important to your learning experience
+- [Attendance]{.hii} is important to your learning experience
     - A lot goes on in the class that may be hard to understand just from lecture slides
 
 . . .
 
-- [Lectures]{.hi}
-    - They will be dynamic, with me asking general questions and expecting answers from you
-    - I will use my iPad to write on the slides and will upload the annottated slides after class
-    - (Maybe) Will have iClicker questions that require your presence in class
+[Lectures]{.hi}
+- They will be dynamic, with me asking general questions and expecting answers from you
+- I will use my iPad to write on the slides and will upload the annottated slides after class
+- (Maybe) Will have iClicker questions that require your presence in class
 
 --- 
 
@@ -57,9 +57,9 @@ name: syllabus
 
 . . .
 
-- I recognize that perhaps all of you are here for the requirement in your own programs, so my aim is to make it as relevant and interesting as possible 
+- [I recognize that perhaps all of you are here for the requirement in your own programs, so my aim is to make it as relevant and interesting as possible]{.tiny}
 
-- I'm not trying to convert you into economists, but rather have you takeaway things that you can apply in your own careers
+- [I'm not trying to convert you into economists, but rather have you takeaway things that you can apply in your own careers]{.tiny}
 
 --- 
 

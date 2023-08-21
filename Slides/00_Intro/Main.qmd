@@ -17,11 +17,11 @@ title-slide-attributes:
 
 # Introduction {.inverse .note}
 
-{{< include 001-prologue.qmd >}}
+{{< include 001-prologue.qmd >}} 
 
 # Syllabus {.inverse .note}
 
-{{< include 002-syllabus.qmd >}}
+{{< include 002-syllabus.qmd >}} 
 
 # What Do We Do With Economics? {.inverse .note}
 

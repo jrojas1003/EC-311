@@ -18,7 +18,7 @@ What do we do with Microeconomics?
 
 . . .
 
-> It sets up a lot of the foundational work for cool research that we may not consier as Economics
+> It sets up a lot of the foundational work for cool research that we may not consider as Economics
 
 ---
 
@@ -54,8 +54,6 @@ Why are we here studying microeconometrics?
 > It will help develop a healthy way of logically thinking about problems
 
 . . .
-
-<br> 
 
 [So Why Should You Care?]{.hii}
 
@@ -117,6 +115,32 @@ They make choices on:
 
 ## About Me (An Economist in Training)
 
-- I'm a 3rd year PhD Student 
+![](./images/Jose_Pic.jpg){.absolute top=100 left=0 width="350"}
+
+:::: {.columns}
+
+::: {.column width="35%"}
+
+:::
+
+::: {.column width="65%"}
+
+I'm from [San Jose, Costa Rica]{.hii}
+
+<br> 
+
+::: {.incremental}
+
+- I'm a 3rd year PhD Student
+
+    - It is a 5 year program so I'll likely graduate with some of you 
+
 - My current research is focused on international trade, development, and political economy
-- I'm originally from Costa Rica but have been in Oregon for 9 years now
+
+- I like to read mystery/spy novels so if you have recommendations let me know!
+
+:::
+
+:::
+
+:::: 
