@@ -1,0 +1,7 @@
+---
+name: calculus
+---
+
+## Starting Simple
+
+We call the slope the [RISE]{.hi} over [RUN]{.hi}

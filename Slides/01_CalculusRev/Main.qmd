@@ -1,25 +1,35 @@
 ---
-title: "Introduction and Overview"
+title: "Calculus Review"
 subtitle: "EC 311 - Intermediate Microeconomics"
 author: Jose Rojas-Fallas
 date: last-modified
 date-format: "YYYY"
 format:
     revealjs:
-        theme: [default, ../styles.scss]
+        theme: [default, styles.scss]
         slide-number: true
-        footer: "EC311, Lecture 01 | Introduction and Overview"
+        footer: "EC311, Lecture 02 | Calculus Overview"
         preview-links: auto
         code-fold: FALSE
 title-slide-attributes: 
   data-background-position: left
 ---
 
-# Introduction {.inverse .note}
+## Outline
 
-{{< include 01-prologue.qmd >}}
+- Calculus
+  - Slopes
+  - Derivatives
+  - Multivariate Derivatives
 
-# Syllabus {.inverse .note}
+# Slopes {.inverse .note}
 
-{{< include 02-syllabus.qmd >}}
+{{< include 011-slopes.qmd >}}
 
+# Derivatives {.inverse .note}
+
+{{< include 012-derivatives.qmd >}}
+
+# Multivariate Derivatives {.inverse .note}
+
+{{< include 013-multivariate.qmd >}}
