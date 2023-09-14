@@ -1,3 +1,58 @@
 ---
 name: derivatives
 ---
+
+## Definition
+
+A [Derivative]{.hii} is simply another function that tells us the slope of a function
+
+- It tells us how a function is behaving
+
+- A [Derivative]{.hii} will be how we find the slope of our functions
+
+. . . 
+
+<br>
+
+[Mathematically]{.hi}
+
+- We will denote a [Derivative]{.hii} as $f'(x)$
+    - Our original function is labeled $f(x)$ so you can read this as: "The derivative of $f(x)$ is $f'(x)$"
+    - Note that $f'(x)$ is the slope of $f(x)$ at any point $x$
+
+---
+
+## Intuition
+
+```{r}
+library(ggplot2)
+library(htmltools)
+
+# Create time values
+time <- seq(0, 10, length.out = 100)
+
+# Calculate height values for the parabola
+height <- -0.5 * (time - 5)^2 + 10
+
+# Create a data frame
+parabola_data <- data.frame(time, height)
+
+# Create the parabola plot
+parabola_plot <- ggplot(parabola_data, aes(time, height)) +
+  geom_line(color = "black", size = 1) +
+  theme_minimal() +
+  theme(axis.text.x = element_blank(),  # Remove x-axis ticks and labels
+        axis.ticks.x = element_blank(),  # Remove x-axis ticks, 
+        axis.ticks.y = element_blank(),  # Remove y-axis ticks
+        axis.text.y = element_blank())
+
+parabola_plot
+```
+
+<br>
+
+. . .
+
+Initially, the height of the ball is [increasing]{.hi-green} over time
+
+Eventually, the height of the ball is [decreasing]{.hi-red} over time

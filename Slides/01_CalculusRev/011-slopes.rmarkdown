@@ -1,0 +1,36 @@
+---
+name: calculus
+---
+
+
+## Starting Simple
+
+
+```{r}
+library(ggplot2)
+
+# Create data for the line
+x <- c(0, 2, 4, 6, 8)
+y <- x * (1/2)
+
+line_data <- data.frame(x, y)
+
+# Create the line plot
+line_plot <- ggplot(line_data, aes(x, y)) +
+  geom_line(color= "#b45c20") +
+  labs(x = "X", y = "Y") +
+  theme_minimal()
+
+print(line_plot)
+```
+
+
+We call the slope the [RISE]{.hi} over [RUN]{.hi}
+
+. . .
+
+The function [RISES by 1]{.hi} at every "block"
+
+It [RUNS by 2]{.hi} at every "block"
+
+So the slope of the function is [$\dfrac{1}{2}$]{.hi}

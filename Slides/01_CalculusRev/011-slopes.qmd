@@ -4,4 +4,104 @@ name: calculus
 
 ## Starting Simple
 
-We call the slope the [RISE]{.hi} over [RUN]{.hi}
+```{r}
+library(ggplot2)
+
+# Create data for the line
+x <- c(0, 2, 4, 6, 8)
+y <- x * (1/2) + 5
+
+line_data <- data.frame(x, y)
+
+# Create the line plot
+line_plot <- ggplot(line_data, aes(x, y)) +
+  geom_line(color= "#b45c20") +
+  labs(x = "X", y = "Y") +
+  theme_minimal()
+
+print(line_plot)
+```
+
+We call the slope the [RISE]{.hi} over [RUN]{.hi} 
+
+---
+
+## Functions & Slopes
+
+We can write that previous line as a mathematical function:
+
+$$f(x) =  x/2 + 5$$
+
+Importantly, the slope for this function is [$1/2$]{.hi} [everywhere]{.hii}
+
+. . .
+
+- Everywhere means for [all values of $x$]{.hii}
+
+- So no matter at what point of the line we calculate the slope, we will always find it to be [$1/2$]{.hi}
+
+---
+
+## Functions & Slopes
+
+Slopes can take positive, negative, or zero values
+
+And each of these let's us know how the function is behaving as we increse in $x$ (as we move to the right):
+
+- Positive values mean the function is increasing
+
+- Negative values mean the function is decreasing
+
+- Zero values mean the function is staying constant (neither increasing or decreasing)
+
+---
+
+```{r}
+library(ggplot2)
+
+# Create x values
+x <- seq(0, 5, by = 0.5)
+
+# Calculate y values for each line
+y_positive_slope <- 0.5 * x + 2
+y_negative_slope <- -0.5 * x + 5
+y_zero_slope <- rep(3, length(x))
+
+# Create a data frame
+line_data <- data.frame(x, y_positive_slope, y_negative_slope, y_zero_slope)
+
+# Create the line plot
+line_plot <- ggplot(line_data, aes(x)) +
+  geom_line(aes(y = y_positive_slope), color = "blue", linetype = "solid", size = 1) +
+  geom_line(aes(y = y_negative_slope), color = "red", linetype = "solid", size = 1) +
+  geom_line(aes(y = y_zero_slope), color = "green", linetype = "solid", size = 1) +
+  labs(x = "X", y = "Y") +
+  theme_minimal()
+
+print(line_plot)
+```
+
+---
+
+## Functions & Slopes
+
+The previous functions are called linear functions:
+
+- Slopes are constant at all values of $x$
+- They are behaving in an equal manner at all points
+
+. . .
+
+<br>
+
+We will mostly be working with non-linear functions, which simply mean they have some form of curvature
+
+- We will use quadratic and cubic functions
+
+    - Quadratic: $f(x) = 3x^{2} + 5x + 10$
+
+    - Cubic: $f(x) = x^{3} - 2x^{2} + x - 5$
+
+. . .
+
+What we truly care about is their slope. And there is a simpler way to find the slope of a function.

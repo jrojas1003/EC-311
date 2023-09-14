@@ -15,16 +15,20 @@ title-slide-attributes:
   data-background-position: left
 ---
 
-## Outline
+::: {.vertical-center}
+
+[Outline]{.hi .big}
 
 - Calculus
   - Slopes
   - Derivatives
   - Multivariate Derivatives
 
-# Slopes {.inverse .note}
+:::
 
-{{< include 011-slopes.qmd >}}
+# Slopes {.inverse .note}
+<!-- 
+{{< include 011-slopes.qmd >}} -->
 
 # Derivatives {.inverse .note}
 

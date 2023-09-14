@@ -339,8 +339,10 @@ Jose Rojas-Fallas
 
   <p class="date">2023</p>
 </section>
-<section id="outline" class="slide level2">
-<h2>Outline</h2>
+<section class="slide level2">
+
+<div class="vertical-center">
+<p><span class="hi big">Outline</span></p>
 <ul>
 <li>Calculus
 <ul>
@@ -349,21 +351,47 @@ Jose Rojas-Fallas
 <li>Multivariate Derivatives</li>
 </ul></li>
 </ul>
+</div>
 </section>
-<section>
 <section id="slopes" class="title-slide slide level1 inverse note center">
 <h1>Slopes</h1>
-
+<!-- 
+{{< include 011-slopes.qmd >}} -->
 </section>
-<section id="starting-simple" class="slide level2">
-<h2>Starting Simple</h2>
-<p>We call the slope the <span class="hi">RISE</span> over <span class="hi">RUN</span></p>
-</section></section>
+
+<section>
 <section id="derivatives" class="title-slide slide level1 inverse note center">
 <h1>Derivatives</h1>
 
 </section>
+<section id="definition" class="slide level2">
+<h2>Definition</h2>
+<p>A <span class="hii">Derivative</span> is simply another function that tells us the slope of a function</p>
+<ul>
+<li><p>It tells us how a function is behaving</p></li>
+<li><p>A <span class="hii">Derivative</span> will be how we find the slope of our functions</p></li>
+</ul>
+<div class="fragment">
+<p><br></p>
+<p><span class="hi">Mathematically</span></p>
+<ul>
+<li>We will denote a <span class="hii">Derivative</span> as <span class="math inline">\(f'(x)\)</span>
+<ul>
+<li>Our original function is labeled <span class="math inline">\(f(x)\)</span> so you can read this as: “The derivative of <span class="math inline">\(f(x)\)</span> is <span class="math inline">\(f'(x)\)</span>”</li>
+<li>Note that <span class="math inline">\(f'(x)\)</span> is the slope of <span class="math inline">\(f(x)\)</span> at any point <span class="math inline">\(x\)</span></li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="intuition" class="slide level2">
+<h2>Intuition</h2>
 
+<img data-src="Main_files/figure-revealjs/unnamed-chunk-1-1.png" width="960" class="r-stretch"><p><br></p>
+<div class="fragment">
+<p>Initially, the height of the ball is <span class="hi-green">increasing</span> over time</p>
+<p>Eventually, the height of the ball is <span class="hi-red">decreasing</span> over time</p>
+</div>
+</section></section>
 <section id="multivariate-derivatives" class="title-slide slide level1 inverse note center">
 <h1>Multivariate Derivatives</h1>
 <div class="footer footer-default">
@@ -581,6 +609,44 @@ Jose Rojas-Fallas
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
