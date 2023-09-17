@@ -135,7 +135,7 @@ You may already know how to take derivatives but prepare to receive a crash-cour
 
 Starting with the basics:
 
-- $y$ will be a function of $x$ such that $(y = f(x))$
+- $y$ will be a function of $x$ such that $y = f(x)$
 
 - I will be using variables to show general cases so you can look back at how it's done
 
@@ -161,4 +161,53 @@ Starting with the basics:
 :::
 
 ::::
+
+---
+
+## Power Rule
+
+This will be the most common derivative we will be using
+
+$$y = a \cdot x^{b}$$
+
+. . .
+
+$$\dfrac{\delta y}{\delta x} = {\color{red}b} \cdot a \cdot x^{\color{red}{b-1}}$$
+
+. . .
+
+For example:
+
+$$y = 5x^{3}$$
+
+. . .
+
+$$\dfrac{\delta y}{\delta x} = {\color{red}3} \cdot 5 x^{\color{red}{3-1}} = 15x^{2}$$
+---
+
+## Power Rule (Negative Exponent)
+
+---
+
+## Power Rule (Fractional Exponent)
+
+---
+
+## Power Rule (Exponent Equal to 1)
+
+---
+
+## Sum (and Difference) Rule
+
+---
+
+## Constant Rule
+
+---
+
+## Log Rule
+
+---
+
+## Chain Rule
 
