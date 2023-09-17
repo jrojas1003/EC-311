@@ -49,10 +49,116 @@ parabola_plot <- ggplot(parabola_data, aes(time, height)) +
 parabola_plot
 ```
 
-<br>
-
 . . .
 
 Initially, the height of the ball is [increasing]{.hi-green} over time
 
 Eventually, the height of the ball is [decreasing]{.hi-red} over time
+
+---
+
+## Intuition
+
+The sign of the derivative matters a ton!
+
+- An [increasing derivative]{.hi-green} means that the function is [going up]{.hi-green}
+
+- A [decreasing derivative]{.hi-red} means that the function is [going down]{.hi-red} 
+
+. . .
+
+The [magnitude]{.h} also carries some significance:
+
+- A [small absolute value]{.hi} means that the [derivative is moving slowly]{.hi}
+
+- A [large absolute value]{.hii} means that the [derivative is moving rapidly]{.hii}
+
+. . .
+
+> [Note: I am talking about absoltue values so this applies to both positive and negative values. Because we use negatives, our intuition may challenged a bit but hopefully a future example will clear things up]{.h .note} 
+
+<!-- Make future example -->
+
+---
+
+## Derivative Equal to Zero
+
+Functions can increase and decrease, which implies something very critical
+
+. . .
+
+> [Functions can have zero slope!]{.hii} This happens when the function switches from increasing to decreasing (and vice-versa)
+
+. . .
+
+<br>
+
+[But Why Does This Matter?]{.h}
+
+- The switch between positive and negative happens exactly when the function is at its maximum/minimum
+
+- And Economics is all about maximizing stuff!
+
+  - Sometimes we minimize a function but the logic remains the same
+
+---
+
+## Bringing the Math to Economics
+
+Think about profits. 
+
+As a firm, we want to maximize profits so we: 
+
+:::: {.incremental}
+- Write down profits as a function of quantity produced
+
+- Take its derivative
+
+- Set that derivative (remember it is a function) equal to zero
+
+- Know how much quantity to produce
+::::
+
+. . .
+
+Once we know what we are doing, the math is extremely simple. 
+
+The hard part is understanding what we are doing, and then interpreting what a result of $x^{*} = 6$ means.
+
+---
+
+## How Do We Calculate Derivatives?
+
+You may already know how to take derivatives but prepare to receive a crash-course in derivative shortcuts
+
+. . . 
+
+Starting with the basics:
+
+- $y$ will be a function of $x$ such that $(y = f(x))$
+
+- I will be using variables to show general cases so you can look back at how it's done
+
+. . .
+
+[We will go over the following:]{.hi}
+
+:::: {.columns}
+
+::: {.column width=60%}
+- Power Rule
+
+- Sum (and Difference) Rule
+
+- Constant Rule
+:::
+
+::: {.column width=40%}
+
+- Log Rule
+
+- Chain Rule
+:::
+
+::::
+

@@ -8,7 +8,7 @@
 <link href="Main_files/libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="Main_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="Main_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.3.361">
+  <meta name="generator" content="quarto-1.4.294">
 
   <meta name="author" content="Jose Rojas-Fallas">
   <meta name="dcterms.date" content="2023-01-01">
@@ -157,7 +157,8 @@
   }
 
   .callout.callout-titled .callout-body > .callout-content > :last-child {
-    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0;
   }
 
   .callout.callout-titled .callout-icon::before {
@@ -356,7 +357,7 @@ Jose Rojas-Fallas
 <section id="slopes" class="title-slide slide level1 inverse note center">
 <h1>Slopes</h1>
 <!-- 
-{{< include 011-slopes.qmd >}} -->
+ -->
 </section>
 
 <section>
@@ -386,10 +387,95 @@ Jose Rojas-Fallas
 <section id="intuition" class="slide level2">
 <h2>Intuition</h2>
 
-<img data-src="Main_files/figure-revealjs/unnamed-chunk-1-1.png" width="960" class="r-stretch"><p><br></p>
-<div class="fragment">
+<img data-src="Main_files/figure-revealjs/unnamed-chunk-1-1.png" width="960" class="r-stretch"><div class="fragment">
 <p>Initially, the height of the ball is <span class="hi-green">increasing</span> over time</p>
 <p>Eventually, the height of the ball is <span class="hi-red">decreasing</span> over time</p>
+</div>
+</section>
+<section id="intuition-1" class="slide level2">
+<h2>Intuition</h2>
+<p>The sign of the derivative matters a ton!</p>
+<ul>
+<li><p>An <span class="hi-green">increasing derivative</span> means that the function is <span class="hi-green">going up</span></p></li>
+<li><p>A <span class="hi-red">decreasing derivative</span> means that the function is <span class="hi-red">going down</span></p></li>
+</ul>
+<div class="fragment">
+<p>The <span class="h">magnitude</span> also carries some significance:</p>
+<ul>
+<li><p>A <span class="hi">small absolute value</span> means that the <span class="hi">derivative is moving slowly</span></p></li>
+<li><p>A <span class="hii">large absolute value</span> means that the <span class="hii">derivative is moving rapidly</span></p></li>
+</ul>
+</div>
+<div class="fragment">
+<blockquote>
+<p><span class="h note">Note: I am talking about absoltue values so this applies to both positive and negative values. Because we use negatives, our intuition may challenged a bit but hopefully a future example will clear things up</span></p>
+</blockquote>
+<!-- Make future example -->
+</div>
+</section>
+<section id="derivative-equal-to-zero" class="slide level2">
+<h2>Derivative Equal to Zero</h2>
+<p>Functions can increase and decrease, which implies something very critical</p>
+<div class="fragment">
+<blockquote>
+<p><span class="hii">Functions can have zero slope!</span> This happens when the function switches from increasing to decreasing (and vice-versa)</p>
+</blockquote>
+</div>
+<div class="fragment">
+<p><br></p>
+<p><span class="h">But Why Does This Matter?</span></p>
+<ul>
+<li><p>The switch between positive and negative happens exactly when the function is at its maximum/minimum</p></li>
+<li><p>And Economics is all about maximizing stuff!</p>
+<ul>
+<li>Sometimes we minimize a function but the logic remains the same</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="bringing-the-math-to-economics" class="slide level2">
+<h2>Bringing the Math to Economics</h2>
+<p>Think about profits.</p>
+<p>As a firm, we want to maximize profits so we:</p>
+<div>
+<ul>
+<li class="fragment"><p>Write down profits as a function of quantity produced</p></li>
+<li class="fragment"><p>Take its derivative</p></li>
+<li class="fragment"><p>Set that derivative (remember it is a function) equal to zero</p></li>
+<li class="fragment"><p>Know how much quantity to produce</p></li>
+</ul>
+</div>
+<div class="fragment">
+<p>Once we know what we are doing, the math is extremely simple.</p>
+<p>The hard part is understanding what we are doing, and then interpreting what a result of <span class="math inline">\(x^{*} = 6\)</span> means.</p>
+</div>
+</section>
+<section id="how-do-we-calculate-derivatives" class="slide level2">
+<h2>How Do We Calculate Derivatives?</h2>
+<p>You may already know how to take derivatives but prepare to receive a crash-course in derivative shortcuts</p>
+<div class="fragment">
+<p>Starting with the basics:</p>
+<ul>
+<li><p><span class="math inline">\(y\)</span> will be a function of <span class="math inline">\(x\)</span> such that <span class="math inline">\((y = f(x))\)</span></p></li>
+<li><p>I will be using variables to show general cases so you can look back at how it’s done</p></li>
+</ul>
+</div>
+<div class="fragment">
+<p><span class="hi">We will go over the following:</span></p>
+<div class="columns">
+<div class="column" style="width:60%;">
+<ul>
+<li><p>Power Rule</p></li>
+<li><p>Sum (and Difference) Rule</p></li>
+<li><p>Constant Rule</p></li>
+</ul>
+</div><div class="column" style="width:40%;">
+<ul>
+<li><p>Log Rule</p></li>
+<li><p>Chain Rule</p></li>
+</ul>
+</div>
+</div>
 </div>
 </section></section>
 <section id="multivariate-derivatives" class="title-slide slide level1 inverse note center">
@@ -424,7 +510,6 @@ Jose Rojas-Fallas
       Reveal.initialize({
 'controlsAuto': true,
 'previewLinksAuto': true,
-'smaller': false,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
@@ -723,10 +808,9 @@ Jose Rojas-Fallas
         // clear code selection
         e.clearSelection();
       });
-      function tippyHover(el, contentFn) {
+      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
         const config = {
           allowHTML: true,
-          content: contentFn,
           maxWidth: 500,
           delay: 100,
           arrow: false,
@@ -736,8 +820,17 @@ Jose Rojas-Fallas
           interactive: true,
           interactiveBorder: 10,
           theme: 'light-border',
-          placement: 'bottom-start'
+          placement: 'bottom-start',
         };
+        if (contentFn) {
+          config.content = contentFn;
+        }
+        if (onTriggerFn) {
+          config.onTrigger = onTriggerFn;
+        }
+        if (onUntriggerFn) {
+          config.onUntrigger = onUntriggerFn;
+        }
           config['offset'] = [0,0];
           config['maxWidth'] = 700;
         window.tippy(el, config); 
