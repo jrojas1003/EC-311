@@ -145,7 +145,7 @@ Starting with the basics:
 
 :::: {.columns}
 
-::: {.column width=60%}
+::: {.column width="60%"}
 - Power Rule
 
 - Sum (and Difference) Rule
@@ -153,7 +153,7 @@ Starting with the basics:
 - Constant Rule
 :::
 
-::: {.column width=40%}
+::: {.column width="40%"}
 
 - Log Rule
 
@@ -187,17 +187,75 @@ $$\dfrac{\delta y}{\delta x} = {\color{red}3} \cdot 5 x^{\color{red}{3-1}} = 15x
 
 ## Power Rule (Negative Exponent)
 
+Sometimes we will see factors with a negative exponent, like $x^{-3}$ for example
+
+As a rule of thumb, you should [always turn your negative exponents into positive ones]{.hii}
+
+Thankfully, its a simple process:
+
+. . .
+
+We just "invert" the negative factor (aka flip the fraction)
+
+$$x^{\color{red}-3} = \dfrac{1}{\color{red}{x^{3}}}$$
+
+. . .
+
+The derivative works exactly the same way so we can begin with the derivative and then make it positive. 
+
+---
+
+## Power Rule (Negative Exponent)
+
+So for $y = 5x^{-2}$ we have:
+
+$$\dfrac{\delta y}{\delta x} = -2 \cdot 5x^{-2-1} = -10x^{-3} = \dfrac{-10}{x^{3}}$$
+
+I'll leave it to you to show yourself that making it $y = \dfrac{5}{x^{2}}$ gives the same result
+
 ---
 
 ## Power Rule (Fractional Exponent)
 
+A lot of the time we will have fractional exponents (or decimals)
+
+$$y = x^{1/5} = x^{0.2}$$
+
+. . .
+
+$$\dfrac{\delta y}{\delta x} = \dfrac{1}{5} \cdot x^{1/5 - 1} = \dfrac{1}{5} x^{-4/5} = \dfrac{1}{5} \cdot \dfrac{1}{x^{4/5}}$$
+
+. . .
+
+<br>
+
+$$\dfrac{\delta y}{\delta x} = 0.2 \cdot x^{0.2 - 1} = 0.2 \cdot x^{-0.8} = \dfrac{0.2}{x^{0.8}}$$
 ---
 
 ## Power Rule (Exponent Equal to 1)
 
+Lastly, I'll remind you that every number has a default exponent of 1
+
+That is to say, if we see $3x$ it is equivalent to $3x^{1}$
+
+This helps us take the derivative using the [Power Rule]{.h}
+
+For example: $y = -3x$
+
+. . .
+
+$$\dfrac{\delta y}{\delta x} = 1 \cdot -3x^{1-1} = -3x^{0} = -3$$
+
+> [The key is to remember that any number with exponent 0 equals 1]{.hi}
+
 ---
 
 ## Sum (and Difference) Rule
+
+
+---
+
+## Product Rule
 
 ---
 

@@ -493,8 +493,55 @@ Jose Rojas-Fallas
 <p><span class="math display">\[\dfrac{\delta y}{\delta x} = {\color{red}3} \cdot 5 x^{\color{red}{3-1}} = 15x^{2}\]</span></p>
 </div>
 </section>
+<section id="power-rule-negative-exponent" class="slide level2">
+<h2>Power Rule (Negative Exponent)</h2>
+<p>Sometimes we will see factors with a negative exponent, like <span class="math inline">\(x^{-3}\)</span> for example</p>
+<p>As a rule of thumb, you should <span class="hii">always turn your negative exponents into positive ones</span></p>
+<p>Thankfully, its a simple process:</p>
+<div class="fragment">
+<p>We just “invert” the negative factor (aka flip the fraction)</p>
+<p><span class="math display">\[x^{\color{red}-3} = \dfrac{1}{\color{red}{x^{3}}}\]</span></p>
+</div>
+<div class="fragment">
+<p>The derivative works exactly the same way so we can begin with the derivative and then make it positive.</p>
+</div>
+</section>
+<section id="power-rule-negative-exponent-1" class="slide level2">
+<h2>Power Rule (Negative Exponent)</h2>
+<p>So for <span class="math inline">\(y = 5x^{-2}\)</span> we have:</p>
+<p><span class="math display">\[\dfrac{\delta y}{\delta x} = -2 \cdot 5x^{-2-1} = -10x^{-3} = \dfrac{-10}{x^{3}}\]</span></p>
+<p>I’ll leave it to you to show yourself that making it <span class="math inline">\(y = \dfrac{5}{x^{2}}\)</span> gives the same result</p>
+</section>
+<section id="power-rule-fractional-exponent" class="slide level2">
+<h2>Power Rule (Fractional Exponent)</h2>
+<p>A lot of the time we will have fractional exponents (or decimals)</p>
+<p><span class="math display">\[y = x^{1/5} = x^{0.2}\]</span></p>
+<div class="fragment">
+<p><span class="math display">\[\dfrac{\delta y}{\delta x} = \dfrac{1}{5} \cdot x^{1/5 - 1} = \dfrac{1}{5} x^{-4/5} = \dfrac{1}{5} \cdot \dfrac{1}{x^{4/5}}\]</span></p>
+</div>
+<div class="fragment">
+<p><br></p>
+<p><span class="math display">\[\dfrac{\delta y}{\delta x} = 0.2 \cdot x^{0.2 - 1} = 0.2 \cdot x^{-0.8} = \dfrac{0.2}{x^{0.8}}\]</span></p>
+</div>
+</section>
+<section id="power-rule-exponent-equal-to-1" class="slide level2">
+<h2>Power Rule (Exponent Equal to 1)</h2>
+<p>Lastly, I’ll remind you that every number has a default exponent of 1</p>
+<p>That is to say, if we see <span class="math inline">\(3x\)</span> it is equivalent to <span class="math inline">\(3x^{1}\)</span></p>
+<p>This helps us take the derivative using the <span class="h">Power Rule</span></p>
+<p>For example: <span class="math inline">\(y = -3x\)</span></p>
+<div class="fragment">
+<p><span class="math display">\[\dfrac{\delta y}{\delta x} = 1 \cdot -3x^{1-1} = -3x^{0} = -3\]</span></p>
+<blockquote>
+<p><span class="hi">The key is to remember that any number with exponent 0 equals 1</span></p>
+</blockquote>
+</div>
+</section>
 <section id="sum-and-difference-rule" class="slide level2">
 <h2>Sum (and Difference) Rule</h2>
+</section>
+<section id="product-rule" class="slide level2">
+<h2>Product Rule</h2>
 </section>
 <section id="constant-rule" class="slide level2">
 <h2>Constant Rule</h2>
