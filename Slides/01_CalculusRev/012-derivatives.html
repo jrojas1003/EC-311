@@ -145,11 +145,172 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p>A <span class="hi-red">decreasing derivative</span> means that the function is <span class="hi-red">going down</span></p></li>
 </ul>
 <p>. . .</p>
-<p>The <span class="hi">magnitude</span> also carries some significance:</p>
+<p>The <span class="h">magnitude</span> also carries some significance:</p>
 <ul>
-<li><p>A <span class="h">small absolute value</span> means that the derivative is moving slowly</p></li>
-<li><p>A <span class="h">large absolute value</span> means that the derivative is moving rapidly</p></li>
+<li><p>A <span class="hi">small absolute value</span> means that the <span class="hi">derivative is moving slowly</span></p></li>
+<li><p>A <span class="hii">large absolute value</span> means that the <span class="hii">derivative is moving rapidly</span></p></li>
 </ul>
+<p>. . .</p>
+<blockquote class="blockquote">
+<p><span class="h note">Note: I am talking about absoltue values so this applies to both positive and negative values. Because we use negatives, our intuition may challenged a bit but hopefully a future example will clear things up</span></p>
+</blockquote>
+<!-- Make future example -->
+<hr>
+</section>
+<section id="derivative-equal-to-zero" class="level2">
+<h2 class="anchored" data-anchor-id="derivative-equal-to-zero">Derivative Equal to Zero</h2>
+<p>Functions can increase and decrease, which implies something very critical</p>
+<p>. . .</p>
+<blockquote class="blockquote">
+<p><span class="hii">Functions can have zero slope!</span> This happens when the function switches from increasing to decreasing (and vice-versa)</p>
+</blockquote>
+<p>. . .</p>
+<p><br></p>
+<p><span class="h">But Why Does This Matter?</span></p>
+<ul>
+<li><p>The switch between positive and negative happens exactly when the function is at its maximum/minimum</p></li>
+<li><p>And Economics is all about maximizing stuff!</p>
+<ul>
+<li>Sometimes we minimize a function but the logic remains the same</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="bringing-the-math-to-economics" class="level2">
+<h2 class="anchored" data-anchor-id="bringing-the-math-to-economics">Bringing the Math to Economics</h2>
+<p>Think about profits.</p>
+<p>As a firm, we want to maximize profits so we:</p>
+<div class="incremental">
+<ul class="incremental">
+<li><p>Write down profits as a function of quantity produced</p></li>
+<li><p>Take its derivative</p></li>
+<li><p>Set that derivative (remember it is a function) equal to zero</p></li>
+<li><p>Know how much quantity to produce</p></li>
+</ul>
+</div>
+<p>. . .</p>
+<p>Once we know what we are doing, the math is extremely simple.</p>
+<p>The hard part is understanding what we are doing, and then interpreting what a result of <span class="math inline">\(x^{*} = 6\)</span> means.</p>
+<hr>
+</section>
+<section id="how-do-we-calculate-derivatives" class="level2">
+<h2 class="anchored" data-anchor-id="how-do-we-calculate-derivatives">How Do We Calculate Derivatives?</h2>
+<p>You may already know how to take derivatives but prepare to receive a crash-course in derivative shortcuts</p>
+<p>. . .</p>
+<p>Starting with the basics:</p>
+<ul>
+<li><p><span class="math inline">\(y\)</span> will be a function of <span class="math inline">\(x\)</span> such that <span class="math inline">\(y = f(x)\)</span></p></li>
+<li><p>I will be using variables to show general cases so you can look back at how it’s done</p></li>
+</ul>
+<p>. . .</p>
+<p><span class="hi">We will go over the following:</span></p>
+<div class="columns">
+<div class="column" style="width:60%;">
+<ul>
+<li><p>Power Rule</p></li>
+<li><p>Sum (and Difference) Rule</p></li>
+<li><p>Constant Rule</p></li>
+</ul>
+</div><div class="column" style="width:40%;">
+<ul>
+<li><p>Log Rule</p></li>
+<li><p>Chain Rule</p></li>
+</ul>
+</div>
+</div>
+<hr>
+</section>
+<section id="power-rule" class="level2">
+<h2 class="anchored" data-anchor-id="power-rule">Power Rule</h2>
+<p>This will be the most common derivative we will be using</p>
+<p><span class="math display">\[y = a \cdot x^{b}\]</span></p>
+<p>. . .</p>
+<p><span class="math display">\[\dfrac{\delta y}{\delta x} = {\color{red}b} \cdot a \cdot x^{\color{red}{b-1}}\]</span></p>
+<p>. . .</p>
+<p>For example:</p>
+<p><span class="math display">\[y = 5x^{3}\]</span></p>
+<p>. . .</p>
+<p><span class="math display">\[\dfrac{\delta y}{\delta x} = {\color{red}3} \cdot 5 x^{\color{red}{3-1}} = 15x^{2}\]</span></p>
+<hr>
+</section>
+<section id="power-rule-negative-exponent" class="level2">
+<h2 class="anchored" data-anchor-id="power-rule-negative-exponent">Power Rule (Negative Exponent)</h2>
+<p>Sometimes we will see factors with a negative exponent, like <span class="math inline">\(x^{-3}\)</span> for example</p>
+<p>As a rule of thumb, you should <span class="hii">always turn your negative exponents into positive ones</span></p>
+<p>Thankfully, its a simple process:</p>
+<p>. . .</p>
+<p>We just “invert” the negative factor (aka flip the fraction)</p>
+<p><span class="math display">\[x^{\color{red}-3} = \dfrac{1}{\color{red}{x^{3}}}\]</span></p>
+<p>. . .</p>
+<p>The derivative works exactly the same way so we can begin with the derivative and then make it positive.</p>
+<hr>
+</section>
+<section id="power-rule-negative-exponent-1" class="level2">
+<h2 class="anchored" data-anchor-id="power-rule-negative-exponent-1">Power Rule (Negative Exponent)</h2>
+<p>So for <span class="math inline">\(y = 5x^{-2}\)</span> we have:</p>
+<p><span class="math display">\[\dfrac{\delta y}{\delta x} = -2 \cdot 5x^{-2-1} = -10x^{-3} = \dfrac{-10}{x^{3}}\]</span></p>
+<p>I’ll leave it to you to show yourself that making it <span class="math inline">\(y = \dfrac{5}{x^{2}}\)</span> gives the same result</p>
+<hr>
+</section>
+<section id="power-rule-fractional-exponent" class="level2">
+<h2 class="anchored" data-anchor-id="power-rule-fractional-exponent">Power Rule (Fractional Exponent)</h2>
+<p>A lot of the time we will have fractional exponents (or decimals)</p>
+<p><span class="math display">\[y = x^{1/5} = x^{0.2}\]</span></p>
+<p>. . .</p>
+<p><span class="math display">\[\dfrac{\delta y}{\delta x} = \dfrac{1}{5} \cdot x^{1/5 - 1} = \dfrac{1}{5} x^{-4/5} = \dfrac{1}{5} \cdot \dfrac{1}{x^{4/5}}\]</span></p>
+<p>. . .</p>
+<p><br></p>
+<p><span class="math display">\[\dfrac{\delta y}{\delta x} = 0.2 \cdot x^{0.2 - 1} = 0.2 \cdot x^{-0.8} = \dfrac{0.2}{x^{0.8}}\]</span></p>
+<hr>
+</section>
+<section id="power-rule-exponent-equal-to-1" class="level2">
+<h2 class="anchored" data-anchor-id="power-rule-exponent-equal-to-1">Power Rule (Exponent Equal to 1)</h2>
+<p>Lastly, I’ll remind you that every number has a default exponent of 1</p>
+<p>That is to say, if we see <span class="math inline">\(3x\)</span> it is equivalent to <span class="math inline">\(3x^{1}\)</span></p>
+<p>This helps us take the derivative using the <span class="h">Power Rule</span></p>
+<p>For example: <span class="math inline">\(y = -3x\)</span></p>
+<p>. . .</p>
+<p><span class="math display">\[\dfrac{\delta y}{\delta x} = 1 \cdot -3x^{1-1} = -3x^{0} = -3\]</span></p>
+<blockquote class="blockquote">
+<p><span class="hi">The key is to remember that any number with exponent 0 equals 1</span></p>
+</blockquote>
+<hr>
+</section>
+<section id="sum-and-difference-rule" class="level2">
+<h2 class="anchored" data-anchor-id="sum-and-difference-rule">Sum (and Difference) Rule</h2>
+<p>Sometimes our functions will have several parts, separated by <span class="math inline">\(\pm\)</span></p>
+<p>To make it more general, I’ll introduce some new notation:</p>
+<p>. . .</p>
+<ul>
+<li><span class="math inline">\(f(x)\)</span> and <span class="math inline">\(g(x)\)</span> are both functions of <span class="math inline">\(x\)</span>.</li>
+</ul>
+<p>. . .</p>
+<ul>
+<li><p><span class="math inline">\(\dfrac{dy}{dx}\)</span> refers to the overall derivative of <span class="math inline">\(y\)</span></p>
+<ul>
+<li>This just means that we will take the derivative of all factors that are functions of <span class="math inline">\(x\)</span></li>
+</ul></li>
+</ul>
+<p><span class="math display">\[\begin{align*}
+  y &amp;= f(x) \pm g(x) \\
+  \dfrac{dy}{dx} &amp;= f'(x) \pm g'(x)
+\end{align*}\]</span></p>
+<hr>
+</section>
+<section id="product-rule" class="level2">
+<h2 class="anchored" data-anchor-id="product-rule">Product Rule</h2>
+<hr>
+</section>
+<section id="constant-rule" class="level2">
+<h2 class="anchored" data-anchor-id="constant-rule">Constant Rule</h2>
+<hr>
+</section>
+<section id="log-rule" class="level2">
+<h2 class="anchored" data-anchor-id="log-rule">Log Rule</h2>
+<hr>
+</section>
+<section id="chain-rule" class="level2">
+<h2 class="anchored" data-anchor-id="chain-rule">Chain Rule</h2>
 </section>
 
 </main>

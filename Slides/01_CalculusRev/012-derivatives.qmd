@@ -252,20 +252,155 @@ $$\dfrac{\delta y}{\delta x} = 1 \cdot -3x^{1-1} = -3x^{0} = -3$$
 
 ## Sum (and Difference) Rule
 
+Sometimes our functions will have several parts, separated by $\pm$
+
+To make it more general, I'll introduce some new notation:
+
+. . .
+
+- $f(x)$ and $g(x)$ are both functions of $x$.
+
+. . .
+
+- $\dfrac{dy}{dx}$ refers to the overall derivative of $y$
+
+  - This just means that we will take the derivative of all factors that are functions of $x$
+
+\begin{align*}
+  y &= f(x) \pm g(x) \\
+  \dfrac{dy}{dx} &= f'(x) \pm g'(x)
+\end{align*}
 
 ---
 
-## Product Rule
+## Sum (and Difference) Rule
+
+Let's look at a sum: 
+
+$$y = x^{2} + 3x$$
+
+. . .
+
+:::: {.columns}
+
+::: {.column width="50%"}
+\begin{align*}
+  f(x) &= x^{2} \\
+  f'(x) &= 2x
+\end{align*}
+:::
+
+::: {.column width="50%"}
+\begin{align*} 
+  g(x) &= 3x \\
+  g'(x) &= 3
+\end{align*}
+:::
+
+::::
+
+. . .
+
+$$\dfrac{dy}{dx} = 2x + 3$$
+
+---
+
+## Sum (and Difference) Rule
+
+How about a difference:
+
+$$y = x - 3x^{2}$$
+
+. . .
+
+:::: {.columns}
+
+::: {.column width="50%"}
+\begin{align*}
+  f(x) &= x \\
+  f'(x) &= 1
+\end{align*}
+:::
+
+::: {.column width="50%"}
+\begin{align*} 
+  g(x) &= 3x^{2} \\
+  g'(x) &= 6x
+\end{align*}
+:::
+
+::::
+
+. . .
+
+$$\dfrac{dy}{dx} = 1 - 6x$$
 
 ---
 
 ## Constant Rule
 
+Important but straightforward $y = f(x) = a$, where $a$ is a constant
+
+```{r, fig.align='center'}
+library(ggplot2)
+
+p <- ggplot(data = NULL, aes(x = NULL, y = NULL)) +
+  xlim(0,10) +
+  ylim(0,10) +
+  labs(x = "x", y = "y") +
+  theme_minimal()
+
+p + geom_hline(yintercept = 5, linetype = "solid", color = "black", linewidth = 2)
+```
+
+. . .
+
+$y$ does not change as $x$ increases, so the slope is 0
+
 ---
 
 ## Log Rule
 
+One of the important functions we will see later uses the natural log function $ln(x)$
+
+```{r, fig.align='center'}
+# Load the ggplot2 library if not already loaded
+library(ggplot2)
+
+# Create a data frame with x values
+data <- data.frame(x = seq(0.1, 5, by = 0.1)) # Generate x values from 0.1 to 5
+
+# Add a new column with the natural logarithm of x
+data$ln_x <- log(data$x)
+
+# Create the ggplot object and plot the natural log function
+ggplot(data, aes(x = x, y = ln_x)) +
+  geom_line(color = "black", size = 2) +
+  xlim(0,5) +
+  labs(
+    x = "x",
+    y = "ln(x)"
+  ) +
+  theme_minimal()
+```
+
+It's primary use is that it increases at a decreasing rate which is math for it is always going up but by less and less every time
+
+---
+
+## Log Rule
+
+$$y = ln(x)$$
+
+. . .
+
+$$\dfrac{dy}{dx} = \dfrac{1}{x}$$
+
+
 ---
 
 ## Chain Rule
+
+
+
 

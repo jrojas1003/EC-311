@@ -539,15 +539,92 @@ Jose Rojas-Fallas
 </section>
 <section id="sum-and-difference-rule" class="slide level2">
 <h2>Sum (and Difference) Rule</h2>
+<p>Sometimes our functions will have several parts, separated by <span class="math inline">\(\pm\)</span></p>
+<p>To make it more general, I’ll introduce some new notation:</p>
+<div class="fragment">
+<ul>
+<li><span class="math inline">\(f(x)\)</span> and <span class="math inline">\(g(x)\)</span> are both functions of <span class="math inline">\(x\)</span>.</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li><p><span class="math inline">\(\dfrac{dy}{dx}\)</span> refers to the overall derivative of <span class="math inline">\(y\)</span></p>
+<ul>
+<li>This just means that we will take the derivative of all factors that are functions of <span class="math inline">\(x\)</span></li>
+</ul></li>
+</ul>
+<p><span class="math display">\[\begin{align*}
+  y &amp;= f(x) \pm g(x) \\
+  \dfrac{dy}{dx} &amp;= f'(x) \pm g'(x)
+\end{align*}\]</span></p>
+</div>
 </section>
-<section id="product-rule" class="slide level2">
-<h2>Product Rule</h2>
+<section id="sum-and-difference-rule-1" class="slide level2">
+<h2>Sum (and Difference) Rule</h2>
+<p>Let’s look at a sum:</p>
+<p><span class="math display">\[y = x^{2} + 3x\]</span></p>
+<div class="fragment">
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="math display">\[\begin{align*}
+  f(x) &amp;= x^{2} \\
+  f'(x) &amp;= 2x
+\end{align*}\]</span></p>
+</div><div class="column" style="width:50%;">
+<p><span class="math display">\[\begin{align*}
+  g(x) &amp;= 3x \\
+  g'(x) &amp;= 3
+\end{align*}\]</span></p>
+</div>
+</div>
+</div>
+<div class="fragment">
+<p><span class="math display">\[\dfrac{dy}{dx} = 2x + 3\]</span></p>
+</div>
+</section>
+<section id="sum-and-difference-rule-2" class="slide level2">
+<h2>Sum (and Difference) Rule</h2>
+<p>How about a difference:</p>
+<p><span class="math display">\[y = x - 3x^{2}\]</span></p>
+<div class="fragment">
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="math display">\[\begin{align*}
+  f(x) &amp;= x \\
+  f'(x) &amp;= 1
+\end{align*}\]</span></p>
+</div><div class="column" style="width:50%;">
+<p><span class="math display">\[\begin{align*}
+  g(x) &amp;= 3x^{2} \\
+  g'(x) &amp;= 6x
+\end{align*}\]</span></p>
+</div>
+</div>
+</div>
+<div class="fragment">
+<p><span class="math display">\[\dfrac{dy}{dx} = 1 - 6x\]</span></p>
+</div>
 </section>
 <section id="constant-rule" class="slide level2">
 <h2>Constant Rule</h2>
+<p>Important but straightforward <span class="math inline">\(y = f(x) = a\)</span>, where <span class="math inline">\(a\)</span> is a constant</p>
+
+<img data-src="Main_files/figure-revealjs/unnamed-chunk-2-1.png" width="960" class="r-stretch quarto-figure-center"><div class="fragment">
+<p><span class="math inline">\(y\)</span> does not change as <span class="math inline">\(x\)</span> increases, so the slope is 0</p>
+</div>
 </section>
 <section id="log-rule" class="slide level2">
 <h2>Log Rule</h2>
+<p>One of the important functions we will see later uses the natural log function <span class="math inline">\(ln(x)\)</span></p>
+
+<img data-src="Main_files/figure-revealjs/unnamed-chunk-3-1.png" width="960" class="r-stretch quarto-figure-center"><p>It’s primary use is that it increases at a decreasing rate which is math for it is always going up but by less and less every time</p>
+</section>
+<section id="log-rule-1" class="slide level2">
+<h2>Log Rule</h2>
+<p><span class="math display">\[y = ln(x)\]</span></p>
+<div class="fragment">
+<p><span class="math display">\[\dfrac{dy}{dx} = \dfrac{1}{x}\]</span></p>
+</div>
 </section>
 <section id="chain-rule" class="slide level2">
 <h2>Chain Rule</h2>
