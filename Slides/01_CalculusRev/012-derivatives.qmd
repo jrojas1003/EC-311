@@ -26,7 +26,6 @@ A [Derivative]{.hii} is simply another function that tells us the slope of a fun
 
 ```{r}
 library(ggplot2)
-library(htmltools)
 
 # Create time values
 time <- seq(0, 10, length.out = 100)
@@ -37,9 +36,14 @@ height <- -0.5 * (time - 5)^2 + 10
 # Create a data frame
 parabola_data <- data.frame(time, height)
 
-# Create the parabola plot
-parabola_plot <- ggplot(parabola_data, aes(time, height)) +
-  geom_line(color = "black", size = 1) +
+# Split the data into increasing and decreasing segments
+increasing_data <- parabola_data[parabola_data$time <= 5, ]
+decreasing_data <- parabola_data[parabola_data$time > 5, ]
+
+# Create the parabola plot with different colors
+parabola_plot <- ggplot() +
+  geom_line(data = increasing_data, aes(time, height), color = "#A3BE8C", size = 1) +
+  geom_line(data = decreasing_data, aes(time, height), color = "#BF616A"  , size = 1) +
   theme_minimal() +
   theme(axis.text.x = element_blank(),  # Remove x-axis ticks and labels
         axis.ticks.x = element_blank(),  # Remove x-axis ticks, 
@@ -348,7 +352,11 @@ p <- ggplot(data = NULL, aes(x = NULL, y = NULL)) +
   xlim(0,10) +
   ylim(0,10) +
   labs(x = "x", y = "y") +
-  theme_minimal()
+  theme_minimal() +
+  theme(axis.text.x = element_blank(),  # Remove x-axis ticks and labels
+        axis.ticks.x = element_blank(),  # Remove x-axis ticks, 
+        axis.ticks.y = element_blank(),  # Remove y-axis ticks
+        axis.text.y = element_blank())
 
 p + geom_hline(yintercept = 5, linetype = "solid", color = "black", linewidth = 2)
 ```
@@ -381,7 +389,11 @@ ggplot(data, aes(x = x, y = ln_x)) +
     x = "x",
     y = "ln(x)"
   ) +
-  theme_minimal()
+  theme_minimal() +
+  theme(axis.text.x = element_blank(),  # Remove x-axis ticks and labels
+        axis.ticks.x = element_blank(),  # Remove x-axis ticks, 
+        axis.ticks.y = element_blank(),  # Remove y-axis ticks
+        axis.text.y = element_blank())
 ```
 
 It's primary use is that it increases at a decreasing rate which is math for it is always going up but by less and less every time
@@ -396,11 +408,53 @@ $$y = ln(x)$$
 
 $$\dfrac{dy}{dx} = \dfrac{1}{x}$$
 
+. . .
+
+How about?
+
+$$y = a \cdot ln(x)$$
+
+. . .
+
+$$\dfrac{dy}{dx} = a \cdot \dfrac{1}{x} = \dfrac{a}{x}$$
 
 ---
 
 ## Chain Rule
 
+- Sometimes there are multiple operations happening at the same time over a variable.
+Generelly, it looks like:
 
+$$y = f\left(g(x)\right)$$
 
+. . . 
 
+- We solve this by working from the outside layer to the inner most one, multiplying each time
+
+- Learning this is important for derivative math, but we will try to avoid them as much as possible
+
+---
+
+## Chain Rule
+
+$$y = \left(x^{3} + 2x\right)^{4}$$
+
+. . .
+
+\begin{align*}
+\dfrac{dy}{dx} &= 4\left( x^{3} + 2x \right)^{4-1} \cdot \left( 3x^{3-1} + 2x^{1-1} \right) \\
+&= 4 \left( x^{3} + 2x \right)^{3} \cdot \left( 3x^{2} + 2 \right)
+\end{align*}
+
+. . .
+
+How about?
+
+$$y = ln(x^{b})$$
+
+. . . 
+
+\begin{align*}
+\dfrac{dy}{dx} &= \dfrac{1}{x^{b}} \cdot \dfrac{bx^{b-1}}{x^{b}} \\
+&= bx^{b-1-b} = bx^{-1} = \dfrac{b}{x}
+\end{align*}

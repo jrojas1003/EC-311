@@ -21,7 +21,7 @@ name: syllabus
 ## Assignments
 
 [Achieve Online Learning]{.hi}
-{
+
 - You [MUST]{.h} register for the course through Achieve
 - This is where you will complete your homework 
 - It also gives you access to the digital version of the textbook

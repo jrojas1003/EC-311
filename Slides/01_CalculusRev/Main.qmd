@@ -27,8 +27,8 @@ title-slide-attributes:
 :::
 
 # Slopes {.inverse .note}
-<!-- 
-{{< include 011-slopes.qmd >}} -->
+
+<!-- {{< include 011-slopes.qmd >}} -->
 
 # Derivatives {.inverse .note}
 
