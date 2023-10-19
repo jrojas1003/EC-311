@@ -353,11 +353,64 @@ Jose Rojas-Fallas
 </ul>
 </div>
 </section>
+<section>
 <section id="slopes" class="title-slide slide level1 inverse note center">
 <h1>Slopes</h1>
-<!-- {{< include 011-slopes.qmd >}} -->
-</section>
 
+</section>
+<section id="starting-simple" class="slide level2">
+<h2>Starting Simple</h2>
+
+<img data-src="Main_files/figure-revealjs/unnamed-chunk-1-1.png" width="960" class="r-stretch"><p>We call the slope the <span class="hi">RISE</span> over <span class="hi">RUN</span></p>
+</section>
+<section id="functions-slopes" class="slide level2">
+<h2>Functions &amp; Slopes</h2>
+<p>We can write that previous line as a mathematical function:</p>
+<p><span class="math display">\[f(x) =  x/2 + 5\]</span></p>
+<p>Importantly, the slope for this function is <span class="hi"><span class="math inline">\(1/2\)</span></span> <span class="hii">everywhere</span></p>
+<div class="fragment">
+<ul>
+<li><p>Everywhere means for <span class="hii">all values of <span class="math inline">\(x\)</span></span></p></li>
+<li><p>So no matter at what point of the line we calculate the slope, we will always find it to be <span class="hi"><span class="math inline">\(1/2\)</span></span></p></li>
+</ul>
+</div>
+</section>
+<section id="functions-slopes-1" class="slide level2">
+<h2>Functions &amp; Slopes</h2>
+<p>Slopes can take positive, negative, or zero values</p>
+<p>And each of these let’s us know how the function is behaving as we increse in <span class="math inline">\(x\)</span> (as we move to the right):</p>
+<ul>
+<li><p>Positive values mean the function is increasing</p></li>
+<li><p>Negative values mean the function is decreasing</p></li>
+<li><p>Zero values mean the function is staying constant (neither increasing or decreasing)</p></li>
+</ul>
+</section>
+<section class="slide level2">
+
+
+<img data-src="Main_files/figure-revealjs/unnamed-chunk-2-1.png" width="960" class="r-stretch"></section>
+<section id="functions-slopes-2" class="slide level2">
+<h2>Functions &amp; Slopes</h2>
+<p>The previous functions are called linear functions:</p>
+<ul>
+<li>Slopes are constant at all values of <span class="math inline">\(x\)</span></li>
+<li>They are behaving in an equal manner at all points</li>
+</ul>
+<div class="fragment">
+<p><br></p>
+<p>We will mostly be working with non-linear functions, which simply mean they have some form of curvature</p>
+<ul>
+<li><p>We will use quadratic and cubic functions</p>
+<ul>
+<li><p>Quadratic: <span class="math inline">\(f(x) = 3x^{2} + 5x + 10\)</span></p></li>
+<li><p>Cubic: <span class="math inline">\(f(x) = x^{3} - 2x^{2} + x - 5\)</span></p></li>
+</ul></li>
+</ul>
+</div>
+<div class="fragment">
+<p>What we truly care about is their slope. And there is a simpler way to find the slope of a function.</p>
+</div>
+</section></section>
 <section>
 <section id="derivatives" class="title-slide slide level1 inverse note center">
 <h1>Derivatives</h1>
@@ -385,7 +438,7 @@ Jose Rojas-Fallas
 <section id="intuition" class="slide level2">
 <h2>Intuition</h2>
 
-<img data-src="Main_files/figure-revealjs/unnamed-chunk-1-1.png" width="960" class="r-stretch"><div class="fragment">
+<img data-src="Main_files/figure-revealjs/unnamed-chunk-3-1.png" width="960" class="r-stretch"><div class="fragment">
 <p>Initially, the height of the ball is <span class="hi-green">increasing</span> over time</p>
 <p>Eventually, the height of the ball is <span class="hi-red">decreasing</span> over time</p>
 </div>
@@ -607,7 +660,7 @@ Jose Rojas-Fallas
 <h2>Constant Rule</h2>
 <p>Important but straightforward <span class="math inline">\(y = f(x) = a\)</span>, where <span class="math inline">\(a\)</span> is a constant</p>
 
-<img data-src="Main_files/figure-revealjs/unnamed-chunk-2-1.png" width="960" class="r-stretch quarto-figure-center"><div class="fragment">
+<img data-src="Main_files/figure-revealjs/unnamed-chunk-4-1.png" width="960" class="r-stretch quarto-figure-center"><div class="fragment">
 <p><span class="math inline">\(y\)</span> does not change as <span class="math inline">\(x\)</span> increases, so the slope is 0</p>
 </div>
 </section>
@@ -615,7 +668,7 @@ Jose Rojas-Fallas
 <h2>Log Rule</h2>
 <p>One of the important functions we will see later uses the natural log function <span class="math inline">\(ln(x)\)</span></p>
 
-<img data-src="Main_files/figure-revealjs/unnamed-chunk-3-1.png" width="960" class="r-stretch quarto-figure-center"><p>It’s primary use is that it increases at a decreasing rate which is math for it is always going up but by less and less every time</p>
+<img data-src="Main_files/figure-revealjs/unnamed-chunk-5-1.png" width="960" class="r-stretch quarto-figure-center"><p>It’s primary use is that it increases at a decreasing rate which is math for it is always going up but by less and less every time</p>
 </section>
 <section id="log-rule-1" class="slide level2">
 <h2>Log Rule</h2>
@@ -664,12 +717,139 @@ Jose Rojas-Fallas
 \end{align*}\]</span></p>
 </div>
 </section></section>
+<section>
 <section id="multivariate-derivatives" class="title-slide slide level1 inverse note center">
 <h1>Multivariate Derivatives</h1>
+
+</section>
+<section id="functions-with-two-variables" class="slide level2">
+<h2>Functions with Two Variables</h2>
+<p>For this I need to introduce some new notation</p>
+<ul>
+<li><span class="math inline">\(F = f(x,y)\)</span> is a function of <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span></li>
+</ul>
+<div class="fragment">
+<ul>
+<li><span class="math inline">\(F\)</span> now has <span class="h">2 derivatives</span>
+<ol type="1">
+<li>“With respect to <span class="math inline">\(x\)</span>”</li>
+<li>“With respect to <span class="math inline">\(y\)</span>”</li>
+</ol></li>
+<li>Each of these is called a <span class="hi">partial derivative</span></li>
+</ul>
+</div>
+<div class="fragment">
+<p>Each <span class="hi">partial derivative</span> is calculated <span class="hii">as if the other variable is a constant number</span></p>
+</div>
+</section>
+<section id="multivariate-derivatives-1" class="slide level2">
+<h2>Multivariate Derivatives</h2>
+<p>Let’s try a basic example: <span class="math inline">\(f(x,y) = x + 2y\)</span></p>
+<div class="fragment">
+<ul>
+<li>What is the <span class="hi">partial derivative of <span class="math inline">\(x \rightarrow \dfrac{df}{dx}\)</span></span>?
+<ul>
+<li>We act as if <span class="hii"><span class="math inline">\(y\)</span> is a constant</span></li>
+</ul></li>
+</ul>
+</div>
+<div class="fragment">
+<p><span class="math display">\[\dfrac{df}{dx} = 1\]</span></p>
+</div>
+<div class="fragment">
+<ul>
+<li>What is the <span class="hi">partial derivative of <span class="math inline">\(y \rightarrow \dfrac{df}{dx}\)</span></span>?
+<ul>
+<li>We act as if <span class="hii"><span class="math inline">\(x\)</span> is a constant</span></li>
+</ul></li>
+</ul>
+<p><span class="math display">\[\dfrac{df}{dy} = 2\]</span></p>
+</div>
+</section>
+<section id="multivariate-derivatives-2" class="slide level2">
+<h2>Multivariate Derivatives</h2>
+<h3 id="additively-separable">Additively Separable</h3>
+<p><span class="math display">\[f(x,y) = ln(x) + 3y\]</span></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Partial w.r.t. <span class="math inline">\(x\)</span></li>
+</ul>
+<div class="fragment">
+<p><span class="math display">\[\dfrac{df}{dx} = \dfrac{1}{x}\]</span></p>
+</div>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>Partial w.r.t. <span class="math inline">\(y\)</span></li>
+</ul>
+<div class="fragment">
+<p><span class="math display">\[\dfrac{df}{dy} = 3\]</span></p>
+</div>
+</div>
+</div>
+</section>
+<section id="multivariate-derivatives-3" class="slide level2">
+<h2>Multivariate Derivatives</h2>
+<h3 id="additively-separable-1">Additively Separable</h3>
+<p><span class="math display">\[f(x,y) = x \cdot y\]</span></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Partial w.r.t. <span class="math inline">\(x\)</span></li>
+</ul>
+<div class="fragment">
+<p><span class="math display">\[\begin{align*}
+\dfrac{df}{dx} &amp;= 1 \cdot x^{1-1} \cdot y \\
+&amp;= y
+\end{align*}\]</span></p>
+</div>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>Partial w.r.t. <span class="math inline">\(y\)</span></li>
+</ul>
+<div class="fragment">
+<p><span class="math display">\[\dfrac{df}{dy} = x\]</span></p>
+</div>
+</div>
+</div>
+</section>
+<section id="multivariate-derivatives-4" class="slide level2">
+<h2>Multivariate Derivatives</h2>
+<h3 id="non-separable">Non-Separable</h3>
+<p><span class="math display">\[f(x,y) = x^{2} \cdot y^{1/2}\]</span></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Partial w.r.t. <span class="math inline">\(x\)</span></li>
+</ul>
+<div class="fragment">
+<p><span class="math display">\[\begin{align*}
+\dfrac{df}{dx} &amp;= 2x^{2-1} \cdot y^{1/2} \\
+&amp;= 2xy^{1/2}
+\end{align*}\]</span></p>
+</div>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>Partial w.r.t. <span class="math inline">\(y\)</span></li>
+</ul>
+<div class="fragment">
+<p><span class="math display">\[\begin{align*}
+\dfrac{df}{dy} &amp;= \dfrac{1}{2}y^{1/2 - 1} \cdot x^{2} \\
+&amp;= \dfrac{1}{2} \cdot \dfrac{1}{y^{1/2}} \cdot x^{2}
+\end{align*}\]</span></p>
+</div>
+</div>
+</div>
+</section>
+<section id="calculus-review" class="slide level2">
+<h2>Calculus Review</h2>
+<p>There is a worksheet on Canvas [link this] for you to practice everything in this lecture.</p>
+<p>I recommend you complete it to get the practice in</p>
+<p>This class is roughly 70% doing math and 30% understanding and interpreting said math</p>
 <div class="footer footer-default">
 <p>EC311, Lecture 02 | Calculus Overview</p>
 </div>
-</section>
+</section></section>
     </div>
   </div>
 

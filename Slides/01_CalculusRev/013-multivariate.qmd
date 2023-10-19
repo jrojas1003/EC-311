@@ -1,3 +1,145 @@
 ---
 name: multivarite derivatives
 ---
+
+## Functions with Two Variables
+
+For this I need to introduce some new notation
+
+- $F = f(x,y)$ is a function of $x$ and $y$
+
+. . . 
+
+- $F$ now has [2 derivatives]{.h}
+    1. "With respect to $x$"
+    2. "With respect to $y$"
+- Each of these is called a [partial derivative]{.hi}
+
+. . . 
+
+Each [partial derivative]{.hi} is calculated [as if the other variable is a constant number]{.hii}
+
+---
+
+## Multivariate Derivatives
+
+Let's try a basic example: $f(x,y) = x + 2y$
+
+. . .
+
+- What is the [partial derivative of $x \rightarrow \dfrac{df}{dx}$]{.hi}?
+    - We act as if [$y$ is a constant]{.hii}
+
+. . .
+
+$$\dfrac{df}{dx} = 1$$
+
+. . .
+
+- What is the [partial derivative of $y \rightarrow \dfrac{df}{dx}$]{.hi}?
+    - We act as if [$x$ is a constant]{.hii}
+
+$$\dfrac{df}{dy} = 2$$
+
+---
+
+## Multivariate Derivatives 
+
+### Additively Separable
+
+$$f(x,y) = ln(x) + 3y$$
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- Partial w.r.t. $x$
+
+:::: {.fragment}
+$$\dfrac{df}{dx} = \dfrac{1}{x}$$
+::::
+:::
+
+::: {.column width="50%"}
+- Partial w.r.t. $y$
+
+:::: {.fragment}
+$$\dfrac{df}{dy} = 3$$
+::::
+
+:::
+::::
+
+---
+
+## Multivariate Derivatives
+
+### Additively Separable
+
+$$f(x,y) = x \cdot y$$
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- Partial w.r.t. $x$
+
+:::: {.fragment}
+\begin{align*}
+\dfrac{df}{dx} &= 1 \cdot x^{1-1} \cdot y \\
+&= y
+\end{align*}
+::::
+:::
+
+::: {.column width="50%"}
+- Partial w.r.t. $y$
+
+:::: {.fragment}
+$$\dfrac{df}{dy} = x$$
+::::
+
+:::
+::::
+
+---
+
+## Multivariate Derivatives
+
+### Non-Separable
+
+$$f(x,y) = x^{2} \cdot y^{1/2}$$
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- Partial w.r.t. $x$
+
+:::: {.fragment}
+\begin{align*}
+\dfrac{df}{dx} &= 2x^{2-1} \cdot y^{1/2} \\
+&= 2xy^{1/2}
+\end{align*}
+::::
+:::
+
+::: {.column width="50%"}
+- Partial w.r.t. $y$
+
+:::: {.fragment}
+\begin{align*}
+\dfrac{df}{dy} &= \dfrac{1}{2}y^{1/2 - 1} \cdot x^{2} \\
+&= \dfrac{1}{2} \cdot \dfrac{1}{y^{1/2}} \cdot x^{2}
+\end{align*}
+::::
+
+:::
+::::
+
+---
+
+## Calculus Review
+
+There is a worksheet on Canvas [link this] for you to practice everything in this lecture. 
+
+I recommend you complete it to get the practice in
+
+This class is roughly 70% doing math and 30% understanding and interpreting said math
