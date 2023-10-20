@@ -1,0 +1,35 @@
+---
+name: Preferences & Utility
+---
+
+## Where Does Demand Come From?
+
+Imagine the market for coffee on campus
+
+- Additionally, picture that the only other good that can be purchased is tea
+
+- On a basic level, [demand for coffee]{.hii} is derived from individual's choosing how to divide their income between coffee and tea
+
+```{r, fig.align='center'}
+library(ggplot2)
+
+# Create data for the supply and demand curves
+quantity <- c(10, 20, 30, 40, 50, 60)
+price_supply <- c(1, 2, 3, 4, 5, 6)
+price_demand <- c(6, 5, 4, 3, 2, 1)
+
+# Create a data frame
+curve_data <- data.frame(quantity, price_supply, price_demand)
+
+# Create the plot
+ggplot(curve_data, aes(x = quantity)) +
+  geom_line(aes(y = price_supply), color = "blue", size = 1, linetype = "solid") +
+  geom_line(aes(y = price_demand), color = "red", size = 1, linetype = "solid") +
+  labs(
+    y = "Price",
+    x = "Quantity"
+  ) +
+  theme_minimal() +
+  annotate("text", x = 60, y = 5.75, label = "S", color = "blue", size = 8) +
+  annotate("text", x = 58, y = 1, label = "D", color = "red", size = 8)
+```

@@ -1,25 +1,45 @@
 ---
-title: "Introduction and Overview"
+title: "Consumer Behavior"
 subtitle: "EC 311 - Intermediate Microeconomics"
 author: Jose Rojas-Fallas
 date: last-modified
 date-format: "YYYY"
 format:
     revealjs:
-        theme: [default, ../styles.scss]
+        theme: [default, styles.scss]
         slide-number: true
-        footer: "EC311, Lecture 01 | Introduction and Overview"
+        footer: "EC311, Lecture 03 | Consumer Behavior"
         preview-links: auto
         code-fold: FALSE
 title-slide-attributes: 
   data-background-position: left
 ---
 
-# Introduction {.inverse .note}
+::: {.vertical-center}
 
-{{< include 01-prologue.qmd >}}
+[Outline]{.hi .realbig}
 
-# Syllabus {.inverse .note}
+### Chapter 4
 
-{{< include 02-syllabus.qmd >}}
+- Topics 
+  - Preferences and Utility (4.1)
+  - Indifference Curves (4.2)
+  - Budget Constraints (4.3)
 
+- Other Stuff
+  - Remember Office Hours on [Days and Times]{.hii}
+  - Also feel free to email me your questions at [jrojas2@gmail.com]{.hii}
+
+:::
+
+# Preferences and Utility {.inverse .note}
+
+{{< include 021-preferences&utility.qmd >}}
+
+# Indifference Curves {.inverse .note}
+
+{{< include 022-indifference_curves.qmd >}}
+
+# Budget Constraints {.inverse .note}
+
+{{< include 023-budget_constraints.qmd >}}
