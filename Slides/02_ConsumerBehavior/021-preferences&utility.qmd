@@ -30,6 +30,318 @@ ggplot(curve_data, aes(x = quantity)) +
     x = "Quantity"
   ) +
   theme_minimal() +
-  annotate("text", x = 60, y = 5.75, label = "S", color = "blue", size = 8) +
-  annotate("text", x = 58, y = 1, label = "D", color = "red", size = 8)
+  annotate("text", x = 60, y = 5.6, label = "S", color = "blue", size = 8) +
+  annotate("text", x = 60, y = 1.3, label = "D", color = "red", size = 8)
 ```
+
+---
+
+## Where Does Demand Come From?
+
+This is the problem we will be dealing with through the first half of the course
+
+> How does an individual allocate a [finite amount of resources]{.hii} between [two goods]{.hii}?
+
+. . .
+
+<br>
+
+[Note:]{.h .note} There are clearly more than just two goods out there, so how can this be useful?
+
+[The main critique I always hear about economics courses is that they're unrealistic. That's mostly true, but we can learn about the aggregate by simplifying and making assumptions]{.h .note}
+---
+
+## Where Does Demand Come From?
+
+- We will frame the decisions as a two-good model where you may choose between:
+
+  - Food and durable consumption
+  - Leisure (not working) and consumption (paid for by earning a wage)
+  - Consumption now and consumption later
+
+> [The key takeaway here is that we can frame many important choices as "two-good" decisions]{.h .note}
+
+- This makes things simpler for us to solve while still maintaining some sense of the real world
+
+---
+
+## Determinants of Consumption
+
+Consumption of any single good has two parts:
+
+- How it [BENEFITS]{.hii} the consumer 
+
+  - We call this [UTILITY]{.hii}
+
+- What it [COSTS]{.hii} the consumer
+
+  - What we give up to purchase the good
+
+. . .
+
+Let's see what this means through a 1-good example $\rightarrow$ Beer
+
+- Imagine the following scenario:
+
+  - You just arrived at the bar and have had zero drinks so far
+  - Each beer costs the same: $4
+
+::: {.notes}
+Beer is a great example of a good with complicated benefits
+:::
+
+---
+
+## Beer {.smaller}
+
+| Number of Beers | Overall Level of Happiness | Change in Level of Happiness |
+|:---------------:|:---------------------------:|:-----------------------------:|
+|        0        |             0               |               -               |
+|        1        |             10              |               10              |
+|        2        |             25              |               15              |
+|        3        |             35              |               10              |
+|        4        |             40              |               5               |
+|        5        |             42              |               3               |
+|        6        |             30              |              -12              |
+
+. . .
+
+:::: {.columns}
+
+:::: {.column width="50%"}
+If beer were free, how many beers should this person drink?
+
+::: {.fragment }
+
+[$$5$$]{.hi}
+
+:::
+
+::::
+
+:::: {.column width="50%"}
+
+::: {.fragment}
+
+Now recall that beer costs $4, how many beers should this person drink?
+
+::: {.fragment}
+
+[$$4$$]{.hi}
+
+:::
+
+:::
+
+::::
+
+:::: 
+
+---
+
+## Intuition Behind "Choice" in Economics
+
+You [cannot]{.hi-red} simply find the consumption amount that makes you the happiest. 
+[But why?]{.hi}
+
+. . .
+
+> The goal is to maximize your [utility]{.hii} whilst acknowledging you have [constraints]{.hii}
+>
+> The choice is simple: [consume an additional unit until the cost of doing so outweighs the benefit]{.hii}
+
+<br>
+
+. . .
+
+[Commit this idea to memory: it is the crux of economics and drives everything we will be doing]{.hi .note}
+
+[We maximize utility up to the point that it does not make sense to do so]{.hi .note}
+
+---
+
+## Back to Beer {.smaller}
+
+| Number of Beers | Overall Level of Happiness | Change in Level of Happiness |
+|:---------------:|:---------------------------:|:-----------------------------:|
+|        0        |             0               |               -               |
+|        1        |             10              |               10              |
+|        2        |             25              |               15              |
+|        3        |             35              |               10              |
+|        4        |             40              |               5               |
+|        5        |             42              |               3               |
+|        6        |             30              |              -12              |
+
+Some Questions:
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- What is the marginal benefit:
+  - When you have not consumed any beer?
+  - When you have already consumed 3 beers?
+  - When you have already consumed 5 beers?
+:::
+
+::: {.column width="50%"}
+- What is the marginal cost of beer? 
+  - Does it change as we consume more?
+:::
+
+::::
+
+---
+
+## Being and Thinking at the Margin
+
+We found two important values:
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- [Marginal Benefit (MB)]{.hi}
+
+::: {.fragment}
+The additional benefit gained for an added unit of consumption
+:::
+
+:::
+
+::: {.column width="50%"}
+- [Marginal Cost (MC)]{.hi}
+
+::: {.fragment}
+The additional cost paid for an added unit of consumption 
+:::
+
+:::
+
+::::
+
+. . .
+
+We can describe the decision-making process in a more formal manner:
+
+- Initially: [MB]{.hi-green} > [MC]{.hi-red} $\rightarrow$ Consume more!
+- Eventually: [MB]{.hi-green} < [MC]{.hi-red} $\rightarrow$ We went too far!
+- At some point: [MB]{.hi-green} = [MC]{.hi-red} $\rightarrow$ Just right!
+
+> [Ask yourself: Why must they be equal?]{.hi .note}
+
+---
+
+## What's Going On? Graphically 
+
+```{r beer-utility, fig.align='center'}
+# Load the ggplot2 library if not already loaded
+library(ggplot2)
+
+# Create a data frame with x values
+data <- data.frame(x = c(0,1,2,3,4,5,6), y = c(0,10,25,35,40,42,30))
+
+# Create the ggplot object
+utility <- ggplot(data, aes(x = x, y = y)) +
+  geom_line(color = "black", size = 2) +
+  xlim(0,6) +
+  labs(
+    x = "Beers",
+    y = "Utility"
+  ) +
+  theme_minimal()
+
+utility
+```
+
+. . .
+
+What matters for choice is the [marginal benefit]{.hi} of an additional beer
+
+In other words, what matters is the change in [utility]{.hii} that occurs as we move to the right on the graph
+
+. . .
+
+> [Recall: A change in $y$ as $x$ increases is the derivative]{.h .note}
+
+---
+
+## What's Going On? Graphically - Derivatives
+
+```{r beer-utility-derivative, fig.align='center'}
+utility
+```
+
+The derivative of this function is the [marginal benefit]{.hi} of beer
+
+[This is why derivatives are important]{.h .note}
+
+We can use derivatives to figure out the optimal amount to consume
+
+---
+
+## What's Going On? Graphically - MB & MC
+
+```{r beer-utility-derivative1, fig.align='center'}
+utility
+```
+
+> [Recall:]{.hi .note} The optimal choice is the point where [MB]{.hi-green} = [MC]{.hi-red} 
+
+> The [MC]{.hi-red} = 4. So we would choose the quantity of beers where [MB]{.hi-green} = 4 
+
+---
+
+## What's Going On? Mathematically
+
+The utility function of beer we've been using is:
+
+$$U(x) = -x^{2} + 12x$$
+
+[Let's practice:]{.h} 
+What would the optimal consumption amount be if the cost of beer is $2?
+
+---
+
+## A Two-Good Problem
+
+The beer example was fairly straightforward. But we will be dealing with making choices between two goods. 
+
+Before we dive in, a couple of things to consider are:
+
+. . .
+
+- When we spend our resources on one good, it cannot be spent on something else
+  - Because we are making decisions amongst both things, we need a [cost relationship]{.hi} between them
+
+. . .
+
+- We do not measure our happiness (utility) in dollars
+  - We need to find a way to choose without directly comparing costs and benefits across goods
+
+--- 
+
+## Enter Utility Functions {.smaller}
+
+A [Utility Function]{.hi} is a function of two variables:
+
+$$U = f(x,y)$$
+
+[Some facts:]{.h}
+
+- $x$ and $y$ are the (positive) amounts of goods you consume
+- The function converts $x$ and $y$ to happiness (utility) from consuming the two goods
+
+. . . 
+
+[For Example:]{.h}
+
+- Let's say that the utility I receive from Beer (B) and Soda (S) can be modeled as:
+
+$$U = f(B,S) = 10B + 2S$$
+
+- Before, we were only interested in the slope of Beer
+- Now, we are interested in the [slopes]{.hii} of both Beer & Soda
+
+---
+
+## Utility Functions 
+

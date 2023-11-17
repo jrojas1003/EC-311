@@ -8,7 +8,7 @@
 <link href="Main_files/libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="Main_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="Main_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.3.361">
+  <meta name="generator" content="quarto-1.4.294">
 
   <meta name="author" content="Jose Rojas-Fallas">
   <meta name="dcterms.date" content="2023-01-01">
@@ -157,7 +157,8 @@
   }
 
   .callout.callout-titled .callout-body > .callout-content > :last-child {
-    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0;
   }
 
   .callout.callout-titled .callout-icon::before {
@@ -372,7 +373,346 @@ Jose Rojas-Fallas
 <li><p>On a basic level, <span class="hii">demand for coffee</span> is derived from individual’s choosing how to divide their income between coffee and tea</p></li>
 </ul>
 
-<img data-src="Main_files/figure-revealjs/unnamed-chunk-1-1.png" width="960" class="r-stretch quarto-figure-center"></section></section>
+<img data-src="Main_files/figure-revealjs/unnamed-chunk-1-1.png" width="960" class="r-stretch quarto-figure-center"></section>
+<section id="where-does-demand-come-from-1" class="slide level2">
+<h2>Where Does Demand Come From?</h2>
+<p>This is the problem we will be dealing with through the first half of the course</p>
+<blockquote>
+<p>How does an individual allocate a <span class="hii">finite amount of resources</span> between <span class="hii">two goods</span>?</p>
+</blockquote>
+<div class="fragment">
+<p><br></p>
+<p><span class="h note">Note:</span> There are clearly more than just two goods out there, so how can this be useful?</p>
+<p><span class="h note">The main critique I always hear about economics courses is that they’re unrealistic. That’s mostly true, but we can learn about the aggregate by simplifying and making assumptions</span></p>
+</div>
+</section>
+<section id="where-does-demand-come-from-2" class="slide level2">
+<h2>Where Does Demand Come From?</h2>
+<ul>
+<li><p>We will frame the decisions as a two-good model where you may choose between:</p>
+<ul>
+<li>Food and durable consumption</li>
+<li>Leisure (not working) and consumption (paid for by earning a wage)</li>
+<li>Consumption now and consumption later</li>
+</ul></li>
+</ul>
+<blockquote>
+<p><span class="h note">The key takeaway here is that we can frame many important choices as “two-good” decisions</span></p>
+</blockquote>
+<ul>
+<li>This makes things simpler for us to solve while still maintaining some sense of the real world</li>
+</ul>
+</section>
+<section id="determinants-of-consumption" class="slide level2">
+<h2>Determinants of Consumption</h2>
+<p>Consumption of any single good has two parts:</p>
+<ul>
+<li><p>How it <span class="hii">BENEFITS</span> the consumer</p>
+<ul>
+<li>We call this <span class="hii">UTILITY</span></li>
+</ul></li>
+<li><p>What it <span class="hii">COSTS</span> the consumer</p>
+<ul>
+<li>What we give up to purchase the good</li>
+</ul></li>
+</ul>
+<div class="fragment">
+<p>Let’s see what this means through a 1-good example <span class="math inline">\(\rightarrow\)</span> Beer</p>
+<ul>
+<li><p>Imagine the following scenario:</p>
+<ul>
+<li>You just arrived at the bar and have had zero drinks so far</li>
+<li>Each beer costs the same: $4</li>
+</ul></li>
+</ul>
+<aside class="notes">
+<p>Beer is a great example of a good with complicated benefits</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</div>
+</section>
+<section id="beer" class="slide level2 smaller">
+<h2>Beer</h2>
+<table>
+<colgroup>
+<col style="width: 22%">
+<col style="width: 37%">
+<col style="width: 40%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Number of Beers</th>
+<th style="text-align: center;">Overall Level of Happiness</th>
+<th style="text-align: center;">Change in Level of Happiness</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">25</td>
+<td style="text-align: center;">15</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">35</td>
+<td style="text-align: center;">10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">40</td>
+<td style="text-align: center;">5</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">42</td>
+<td style="text-align: center;">3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">30</td>
+<td style="text-align: center;">-12</td>
+</tr>
+</tbody>
+</table>
+<div class="fragment">
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>If beer were free, how many beers should this person drink?</p>
+<div class="fragment">
+<p><span class="hi"><span class="math display">\[5\]</span></span></p>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="fragment">
+<p>Now recall that beer costs $4, how many beers should this person drink?</p>
+<div class="fragment">
+<p><span class="hi"><span class="math display">\[4\]</span></span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="intuition-behind-choice-in-economics" class="slide level2">
+<h2>Intuition Behind “Choice” in Economics</h2>
+<p>You <span class="hi-red">cannot</span> simply find the consumption amount that makes you the happiest. <span class="hi">But why?</span></p>
+<div class="fragment">
+<blockquote>
+<p>The goal is to maximize your <span class="hii">utility</span> whilst acknowledging you have <span class="hii">constraints</span></p>
+<p>The choice is simple: <span class="hii">consume an additional unit until the cost of doing so outweighs the benefit</span></p>
+</blockquote>
+<p><br></p>
+</div>
+<div class="fragment">
+<p><span class="hi note">Commit this idea to memory: it is the crux of economics and drives everything we will be doing</span></p>
+<p><span class="hi note">We maximize utility up to the point that it does not make sense to do so</span></p>
+</div>
+</section>
+<section id="back-to-beer" class="slide level2 smaller">
+<h2>Back to Beer</h2>
+<table>
+<colgroup>
+<col style="width: 22%">
+<col style="width: 37%">
+<col style="width: 40%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Number of Beers</th>
+<th style="text-align: center;">Overall Level of Happiness</th>
+<th style="text-align: center;">Change in Level of Happiness</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">25</td>
+<td style="text-align: center;">15</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">35</td>
+<td style="text-align: center;">10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">40</td>
+<td style="text-align: center;">5</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">42</td>
+<td style="text-align: center;">3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">30</td>
+<td style="text-align: center;">-12</td>
+</tr>
+</tbody>
+</table>
+<p>Some Questions:</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>What is the marginal benefit:
+<ul>
+<li>When you have not consumed any beer?</li>
+<li>When you have already consumed 3 beers?</li>
+<li>When you have already consumed 5 beers?</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>What is the marginal cost of beer?
+<ul>
+<li>Does it change as we consume more?</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="being-and-thinking-at-the-margin" class="slide level2">
+<h2>Being and Thinking at the Margin</h2>
+<p>We found two important values:</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li><span class="hi">Marginal Benefit (MB)</span></li>
+</ul>
+<div class="fragment">
+<p>The additional benefit gained for an added unit of consumption</p>
+</div>
+</div><div class="column" style="width:50%;">
+<ul>
+<li><span class="hi">Marginal Cost (MC)</span></li>
+</ul>
+<div class="fragment">
+<p>The additional cost paid for an added unit of consumption</p>
+</div>
+</div>
+</div>
+<div class="fragment">
+<p>We can describe the decision-making process in a more formal manner:</p>
+<ul>
+<li>Initially: <span class="hi-green">MB</span> &gt; <span class="hi-red">MC</span> <span class="math inline">\(\rightarrow\)</span> Consume more!</li>
+<li>Eventually: <span class="hi-green">MB</span> &lt; <span class="hi-red">MC</span> <span class="math inline">\(\rightarrow\)</span> We went too far!</li>
+<li>At some point: <span class="hi-green">MB</span> = <span class="hi-red">MC</span> <span class="math inline">\(\rightarrow\)</span> Just right!</li>
+</ul>
+<blockquote>
+<p><span class="hi note">Ask yourself: Why must they be equal?</span></p>
+</blockquote>
+</div>
+</section>
+<section id="whats-going-on-graphically" class="slide level2">
+<h2>What’s Going On? Graphically</h2>
+
+<img data-src="Main_files/figure-revealjs/beer-utility-1.png" width="960" class="r-stretch quarto-figure-center"><div class="fragment">
+<p>What matters for choice is the <span class="hi">marginal benefit</span> of an additional beer</p>
+<p>In other words, what matters is the change in <span class="hii">utility</span> that occurs as we move to the right on the graph</p>
+</div>
+<div class="fragment">
+<blockquote>
+<p><span class="h note">Recall: A change in <span class="math inline">\(y\)</span> as <span class="math inline">\(x\)</span> increases is the derivative</span></p>
+</blockquote>
+</div>
+</section>
+<section id="whats-going-on-graphically---derivatives" class="slide level2">
+<h2>What’s Going On? Graphically - Derivatives</h2>
+
+<img data-src="Main_files/figure-revealjs/beer-utility-derivative-1.png" width="960" class="r-stretch quarto-figure-center"><p>The derivative of this function is the <span class="hi">marginal benefit</span> of beer</p>
+<p><span class="h note">This is why derivatives are important</span></p>
+<p>We can use derivatives to figure out the optimal amount to consume</p>
+</section>
+<section id="whats-going-on-graphically---mb-mc" class="slide level2">
+<h2>What’s Going On? Graphically - MB &amp; MC</h2>
+
+<img data-src="Main_files/figure-revealjs/beer-utility-derivative1-1.png" width="960" class="r-stretch quarto-figure-center"><blockquote>
+<p><span class="hi note">Recall:</span> The optimal choice is the point where <span class="hi-green">MB</span> = <span class="hi-red">MC</span></p>
+</blockquote>
+<blockquote>
+<p>The <span class="hi-red">MC</span> = 4. So we would choose the quantity of beers where <span class="hi-green">MB</span> = 4</p>
+</blockquote>
+</section>
+<section id="whats-going-on-mathematically" class="slide level2">
+<h2>What’s Going On? Mathematically</h2>
+<p>The utility function of beer we’ve been using is:</p>
+<p><span class="math display">\[U(x) = -x^{2} + 12x\]</span></p>
+<p><span class="h">Let’s practice:</span> What would the optimal consumption amount be if the cost of beer is $2?</p>
+</section>
+<section id="a-two-good-problem" class="slide level2">
+<h2>A Two-Good Problem</h2>
+<p>The beer example was fairly straightforward. But we will be dealing with making choices between two goods.</p>
+<p>Before we dive in, a couple of things to consider are:</p>
+<div class="fragment">
+<ul>
+<li>When we spend our resources on one good, it cannot be spent on something else
+<ul>
+<li>Because we are making decisions amongst both things, we need a <span class="hi">cost relationship</span> between them</li>
+</ul></li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>We do not measure our happiness (utility) in dollars
+<ul>
+<li>We need to find a way to choose without directly comparing costs and benefits across goods</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="enter-utility-functions" class="slide level2 smaller">
+<h2>Enter Utility Functions</h2>
+<p>A <span class="hi">Utility Function</span> is a function of two variables:</p>
+<p><span class="math display">\[U = f(x,y)\]</span></p>
+<p><span class="h">Some facts:</span></p>
+<ul>
+<li><span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> are the (positive) amounts of goods you consume</li>
+<li>The function converts <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> to happiness (utility) from consuming the two goods</li>
+</ul>
+<div class="fragment">
+<p><span class="h">For Example:</span></p>
+<ul>
+<li>Let’s say that the utility I receive from Beer (B) and Soda (S) can be modeled as:</li>
+</ul>
+<p><span class="math display">\[U = f(B,S) = 10B + 2S\]</span></p>
+<ul>
+<li>Before, we were only interested in the slope of Beer</li>
+<li>Now, we are interested in the <span class="hii">slopes</span> of both Beer &amp; Soda</li>
+</ul>
+</div>
+</section>
+<section id="utility-functions" class="slide level2">
+<h2>Utility Functions</h2>
+</section></section>
 <section id="indifference-curves" class="title-slide slide level1 inverse note center">
 <h1>Indifference Curves</h1>
 
@@ -381,7 +721,7 @@ Jose Rojas-Fallas
 <section id="budget-constraints" class="title-slide slide level1 inverse note center">
 <h1>Budget Constraints</h1>
 <div class="footer footer-default">
-<p>EC311, Lecture 03 | Consumer Behavior</p>
+<p>EC311 - Lecture 03 | Consumer Behavior</p>
 </div>
 </section>
     </div>
@@ -410,7 +750,6 @@ Jose Rojas-Fallas
       Reveal.initialize({
 'controlsAuto': true,
 'previewLinksAuto': true,
-'smaller': false,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
@@ -709,10 +1048,9 @@ Jose Rojas-Fallas
         // clear code selection
         e.clearSelection();
       });
-      function tippyHover(el, contentFn) {
+      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
         const config = {
           allowHTML: true,
-          content: contentFn,
           maxWidth: 500,
           delay: 100,
           arrow: false,
@@ -722,8 +1060,17 @@ Jose Rojas-Fallas
           interactive: true,
           interactiveBorder: 10,
           theme: 'light-border',
-          placement: 'bottom-start'
+          placement: 'bottom-start',
         };
+        if (contentFn) {
+          config.content = contentFn;
+        }
+        if (onTriggerFn) {
+          config.onTrigger = onTriggerFn;
+        }
+        if (onUntriggerFn) {
+          config.onUntrigger = onUntriggerFn;
+        }
           config['offset'] = [0,0];
           config['maxWidth'] = 700;
         window.tippy(el, config); 
