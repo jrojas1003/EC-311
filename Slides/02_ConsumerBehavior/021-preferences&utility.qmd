@@ -334,7 +334,7 @@ $$U = f(x,y)$$
 
 [For Example:]{.h}
 
-- Let's say that the utility I receive from Beer (B) and Soda (S) can be modeled as:
+- Let's say that the utility I receive from [Beer (B)]{.h} and [Soda (S)]{.h} can be modeled as:
 
 $$U = f(B,S) = 10B + 2S$$
 
@@ -343,5 +343,87 @@ $$U = f(B,S) = 10B + 2S$$
 
 ---
 
-## Utility Functions 
+## Utility Functions - Beer & Soda
 
+$$U = f(B,S) = 10B + 2S$$
+
+For a function of two variables there are [two slopes]{.hi}
+
+- One for each [partial derivative]{.hii} which we will call [Marginal Utilities]{.hii}
+
+. . .
+
+- In the [Beer (B)]{.h} and [Soda (S)]{.h} example we will have:
+
+  - The [Marginal Utility of Beer]{.hii} [($MU_{B}$)]{.h}
+  - The [Marginal Utility of Soda]{.hii} [($MU_{S}$)]{.h}
+
+. . .
+
+> What are the Marginal Utilities of Beer and Soda?
+
+---
+
+## Utility Functions - PB&J
+
+Now find the Marginal Utilities for Peanut Butter and Jelly
+
+$$U = f(P,J) = P^{2} \cdot J$$
+
+---
+
+## What do Utility Functions even Mean?
+
+They help us represent how people feel about goods $x$ and $y$
+
+There are certain properties that help us determine:
+
+. . .
+
+- Do I [like or dislike]{.hi} $x$?
+
+- Does [how much I like]{.hi} $x$ depend on [how much $x$ I already have]{.hi}?
+
+- Does [how much I like]{.hi} $x$ depend on [how much $y$ I have]{.hi}?
+
+. . .
+
+> [We can understand these properties by looking at the marginal utilities!]{.h .note .big}
+
+---
+
+## Utility Functions - Do I Like or Dislike $x$?
+
+> [If I consume more $x$, how does my utility move?]{.h .note .big}
+
+Beyond graphing the utility function, we need to find a way to answer this formally and mathematically
+
+. . . 
+
+We can look at the [sign of the derivative]{.hi}
+
+- If the derivative of $U$ with respect to (w.r.t.) $x$ is:
+
+. . .
+
+:::: {.columns}
+
+::: {.column width="50%"}
+[Positive]{.hi-green}
+
+::: {.fragment}
+I like $x$
+:::
+
+:::
+
+::: {.column width="50%"}
+[Negative]{.hi-red}
+
+::: {.fragment}
+I dislike $x$
+:::
+
+:::
+
+::::

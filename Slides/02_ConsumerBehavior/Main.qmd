@@ -40,6 +40,9 @@ title-slide-attributes:
 
 {{< include 022-indifference_curves.qmd >}}
 
+<!--
+
 # Budget Constraints {.inverse .note}
 
 {{< include 023-budget_constraints.qmd >}}
+-->
