@@ -427,3 +427,169 @@ I dislike $x$
 :::
 
 ::::
+
+---
+
+## Like or Dislike - Example
+
+Given my utility curve for [Beer (B)]{.h} and [Soda (S)]{.h}, what do I like or dislike?
+
+$$U = f(B,S) = 10B + 2S$$
+
+. . .
+
+<br>
+<br>
+
+:::: {.columns}
+
+::: {.column width="50%"}
+I like [Beer]{.h}
+
+::: {.fragment}
+$MU_{B} = 10 > 0$
+:::
+
+:::
+
+::: {.column width="50%"}
+I like [Soda]{.h}
+
+::: {.fragment}
+$MU_{S} = 2 > 0$
+:::
+
+:::
+::::
+
+---
+
+## Does How Much I like $x$ Depend on How Much I Already Have?
+
+> [Remember to think at the margin]{.h .note}
+
+Is each additional unit of $x$ bring me [more]{.hi-green}, [less]{.hi-red}, or [equal]{.hi-teal} happiness as the previous unit?
+
+. . .
+
+<br>
+
+This is slightly trickier to figure out, but we still use marginal utility logic
+
+- In fact, we will use what is called the [Second Derivative]{.hi}
+
+- Mathematically, this is the [derivative]{.h} of $MU_{x}$ w.r.t. $x$ and we ask:
+
+  - Is this [second derivative]{.h} [positive]{.hi-green}, [negative]{.hi-red}, or [zero]{.hi-teal}?
+
+---
+
+## Depend on How Much I Already Have - Example
+
+My utility for [Cookies]{.h} and [Milk]{.h}:
+
+$$U = f(C,M) = C^{1/2}M^{1/2}$$
+
+. . . 
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+[Cookies]{.h}
+
+::: {.fragment}
+$MU_{c} = \dfrac{1}{2} \cdot C^{-1/2} \cdot M^{1/2}$
+$MU_{cc} = \dfrac{-1}{2} \cdot \dfrac{1}{2} \cdot C^{-1/2 - 1} \cdot M^{1/2}$
+$MU_{cc} = \dfrac{-1}{4} \cdot \dfrac{1}{C^{3/2}} \cdot M^{1/2}$
+$MU_{cc} = \dfrac{-M^{1/2}}{4C^{3/2}}$
+:::
+
+:::
+
+::: {.column width="50%"}
+
+[Milk]{.h}
+
+::: {.fragment}
+$U_{mm} = \dfrac{-C^{1/2}}{4M^{3/2}}$
+:::
+
+<br>
+
+::: {.fragment}
+$MU_{cc}$ is [negative]{.hi-red} so we can say that [Cookies]{.h} have a Decreasing Marginal Utility
+:::
+
+:::
+
+::::  
+
+---
+
+## Does How Much I Like $x$ Depend on How Much $y$ I Have?
+
+This one is more straightforward: Does the marginal utility of $x$ depend on $y$?
+
+- Mathematically, we take the derivative  of $MU_{x}$ w.r.t. to $y$, and vice-versa. 
+  
+  - This is called the [cross-partial derivative]{.h}
+
+- Notationally, we have: $MU_{xy}$
+
+Where we can determine the order of derivatives by looking at the subscript:
+
+- $x$ is first, and $y$ is the second derivative
+
+---
+
+## Depend on How Much of the Other Good I Have - Example
+
+How about this utility for Peanut Butter and Jelly
+
+$$U = f(P,J) = P^{2} \cdot J$$
+
+. . .
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+[Peanut Butter]{.hi}
+
+::: {.fragment}
+
+\begin{align*}
+  MU_{P} &= 2P^{2-1} \cdot J = 2PJ \\
+  MU_{PJ} &= 2P \cdot J^{1-1} = 2P
+\end{align*}
+
+:::
+
+:::
+
+::: {.column width="50%"}
+
+[Jelly]{.hi}
+
+::: {.fragment}
+
+\begin{align*}
+  MU_{J} &= P^{2} \cdot J^{1-1} = P^{2} \\
+  MU_{JP} &= P^{2} = 2P
+\end{align*}
+
+:::
+
+:::
+
+::::
+
+. . .
+
+> [Notice that the cross-partials are the same and this will always be the case for any utility function!]{.note .h}
+
+---
+
+## Meaning of a Utility Function
+
