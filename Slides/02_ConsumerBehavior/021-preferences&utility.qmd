@@ -593,3 +593,423 @@ $$U = f(P,J) = P^{2} \cdot J$$
 
 ## Meaning of a Utility Function
 
+What are Utility Functions?
+
+. . .
+
+- They are a flexible tool that help us describe the relationship between two godos and the utility (happiness) you gain from them
+
+. . .
+
+- They allow us to get a good intuition of how we can change function properties so they relate to the choice we are attempting to model
+
+. . .
+
+- Let's think about some goods and decide what the utility function should look like
+
+---
+
+## Modeling with Utility Functions
+
+Let's consider [Homework]{.hi} and [Pizza]{.hi}
+
+. . .
+
+- First, we decide whether the good is desirable [(good)]{.hi-green} or undesirable [(bad)]{.hi-red}
+
+  ::: {.fragment}
+
+  - I'll make the bold assumption that [Homework]{.hi} is a bad and that [Pizza]{.hi} is a good
+
+  :::
+
+  ::: {.fragment}
+
+  > [Note: This implies that the marginal utilities are $MU_{H} < 0$ and $MU_{P} > 0$]{.h .note}
+
+  :::
+
+---
+
+## Modeling with Utility Functions - Example
+
+[Homework]{.hi} is a [bad]{.hi-red} and [Pizza]{.hi} is a [good]{.hi-green}
+
+. . .
+
+Let's also set the following requirements:
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+The [marginal disutility]{.hi-red} of [homework]{.hi} is larger when I have more of it
+
+::: {.fragment}
+
+$MU_{H}$ is decreasing in $H \; \rightarrow \;$ We need an $H$ in $MU_{H}$
+
+:::
+
+:::
+
+::: {.column width="50%"}
+
+The [marginal utility]{.hi-green} of [pizza]{.hi} is smaller when I have more of it
+
+::: {.fragment}
+
+$MU_{P}$ becomes smaller as I have more $P \; \rightarrow \;$ We need an $H$ in $MU_{H}$
+
+$MU_{P}$ does [**not**]{.h} depend on [homework]{.hi} $MU_{P}$ does not have an $H$
+
+:::
+
+:::
+
+::::
+
+. . .
+
+> [Attempt creating a utility function with the above characteristics]{.h .note}
+
+---
+
+## Modeling our Homework and Pizza {.smaller}
+
+Here's my version:
+
+$$U(H,P) = -H^{2} + ln(P)$$
+
+Now let's prove that it meets the requirements 
+
+. . . 
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+[Homework]{.hi} is a [bad]{.hi-red} and must be worse the more I have of interested
+
+:::: {.fragment}
+
+$$MU_{H} = -2H < 0$$
+
+$$MU_{HH} = -2 <0$$
+
+::::
+
+:::
+
+::: {.column width="50%"}
+
+[Pizza]{.hi} is a [good]{.hi-green}, I get less joy from it the more I have, and it does not depend on how much [homework]{.hi} I have
+
+:::: {.fragment}
+
+$$MU_{P} = \dfrac{1}{P} > 0 $$
+
+$$MU_{PP} = \dfrac{-1}{P^{2}} < 0$$
+
+$$MU_{PH} = 0 = MU_{HP}$$
+
+::::
+
+:::
+
+::::
+
+---
+
+## Meaning of a Utility function
+
+The single most important property of a utility function is that we can measure [**the relative preference for one good over the other**]{.h}
+
+- It measures [how many units of $y$ would you give up to get one more unit of $x$?]{.hi}
+
+  - We call this the [Marginal Rate of Substitution (MRS)]{.hii}
+
+$$MRS = \dfrac{MU_{x}}{MU_{y}}$$
+
+---
+
+## Marginal Rate of Substition (MRS)
+
+Here we are talking about the relative preference of $x$ over $y$, but how?
+
+. . .
+
+- Consider $U = f(x,y) = 4x + 2y$
+
+  - You get 4 units of utility for each $x \; \rightarrow \; 4$
+
+  - You get 2 units of utility for each $y \; \rightarrow \; 2$
+
+  - We can say that each $x$ is twice as valuable as each $y$
+
+. . .
+
+Using our MRS formula we have:
+
+$$MRS = \dfrac{MU_{x}}{MU_{y}} = \dfrac{4}{2} = 2$$
+
+---
+
+## Types of Utility Functions
+
+In Economics, we mainly deal with 4 typess of functions, each with its set of properties and tricks
+
+. . .
+
+- Cobb-Douglas
+
+- Quasi-linear
+
+- Perfect Substitutes
+
+- Perfect Complements
+
+---
+
+## Cobb-Douglas
+
+$$U(x,y) = x^{a}y^{b}$$
+
+> [**Find the MRS of this general function**]{.note .h}
+
+. . .
+
+$$MRS = \dfrac{MU_{x}}{MU_{y}} = \dfrac{ax^{a-1}y^{b}}{bx^{a}y^{b-1}} = \dfrac{a}{b} \cdot \dfrac{x^{a-1-a}}{y^{b-1-b}} = \dfrac{a}{b} \cdot \dfrac{x^{-1}}{y^{-1}} = \dfrac{a}{b} \cdot \dfrac{y}{x}$$
+
+. . .
+
+> [**The MRS for a Cobb-Douglas will always look like**]{.note .h}
+>
+> $$\dfrac{a}{b} \cdot \dfrac{y}{x}$$
+
+---
+
+## Cobb-Douglas: Keys to Remember
+
+$$MRS = $\dfrac{a}{b} \cdot \dfrac{y}{x}$$
+
+- The MRS is a ratio of $y$ to $x$, multiplied by a constant
+
+- MRS is your [willingness to trade $y$ for $x$]{.h}
+
+- As you get more $x$, the MRS goes down
+
+- As you get more $y$, the MRS goes up
+
+---
+
+## Cobb-Douglas - Example
+
+$$U(x,y) = x^{3}y^{1/2}$$
+
+> [**Find the MRS of this utility function**]{.note .h}
+
+. . .
+
+$$MRS = \dfrac{MU_{x}}{MU_{y}} = \dfrac{3x^{2}y^{1/2}}{1/2x^{3}y^{-1/2}} = \dfrac{3}{1/2} \cdot \dfrac{y^{1/2}y^{1/2}}{x^{3}x^{-2}} = 6 \cdot \dfrac{y}{x}$$
+
+. . .
+
+If we recall that $MRS = \dfrac{a}{b} \cdot \dfrac{y}{x}$ then we can take a shortcut:
+
+$$MRS = \dfrac{a}{b} \cdot \dfrac{y}{x} \rightarrow \dfrac{3}{1/2} \cdot \dfrac{y}{x} = 6 \cdot \dfrac{y}{x}$$
+
+---
+
+## Quasi-Linear
+
+$$U(x,y) = a \cdot ln(x) + b \cdot y$$
+
+Where $a \cdot ln(x)$ is the ["quasi"]{.h} part and $b \cdot y$ is the ["linear"]{.h} part
+
+> [**Find the MRS of this general function**]{.note .h}
+
+. . .
+
+$$MRS = \dfrac{MU_{x}}{MU_{y}} = \dfrac{a/x}{b} = \dfrac{a}{b} \cdot \dfrac{1}{x}$$
+
+---
+
+## Quasi-Linear: Keys to Remember
+
+$$MRS = \dfrac{a}{b} \cdot \dfrac{1}{x}$$
+
+- The MRS is a constant times $1/x$
+
+- As you get more $x$, the MRS decreases
+
+- As you get more $y$, the MRS remains the same
+
+---
+
+## Quasi-Linear - Example
+
+$$U(x,y) = 1/3 \cdot ln(x) + y$$
+
+> [**Find the MRS of this utility function**]{.note .h}
+
+. . .
+
+$$MRS = \dfrac{MU_{x}}{MU_{y}} = \dfrac{1/3 \cdot 1/x}{1} = \dfrac{1}{3} \cdot \dfrac{1}{x}$$
+
+. . .
+
+Using our shortcut we get:
+
+$$MRS = \dfrac{a}{b} \cdot \dfrac{1}{x} = \dfrac{1/3}{1} \cdot \dfrac{1}{x} = \dfrac{1}{3} \cdot \dfrac{1}{x}$$
+
+---
+
+## Perfect Substitutes
+
+$$U(x,y) = a \cdot x + b \cdot y$$
+
+> [**Find the MRS of this general function**]{.note .h}
+
+. . .
+
+$$MRS = \dfrac{MU_{x}}{MU_{y}} = \dfrac{a}{b}$$
+
+### Keys to Remember
+
+- MRS is a constant
+
+---
+
+## Perfect Substitutes - Example
+
+$$U(x,y) = 6x + \dfrac{1}{2} y $$
+
+> [**Find the MRS of this utility function**]{.note .h}
+
+. . .
+
+$$MRS = \dfrac{MU_{x}}{MU_{y}} = \dfrac{6}{1/2} = 12$$
+
+. . .
+
+And our shortcut shows:
+
+$$MRS = \dfrac{6}{1/2} = 12$$
+
+---
+
+## Perfect Complements
+
+$$U(x,y) = \min \{a \cdot x, b \cdot y \}$$
+
+This utility function requires a different form of intuition
+
+Let's first think of a simple example:
+
+. . .
+
+Imagine we are trying to make some hot chocolate which requires 1 pack of chocolate powder and 12 oz of milk
+
+$$U(x,y) = \min \{1 \, choco, 12oz \, milk \}$$
+
+. . .
+
+You check your kitchen and find that there are 3 packs of chocolate powder and you have 15 oz of milk in your fridge
+
+. . .
+
+> [**How many hot chocolates can we make?**]{.h .note}
+
+---
+
+## Perfect Complements Intuition
+
+These are goods that [**have to be consumed together in an exact proportion**]{.h} in order to produce any utility 
+
+> There is no MRS, so we use a property called the [No-Waste Condition]{.hi}:
+>
+> $$U(x,y) = \min \{a \cdot x, b \cdot y \}$$
+>
+> $$a \cdot x = b \cdot y$$
+
+---
+
+## Perfect Complements: Keys to Remember
+
+- MRS is not defined (We cannot take a derivative)
+
+- We can use another form of logic called [No-Waste Condition]{.hi}:
+
+  - When $a \cdot x < b \cdot y$ you will give up any $y$ you can to get more $x$
+
+  - When $a \cdot x < b \cdot y$ you will give up any $x$ you can to get $y$
+
+---
+
+## Perfect Complements - Example 
+
+$$U(x,y) = \min \{ \dfrac{x}{2}, \dfrac{y}{4} \}$$
+
+> [**Find the No-Waste Condition of this utility function**]{.note .h}
+
+. . .
+
+No-Waste Condition is $\dfrac{x}{2} = \dfrac{y}{4} \rightarrow 4x = 2y \rightarrow 2x = 2$
+
+. . .
+
+We can say: 
+
+- If $2x > y \; \rightarrow \;$ Too much $x$, so we would trade some $x$ for some $y$
+
+- If $2x < y \; \rightarrow \;$ Too much $y$, so we would trade some $y$ for some $x$
+
+---
+
+## Bundles
+
+When you have a utility function of two goods, any given combination of those two goods is called a [Bundle]{.hi}
+
+- Every [bundle]{.hi} has an associated utility level
+
+Take the following utility function and bundles
+
+$$U(x,y) = x^{2}y$$
+
+. . .   
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+Bundle 1 is (3,2)
+
+:::: {.fragment}
+
+\begin{align*}
+  U(3,2) &= 3^{2} \cdot 2 \\
+         &= 9 \cdot 2 = 18
+\end{align*}
+
+::::
+
+:::
+
+::: {.column width="50%"}
+
+Bundle 2 is (1,0)
+
+:::: {.fragment}
+
+\begin{align*}
+  U(1,0) &= 1^{2} \cdot 0 \\
+         &= 1 \cdot 0 = 0
+\end{align*}
+
+::::
+
+:::
+
+::::
+
