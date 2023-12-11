@@ -1,3 +1,24 @@
 ---
 name: Indifference Curves
 ---
+
+## What is Indifference?
+
+It is exactly what it sounds like between two bundles
+
+- Any two bundles that give the same utility level makes you indifferent between those two Bundles
+
+For example, for the utility of $U(x,y) = 2x + 3y$ I am indifferent between bundles (3,2) and (0,4)
+
+. . .
+
+<br>
+
+\begin{align*}
+    U(3,2) &= 2(3) + 3(2) = 6 + 6 = 12 \\ \\
+    U(0,4) &= 2(0) + 3(4) = 12
+\end{align*}
+
+---
+
+## Indifference Sets
