@@ -21,4 +21,86 @@ For example, for the utility of $U(x,y) = 2x + 3y$ I am indifferent between bund
 
 ---
 
-## Indifference Sets
+## Indifference Set
+
+Given a utility function and a level of utility, you can find a whole set of bundles that you are indifferent between
+
+. . .
+
+For example, let $U(x,y) = x + y$ and set $U = 10$. 
+Then we can find an infinite set of $x$ and $y$ that will give us our stated utility level
+
+. . .
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+\begin{align*}
+    x &= 10 \\
+    x &= 9 \\
+    x &= 8 \\
+      &. \\
+      &. \\
+      &.
+\end{align*}
+
+:::
+
+::: {.column width="50%"}
+
+\begin{align*}
+    y &= 0 \\
+    y &= 1 \\
+    y &= 2 \\
+      &. \\
+      &. \\
+      &.
+\end{align*}
+
+:::
+
+::::
+
+---
+
+## Indifference Curves
+
+We can create a function that helps us find [ALL]{.h} possible bundles that make you indifferent at a given utility level
+
+We call this an [Indifference Curve]{.hi}
+
+For our previous utility function $U(x,y) = x + y$ where $U = 10$, we solve for $y$ and get:
+
+. . .
+
+\begin{align*}
+    U(x,y) &= x + y \\ \\
+    10 &= x + y \\ \\
+    10 - x &= y \rightarrow \text{Indifference Curve (IC)}
+\end{align*}
+
+---
+
+## Indifference Curve - Example
+
+$$U(x,y) = xy \;\; \text{where} \; U = 16$$
+
+. . .
+
+> What type of Utility Function is this?
+
+. . .
+
+- It is a Cobb-Douglas $x^{a}y^{b} \text{ where } a = b = 1$
+
+. . .
+
+> What is the associated Indifference Curve?
+
+. . .
+
+$$16 = xy \rightarrow y = \dfrac{16}{x} \rightarrow \text{ IC }$$
+
+---
+
