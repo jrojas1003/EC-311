@@ -819,6 +819,11 @@ If we recall that $MRS = \dfrac{a}{b} \cdot \dfrac{y}{x}$ then we can take a sho
 
 $$MRS = \dfrac{a}{b} \cdot \dfrac{y}{x} \rightarrow \dfrac{3}{1/2} \cdot \dfrac{y}{x} = 6 \cdot \dfrac{y}{x}$$
 
+::: {.notes}
+Introduce log transformation here
+:::
+
+
 ---
 
 ## Quasi-Linear
@@ -1013,3 +1018,100 @@ Bundle 2 is (1,0)
 
 ::::
 
+---
+
+## Bundles & Axioms of Preferences
+
+:::: {.notes}
+
+Let's first define what an Axiom is
+
+- A proposition that is assumed to be true without proof for the sake of studying the consequences that follow from it
+
+::::
+
+We will use the following axioms about preferences between bundles to ensure logical consistency
+
+. . .
+
+- Completeness
+
+. . .
+
+- "More is Better"
+
+. . .
+
+- Transitivity
+
+. . .
+
+> [These come from economic theory so they will help you think like an economist but do not think this tells us how people behave]{.h .note}
+
+. . .
+
+> [We are attempting to successfully predict behavior, so we will simply assume that everyone behaves accordingly]{.h .note}
+
+---
+
+## Completeness 
+
+We say that preferences are always [complete]{.hi}. So when comparing bundles A and B, you can always say:
+
+. . .
+
+- I prefer A to B ($A \succeq B$)
+
+- I prefer B to A ($A \succeq B$)
+
+- I am indifferent between A and B ($A \sim B$) 
+
+. . .
+
+This allows us to compare and order any pair of bundles
+
+---
+
+## "More is Better"
+
+Or at least more is no worse than less
+
+. . .
+
+In general, if a good is desirable we will want more of it
+
+- However, sometimes products can be bads (instead of goods) and we would, obviously, want less of those
+
+---
+
+## Transitivity
+
+Preferences are transitive. This means that when comparing bundles A, B, and C you can get logical orderings through rankings:
+
+. . . 
+
+- If you prefer B to A ($B \succeq A$) and C to B ($C \succeq B$) then you must prefer C to A ($C \succeq A$)
+
+. . .
+
+![](Images\Transitivity-line.png){fig-align="center"}
+
+---
+
+## Transitivity
+
+What would this graph mean?
+
+![](Images\Transitivity-Equal-line.png){fig-align="center"}
+
+. . .
+
+All bundles are preferred equally!
+
+---
+
+## Preferences Assumptions
+
+All of these are necessary to understand utility funcitons and be able to graph them
+
+To do so we first need to learn about [Indifference Curves]{.hii}
