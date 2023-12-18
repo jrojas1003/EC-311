@@ -34,17 +34,12 @@ title-slide-attributes:
 
 # Preferences and Utility {.inverse .note}
 
-<!--
-{{< include 021-preferences&utility.qmd >}}
--->
+<!--{{< include 021-preferences&utility.qmd >}}-->
 
 # Indifference Curves {.inverse .note}  
 
-{{< include 022-indifference_curves.qmd >}}
-
-<!--
+<!--{{< include 022-indifference_curves.qmd >}}-->
 
 # Budget Constraints {.inverse .note}
 
 {{< include 023-budget_constraints.qmd >}}
--->
