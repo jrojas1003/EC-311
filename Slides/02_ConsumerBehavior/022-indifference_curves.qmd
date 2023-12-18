@@ -104,3 +104,521 @@ $$16 = xy \rightarrow y = \dfrac{16}{x} \rightarrow \text{ IC }$$
 
 ---
 
+## Indifference Curves 
+
+So why do we care about these curves?
+
+. . .
+
+- We can graph them
+
+. . .
+
+- Graphing is a key step to figuring out how to solve an individual's choice problem 
+
+. . .
+
+> [Each utility function has a unique shape that we will learn]{.h .note}
+
+---
+
+## Let's Draw - Perfect Substitutes
+
+$$U(x,y) = 3x + y \; \text{ with } \; U = 6, \, 9, \, 15$$
+
+> [First, find the indifference curves for each Utility value]{.h .note}
+
+<br>
+
+:::: {.columns}
+
+::: {.column width="33%"}
+
+$$U = 6$$
+
+:::: {.fragment}
+
+$$y = 6 - 3x$$
+
+::::
+
+:::
+
+::: {.column width="33%"}
+
+$$U = 9$$
+
+:::: {.fragment}
+
+$$y = 9 - 3x$$
+
+::::
+
+:::
+
+::: {.column width="33%"}
+
+$$U = 15$$
+
+:::: {.fragment}
+
+$$y = 15 - 3x$$
+
+::::
+
+:::
+
+::::
+
+. . .
+
+> [Next, we graph these functions]{.h .note}
+
+<!--
+``` {r perfect-substitutes, fig.align='center'}
+library(ggplot2)
+
+# Create a data frame with x values
+x_values <- seq(-5, 5, by = 0.1)  # Adjust the range of x-values as needed
+
+# Create a data frame with y values for each function
+df <- data.frame(
+  x = x_values,
+  y1 = 6 - 3 * x_values,
+  y2 = 9 - 3 * x_values,
+  y3 = 15 - 3 * x_values
+)
+
+# Plot the functions using ggplot2
+ggplot(df, aes(x)) +
+  geom_line(aes(y = y1), color = "blue", linetype = "solid", size = 1, label = "y = 6 - 3x") +
+  geom_line(aes(y = y2), color = "red", linetype = "dashed", size = 1, label = "y = 9 - 3x") +
+  geom_line(aes(y = y3), color = "green", linetype = "dotted", size = 1, label = "y = 15 - 3x") +
+  labs(x = "Good X",
+       y = "Good Y") +
+  xlim(0,6) + 
+  ylim(0,20) + 
+  theme_minimal() +
+  scale_color_manual(values = c("blue", "red", "green")) +
+  theme(legend.position = c(0.8, 0.2))  # Adjust legend position as needed
+``` 
+-->
+
+---
+
+## Let's Draw - Perfect Complements
+
+$$U(x,y) = \min \{ x, \dfrac{y}{2} \} \; \text { with } U = 2, \, 8, \, 9$$
+
+> [Find the indifference curves for each utility value]{.h .note}
+
+<br>
+
+:::: {.columns}
+
+::: {.column width="33%"}
+
+$$U = 2$$
+
+:::: {.fragment}
+
+$$x = 2 \; \text{ or } y = 4$$
+
+::::
+
+:::
+
+::: {.column width="33%"}
+
+$$U = 8$$
+
+:::: {.fragment}
+
+$$x = 8 \; \text{ or } y = 16$$
+
+::::
+
+:::
+
+::: {.column width="33%"}
+
+$$U = 9$$
+
+:::: {.fragment}
+
+$$x = 9 \; \text{ or } y = 18$$
+
+::::
+
+:::
+
+::::
+
+. . .
+
+> [Next, we graph these functions]{.h .note}
+
+---
+
+## Let's Draw - Cobb-Douglas
+
+$$U(x,y) = x^{1/2}y \; \text{ with } U = 4, \, 8, \, 10$$
+
+> [Find the indifference curves for each utility value]{.h .note}
+
+<br>
+
+:::: {.columns}
+
+::: {.column width="33%"}
+
+$$U = 4$$
+
+:::: {.fragment}
+
+$$y = \dfrac{4}{x^{1/2}}$$
+
+::::
+
+:::
+
+::: {.column width="33%"}
+
+$$U = 8$$
+
+:::: {.fragment}
+
+$$y = \dfrac{8}{x^{1/2}}$$
+
+::::
+
+:::
+
+::: {.column width="33%"}
+
+$$U = 10$$
+
+:::: {.fragment}
+
+$$y = \dfrac{10}{x^{1/2}}$$
+
+::::
+
+:::
+
+::::
+
+. . .
+
+> [Next, we graph these functions]{.h .note}
+
+---
+
+## Let's Draw - Quasi-Linear
+
+$$U(x,y) = ln(x) + y \; \text{ with } U = 5, \, 15, \, 20$$
+
+> [Find the indifference curves for each utility value]{.h .note}
+
+<br>
+
+:::: {.columns}
+
+::: {.column width="33%"}
+
+$$U = 5$$
+
+:::: {.fragment}
+
+$$y = 5 - ln(x)$$
+
+::::
+
+:::
+
+::: {.column width="33%"}
+
+$$U = 15$$
+
+:::: {.fragment}
+
+$$y = 15 - ln(x)$$
+
+::::
+
+:::
+
+::: {.column width="33%"}
+
+$$U = 20$$
+
+:::: {.fragment}
+
+$$y = 20 - ln(x)$$
+
+::::
+
+:::
+
+::::
+
+. . .
+
+> [Next, we graph these functions]{.h .note}
+
+---
+
+## Indifference Curve - Rules {.smaller}
+
+It is very important that you understand the [intuition]{.hi} behind indifference curves 
+
+Let's view an example that can help:
+
+. . .
+
+Consider Weather Reports:
+
+- On cold days, what the weather feels like is a function of:
+
+    1. Temperature
+
+    2. Windchill
+
+. . .
+
+- An indifference curve represents [all of the different combinations of temperature and windchill that cause you to feel the exact same thing]{.hi}
+
+. . .
+
+- If the windchill is suddenly lower, what must [intuitively]{.hi} happen to the temperature to keep you feeling the same outside?
+
+. . .
+
+If windchill $\downarrow$ then temperature $\uparrow$
+
+---
+
+## Indifference Curve - Rules
+
+We use this exact same logic for utility between two goods
+
+[Intuitively]{.hii}, if I want to stay at the same level of happiness as I lose some $y$, what must happen to $x$?
+
+. . .
+
+- I need more of $x$
+
+. . .
+
+This is why we read them from left to right and why they have a negative slope
+
+- I know the perfect complements is odd but the same logic tends to apply
+
+---
+
+## Formal Indifference Curve Rules
+
+All of the stuff from before can be formalized into the following 3:
+
+. . .
+
+- [Monotonicity:]{.h .big} Indifference curves always go from the top left to the bottom right of the graph without changing direction at any point
+
+. . .
+
+- [Non-Crossing:]{.h .big} If at least two curves cross, this leads to logical contradictions
+
+. . .
+
+- [Convex:]{.h .big} Balanced combinations of two goods are preferred to extreme outcomes (A lot of one good, little of the other)
+
+---
+
+## Monotonicity {.vertical-center .realbig}
+
+[I'll draw it on the board and later upload a digital image on Canvas]{.note .realbig}
+
+::: {.notes}
+  Drawing on whiteboard & promise to upload a completed iPad drawing after class
+:::
+
+---
+
+## Non-Crossing {.vertical-center .realbig}
+
+[I'll draw it on the board and later upload a digital image on Canvas]{.note .realbig}
+
+::: {.notes}
+  Drawing on whiteboard 
+::: 
+
+---
+
+## Convex {.vertical-center .realbig}
+
+[I'll draw it on the board and later upload a digital image on Canvas]{.note .realbig}
+
+::: {.notes}
+  Drawing on whiteboard
+:::
+
+---
+
+## What About the Other Functional Forms?
+
+I drew Cobb-Douglas curves (mostly because they're easier to illustrate these properties) but what about Perfect Complements or Perfect Substitutes? 
+
+. . .
+
+- They fulfill all 3 properties, [**but not strongly**]{.h} 
+
+. . .
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+[**Perfect Complements**]{.hi}
+
+::: {.fragment}
+- Never Crosses
+- Convex
+:::
+
+::: {.fragment}
+- [Wealky Monotonic]{.hi}
+:::
+
+:::
+
+::: {.column width="50%"}
+
+[**Perfect Substitutes**]{.hi}
+
+::: {.fragment}
+- Never Crosses
+- Monotonic
+:::
+
+::: {.fragment}
+- [Weakly Convex]{.hi}
+:::
+
+:::
+
+::::
+
+. . .
+
+<br>
+
+- Let's look at the board again
+
+---
+
+## Most Important Facts of Indifference Curves
+
+Recall the intuition of what a movement along the indifference curve means:
+
+. . .
+
+- You are trading [$y$]{.h} for [$x$]{.h}, holding [constant]{.h} your level of [utility]{.h}
+
+. . .
+
+  - The slope of the indifference curve measures your [**willingness to tradeoff between $x$ and $y$**]{.h}
+
+. . .
+
+  - This is also known as the [**Marginal Rate of Substition**]{.hii} (times $-1$)
+
+---
+
+## Most Important Facts of Indifference Curves
+
+This [**Marginal Rate of Substition (MRS)**]{.hii} thing is pretty important
+
+First, why is the slope the [negative MRS]{.h}?
+
+. . .
+
+- The MRS is the [ratio]{.h} of the effect of increasing $x$ on your utility and the effect of increasing $y$ on your utility
+  
+. . .
+
+  - $\dfrac{MU_{x}}{MU_{y}}$
+
+. . .
+
+- The Indifference Curve slope is all about keeping the utility level constant while we move $x$ and $y$ in opposite directions
+
+- Therefore the IC slope = -MRS
+
+---
+
+## Simple Mathematical Proof
+
+For 
+
+$$U(x,y) = ax + by$$
+
+. . .
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+1. Find the MRS and times -1
+
+:::: {.fragment}
+
+\begin{align*}
+  MRS &\dfrac{MU_{x}}{MU_{y}} = \dfrac{a}{b} \\
+  -MRS &= \dfrac{-a}{b}
+\end{align*}
+
+::::
+
+:::
+
+::: {.column width="50%"}
+
+2. Find the Indifference Curve and it's slope
+
+:::: {.fragment}
+
+\begin{align*}
+  \bar{U} &= ax + by \\ 
+  \bar{U} - ax &= by \\
+  \dfrac{\bar{U}}{b} - \dfrac{ax}{b} &= y \\
+  \text{Slope} &\text{ is the derivative!} \\
+  \dfrac{\partial y}{\partial x} &= \dfrac{-a}{b}
+\end{align*}
+
+::::
+
+:::
+
+::::
+
+---
+
+## Indifference Curves
+
+From this lecture you have learned:
+
+- Everything about utility functions and how to use them to find an MRS
+
+- Everything about Indifference Curves and how the IC slope relates to the MRS 
+
+. . .
+
+The MRS is going to be key to solving utility maximization problems 
+
+  - Mathematically (Using derivatives)
+
+  - Graphically (Drawing ICs)
+
+. . .
+
+However, when we maximize utility functions we have constraints, we called these [**Budget Constraints**]{.hii}
