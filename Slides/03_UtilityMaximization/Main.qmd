@@ -1,0 +1,45 @@
+---
+title: "Utility Maximization"
+subtitle: "EC 311 - Intermediate Microeconomics"
+author: Jose Rojas-Fallas
+date: last-modified
+date-format: "YYYY"
+format:
+    revealjs:
+        theme: [default, styles.scss]
+        slide-number: true
+        footer: "EC311 - Lecture 04 | Utility Maximization"
+        preview-links: auto
+        code-fold: FALSE
+title-slide-attributes: 
+  data-background-position: left
+---
+
+::: {.vertical-center}
+
+[Outline]{.hi .realbig}
+
+### Chapter 4
+
+- Topics 
+
+  - Optimal Consumption (4.4)
+
+    - Slopes Logic
+
+    - Constrained Optimization
+
+
+:::
+
+# Optimal Consumption {.inverse .note}
+
+{{< include 021-optimal-consumption.qmd >}}
+
+# Slopes Logic {.inverse .note}
+
+{{< include 022-slope-logic.qmd >}}
+
+# Constrained Optimization {.inverse .note} 
+
+{{< include 023-constrained-optimization.qmd >}}
