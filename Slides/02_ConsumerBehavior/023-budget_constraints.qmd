@@ -1,3 +1,297 @@
 ---
 name: Budget Constraints
 ---
+
+## Budgets 
+
+[Economic Theory]{.hi} says that individuals make themselves as happy as they possibly can, after choosing from a set of all bundles they can afford 
+
+- We do not just maximize utility functions, but rather we maximize them subject to [**Budget Constraints (BC)**]{.hii}
+
+---
+
+## Budgets - Variables
+
+Inside a budget constraint we use the exact same variables we use in our utility function, namely $x$ and $y$
+
+But we'll need to introduce some new notation and terminology:
+
+. . . 
+
+- The [price]{.h} of good $x \; \rightarrow \; P_{x}$
+
+- The [price]{.h} of good $y \; \rightarrow \; P_{y}$
+
+- Your income, budget, or money-on-hand $\rightarrow \; M$
+
+    - The book also calls this $I$ 
+
+---
+
+## Budgets - Functional Form
+
+Putting together our variables we get our [Budget Constraint]{.hii}
+
+$$P_{x} \cdot x + P_{y} \cdot y \leq M$$
+
+. . .
+
+> [Do not let the inequality $leq$ scare you, it just means we can spend less than our total income]{.note .h}
+
+. . .
+
+However, in our applications we are going to treat it as a strict equality
+
+$$P_{x} \cdot x + P_{y} \cdot y = M$$
+
+And let's think why?
+
+. . .
+
+- If we are maximizing utility, it does not make sense to leave any income unspent!
+
+---
+
+## Budgets - Spending All Our Income
+
+But do we usually spend [**all**]{.h} of our money?
+
+. . .
+
+Of course not, but here is how to think about it in the economics sense:
+
+. . .
+
+- When you go to the grocery store you make to choices before even stepping inside:
+
+    1. How much to spend at the store
+
+    2. What to spend it on
+
+. . .
+
+- Once you allocate your budget, you usually spend all of it
+
+::: {.note}
+The trick is to create the context in which it makes sense that everything gets spent
+:::
+
+---
+
+## Let's Construct A Budget Constraint
+
+First, we need our two goods from before: Beer ($B$) and Soda ($S$)
+
+Let's label everything properly:
+
+. . .
+
+- $B = \text{Beer}$
+
+- $S = \text{Soda}$
+
+- $P_{B} = \$4$
+
+- $P_{S} = \$2$
+
+- $M = \$20$
+
+What does the Budget Constraint look like?
+
+. . .
+
+$$B \cdot P_{B} + S \cdot P_{S} = M$$
+
+$$4B + 2P = 20$$
+
+---
+
+## Let's Graph A Budget Constraint
+
+We graph the budget in the same space in as our IC, but what are we graphing?
+
+$$P_{x} \cdot x + P_{y} \cdot y = M$$
+
+And thankfully, this is just a straight line
+
+---
+
+## Bringing Intuition into Budget Constraint Graphs
+
+$$P_{x} \cdot x + P_{y} \cdot y = M$$
+
+Thinking intuitively, this graph represents:
+
+. . .
+
+- All combinations of $(x,y)$ that cost exactly $M$
+
+. . .
+
+- If we spend nothing on good $y$, what is the most possible $x$ that we can purchase?
+
+. . .
+
+\begin{align*}
+    P_{x} \cdot x + P_{y} \cdot 0 &= M \\
+    P_{x} \cdot x &= M \\
+    x &= \dfrac{m}{P_{x}}
+\end{align*}
+
+---
+
+## Let's Graph A Budget Constraint
+
+Following the logic we just did, the budget line will connect two points:
+
+One for when we buy only $x$ and one for when we buy only $y$
+
+$$(\dfrac{M}{P_{x}}, 0) \text{ and } (0, \dfrac{M}{P_{y}})$$
+
+. . .
+
+```{r budget-line-graph, fig.align='center'}
+# Install and load ggplot2 if not already installed
+# install.packages("ggplot2")
+library(ggplot2)
+
+# Create data for the budget line
+budget_data <- data.frame(x = c(0, 10), y = c(10, 0))
+
+# Create data for the points at intersections
+points_data <- data.frame(x = c(0, 10), y = c(10, 0), label = c("M/Py", "M/Px"))
+
+# Plot the budget line and add points
+ggplot(budget_data, aes(x, y)) +
+  geom_line(color = "blue", lwd = 1.5) +
+  geom_hline(yintercept = 0, linetype = "solid", color = "black", lwd = 2) + 
+  geom_vline(xintercept = 0, linetype = "solid", color = "black", lwd = 2) + 
+  geom_point(data = points_data, aes(x, y), color = "red", size = 5) +
+  geom_text(data = points_data, aes(x, y, label = label), vjust = 1.5, hjust = 1.2, color = "red") +
+  # Customize axes labels and plot title
+  labs(x = "Quantity of X", y = "Quantity of Y") +
+  theme_minimal()
+```
+
+---
+
+## Interpreting the Slope of the Budget Constraint
+
+The Budget Constraint is the line: 
+
+$$y = \dfrac{M}{P_{y}} - \dfrac{P_{x}}{P_{y}} \cdot x \;\; \text{ where the slope is } \; -\dfrac{P_{x}}{P_{y}}$$
+
+. . .
+
+Now, let's define
+$$P_{x} = \dfrac{\$}{x} \text{ and } P_{y} = \dfrac{\$}{y}$$
+
+. . .
+
+We get this result in terms of units!
+
+$$\dfrac{P_{x}}{P_{y}} = \dfrac{\$/x}{\$/y} = \dfrac{\$}{x} \cdot \dfrac{y}{\$} = \dfrac{y}{x}$$
+
+---
+
+## The Slope of the Budget Constraint
+
+As we just saw, the price ratio $P_{x}/P_{y}$ can be measured in units of $x$ per units of $y$
+
+We had already seen something that is measured in units $\rightarrow$ the MRS 
+
+. . .
+
+This leads us to understand the differences between the two:
+
+. . . 
+
+- The [MRS]{.hi-teal} represents how much $y$ you [would be willing to]{.hi-teal} give up in order to get a unit of $x$
+
+. . .
+
+- The [Price Ratio]{.hp} represents how much $y$ you [would have to]{.hp} give up in order to get a unit of $x$
+
+---
+
+## What Happens When Things Change?
+
+Budgets are not static. Prices and income can change based on market conditions so it is important to understand the effects when factors change
+
+. . .
+
+- We can have changes in income (increase or decrease)
+
+- Price of $x$ can change (increase or decrease)
+
+- Price of $y$ can change (increase or decrease)
+
+. . .
+
+> [Note - We normally consider what happens when only one of the possible factors change, and hold all others fixed]{.h .note}
+
+---
+
+## Changes in Income
+
+What happens to the budget if income $(M)$ increases?
+
+. . .
+
+- $\dfrac{M}{P_{x}}$, the maximum amount of $x$ that can be purchased goes up 
+
+- $\dfrac{M}{P_{y}}$, the maximum amount of $y$ that can be purchased goes up 
+
+- The slope of the BC $(-P_{x}/P_{y})$ stays the same
+
+. . .
+
+Income changes affect the [overall amount]{.h} an individual can consume, but has [no effect on the relative cost of the goods]{.h}
+
+. . .
+
+> [**Intuitively, the opposite is true if income $(M)$ decreases**]{.h}
+
+---
+
+## Changes in Income - Graph
+
+[Back to the board]{.note .realbig .vertical-center}
+
+
+::: {.notes}
+    When income increases (decreases) the budget line is pushed diagonally away (toward) the origin
+:::
+
+---
+
+## Changes in Prices 
+
+What happens to the budget if the price of good $x$ $(P_{x})$ increases?
+
+. . .
+
+- The maximum amount of $x$ that can be consumed goes down $(\dfrac{M}{P_{x}}) \downarrow$
+
+- The maximum amount of $y$ that can be consumed stays the same  $(\dfrac{M}{P_{x}})$
+
+- The price ratio $(- \dfrac{P_{x}}{P_{y}})$ becomes steeper
+
+. . .
+
+> [**Once more, the opposite happens with a decrease**]{.h}
+
+. . .
+
+> [**How about a shift in $P_{y}$ ?**]{.h}
+
+---
+
+## Changes in Prices - Graph
+
+[Back to the board]{.note .realbig .vertical-center}
+
+
+::: {.notes}
+    When price of x increases (decreases) the budget line is shifted along the x-axis in (out)
+:::
