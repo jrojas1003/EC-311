@@ -1,0 +1,6 @@
+---
+name: Slope Logic
+---
+
+## Math Makes Point C special
+

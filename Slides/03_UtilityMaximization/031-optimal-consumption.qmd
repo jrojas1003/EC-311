@@ -1,0 +1,169 @@
+---
+name: Optimal Consumption
+---
+
+## Putting All We've Seen Together
+
+So far we have done 3 things:
+
+. . .
+
+1. We learned about measuring and analyzing benefit functions, which we called [Utility]{.h}
+
+. . .
+
+2. We learned about measuring and analyzing cost functions, we called those [Budgets]{.h}
+
+. . .
+
+3. We motivated the importance of "Constrained Optimization"
+
+. . .
+
+Now we will put it all together to solve problems
+
+---
+
+## Gameplan
+
+We will do it by:
+
+1. Solving it graphically to gain the intuition of what is happening
+
+2. Mathematically, because we need to be able to solve these problems formally
+
+. . .
+
+The core question we are attempting to answer is
+
+<br>
+
+> [**Given a specific budget constraint, what bundle should an individual choose to maximize their utility?**]{.h}
+
+---
+
+## BC + IC Graph 
+
+:::: {layout-ncol=2}
+
+![Budget Constraint](Images\Budget-Constraint.png)
+
+![Indifference Curve](Images\Indifference-Curve.png)
+
+::::
+
+These are our two ingredients to solving a utility maximization problem 
+
+---
+
+## Putting It Together
+
+![](Images\Utility-Max-Graph1.png){fig-align="center"}
+
+The key for these graphs is to internalize the fact that there are infinite amounts of IC we can draw
+
+. . . 
+
+> [**And only one will be utility maximizing bundle**]{.note .h}
+
+---
+
+## Putting It Together
+
+
+
+:::: {.columns}
+
+::: {.column width="70%"}
+
+![](Images\Utility-Max-Graph2.png){fig-align="center"}
+
+Which one is the utility maximizing bundle?
+
+:::
+
+::: {.column width="30%"}
+
+[**Point A**]{.h} 
+
+:::: {.fragment}
+Affordable and on the Budget Line
+::::
+
+[**Point B**]{.h}
+
+:::: {.fragment}
+
+Affordable but does not use all our budget
+
+::::
+
+[**Point C**]{.h}
+
+:::: {.fragment}
+Affordable and on the Budget Line
+::::
+
+[**Point D**]{.h}
+
+:::: {.fragment}
+Highest utility but unaffordable 
+::::
+
+:::
+
+::::
+
+. . .
+
+[**Point C**]{.h} is the highest level of indifference curve that is on the budget line only once!
+
+---
+
+## BC + IC Graph Takeaways
+
+ICs [above]{.hi} the BC:
+
+:::: {.fragment}
+- If the IC [never touches the budget constraint]{.hi}, then none of the bundles on that curve (that utility level) are affordable 
+:::: 
+
+:::: {.fragment}
+- It is impossible to achieve that level of utility with the given amount of income
+::::
+
+ICs [below]{.hi} the BC:
+
+:::: {.fragment}
+- If the IC is [within the bounds of the BC]{.hi}, it is possible to attain that level of utility with the given amount of income
+::::
+
+:::: {.fragment}
+- It is also possible to attain more utility than the level given by this IC and still use less than the given income
+::::
+
+---
+
+## IC With The Highest Utility 
+
+![](Images\Utility-Max-Graph2.png){fig-align="center"}
+
+[**Point C**]{.h} is a magical point
+
+- It is where the IC touches the BC [exactly once]{.hi}
+
+- Every other point on the [green IC]{.hi-green} is unaffordable 
+
+---
+
+## IC With The Highest Utility 
+
+![](Images\Utility-Max-Graph2.png){fig-align="center"}
+
+- We call [**Point C**]{.h} the [Utility Maximizing Bundle]{.hii}
+
+- Moving along the BC, to other affordable bundles like [**Point A**]{.h} only makes you worse off
+
+. . .
+
+But what is so special about [**Point C**]{.h}? Math makes it special!
