@@ -166,4 +166,4 @@ ICs [below]{.hi} the BC:
 
 . . .
 
-But what is so special about [**Point C**]{.h}? Math makes it special!
+But what is so special about [**Point C**]{.h}? Math does!
