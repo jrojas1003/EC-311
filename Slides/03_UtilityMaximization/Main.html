@@ -361,56 +361,98 @@ Jose Rojas-Fallas
 <!--{{< include 031-optimal-consumption.qmd >}}-->
 </section>
 
+<section id="slope-logic-graphical-approach" class="title-slide slide level1 inverse note center">
+<h1>Slope Logic (Graphical Approach)</h1>
+<!--{{< include 032-slope-logic-graph.qmd >}}-->
+</section>
+
 <section>
-<section id="slopes-logic" class="title-slide slide level1 inverse note center">
-<h1>Slopes Logic</h1>
+<section id="constrained-optimization" class="title-slide slide level1 inverse note center">
+<h1>Constrained Optimization</h1>
 
 </section>
-<section id="math-makes-point-c-special" class="slide level2">
-<h2>Math Makes Point C special</h2>
-<p>This is the point where the BC line and the IC curve have the exact same slope, this is also known as <span class="h">the point where they are tangent</span></p>
-<div class="fragment">
-<p>This helps us put the intuition we gained from the graph together with the math</p>
+<section id="how-to-tackle-this-mathematically" class="slide level2">
+<h2>How to Tackle This Mathematically</h2>
+<p>We know the steps:</p>
+<div>
+<ol type="1">
+<li class="fragment"><p>Calculate the MRS of a given utility function</p></li>
+<li class="fragment"><p>Calculate the Price Ratio using the Budget Constraint</p></li>
+<li class="fragment"><p>Set them equal to each other</p></li>
+</ol>
 </div>
 <div class="fragment">
-<p><br></p>
 <blockquote>
-<p><span class="h note"><strong>The key to finding the utility maximizing bundle (the best mix of <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>) you have to find the bundle where the BC and IC have the same slope</strong></span></p>
+<p><span class="h note"><strong>It really is this simple, but the math makes it look more complicated</strong></span></p>
 </blockquote>
 </div>
 </section>
-<section id="why-does-this-work" class="slide level2">
-<h2>Why Does This Work?</h2>
-<p>Let’s recall what the <span class="hi">Slope of the IC</span> means:</p>
+<section id="defining-the-problem" class="slide level2">
+<h2>Defining the Problem</h2>
+<p>The problem will take the form of</p>
+<p><span class="math display">\[\max \; U(x,y) \;\;\;\; \text{subject to} \;\;\;\; P_{x} \cdot x + P_{y} \cdot y = M\]</span></p>
 <div class="fragment">
+<p>This is what we call a <span class="hi">Constrained Optimization</span> problem</p>
 <ul>
-<li><p>It is the <strong>Negative MRS</strong></p></li>
-<li><p>It tells you how much <span class="math inline">\(y\)</span> you would be <span class="hi">willing to</span> give up to get another unit of <span class="math inline">\(x\)</span>?</p></li>
-</ul>
-</div>
-<div class="fragment">
-<p>Now recall what the <span class="hi">Slope of the BC</span> means:</p>
-</div>
-<div class="fragment">
-<ul>
-<li><p>It is the <strong>Negative Price Ratio</strong></p></li>
-<li><p>It tells you how much <span class="math inline">\(y\)</span> you would <span class="hi">have to</span> give up to get another unit of <span class="math inline">\(x\)</span>?</p></li>
+<li>You are trying to maximize your utility subject to a budget constraint</li>
 </ul>
 </div>
 </section>
-<section id="why-does-this-work-1" class="slide level2">
-<h2>Why Does This Work?</h2>
-<p>Imagine what it would it mean if these two slopes were not equal</p>
+<section id="different-utility-functional-forms" class="slide level2">
+<h2>Different Utility Functional Forms</h2>
+<p>We had four different forms that utility can take:</p>
 <div class="fragment">
-<p>Let’s say the <span class="hi">Negative MRS</span> is <span class="math inline">\(-4\)</span></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li><p>Cobb-Douglas</p></li>
+<li><p>Quasi-linear</p></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<ul>
+<li><p>Perfect Substitutes</p></li>
+<li><p>Perfect Complements</p></li>
+</ul>
 </div>
-</section></section>
-<section id="constrained-optimization" class="title-slide slide level1 inverse note center">
-<h1>Constrained Optimization</h1>
+</div>
+</div>
+<div class="fragment">
+<p>Each have their quirks and procedure to follow</p>
+</div>
+<div class="fragment">
+<blockquote>
+<p><span class="h note"><strong>Solving these type of problems is the crux of the course. I know it can be intimidating at first glance, but my personal advice is to not over think the process, that’s what the steps are for</strong></span></p>
+</blockquote>
+</div>
+<div class="fragment">
+<blockquote>
+<p><span class="h note"><strong>The theory is what will guide you and allow you to interpret results, and it may seem wonky at first but that’s just how economists think</strong></span></p>
+</blockquote>
+</div>
+</section>
+<section id="cobb-douglas-utility-constrained-maximization" class="slide level2">
+<h2>Cobb-Douglas Utility Constrained Maximization</h2>
+<p>There is a 4-step approach that we will follow to solve these problems when the utility function is <span class="hi">Cobb-Douglas</span></p>
+<div class="fragment">
+<div>
+<ol type="1">
+<li class="fragment"><p>Calculate the MRS and set it equal to the Price Ratio</p></li>
+<li class="fragment"><p>Re-arrange this equality to isolate one good (<span class="math inline">\(x\)</span> or <span class="math inline">\(y\)</span>) as a function of the other (It does not matter which good you choose here).</p>
+<ul>
+<li class="fragment">The resulting equation is called an “optimality condition”</li>
+</ul></li>
+<li class="fragment"><p>Write down your budget constraint and plug the optimality condition into it.</p>
+<ul>
+<li class="fragment">This allows you to solve for the <span class="hi">demand</span> of one of the two goods</li>
+</ul></li>
+<li class="fragment"><p>Use your demand for one good and plug it into either the optimality condition or the BC to find the demand for the other good</p></li>
+</ol>
+</div>
 <div class="footer footer-default">
 <p>EC311 - Lecture 04 | Utility Maximization</p>
 </div>
-</section>
+</div>
+</section></section>
     </div>
   </div>
 
