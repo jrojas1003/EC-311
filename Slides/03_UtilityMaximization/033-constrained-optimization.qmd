@@ -1,3 +1,100 @@
 ---
 name: Constrained Optimization
 ---
+
+## How to Tackle This Mathematically
+
+We know the steps:
+
+::: {.incremental}
+1. Calculate the MRS of a given utility function
+
+2. Calculate the Price Ratio using the Budget Constraint
+
+3. Set them equal to each other
+:::
+
+. . .
+
+> [**It really is this simple, but the math makes it look more complicated**]{.h .note}
+
+---
+
+## Defining the Problem
+
+The problem will take the form of 
+
+$$\max \; U(x,y) \;\;\;\; \text{subject to} \;\;\;\; P_{x} \cdot x + P_{y} \cdot y = M$$
+
+. . .
+
+This is what we call a [Constrained Optimization]{.hi} problem 
+
+- You are trying to maximize your utility subject to a budget constraint 
+
+---
+
+## Different Utility Functional Forms
+
+We had four different forms that utility can take:
+
+. . .
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+- Cobb-Douglas
+
+- Quasi-linear
+
+:::
+
+::: {.column width="50%"}
+
+- Perfect Substitutes
+
+- Perfect Complements 
+
+::: 
+
+::::
+
+. . .
+
+Each have their quirks and procedure to follow
+
+. . .
+
+> [**Solving these type of problems is the crux of the course. I know it can be intimidating at first glance, but my personal advice is to not over think the process, that's what the steps are for**]{.h .note}
+> 
+
+. . . 
+
+> [**The theory is what will guide you and allow you to interpret results, and it may seem wonky at first but that's just how economists think**]{.h .note}
+
+---
+
+## Cobb-Douglas Utility Constrained Maximization
+
+There is a 4-step approach that we will follow to solve these problems when the utility function is [Cobb-Douglas]{.hi}
+
+. . .
+
+::: {.incremental}
+1. Calculate the MRS and set it equal to the Price Ratio
+
+2. Re-arrange this equality to isolate one good ($x$ or $y$) as a function of the other (It does not matter which good you choose here). 
+
+    - The resulting equation is called an "optimality condition"
+
+3. Write down your budget constraint and plug the optimality condition into it. 
+
+    - This allows you to solve for the [demand]{.hi} of one of the two goods
+
+4. Use your demand for one good and plug it into either the optimality condition or the BC to find the demand for the other good
+:::
+
+---
+
+## 
