@@ -20,7 +20,7 @@ Before we jump into Intermediate Microeconomics, we need to refresh our memories
 
 ## Demand {.align-center}
 
-```{r} 
+```{r demand-line, fig.align="center"} 
 library(ggplot2)
 
 # Create data for demand and supply curves
@@ -32,7 +32,7 @@ df <- data.frame(price, quantity_demanded, quantity_supplied)
 
 # Create demand and supply curve plot
 demand_plot <- ggplot(df, aes(x = quantity_demanded, y = price)) +
-  geom_line(color = "blue") +
+  geom_line(color = "blue", lwd = 3) +
   labs(x = "Quantity", y = "Price") +
   theme_minimal() 
 
@@ -82,7 +82,7 @@ Some [Factors]{.hi} that can affect demand are:
 
 ## Supply {.align-center}
 
-```{r} 
+```{r supply-line, fig.align='center'} 
 library(ggplot2)
 
 # Create data for demand and supply curves
@@ -94,7 +94,7 @@ df <- data.frame(price, quantity_demanded, quantity_supplied)
 
 # Create demand and supply curve plot
 supply_plot <- ggplot(df, aes(x = quantity_supplied, y = price)) +
-  geom_line(color = "red") +
+  geom_line(color = "red", lwd = 3) +
   labs(x = "Quantity", y = "Price") +
   theme_minimal() 
 print(supply_plot)
@@ -138,7 +138,7 @@ Some [Factors]{.hi} that may affect supply are:
 
 ## Supply & Demand {.align-center}
 
-```{r} 
+```{r supply-demand, fig.align='center'} 
 library(ggplot2)
 
 # Create data for demand and supply curves
@@ -150,8 +150,8 @@ df <- data.frame(price, quantity_demanded, quantity_supplied)
 
 # Create demand and supply curve plot
 supply_plot <- ggplot(df, aes(x = quantity_supplied, y = price)) +
-  geom_line(color = "red") +
-  geom_line(aes(x = quantity_demanded, y = price), color = "blue") + 
+  geom_line(color = "red", lwd = 3) +
+  geom_line(aes(x = quantity_demanded, y = price), color = "blue", lwd = 3) + 
   labs(x = "Quantity", y = "Price") +
   theme_minimal() 
 
