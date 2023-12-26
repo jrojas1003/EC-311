@@ -49,9 +49,9 @@ Why are we here studying microeconometrics?
 
 . . .
 
-> Its a requirement
+> [Its a requirement]{.h .note}
 >
-> It will help develop a healthy way of logically thinking about problems
+> [It will help develop a healthy way of logically thinking about problems]{.h .note}
 
 . . .
 
@@ -115,15 +115,14 @@ They make choices on:
 
 ## About Me (An Economist in Training)
 
-![](./images/Jose_Pic.jpg){.absolute top=100 left=0 width="350"}
 
 :::: {.columns}
 
-::: {.column width="35%"}
-
+::: {.column width="40%"}
+![](./images/Jose_Pic.jpg){.absolute top=100 left=0 width="350"}
 :::
 
-::: {.column width="65%"}
+::: {.column width="60%"}
 
 I'm from [San Jose, Costa Rica]{.hii}
 
