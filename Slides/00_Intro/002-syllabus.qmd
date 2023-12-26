@@ -4,34 +4,20 @@ name: syllabus
 
 ## Class Information
 
-- Schedule: Days (Time) in Classroom
-- Office Hours: Days (Time)
+- [**Schedule:**]{.hi} Tuesday & Thursday in Straub 145
+- [**Office Hours:**]{.hi} Thursday from 12:00 to 14:00
 - [Attendance]{.hii} is important to your learning experience
     - A lot goes on in the class that may be hard to understand just from lecture slides
 
 . . .
 
 [Lectures]{.hi}
+
 - They will be dynamic, with me asking general questions and expecting answers from you
-- I will use my iPad to write on the slides and will upload the annottated slides after class
-- (Maybe) Will have iClicker questions that require your presence in class
 
---- 
+- There will be in-class problems for you to complete and which will be a part of your participation grade
 
-## Assignments
-
-[Achieve Online Learning]{.hi}
-
-- You [MUST]{.h} register for the course through Achieve
-- This is where you will complete your homework 
-- It also gives you access to the digital version of the textbook
-- The course code is [code goes here]{.hp}
-- Your lowest homework grade will be dropped
-
-[Canvas Quizzes]{.hi}
-
-- Weekly quizzes that will help you get accustomed to how test questions will look
-- These are on Canvas and will be weekly 
+- On ocassion I will use the whiteboard to make graphs or to answer math questions
 
 ---
 
@@ -44,7 +30,7 @@ name: syllabus
     - MATH 241: Calculus 1 (Recommended but not required)
     - I'll give you a crashcourse in what we'll need from calculus in the next lecture
 
- ---
+---
 
 ## Expectations
 
@@ -61,35 +47,73 @@ name: syllabus
 
 - [I'm not trying to convert you into economists, but rather have you takeaway things that you can apply in your own careers]{.tiny}
 
+---
+
+## Assignments {.smaller}
+
+[Achieve Online Learning]{.hi}
+
+::: {.incremental}
+- You [MUST]{.h} register for the course through Achieve
+- This is where you will complete your homework 
+- It also gives you access to the digital version of the textbook
+- The course code is [hvnmbg]{.hp}
+- Your lowest homework grade will be dropped
+- 1 day grace period (with 5% penalty) $\rightarrow$ no submissions allowed after that
+:::
+
+[Canvas Quizzes]{.hi}
+
+::: {.incremental}
+- Weekly quizzes that will help you get accustomed to how test questions will look
+- Roughly 10 questions with only one attempt allowed
+- I will drop your lowest 2 scores
+- No late submissions allowed
+:::
+
 --- 
 
-## Grades
+## Grades {.smaller}
 
 :::: {.columns}
 
 ::: {.column width="50%"}
 [Homework]{.hi}
 
+::: {.incremental}
 - Achieve Homework (20%)
-    - [Amount of assignments here]{.hi-red}
-    - [Due day]{.hi-red}
+    - [8 Assignments]{.h }
+    - [Due on Thursdays at 11:59 pm]{.hi-red}
 - Canvas Quizzes (15%)
-    - [Amount of assignments here]{.hi-red}
-    - [Due day]{.hi-red}
+    - [7 Quizzes]{.h}
+    - [Due on Thursdays at 11:59 pm]{.hi-red}
+:::
+
 :::
 
 ::: {.column width=50%}
 [Exams]{.hi}
 
+::: {.incremental}
 - Midterm (30%)
-    - [Tentatively on Week & Day]{.hi-red}
-- Final (45%)
-    - [Tentatively on Week & Day]{.hi-red}
+    - [Week 6 - Thursday at 08:00]{.hi-red}
+- Final (30%)
+    - [March 20 - Wednesday at 08:00]{.hi-red}
+:::
+
 :::
 
 ::::
 
-. . . 
+[Participation]{.hi}
+
+::: {.incremental}
+- I'll randomly select someone to answer a questions during lecture 
+    - Being correct is not important, but rather that you attempted it
+- Everyone will eventually be called upon so you cannot escape it
+:::
+
+. . .
 
 [Grade Notes]{.hii}
 - There will most likely be a curve applied to your course grade 
