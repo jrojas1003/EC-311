@@ -97,4 +97,513 @@ There is a 4-step approach that we will follow to solve these problems when the 
 
 ---
 
-## 
+## 1 - Calculate MRS and Set Equal to Price Ratio
+
+$$\text{Let } \, U(x,y) = xy, \; P_{x} = 1, \; P_{y} = 2, \; M = 12$$
+
+. . .
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+Find MRS
+
+::: {.fragment}
+$$MRS = \dfrac{MU_{x}}{MU_{y}} = \dfrac{y}{x}$$
+:::
+
+::: 
+
+::: {.column width="50%"}
+
+Find Price Ratio
+
+::: {.fragment}
+$$\text{Price Ratio} = \dfrac{P_{x}}{P_{y}} = \dfrac{1}{2}$$
+:::
+
+:::
+
+::::
+
+Set them equal to each other
+
+. . .
+
+$$\dfrac{y}{x} = \dfrac{1}{2}$$
+
+---
+
+## 2 - Re-arrange the Equality to Isolate for One Good
+
+$$\dfrac{y}{x} = \dfrac{1}{2}$$
+
+You can isolate either $x$ or $y$
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+Isolating $y$
+
+::: {.fragment}
+$$y = \dfrac{x}{2}$$
+:::
+
+::: 
+
+::: {.column width="50%"}
+
+Isolating $x$
+
+::: {.fragment}
+$$x = 2y$$
+:::
+
+:::
+
+::::
+
+. . .
+
+These are optimality conditions for $x$ and $y$
+
+They tell us the demand of a good conditional on other model parameters
+
+---
+
+## 3 - Write Down BC and Plug An Optimality Condition
+
+$$y = \dfrac{x}{2} \;\; \& \;\; BC: \, x + 2y = 12$$
+
+Here I will plug in my known value of $y$ anywhere I find a $y$ in the BC
+
+. . .
+
+\begin{align*}
+    x + 2y &= 12 \\
+    x + 2(\dfrac{x}{2}) &= 12 \\
+    x + x &= 12 \\
+    2x &= 12 \\
+    x^{*} &= 6
+\end{align*}
+
+> [Note: I will denote the optimal amount for any good as $x^{*}$ or $y^{*}$ or whatever variable the problem uses]{.h .note}
+
+---
+
+## 4 - Plug Demand for One Good into Optimality Condition or BC
+
+$$\text{We found that } x^{*} = 6$$
+
+I'll do it both ways just to show you that it works but you only have to do one (I recommend finding which one is simpler for you):
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+[Plugging into Optimality Condition]{.hi}
+
+::: {.fragment}
+\begin{align*}
+    y &= \dfrac{x^{*}}{2} \\
+    y &= \dfrac{6}{2} \\
+    y^{*} &= 3
+\end{align*}
+:::
+
+:::
+
+::: {.column width="50%"}
+
+[Plugging into Budget Constraint]{.hi}
+
+::: {.fragment}
+\begin{align*}
+    x^{*} + 2y &= 12 \\
+    6 + 2y^{*} &= 12 \\
+    2y^{*} &= 6 \\
+    y^{*} &= 3
+\end{align*}
+:::
+
+:::
+
+::::
+
+. . .
+
+> [Lastly, in exams I will expect the answers to be identified at the end of your work so I know you actually answered the question that was asked]{.h .note}
+
+---
+
+## Cobb-Douglas 2: Example For You
+
+$$U(x,y) = x^{1/4}y^{3/4}, \; P_{x} = 2, \; P_{y} = 3, \; M = 32$$
+
+[What are the optimal amounts of $x$ and $y$ to maximize this individual's utility subject to their budget constraint?]{.h .note}
+
+::: {.fragment}
+$$x^{*} = 4 \; \& \; y^{*} = 8$$
+:::
+
+[What utility level $U^{*}$ is achieved?]{.h .note}
+
+::: {.fragment}
+$$U^{*} = (x^{*})^{1/4} (y^{*})^{3/4} = (4)^{1/4} (8)^{3/4} = \ldots$$
+:::
+
+---
+
+## Cobb-Douglas 2: Solution {.smaller}
+
+$$MRS = \dfrac{MU_{x}}{MU_{y}} = \dfrac{1/4 \, x^{-3/4} y^{3/4}}{3/4 \, x^{1/4} y^{-1/4}} = \dfrac{1/4}{3/4} \cdot \dfrac{y^{3/4} y^{1/4}}{x^{1/4} x^{3/4}} = \dfrac{1}{3} \cdot \dfrac{y}{x}$$
+
+. . .
+
+Also recall:
+
+$$MRS = \dfrac{a}{b} \cdot \dfrac{y}{x} = \dfrac{1/4}{3/4} \cdot \dfrac{y}{x} = \dfrac{1}{3} \cdot \dfrac{y}{x}$$
+
+. . .
+
+$$\text{Price Ratio} = \dfrac{P_{x}}{P_{y}} = \dfrac{2}{3}$$
+
+. . .
+
+$$\dfrac{y}{3x} = \dfrac{2}{3} \; \rightarrow \; y = 2x$$
+
+. . .
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+Plug optimailty condition into BC
+
+::: {.fragment}
+\begin{align*}
+    \text{BC: } 2x + 3y &= 32 \\
+    2x + 3(2x) &= 32 \\
+    8x &= 32 \\
+    x^{*} &= 4
+\end{align*}
+:::
+
+:::
+
+::: {.column width="50%"}
+
+Find demand for $y$
+
+::: {.fragment}
+\begin{align*}
+    y^{*} &= 2x^{*} \\
+    y^{*} &= 2(4) \\
+    y^{*} &= 8
+\end{align*}
+:::
+
+:::
+
+::::
+
+---
+
+## Quasi-linear Utility Constrained Optimization
+
+To solve problems with this utility functional form we repeat the same steps as C-D but we skip step 3
+
+::: {.incremental}
+1. Find the MRS and set it equal to the Price Ratio
+
+2. Solve the equality for the non-linear good (usually inside the $ln()$)
+
+3. Use the BC to find the demand of the other good
+:::
+
+---
+
+## 1 - Find the MRS and set it equal to the Price Ratio
+
+$$\text{Let } \, U(x,y) = 10 \cdot ln(x) + \dfrac{y}{2}, \; P_{x} = 5, \; P_{y} = 2, \; M = 70$$
+
+. . .
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+Find MRS
+
+::: {.fragment}
+$$MRS = \dfrac{MU_{x}}{MU_{y}} = \dfrac{10/x}{1/2} = \dfrac{20}{x}$$
+:::
+
+::: 
+
+::: {.column width="50%"}
+
+Find Price Ratio
+
+::: {.fragment}
+$$\text{Price Ratio} = \dfrac{P_{x}}{P_{y}} = \dfrac{5}{2}$$
+:::
+
+:::
+
+::::
+
+Set them equal to each other
+
+. . .
+
+$$\dfrac{20}{x} = \dfrac{5}{2}$$
+
+---
+
+## 2 - Solve the Equality for the Non-linear good
+
+$$\dfrac{20}{x} = \dfrac{5}{2}$$
+
+We solve for x (notice there is no $y$)
+
+. . .
+
+\begin{align*}
+    40 &= 5x \\
+    x^{*} = 8
+\end{align*}
+
+---
+
+## 3 - Use BC to Find Demand of Other Good 
+
+$$\text{BC: } 5x + 2y = 70, \;\; x^{*} = 8$$
+
+. . .
+
+\begin{align*}
+    5x^{*} + 2y &= 70 \\
+    5(8) + 2y &= 70 \\
+    40 + 2y &= 70 \\
+    2y &= 70 \\
+    y^{*} &= 35
+\end{align*}
+
+---
+
+## Perfect Substitutes Constrained Optimization 
+
+Recall the functional form
+
+$$U(x,y) = ax + by$$
+
+::: {.incremental}
+- Mathematically, the MRS will just equal a constant $\left(\dfrac{a}{b} \right)$ so setting it equal to the price ratio doesn't really do much
+
+- It will either be larger than, smaller than, or equal
+
+- So what do we do? A graph will help us see
+:::
+
+---
+
+## Perfect Substitutes Optimization Graph 
+
+$$\text{Let } U(x,y) = x + y, \; P_{x} = 10, \; P_{y} = 18, \; M = 90$$
+
+:::: {.columns}
+
+::: {.column width="45%"}
+
+[Find the MRS]{.hi-purple}
+
+::: {.fragment}
+$$MRS = \dfrac{1}{1} = 1$$
+:::
+
+[Find Price Ratio]{.hi-orange}
+
+::: {.fragment}
+$$\dfrac{P_{x}}{P_{y}} = \dfrac{10}{18} = \dfrac{5}{9}$$
+:::
+
+:::
+
+::: {.column width="55%"}
+
+Graph 
+
+::: {.fragment}
+![](Images/P-Subs-Graph1.png)
+:::
+
+:::
+
+::::
+
+---
+
+## Perfect Substitutes Optimization Graph 
+
+![](Images/P-Subs-Graph1.png){fig-align="center"}
+
+Here, the individual chooses to only consume good $x$ and no $y$. Why?
+
+::: {.incremental}
+- The [ICs]{.hi-purple} are steeper than the [BC]{.hi-orange}
+
+- The intuition is saying that the [willingness to trade]{.h} $y$ for $x$ is always larger than the [ability to trade]{.h} 
+
+- This individual will get all the $x$ they can!
+:::
+
+---
+
+## Perfect Substitutes Optimization - Example
+
+$$U(x,y) = 2x + 3y, \; P_{x} = 1, \; P_{y} = 1/2, \; M = 5$$
+
+:::: {.columns}
+
+::: {.column width="45%"}
+
+[Find the MRS]{.hi-purple}
+
+::: {.fragment}
+$$MRS = \dfrac{2}{2} = 1$$
+:::
+
+[Find Price Ratio]{.hi-orange}
+
+::: {.fragment}
+$$\dfrac{P_{x}}{P_{y}} = \dfrac{1}{1/2} = 2$$
+:::
+
+:::
+
+::: {.column width="55%"}
+
+Graph 
+
+::: {.fragment}
+![](Images/P-Subs-Graph2.png)
+:::
+
+:::
+
+::::
+
+::: {.notes}
+Have students do this one
+:::
+
+---
+
+## Perfect Substitutes Optimization 
+
+As we saw, maximization problems with P-Subs functional form have two predictable outcomes
+
+- Either you consume all $x$ and no $y$ or all $y$ and no $x$
+
+    - It depends on the relationship between the MRS and the Price Ratio
+
+. . .
+
+- There is the unusual case where the slopes are the same
+
+    - Graphically, this means that they will perfectly overlap 
+
+    - Mathematically, any bundle that meets the requirements will work
+
+---
+
+## Perfect Substitutes Utility Constrained Optimization 
+
+The graphs we just saw tell us how to do the math:
+
+::: {.incremental}
+1. Find the MRS and Price Ratio
+
+2. Compare the MRS to the Price Ratio
+    - If $\text{MRS} > \text{Price Ratio}$, consume all $x$ and $y$ = 0
+    - If $\text{MRS} < \text{Price Ratio}$, consume all $y$ and $x$ = 0
+
+3. Figure out how much $x$ and $y$ to consume using the BC
+:::
+
+---
+
+## P-Subs Example (Mathematically)
+
+$$U(x,y) = 3x + 2y, \; P_{x} = 1, \; P_{y} = 4, \; M = 60$$
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+Find MRS and Price Ratio
+
+::: {.fragment}
+\begin{align*}
+    MRS &= \dfrac{MU_{x}}{MU_{y}} = \dfrac{3}{2} \\
+    \text{Price Ratio} &= \dfrac{P_{x}}{P_{y}} = \dfrac{1}{4}
+\end{align*}
+:::
+
+:::
+
+::: {.column width="50%"}
+
+Compare MRS to Price ratio
+
+::: {.fragment}
+\begin{align*}
+    \dfrac{3}{2} &> \dfrac{1}{4} \\
+    \text{MRS} &> \text{Price Ratio}
+\end{align*}
+
+[Choose only $x$]{.hi}
+:::
+
+:::
+
+::::
+
+Figure out how much $x$ and $y$ to consume using the BC 
+
+. . .
+
+\begin{align*}
+    \text{BC: } x + 4y &= 60 \\
+    x + 4(0) &= 60 \\
+    x^{*} &= 60 \\
+    y^{*} &= 0
+\end{align*}
+
+---
+
+## Perfect Substitutes Optimization Intuition 
+
+With Perfect Substitutes the goods do not interact at all 
+
+So the question really becomes:
+
+. . .
+
+- Which of these two goods is more cost-effective at generating utility?
+
+. . .   
+
+<br> 
+
+When you say that the MRS is less than the Price Ratio, you are also saying that [**you get fewer units of utility per dollar spent on $x$ than per dollar spent on $y$**]{.hi}. Therefore, you should only consume $y$.
+
+> [**Note: This logic only works for Perfect Substitutes. This is because the MRS is always a constant**]{.h .note}
+
+---
+
+## Perfect Complements Utility Constrained Optimization 
+
