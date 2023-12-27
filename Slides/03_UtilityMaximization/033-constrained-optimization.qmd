@@ -607,3 +607,166 @@ When you say that the MRS is less than the Price Ratio, you are also saying that
 
 ## Perfect Complements Utility Constrained Optimization 
 
+[Recall: We cannot solve this utility form like the others because there is no MRS]{.h .note}
+
+. . .
+
+So let's see what a graph can tell us
+
+$$U(x,y) = \min \{2x,3y\}, \; P_{x} = 2, \; P_{y} = 2, \; M = 40 $$
+
+. . .
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+![](Images/P-Comps-Graph1.png){fig-align="center" width="500" height="400"}
+
+:::
+
+::: {.column width="40%"}
+
+[**Point C**]{.h .note} is the minimum point of this indifference curve but is it maximizing?
+
+::: {.incremental}
+- Why not choose [**Point A**]{.h .note} or [**Point B**]{.h .note} if they are on the BC & IC?
+- Because there is a higher IC that exists!
+:::
+
+:::
+
+::::
+
+---
+
+## Perfect Complements Utility Constrained Optimization - Graph
+
+![](Images/P-Comps-Graph2.png){fig-align="center" width="450" height="350"}
+
+Hidden [**Point D**]{.h .note} is the actual maximizing point
+
+. . .
+
+Remember that there are is always a [**Better-Than Set**]{.h} where other ICs exist
+
+- It just happens that if they are beyond the BC they are unaffordable
+
+---
+
+## Perfect Complements Graph Intuition 
+
+The bundles on both the IC and the BC involve "wasting" one good or the other
+
+- Recall that the ["No-Waste Condition"]{.hii} says that you should achieve a certain utility level with the minimum units of $x$ and $y$ possible
+
+    - In other words, you want to be at the ["kink"]{.hii} of the function
+
+. . .
+
+The previous graph showed us that [**Point D**]{.h .note} is the utility maximizing point, now let's learn how to find it
+
+---
+
+## Perfect Complements Contrained Optimization 
+
+I will be bold and say that this is one of the simpler utility functions to maximize
+
+Just be sure to follow the steps:
+
+::: {.incremental}
+1. Solve the ["No-Waste Condition"]{.hii} for one of the goods (Does not matter which one)
+
+2. Plug the optimality condition into the budget constraint and find the demand of one Good
+
+3. Use either the BC or the ["No-Waste Condition"]{.hii} to solve for the demand of the other good 
+:::
+
+---
+
+## 1 - Solve the No-Waste Condition for One of the Goods
+
+$$U(x,y) = \min \{\dfrac{x}{2}, 2y\}, \; P_{x} = 1, \; P_{y} = 3, \; M = 56$$
+
+Solve the No-Waste Condition
+
+. . .
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+Solving for $x^{*}$
+
+::: {.fragment}
+\begin{align*}
+    \dfrac{x}{2} &= 2y \\
+    x^{*} &= 4y 
+\end{align*}
+:::
+
+:::
+
+::: {.column width="50%"}
+
+Solving for $y^{*}$
+
+::: {.fragment}
+\begin{align*}
+    \dfrac{x}{2} &= 2y \\
+    y^{*} &= \dfrac{x}{4}
+\end{align*}
+:::
+
+:::
+
+::::
+
+---
+
+## 2 - Plug the Optimality Condition into the BC to Find Demand of One good
+
+$$x^{*} = 4y \; \text{or} \; y^{*} = \dfrac{x}{4} \;\; , \;\; \text{BC: } x + 3y = 56$$
+
+. . .
+
+\begin{align*}
+    x + 3y &= 56 \\
+    (4y) + 3y &= 56 \\
+    7y &= 56 \\
+    y^{*} &= 8
+\end{align*}
+
+---
+
+## 3 - Use BC or "No-Waste Condition" to Find Demand for Other Good 
+
+$$y^{*} = 8 \;\; \text{and} \;\; \text{No-Waste Condition: } \dfrac{x}{2} = 2y$$
+
+\begin{align*}
+    \dfrac{x}{2} &= 2y \\
+    x^{*} &= 4y \\
+    x^{*} &= 4(8) \\ 
+    x^{*} &= 32
+\end{align*}
+
+. . .
+
+So our optimal bundle is:
+
+$$x^{*} = 32 \;\; \& \;\; y^{*} = 8$$
+
+---
+
+## Utility Maximization Summary
+
+This lecture has taught you how to solve the 4 different utility functional forms constrained maximization problems graphically and mathematically 
+
+With this in our toolbox, we can find the individual demand of goods. 
+
+The next step is to find Demand Functions for the entire market
+
+
+
+
+
