@@ -356,16 +356,314 @@ Jose Rojas-Fallas
 </ul>
 </div>
 </section>
+<section>
 <section id="optimal-consumption" class="title-slide slide level1 inverse note center">
 <h1>Optimal Consumption</h1>
-<!--{{< include 031-optimal-consumption.qmd >}}-->
-</section>
 
+</section>
+<section id="putting-all-weve-seen-together" class="slide level2">
+<h2>Putting All We’ve Seen Together</h2>
+<p>So far we have done 3 things:</p>
+<div class="fragment">
+<ol type="1">
+<li>We learned about measuring and analyzing benefit functions, which we called <span class="h">Utility</span></li>
+</ol>
+</div>
+<div class="fragment">
+<ol start="2" type="1">
+<li>We learned about measuring and analyzing cost functions, we called those <span class="h">Budgets</span></li>
+</ol>
+</div>
+<div class="fragment">
+<ol start="3" type="1">
+<li>We motivated the importance of “Constrained Optimization”</li>
+</ol>
+</div>
+<div class="fragment">
+<p>Now we will put it all together to solve problems</p>
+</div>
+</section>
+<section id="gameplan" class="slide level2">
+<h2>Gameplan</h2>
+<p>We will do it by:</p>
+<ol type="1">
+<li><p>Solving it graphically to gain the intuition of what is happening</p></li>
+<li><p>Mathematically, because we need to be able to solve these problems formally</p></li>
+</ol>
+<div class="fragment">
+<p>The core question we are attempting to answer is</p>
+<p><br></p>
+<blockquote>
+<p><span class="h"><strong>Given a specific budget constraint, what bundle should an individual choose to maximize their utility?</strong></span></p>
+</blockquote>
+</div>
+</section>
+<section id="bc-ic-graph" class="slide level2">
+<h2>BC + IC Graph</h2>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="Images\Budget-Constraint.png"></p>
+<figcaption>Budget Constraint</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="Images\Indifference-Curve.png"></p>
+<figcaption>Indifference Curve</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<p>These are our two ingredients to solving a utility maximization problem</p>
+</section>
+<section id="putting-it-together" class="slide level2">
+<h2>Putting It Together</h2>
+
+<img data-src="Images\Utility-Max-Graph1.png" class="r-stretch quarto-figure-center"><p>The key for these graphs is to internalize the fact that there are infinite amounts of IC we can draw</p>
+<div class="fragment">
+<blockquote>
+<p><span class="note h"><strong>And only one will be utility maximizing bundle</strong></span></p>
+</blockquote>
+</div>
+</section>
+<section id="putting-it-together-1" class="slide level2">
+<h2>Putting It Together</h2>
+<div class="columns">
+<div class="column" style="width:70%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="Images\Utility-Max-Graph2.png"></p>
+</figure>
+</div>
+<p>Which one is the utility maximizing bundle?</p>
+</div><div class="column" style="width:30%;">
+<p><span class="h"><strong>Point A</strong></span></p>
+<div class="fragment">
+<p>Affordable and on the Budget Line</p>
+</div>
+<p><span class="h"><strong>Point B</strong></span></p>
+<div class="fragment">
+<p>Affordable but does not use all our budget</p>
+</div>
+<p><span class="h"><strong>Point C</strong></span></p>
+<div class="fragment">
+<p>Affordable and on the Budget Line</p>
+</div>
+<p><span class="h"><strong>Point D</strong></span></p>
+<div class="fragment">
+<p>Highest utility but unaffordable</p>
+</div>
+</div>
+</div>
+<div class="fragment">
+<p><span class="h"><strong>Point C</strong></span> is the highest level of indifference curve that is on the budget line only once!</p>
+</div>
+</section>
+<section id="bc-ic-graph-takeaways" class="slide level2">
+<h2>BC + IC Graph Takeaways</h2>
+<p>ICs <span class="hi">above</span> the BC:</p>
+<div class="fragment">
+<ul>
+<li>If the IC <span class="hi">never touches the budget constraint</span>, then none of the bundles on that curve (that utility level) are affordable</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>It is impossible to achieve that level of utility with the given amount of income</li>
+</ul>
+</div>
+<p>ICs <span class="hi">below</span> the BC:</p>
+<div class="fragment">
+<ul>
+<li>If the IC is <span class="hi">within the bounds of the BC</span>, it is possible to attain that level of utility with the given amount of income</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>It is also possible to attain more utility than the level given by this IC and still use less than the given income</li>
+</ul>
+</div>
+</section>
+<section id="ic-with-the-highest-utility" class="slide level2">
+<h2>IC With The Highest Utility</h2>
+
+<img data-src="Images\Utility-Max-Graph2.png" class="r-stretch quarto-figure-center"><p><span class="h"><strong>Point C</strong></span> is a magical point</p>
+<ul>
+<li><p>It is where the IC touches the BC <span class="hi">exactly once</span></p></li>
+<li><p>Every other point on the <span class="hi-green">green IC</span> is unaffordable</p></li>
+</ul>
+</section>
+<section id="ic-with-the-highest-utility-1" class="slide level2">
+<h2>IC With The Highest Utility</h2>
+
+<img data-src="Images\Utility-Max-Graph2.png" class="r-stretch quarto-figure-center"><ul>
+<li><p>We call <span class="h"><strong>Point C</strong></span> the <span class="hii">Utility Maximizing Bundle</span></p></li>
+<li><p>Moving along the BC, to other affordable bundles like <span class="h"><strong>Point A</strong></span> only makes you worse off</p></li>
+</ul>
+<div class="fragment">
+<p>But what is so special about <span class="h"><strong>Point C</strong></span>? Math does!</p>
+</div>
+</section></section>
+<section>
 <section id="slope-logic-graphical-approach" class="title-slide slide level1 inverse note center">
 <h1>Slope Logic (Graphical Approach)</h1>
-<!--{{< include 032-slope-logic-graph.qmd >}}-->
-</section>
 
+</section>
+<section id="math-makes-point-c-special" class="slide level2">
+<h2>Math Makes Point C special</h2>
+<p>This is the point where the BC line and the IC curve have the exact same slope, this is also known as <span class="h">the point where they are tangent</span></p>
+<div class="fragment">
+<p>This helps us put the intuition we gained from the graph together with the math</p>
+</div>
+<div class="fragment">
+<p><br></p>
+<blockquote>
+<p><span class="h note"><strong>The key to finding the utility maximizing bundle (the best mix of <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>) you have to find the bundle where the BC and IC have the same slope</strong></span></p>
+</blockquote>
+</div>
+</section>
+<section id="why-does-this-work" class="slide level2">
+<h2>Why Does This Work?</h2>
+<p>Let’s recall what the <span class="hi">Slope of the IC</span> means:</p>
+<div class="fragment">
+<ul>
+<li><p>It is the <strong>Negative MRS</strong></p></li>
+<li><p>It tells you how much <span class="math inline">\(y\)</span> you would be <span class="hi">willing to</span> give up to get another unit of <span class="math inline">\(x\)</span>?</p></li>
+</ul>
+</div>
+<div class="fragment">
+<p>Now recall what the <span class="hi">Slope of the BC</span> means:</p>
+</div>
+<div class="fragment">
+<ul>
+<li><p>It is the <strong>Negative Price Ratio</strong></p></li>
+<li><p>It tells you how much <span class="math inline">\(y\)</span> you would <span class="hi">have to</span> give up to get another unit of <span class="math inline">\(x\)</span>?</p></li>
+</ul>
+</div>
+</section>
+<section id="why-does-this-work-1" class="slide level2">
+<h2>Why Does This Work?</h2>
+<p>Imagine what it would it mean if these two slopes were not equal</p>
+<div class="fragment">
+<p>You are consuming Bundle A where:</p>
+<p>The <span class="hi">Negative MRS</span> is <span class="math inline">\(-4\)</span></p>
+<div>
+<ul>
+<li class="fragment"><p>What does this mean?</p>
+<ul>
+<li class="fragment"><span class="hi"><strong>You are WILLING to</strong></span> give up 4 units of <span class="math inline">\(y\)</span> for 1 unit of <span class="math inline">\(x\)</span></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div class="fragment">
+<p>Let’s also say that the <span class="hi">Negative Price Ratio</span> is <span class="math inline">\(-3\)</span></p>
+<div>
+<ul>
+<li class="fragment"><p>What does this mean?</p>
+<ul>
+<li class="fragment"><span class="hi"><strong>You HAVE to</strong></span> give up 3 units of <span class="math inline">\(y\)</span> for 1 unit of <span class="math inline">\(x\)</span></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div class="fragment">
+<p>Because it is “cheaper” to trade <span class="math inline">\(y\)</span> for <span class="math inline">\(x\)</span> than you are willing to, you will make the trade</p>
+</div>
+<div class="fragment">
+<blockquote>
+<p><span class="h note"><strong>Is this a utility maximizing bundle? Why or Why not?</strong></span></p>
+</blockquote>
+<aside class="notes">
+<p>Lots of non-rhetorical questions at each pause</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</div>
+</section>
+<section id="why-does-this-work-2" class="slide level2">
+<h2>Why Does This Work?</h2>
+<p>If <span class="hi"><span class="math inline">\(\text{Negative MRS } \neq \text{ Price Ratio}\)</span></span> then you trade that bundle for another, which means that you were <span class="h"><strong>not</strong></span> at a utility maximizing bundle</p>
+<div class="fragment">
+<p><br></p>
+<p>The logic here is:</p>
+<ul>
+<li><span class="hi note">If you willingly move away from a chosen bundle, then that bundle, by definition, cannot be utility maximizing</span></li>
+</ul>
+</div>
+<div class="fragment">
+<p>Let’s draw it!</p>
+</div>
+</section>
+<section id="graph-takeaway" class="slide level2 smaller">
+<h2>Graph Takeaway</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="Images/Diff-MRS-PriceRatio.png" width="500" height="333"></p>
+</figure>
+</div>
+<div class="fragment">
+<p>If <span class="hi"><span class="math inline">\(\text{Negative MRS } &lt; \text{ Price Ratio}\)</span></span> <span class="h note"><strong>(Point A)</strong></span></p>
+<ul>
+<li><p>Graphically, this means that the <span class="hi">IC</span> is <span class="h"><strong>steeper than</strong></span> the <span class="hi">BC</span></p></li>
+<li><p>Trading away some <span class="math inline">\(y\)</span> for some <span class="math inline">\(x\)</span> moves you down and to the right in the better-than set</p></li>
+</ul>
+</div>
+<div class="fragment">
+<p>If <span class="hi"><span class="math inline">\(\text{Negative MRS } &gt; \text{ Price Ratio}\)</span></span> <span class="h note"><strong>(Point B)</strong></span></p>
+<ul>
+<li><p>Graphically, this means that the <span class="hi">IC</span> is <span class="h"><strong>flatter than</strong></span> the <span class="hi">BC</span></p></li>
+<li><p>Trading away some <span class="math inline">\(x\)</span> for some <span class="math inline">\(y\)</span> moves you up and to the left in the better-than set</p></li>
+</ul>
+</div>
+</section>
+<section id="graph-takeaway---part-ii" class="slide level2">
+<h2>Graph Takeaway - Part II</h2>
+<p>The graph implicitly says:</p>
+<div>
+<ul>
+<li class="fragment"><p>There are an infinite number of ICs that all correspond to different levels of utility</p></li>
+<li class="fragment"><p>There is only one BC</p></li>
+<li class="fragment"><p>Utility maximization happens <span class="h">only</span> when you find the point on the BC that touches the highest possible IC (once)</p></li>
+</ul>
+</div>
+<div class="fragment">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="Images/Infinite-IC.png" width="600" height="400"></p>
+</figure>
+</div>
+</div>
+</section>
+<section id="slope-logic-summary" class="slide level2">
+<h2>Slope Logic Summary</h2>
+<p>The logic takaways here are:</p>
+<div>
+<ul>
+<li class="fragment"><p>When you have a curved IC, you have to set the slope of the IC equal to the slope of the BC to find the utility-maximizing bundle</p></li>
+<li class="fragment"><p>If they are not equal, you would be willing to make some trade to a different bundle</p></li>
+<li class="fragment"><p>The magical point of maximization only occurs if the ICs are <span class="h">Non-Crossing</span>, <span class="h">Monotonic</span>, and <span class="h">Convex</span></p>
+<ul>
+<li class="fragment">The <span class="h">weakly monotonic</span> and <span class="h">weakly convex</span> arguments we saw satisfy this</li>
+</ul></li>
+<li class="fragment"><p>Most importantly, <span class="hi"><strong>there is only one magical point</strong></span></p></li>
+</ul>
+</div>
+</section></section>
 <section>
 <section id="constrained-optimization" class="title-slide slide level1 inverse note center">
 <h1>Constrained Optimization</h1>
@@ -808,13 +1106,139 @@ Jose Rojas-Fallas
 </ul>
 </div>
 <div class="fragment">
+<p><br></p>
 <p>When you say that the MRS is less than the Price Ratio, you are also saying that <span class="hi"><strong>you get fewer units of utility per dollar spent on <span class="math inline">\(x\)</span> than per dollar spent on <span class="math inline">\(y\)</span></strong></span>. Therefore, you should only consume <span class="math inline">\(y\)</span>.</p>
 <blockquote>
 <p><span class="h note"><strong>Note: This logic only works for Perfect Substitutes. This is because the MRS is always a constant</strong></span></p>
 </blockquote>
+</div>
+</section>
+<section id="perfect-complements-utility-constrained-optimization" class="slide level2">
+<h2>Perfect Complements Utility Constrained Optimization</h2>
+<p><span class="h note">Recall: We cannot solve this utility form like the others because there is no MRS</span></p>
+<div class="fragment">
+<p>So let’s see what a graph can tell us</p>
+<p><span class="math display">\[U(x,y) = \min \{2x,3y\}, \; P_{x} = 2, \; P_{y} = 2, \; M = 40 \]</span></p>
+</div>
+<div class="fragment">
+<div class="columns">
+<div class="column" style="width:60%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="Images/P-Comps-Graph1.png" width="500" height="400"></p>
+</figure>
+</div>
+</div><div class="column" style="width:40%;">
+<p><span class="h note"><strong>Point C</strong></span> is the minimum point of this indifference curve but is it maximizing?</p>
+<div>
+<ul>
+<li class="fragment">Why not choose <span class="h note"><strong>Point A</strong></span> or <span class="h note"><strong>Point B</strong></span> if they are on the BC &amp; IC?</li>
+<li class="fragment">Because there is a higher IC that exists!</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="perfect-complements-utility-constrained-optimization---graph" class="slide level2">
+<h2>Perfect Complements Utility Constrained Optimization - Graph</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="Images/P-Comps-Graph2.png" width="450" height="350"></p>
+</figure>
+</div>
+<p>Hidden <span class="h note"><strong>Point D</strong></span> is the actual maximizing point</p>
+<div class="fragment">
+<p>Remember that there are is always a <span class="h"><strong>Better-Than Set</strong></span> where other ICs exist</p>
+<ul>
+<li>It just happens that if they are beyond the BC they are unaffordable</li>
+</ul>
+</div>
+</section>
+<section id="perfect-complements-graph-intuition" class="slide level2">
+<h2>Perfect Complements Graph Intuition</h2>
+<p>The bundles on both the IC and the BC involve “wasting” one good or the other</p>
+<ul>
+<li><p>Recall that the <span class="hii">“No-Waste Condition”</span> says that you should achieve a certain utility level with the minimum units of <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> possible</p>
+<ul>
+<li>In other words, you want to be at the <span class="hii">“kink”</span> of the function</li>
+</ul></li>
+</ul>
+<div class="fragment">
+<p>The previous graph showed us that <span class="h note"><strong>Point D</strong></span> is the utility maximizing point, now let’s learn how to find it</p>
+</div>
+</section>
+<section id="perfect-complements-contrained-optimization" class="slide level2">
+<h2>Perfect Complements Contrained Optimization</h2>
+<p>I will be bold and say that this is one of the simpler utility functions to maximize</p>
+<p>Just be sure to follow the steps:</p>
+<div>
+<ol type="1">
+<li class="fragment"><p>Solve the <span class="hii">“No-Waste Condition”</span> for one of the goods (Does not matter which one)</p></li>
+<li class="fragment"><p>Plug the optimality condition into the budget constraint and find the demand of one Good</p></li>
+<li class="fragment"><p>Use either the BC or the <span class="hii">“No-Waste Condition”</span> to solve for the demand of the other good</p></li>
+</ol>
+</div>
+</section>
+<section id="solve-the-no-waste-condition-for-one-of-the-goods" class="slide level2">
+<h2>1 - Solve the No-Waste Condition for One of the Goods</h2>
+<p><span class="math display">\[U(x,y) = \min \{\dfrac{x}{2}, 2y\}, \; P_{x} = 1, \; P_{y} = 3, \; M = 56\]</span></p>
+<p>Solve the No-Waste Condition</p>
+<div class="fragment">
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Solving for <span class="math inline">\(x^{*}\)</span></p>
+<div class="fragment">
+<p><span class="math display">\[\begin{align*}
+    \dfrac{x}{2} &amp;= 2y \\
+    x^{*} &amp;= 4y
+\end{align*}\]</span></p>
+</div>
+</div><div class="column" style="width:50%;">
+<p>Solving for <span class="math inline">\(y^{*}\)</span></p>
+<div class="fragment">
+<p><span class="math display">\[\begin{align*}
+    \dfrac{x}{2} &amp;= 2y \\
+    y^{*} &amp;= \dfrac{x}{4}
+\end{align*}\]</span></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="plug-the-optimality-condition-into-the-bc-to-find-demand-of-one-good" class="slide level2">
+<h2>2 - Plug the Optimality Condition into the BC to Find Demand of One good</h2>
+<p><span class="math display">\[x^{*} = 4y \; \text{or} \; y^{*} = \dfrac{x}{4} \;\; , \;\; \text{BC: } x + 3y = 56\]</span></p>
+<div class="fragment">
+<p><span class="math display">\[\begin{align*}
+    x + 3y &amp;= 56 \\
+    (4y) + 3y &amp;= 56 \\
+    7y &amp;= 56 \\
+    y^{*} &amp;= 8
+\end{align*}\]</span></p>
+</div>
+</section>
+<section id="use-bc-or-no-waste-condition-to-find-demand-for-other-good" class="slide level2">
+<h2>3 - Use BC or “No-Waste Condition” to Find Demand for Other Good</h2>
+<p><span class="math display">\[y^{*} = 8 \;\; \text{and} \;\; \text{No-Waste Condition: } \dfrac{x}{2} = 2y\]</span></p>
+<p><span class="math display">\[\begin{align*}
+    \dfrac{x}{2} &amp;= 2y \\
+    x^{*} &amp;= 4y \\
+    x^{*} &amp;= 4(8) \\
+    x^{*} &amp;= 32
+\end{align*}\]</span></p>
+<div class="fragment">
+<p>So our optimal bundle is:</p>
+<p><span class="math display">\[x^{*} = 32 \;\; \&amp; \;\; y^{*} = 8\]</span></p>
+</div>
+</section>
+<section id="utility-maximization-summary" class="slide level2">
+<h2>Utility Maximization Summary</h2>
+<p>This lecture has taught you how to solve the 4 different utility functional forms constrained maximization problems graphically and mathematically</p>
+<p>With this in our toolbox, we can find the individual demand of goods.</p>
+<p>The next step is to find Demand Functions for the entire market</p>
 <div class="footer footer-default">
 <p>EC311 - Lecture 04 | Utility Maximization</p>
-</div>
 </div>
 </section></section>
     </div>

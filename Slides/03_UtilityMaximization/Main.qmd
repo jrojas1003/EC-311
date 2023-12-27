@@ -34,11 +34,11 @@ title-slide-attributes:
 
 # Optimal Consumption {.inverse .note}
 
-<!--{{< include 031-optimal-consumption.qmd >}}-->
+{{< include 031-optimal-consumption.qmd >}}
 
 # Slope Logic (Graphical Approach) {.inverse .note}
 
-<!--{{< include 032-slope-logic-graph.qmd >}}-->
+{{< include 032-slope-logic-graph.qmd >}}
 
 # Constrained Optimization {.inverse .note} 
 
