@@ -3,3 +3,208 @@ name: motivation
 ---
 
 ## There's An Actual Purpose to This
+
+All this abstract math stuff has a purpose:
+
+- At the start, I mentioned that firms, non-profits, and government agencies all have an incentive to model demand across every major industry
+
+. . .
+
+- They can ask: "If we raise the price of our product by 2%, how will our sales numbers react?"
+
+---
+
+## Applications 
+
+The models used to estimate demand responses are derived from utility maximization 
+
+For example, Dutch Bros sets up a utility that they think represents preferences for their coffee and related goods
+
+- They can derive and estimate the associated demand function from their sales data
+
+. . .
+
+Up to now, we have only solved utility maximization problems with the goal of finding the [level of demand]{.hi} (aka we found [numbers]{.hi})
+
+. . .
+
+Now we will solve these problems without specifying either price or income
+
+This makes it more general, which has its advantages:
+
+::: {.incremental}
+- It allows us to analyze how demand responds when prices or income change
+- The math stays the same, just that we have more unknowns now
+:::
+
+---
+
+## How Do We Find Demand Functions?
+
+Let's begin with the workhorse of this course: Cobb-Douglas
+
+$$\max U(x,y) = x^{\alpha}y^{\beta} \;\; \text{s.t.} \;\; P_{x} \cdot x + P_{y} \cdot y = M$$
+
+Recall how we solve this problem:
+
+::: {.incremental}
+1. Find the MRS and set it equal to the Price Ratio
+
+2. Solve this equality for one of the goods $\rightarrow$ Optimality Condition
+
+3. Plug the Optimality Condition into the Budget Constraint
+
+4. Use the found demand for one good and plug it into the Optimality Condition or Budget Constraint to find demand for the other good
+:::
+
+---
+
+## Cobb-Douglas General Solution - Step 1
+
+$$\max U(x,y) = x^{\alpha}y^{\beta} \;\; \text{s.t.} \;\; P_{x} \cdot x + P_{y} \cdot y = M$$
+
+> [**Find the MRS and the Price Ratio**]{.h .note}
+
+::: {.fragment}
+$$MRS = \dfrac{MU_{x}}{MU_{y}} = \dfrac{\alpha x^{\alpha - 1 y^{\beta}}}{\beta x^{\alpha} y^{\beta - 1}} = \dfrac{\alpha}{\beta} \cdot \dfrac{x^{\alpha - 1 - \alpha}}{y^{\beta - 1 - \beta}} = \dfrac{\alpha}{\beta} \cdot \dfrac{x^{-1}}{y^{-1}} = \dfrac{\alpha}{\beta} \cdot \dfrac{y}{x}$$
+
+$$\text{Price Ratio} = \dfrac{P_{x}}{P_{y}}$$
+:::
+
+> [**Set them equal to each other**]{.h .note}
+
+::: {.fragment}
+\begin{align*}
+    \text{MRS} &= \text{Price Ratio} \\
+    \dfrac{\alpha}{\beta} \cdot \dfrac{y}{x} &= \dfrac{P_{x}}{P_{y}}
+\end{align*}
+:::
+
+---
+
+## Cobb-Douglas General Solution - Step 2
+
+$$\dfrac{\alpha}{\beta} \cdot \dfrac{y}{x} = \dfrac{P_{x}}{P_{y}}$$
+
+> [**Solve for $y$**]{.h .note}
+
+::: {.fragment}
+\begin{align*}
+    \dfrac{\alpha}{\beta} \cdot \dfrac{y}{x} &= \dfrac{P_{x}}{P_{y}} \\
+    \dfrac{y}{x} &= \dfrac{P_{x}}{P_{y}} \cdot \dfrac{\beta}{\alpha} \\
+    y^{*} &= \dfrac{\beta}{\alpha} \cdot \dfrac{P_{x}}{P_{y}} \cdot x
+\end{align*}
+:::
+
+---
+
+## Cobb-Douglas General Solution - Step 3
+
+$$y^{*} = \dfrac{\beta}{\alpha} \cdot \dfrac{P_{x}}{P_{y}} \cdot x \;\; \& \;\; \text{BC: } P_{x} \cdot x + P_{y} \cdot y = M$$
+
+> [**Solve for the Demand of good $x$**]{.h .note}
+
+. . .
+
+\begin{align*}
+M &= P_{x} \cdot x + P_{y} \cdot y \\
+M &= P_{x} \cdot x + P_{y} \cdot \left( \dfrac{\beta}{\alpha} \cdot \dfrac{P_{x}}{P_{y}} \cdot x \right) \\
+M &= P_{x} \cdot x + \dfrac{\beta}{\alpha} \cdot P_{x} \cdot x \\
+M &= P_{x} \cdot x \left( 1 + \dfrac{\beta}{\alpha} \right) \\
+\vdots \\
+x^{*} &= \dfrac{M}{P_{x}} \cdot \dfrac{\alpha}{\alpha + \beta}
+\end{align*}
+
+---
+
+## Cobb-Douglas General Solution - Step 4
+
+$$x^{*} = \dfrac{M}{P_{x}} \cdot \dfrac{\alpha}{\alpha + \beta}$$
+
+>[**Use found demand of one good to find demand for the other good**]{.h .note}
+
+. . .
+
+\begin{align*}
+    y^{*} &= \dfrac{\beta}{\alpha} \cdot \dfrac{P_{x}}{P_{y}} \cdot \color{red}{x^{*}} \\
+    y^{*} &= \dfrac{\beta}{\alpha} \cdot \dfrac{P_{x}}{P_{y}} \cdot \color{red}{\dfrac{M}{P_{x}} \cdot \dfrac{\alpha}{\alpha + \beta}} \\
+    y^{*} &= \dfrac{\beta}{\alpha + \beta} \cdot \dfrac{M}{P_{y}}
+\end{align*}
+
+---
+
+## Cobb-Douglas General Solution - Trick
+
+When $x^{*}$ and $y^{*}$ are functions, we call them [**Demand Functions**]{.h}
+
+$$x^{*} = \dfrac{\alpha}{\alpha + \beta} \cdot \dfrac{M}{P_{x}}\;\;\;\;\;\; \& \;\;\;\;\;\; y^{*} = \dfrac{\beta}{\alpha + \beta} \cdot \dfrac{M}{P_{y}} $$
+
+> [**Knowing a C-D utility looks like $U(x,y) = x^{\alpha} y^{\beta}$ what do you notice about these functions?**]{.h .note}
+
+. . .
+
+Let me show you a trick for Cobb-Douglas utility functions
+
+::: {.incremental}
+- They are a constant share of how much I can afford of each individual good
+
+- This will always be true so you can use this to check your math in later problems
+:::
+
+::: {.notes}
+If you ever use this in an exam, be sure to explain why this shortcut works (bullet point 1)
+:::
+
+---
+
+## Demand Functions
+
+In general, the demand for $x$ and $y$ are functions of three variables:
+
+<br><br>
+
+::: {.incremental}
+- $P_{x}$, $P_{y}$, and $M$
+
+- This allows us to write demand functions as:
+    - $x^{*} = f(P_{x}, P_{y}, M)$
+    - $y^{*} = f(P_{x}, P_{y}, M)$
+
+- We are interested in how demand responds to changes to all three arguments
+:::
+
+---
+
+## Techniques to Find Demand Functions
+
+We will learn how to find Demand Functions
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+[**Graphically**]{.hi}
+
+::: {.fragment}
+- Expansion Paths and Engel Curves
+:::
+
+:::
+
+::: {.column width="50%"}
+
+[**Mathematically**]{.hi}
+
+::: {.fragment}
+- Derivatives and Elasticities
+:::
+
+:::
+
+::::
+
+. . .
+
+- We will figure out how a change in any of the function parameters affects demand for both goods
+
+- Let's begin with [Changes to Income]{.hii}
