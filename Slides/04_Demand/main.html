@@ -357,16 +357,221 @@ Jose Rojas-Fallas
 </div>
 </section>
 <section>
-<section id="test" class="title-slide slide level1 inverse note center">
-<h1>Test</h1>
+<section id="applications-of-micro-theory-demand-functions" class="title-slide slide level1 inverse note center">
+<h1>Applications of Micro Theory: Demand Functions</h1>
 
 </section>
-<section id="test-1" class="slide level2">
-<h2>Test</h2>
+<section id="theres-an-actual-purpose-to-this" class="slide level2">
+<h2>There’s An Actual Purpose to This</h2>
+<p>All this abstract math stuff has a purpose:</p>
+<ul>
+<li>At the start, I mentioned that firms, non-profits, and government agencies all have an incentive to model demand across every major industry</li>
+</ul>
+<div class="fragment">
+<ul>
+<li>They can ask: “If we raise the price of our product by 2%, how will our sales numbers react?”</li>
+</ul>
+</div>
+</section>
+<section id="applications" class="slide level2">
+<h2>Applications</h2>
+<p>The models used to estimate demand responses are derived from utility maximization</p>
+<p>For example, Dutch Bros sets up a utility that they think represents preferences for their coffee and related goods</p>
+<ul>
+<li>They can derive and estimate the associated demand function from their sales data</li>
+</ul>
+<div class="fragment">
+<p>Up to now, we have only solved utility maximization problems with the goal of finding the <span class="hi">level of demand</span> (aka we found <span class="hi">numbers</span>)</p>
+</div>
+<div class="fragment">
+<p>Now we will solve these problems without specifying either price or income</p>
+<p>This makes it more general, which has its advantages:</p>
+<div>
+<ul>
+<li class="fragment">It allows us to analyze how demand responds when prices or income change</li>
+<li class="fragment">The math stays the same, just that we have more unknowns now</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="how-do-we-find-demand-functions" class="slide level2">
+<h2>How Do We Find Demand Functions?</h2>
+<p>Let’s begin with the workhorse of this course: Cobb-Douglas</p>
+<p><span class="math display">\[\max U(x,y) = x^{\alpha}y^{\beta} \;\; \text{s.t.} \;\; P_{x} \cdot x + P_{y} \cdot y = M\]</span></p>
+<p>Recall how we solve this problem:</p>
+<div>
+<ol type="1">
+<li class="fragment"><p>Find the MRS and set it equal to the Price Ratio</p></li>
+<li class="fragment"><p>Solve this equality for one of the goods <span class="math inline">\(\rightarrow\)</span> Optimality Condition</p></li>
+<li class="fragment"><p>Plug the Optimality Condition into the Budget Constraint</p></li>
+<li class="fragment"><p>Use the found demand for one good and plug it into the Optimality Condition or Budget Constraint to find demand for the other good</p></li>
+</ol>
+</div>
+</section>
+<section id="cobb-douglas-general-solution---step-1" class="slide level2">
+<h2>Cobb-Douglas General Solution - Step 1</h2>
+<p><span class="math display">\[\max U(x,y) = x^{\alpha}y^{\beta} \;\; \text{s.t.} \;\; P_{x} \cdot x + P_{y} \cdot y = M\]</span></p>
+<blockquote>
+<p><span class="h note"><strong>Find the MRS and the Price Ratio</strong></span></p>
+</blockquote>
+<div class="fragment">
+<p><span class="math display">\[MRS = \dfrac{MU_{x}}{MU_{y}} = \dfrac{\alpha x^{\alpha - 1 y^{\beta}}}{\beta x^{\alpha} y^{\beta - 1}} = \dfrac{\alpha}{\beta} \cdot \dfrac{x^{\alpha - 1 - \alpha}}{y^{\beta - 1 - \beta}} = \dfrac{\alpha}{\beta} \cdot \dfrac{x^{-1}}{y^{-1}} = \dfrac{\alpha}{\beta} \cdot \dfrac{y}{x}\]</span></p>
+<p><span class="math display">\[\text{Price Ratio} = \dfrac{P_{x}}{P_{y}}\]</span></p>
+</div>
+<blockquote>
+<p><span class="h note"><strong>Set them equal to each other</strong></span></p>
+</blockquote>
+<div class="fragment">
+<p><span class="math display">\[\begin{align*}
+    \text{MRS} &amp;= \text{Price Ratio} \\
+    \dfrac{\alpha}{\beta} \cdot \dfrac{y}{x} &amp;= \dfrac{P_{x}}{P_{y}}
+\end{align*}\]</span></p>
+</div>
+</section>
+<section id="cobb-douglas-general-solution---step-2" class="slide level2">
+<h2>Cobb-Douglas General Solution - Step 2</h2>
+<p><span class="math display">\[\dfrac{\alpha}{\beta} \cdot \dfrac{y}{x} = \dfrac{P_{x}}{P_{y}}\]</span></p>
+<blockquote>
+<p><span class="h note"><strong>Solve for <span class="math inline">\(y\)</span></strong></span></p>
+</blockquote>
+<div class="fragment">
+<p><span class="math display">\[\begin{align*}
+    \dfrac{\alpha}{\beta} \cdot \dfrac{y}{x} &amp;= \dfrac{P_{x}}{P_{y}} \\
+    \dfrac{y}{x} &amp;= \dfrac{P_{x}}{P_{y}} \cdot \dfrac{\beta}{\alpha} \\
+    y^{*} &amp;= \dfrac{\beta}{\alpha} \cdot \dfrac{P_{x}}{P_{y}} \cdot x
+\end{align*}\]</span></p>
+</div>
+</section>
+<section id="cobb-douglas-general-solution---step-3" class="slide level2">
+<h2>Cobb-Douglas General Solution - Step 3</h2>
+<p><span class="math display">\[y^{*} = \dfrac{\beta}{\alpha} \cdot \dfrac{P_{x}}{P_{y}} \cdot x \;\; \&amp; \;\; \text{BC: } P_{x} \cdot x + P_{y} \cdot y = M\]</span></p>
+<blockquote>
+<p><span class="h note"><strong>Solve for the Demand of good <span class="math inline">\(x\)</span></strong></span></p>
+</blockquote>
+<div class="fragment">
+<p><span class="math display">\[\begin{align*}
+M &amp;= P_{x} \cdot x + P_{y} \cdot y \\
+M &amp;= P_{x} \cdot x + P_{y} \cdot \left( \dfrac{\beta}{\alpha} \cdot \dfrac{P_{x}}{P_{y}} \cdot x \right) \\
+M &amp;= P_{x} \cdot x + \dfrac{\beta}{\alpha} \cdot P_{x} \cdot x \\
+M &amp;= P_{x} \cdot x \left( 1 + \dfrac{\beta}{\alpha} \right) \\
+\vdots \\
+x^{*} &amp;= \dfrac{M}{P_{x}} \cdot \dfrac{\alpha}{\alpha + \beta}
+\end{align*}\]</span></p>
+</div>
+</section>
+<section id="cobb-douglas-general-solution---step-4" class="slide level2">
+<h2>Cobb-Douglas General Solution - Step 4</h2>
+<p><span class="math display">\[x^{*} = \dfrac{M}{P_{x}} \cdot \dfrac{\alpha}{\alpha + \beta}\]</span></p>
+<blockquote>
+<p><span class="h note"><strong>Use found demand of one good to find demand for the other good</strong></span></p>
+</blockquote>
+<div class="fragment">
+<p><span class="math display">\[\begin{align*}
+    y^{*} &amp;= \dfrac{\beta}{\alpha} \cdot \dfrac{P_{x}}{P_{y}} \cdot \color{red}{x^{*}} \\
+    y^{*} &amp;= \dfrac{\beta}{\alpha} \cdot \dfrac{P_{x}}{P_{y}} \cdot \color{red}{\dfrac{M}{P_{x}} \cdot \dfrac{\alpha}{\alpha + \beta}} \\
+    y^{*} &amp;= \dfrac{\beta}{\alpha + \beta} \cdot \dfrac{M}{P_{y}}
+\end{align*}\]</span></p>
+</div>
+</section>
+<section id="cobb-douglas-general-solution---trick" class="slide level2">
+<h2>Cobb-Douglas General Solution - Trick</h2>
+<p>When <span class="math inline">\(x^{*}\)</span> and <span class="math inline">\(y^{*}\)</span> are functions, we call them <span class="h"><strong>Demand Functions</strong></span></p>
+<p><span class="math display">\[x^{*} = \dfrac{\alpha}{\alpha + \beta} \cdot \dfrac{M}{P_{x}}\;\;\;\;\;\; \&amp; \;\;\;\;\;\; y^{*} = \dfrac{\beta}{\alpha + \beta} \cdot \dfrac{M}{P_{y}} \]</span></p>
+<blockquote>
+<p><span class="h note"><strong>Knowing a C-D utility looks like <span class="math inline">\(U(x,y) = x^{\alpha} y^{\beta}\)</span> what do you notice about these functions?</strong></span></p>
+</blockquote>
+<div class="fragment">
+<p>Let me show you a trick for Cobb-Douglas utility functions</p>
+<div>
+<ul>
+<li class="fragment"><p>They are a constant share of how much I can afford of each individual good</p></li>
+<li class="fragment"><p>This will always be true so you can use this to check your math in later problems</p></li>
+</ul>
+</div>
+<aside class="notes">
+<p>If you ever use this in an exam, be sure to explain why this shortcut works (bullet point 1)</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</div>
+</section>
+<section id="demand-functions" class="slide level2">
+<h2>Demand Functions</h2>
+<p>In general, the demand for <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> are functions of three variables:</p>
+<p><br><br></p>
+<div>
+<ul>
+<li class="fragment"><p><span class="math inline">\(P_{x}\)</span>, <span class="math inline">\(P_{y}\)</span>, and <span class="math inline">\(M\)</span></p></li>
+<li class="fragment"><p>This allows us to write demand functions as:</p>
+<ul>
+<li class="fragment"><span class="math inline">\(x^{*} = f(P_{x}, P_{y}, M)\)</span></li>
+<li class="fragment"><span class="math inline">\(y^{*} = f(P_{x}, P_{y}, M)\)</span></li>
+</ul></li>
+<li class="fragment"><p>We are interested in how demand responds to changes to all three arguments</p></li>
+</ul>
+</div>
+</section>
+<section id="techniques-to-find-demand-functions" class="slide level2">
+<h2>Techniques to Find Demand Functions</h2>
+<p>We will learn how to find Demand Functions</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="hi"><strong>Graphically</strong></span></p>
+<div class="fragment">
+<ul>
+<li>Expansion Paths and Engel Curves</li>
+</ul>
+</div>
+</div><div class="column" style="width:50%;">
+<p><span class="hi"><strong>Mathematically</strong></span></p>
+<div class="fragment">
+<ul>
+<li>Derivatives and Elasticities</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="fragment">
+<ul>
+<li><p>We will figure out how a change in any of the function parameters affects demand for both goods</p></li>
+<li><p>Let’s begin with <span class="hii">Changes to Income</span></p></li>
+</ul>
+</div>
+</section></section>
+<section id="income-changes" class="title-slide slide level1 inverse note center">
+<h1>Income Changes</h1>
+
+</section>
+
+<section id="price-changes" class="title-slide slide level1 inverse note center">
+<h1>Price Changes</h1>
+
+</section>
+
+<section id="substitution-and-income-effect" class="title-slide slide level1 inverse note center">
+<h1>Substitution and Income Effect</h1>
+
+</section>
+
+<section id="changes-in-another-goods-price" class="title-slide slide level1 inverse note center">
+<h1>Changes in Another Good’s Price</h1>
+
+</section>
+
+<section id="individual-demand-rightarrow-market-demand" class="title-slide slide level1 inverse note center">
+<h1>Individual Demand <span class="math inline">\(\Rightarrow\)</span> Market Demand</h1>
 <div class="footer footer-default">
 <p>EC311 - Lecture 04 | Demand</p>
 </div>
-</section></section>
+</section>
     </div>
   </div>
 

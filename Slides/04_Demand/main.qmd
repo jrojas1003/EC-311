@@ -35,9 +35,9 @@ title-slide-attributes:
 
 :::
 
-# Applications of Micro Theory {.inverse .note}
+# Applications of Micro Theory: Demand Functions {.inverse .note}
 
-{{< incldue 040-micro-motivation.qmd >}}
+{{< include 040-micro-motivation.qmd >}}
 
 # Income Changes {.inverse .note}
 
@@ -45,7 +45,7 @@ title-slide-attributes:
 
 # Price Changes {.inverse .note}
 
-{{< include 042-prince-changes.qmd >}}
+{{< include 042-price-changes.qmd >}}
 
 # Substitution and Income Effect {.inverse .note}
 
