@@ -1,0 +1,216 @@
+---
+name: own price changes 
+---
+
+## Price Changes are Important 
+
+Changing the price of a good and seeing what changes that causes is one of the most important types of changes we can consider
+
+- This is what people in the real world most want to know about
+
+. . .
+
+An important thing to have in mind throughout this section is:
+
+- If you hear/read "Demand Curve" or "Elasticity" without specifying if it's about price or income, [**the default is Own-Price Elasticity**]{.h}
+
+---
+
+## Price Changes
+
+Let's recall an important effect of price changes on the Budget Constraint
+
+> [**What happens to the Budget Constraint when then price of a normal good $x$ falls?**]{.h .note}
+
+. . .
+
+:::: {.columns}
+
+::: {.column width="30%"}
+
+[What happens to the slope?]{.hi .align-center}
+
+::: {.fragment}
+$$\dfrac{-P_{x}}{P_{y}} \; \rightarrow \; \downarrow P_{x} \; \rightarrow \; ???$$
+:::
+
+:::
+
+::: {.column width="70%"}
+
+[Graph]{.hi .align-center}
+
+::: {.fragment}
+![](Images/Price-Offer-Curve1.png){fig-align="center" height="400" width="500"}
+:::
+
+:::
+
+::::
+
+---
+
+## Individual Demand 
+
+Similar to the Engel Curve, we can connect these optimal bundles to get an important curve
+
+. . .
+
+![](Images/Price-Offer-Curve2.png){fig-align="center" width="600" height="500"}
+
+This is an [Individual Demand Curve]{.hi} 
+
+---
+
+## Individual Demand Curve
+
+If we clean it up a bit, we get our typical [downward sloping Demand Curve]{.hi}
+
+![](Images/Ind-Demand-Curve.png){fig-align="center" width="550" height="450"}
+
+[Notice I changed the axis slightly: I put Price on the vertical axis and Quantity of $x$ demanded on the horizontal axis]{.hi}
+
+---
+
+## Income Changes (Again) 
+
+If you recall from EC 201 we learned about demand shifters when income increases.
+
+If we repeat this exercise with an increased income we can observe the [Demand Shift]{.hi} 
+
+:::: {.columns}
+
+::: {.column width="50%"}
+![](Images/Demand-Shift1.png)
+:::
+
+::: {.column width="50%"}
+![](Images/Demand-Shift2.png){height="400"}
+:::
+
+::::
+
+---
+
+## Individual Demand (Mathematically)
+
+As we have done before, we also show the [Demand Curve Properties]{.hi} through derivatives!
+
+Let's show that the Demand Curve is downward sloping
+
+. . .
+
+- First, recall that the optimal consumption for a normal good $y$ from a Cobb-Douglas Utility Function is:
+
+$$
+    y^{*} = \dfrac{\beta}{\alpha + \beta} \cdot \dfrac{M}{P_{y}} = \dfrac{\beta M}{\alpha + \beta} \cdot P_{y}^{-1}
+$$
+
+. . .
+
+- Second, we take the [derivative w.r.t. Price]{.hi}
+
+$$
+    \dfrac{\partial y}{\partial P_{y}} = \dfrac{\beta M}{\alpha + \beta} \cdot (-1)P_{y}^{-2} = \dfrac{-\beta M}{\alpha + \beta} \cdot P_{y}^{-2} = \dfrac{-\beta M}{\alpha + \beta} \cdot \dfrac{1}{P_{y}^{2}} < 0 
+$$
+
+::: {.notes}
+C-D behaves as expected, the demand curve is downward sloping
+:::
+
+---
+
+## Price Elasticity
+
+This concept is identical to income elasticity 
+
+I will refer to the [Elasticity of Demand]{.hi} as the [elasticity of $x$ with respect to $P_{x}$]{.hi}
+
+. . .
+
+The formula is
+
+$$
+    E_{x^{*},P_{x}} = \dfrac{\partial x^{*}}{\partial P_{x}} \cdot \dfrac{P_{x}}{x^{*}}  \;\; \text{where} \;\; x^{*} = \dfrac{M}{2P_{x}}
+$$
+
+---
+
+## Elasticity of Demand - Example
+
+Let 
+
+$$
+    E_{x^{*},P_{x}} = \dfrac{\partial x^{*}}{\partial P_{x}} \cdot \dfrac{P_{x}}{x^{*}}  \;\; \text{where} \;\; x^{*} = \dfrac{M}{2P_{x}}
+$$
+
+. . .
+
+> [Find $\;\; \dfrac{\partial x^{*}}{\partial P_{x}}$]{.hi .note}
+
+. . .
+
+$$
+    \dfrac{\partial x^{*}}{\partial P_{x}} = \dfrac{-M}{2P_{x}^{2}}
+$$
+
+. . .
+
+> [Plug in our known values to the elasticity formula]{.hi .note}
+
+. . .
+
+$$
+    E_{x^{*},P_{x}} = \dfrac{-M}{2P_{x}^{2}} \cdot \dfrac{P_{x}}{\color{red}{x}} = \dfrac{-M}{2P_{x}^{2}} \cdot \dfrac{P_{x}}{\color{red}{\dfrac{-M}{2P_{x}^{2}}}} = \dfrac{-P_{x}}{P_{x}} = -1
+$$
+
+---
+
+## Elasticity of Demand - Example 2
+
+$$
+    y^{*} = \dfrac{M}{P_{y}} - 10
+$$
+
+. . .
+
+> [Find $\;\; \dfrac{\partial x^{*}}{\partial P_{x}}$]{.hi .note}
+
+. . .
+
+$$
+    \dfrac{\partial y^{*}}{\partial P_{y}} = \dfrac{-M}{P_{y}^{2}}
+$$
+
+> [Plug in our known values to the elasticity formula]{.hi .note}
+
+. . .
+
+$$
+    E_{y^{*}, P_{y}} = \dfrac{-M}{M - 10 P_{y}}
+$$
+
+---
+
+## Changes in Quantity Demanded 
+
+There are two major driving factors in changes in quantity when price changes: 
+
+::: {.incremental}
+1. Change that results from a change in the relative price of the two goods $\rightarrow$ [Substitution Effect]{.hi}
+2. Change that results from a change in the purchasing power of the consumer's income $\rightarrow$ [Income Effect]{.hi} 
+:::
+
+. . .
+
+However, we [**cannot**]{.hi-red} observe both of these in the real world 
+
+We observed the [**combined**]{.hi-teal} effect of these two 
+
+So we have:
+
+. . .
+
+$$
+    \text{Total Effect} = \text{Substitution Effect} + \text{Income Effect}
+$$
