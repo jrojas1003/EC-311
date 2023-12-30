@@ -1,3 +1,447 @@
 ---
-name: Test
+name: Change to Income
 ---
+
+## Visualizing the Change
+
+Let's start with a our standard optimized utility graph    
+
+::: {.fragment}
+![](Images/Inc-Change1.png){fig-align="center" width=600 height=500}
+:::
+
+. . .
+
+What would happen if we [**Increase**]{.h} our income?
+
+---
+
+## Visualizing the Change
+
+With an increase in income, our budget constraint will:
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+[Shift Outward]{.hi}
+
+::: {.fragment}
+![](Images/Inc-Change2.png){fig-align="center" width=600 height=500}
+:::
+
+:::
+
+::: {.column width="50%"}
+
+::: {.fragment}
+[We find the new Maximizing Point]{.hi}
+
+![](Images/Inc-Change3.png){fig-align="center" width=600 height=500}
+:::
+
+:::
+
+::::
+
+---
+
+## More Goods 
+
+The previous graphs tell us 
+
+- When income $(M)$ goes up, you can now reach a higher IC and be better off (relatively)
+
+- This graph also makes an important assumption
+
+::: {.incremental}
+- Both goods ,$x$ and $y$, are desirable 
+    - We call these [Normal Goods]{.hi}
+:::
+
+. . .
+
+[Normal Goods]{.hi} are desirable, which simply means that if we have more income we will consume more of them
+
+---
+
+## Other Types of Goods?
+
+Does it always have to be the case that consumpution of both $x$ and $y$ has to increase in response to an increase in income?
+
+. . .
+
+No! There are goods we call [Inferior Goods]{.hi-red} 
+
+::: {.incremental}
+- These goods are consumed less when income increases 
+- A classic example of this is Maruchan ramen noodles
+:::
+
+---
+
+## Inferior Goods - Graph
+
+Let $y$ be an inferior good, the optimized utility graph would look something like
+
+:::: {.columns}
+
+::: {.column width="40%"}
+
+[Maximized Utility]{.hi}
+
+![](Images/Inferior-Good1.png)
+
+:::
+
+::: {.column width="60%"}
+
+[Increase in Income with Inferior Good $y$]{.hi}
+
+::: {.fragment}
+![](Images/Inferior-Good2.png)
+:::
+
+:::
+
+::::
+
+---
+
+## Inferior Goods - Graph Intuition
+
+With an inferior good (let's keep saying $y$) there is a predictable shift when income increases
+
+. . .
+
+![](Images/Inferior-Good3.png){fig-align="center" height=500 width=600}
+
+The new bundle must be in [this region of the budget]{.hi-purple}
+
+---
+
+## Can Both Goods Be Inferior?
+
+As your income increases, can you buy less of both goods?
+
+::: {.incremental}
+- No! [Why Not?]{.h}
+- The Budget Constraint does not allow it
+- Recall that the BC looks like: $P_{x} \cdot x + P_{y} \cdot y = M$
+:::
+
+. . .
+
+If your income increases, and you decrease the amount of $x$ you consume ($x$ is an inferior good), then there is a lot of income leftover that is required to be spent
+
+The only other option is to increase your consumption of $y$
+
+. . .
+
+<br>
+
+> In fact, if increasing your income has no effect on how much $x$ you consume, you would still have to increase your consumption of $y$
+
+---
+
+## Engel Curves
+
+This curve describes the relationship between $M^{*}$ and $y^{*}$, with $M$ on the vertical axis and $y^{*}$ on the horizontal axis 
+
+Let's build this by parts, starting with a bunch of income levels and the associated $y^{*}$ consumption levels 
+
+. . .
+
+![](Images/Engel-Curve1.png){fig-align="center" height=400 width=600}
+
+[**Notice the axis!**]{.hi .align-center}
+
+---
+
+## Engel Curves
+
+If we connect all our optimal levels of $y^{*}$ we find our [Engel Curve]{.hi}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+[Connect the dots]{.hi}
+
+::: {.fragment}
+![](Images/Engel-Curve2.png){height=450}
+:::
+
+:::
+
+::: {.column width="50%"}
+
+[Our Engel Curve]{.hi}
+
+::: {.fragment}
+![](Images/Engel-Curve3.png)
+:::
+
+:::
+
+::::
+
+---
+
+## Engel Curves
+
+The important thing to consider about Engel Curves is the [sign of the slope]{.h} $\rightarrow$ [It tells us if a good is normal or inferior]{.h}
+
+::: {.incremental}
+- A [Positive Slope]{.hi-green} means that when Income goes up, $y^{*}$ increases and we say $y$ is a [normal good]{.hi-green}
+- A [Negative Slope]{.hp} means that when Income goes up, $y^{*}$ decreases and we say $y$ is an [inferior good]{.hp}
+:::
+
+. . .
+
+<br>
+We've seen that curves slopes can change, so we can ask ourselves:
+
+> [Can a good be an inferior good over all income levels?]{.hi .note}
+
+---
+
+## Engel Curves - Inferior Goods Always?
+
+[Can in be the case that no matter what my current income is, an increase in income will decrease my consumption of a good?]{.hi}
+
+. . .
+
+[It is impossible!]{.hi}
+
+::: {.incremental}
+- Even a good that is usually inferior, or better said, [inferior over common income levels must be a normal good over low enough levels of income]{.hii}
+    - I'll show  you an example of an Engel Curve with a negative slope and we'll see why 
+:::
+
+---
+
+## Engel Curves - Inferior Goods Always?
+
+Think about our Instant Ramen example. When in college, the more money you have, the more you buy Instant Ramen (so it is a normal good). 
+
+But once you graduate and get that promised pay increase from graduating, you buy Instant Ramen less and less the higher your Income becomes (inferior good)
+
+. . .
+
+![](Images/Engel-Curve4.png){fig-align="center" height="475" width="525"}
+
+---
+
+## Engel Curves - Mathematically
+
+We can formalize Engel Curves as:
+
+::: {.incremental}
+1. Engel Curves are graphs of the Demand Function
+    - $x^{*} = f(P_{x},P_{y},M)$
+2. Where we hold prices fixed and flip the axis
+:::
+
+---
+
+## Engel Curves - Mathematically
+
+Take our Cobb-Douglas example
+
+$$U(x,y) = x^{\alpha}y^{\beta} \;\;\; \text{where} \;\;\; \alpha = \beta = P_{x} = 1$$
+
+Also recall that
+
+$$x^{*} = \dfrac{\alpha}{\alpha + \beta} \cdot \dfrac{M}{P_{x}}$$
+
+. . .
+
+:::: {.columns}
+
+::: {.column width="50%"}
+Solving for $M$ yields:
+
+::: {.fragment}
+\begin{align*}
+    x^{*} &= \dfrac{\alpha}{\alpha + \beta} \cdot \dfrac{M}{P_{x}} \\
+    x^{*} &= \dfrac{1}{2} \cdot M = \dfrac{M}{2} \\
+    x^{*} &= \dfrac{M}{2} \rightarrow M = 2x^{*}
+\end{align*}
+::: 
+
+:::
+
+::: {.column width="50%"}
+
+What's the slope of this demand tell us?
+
+::: {.fragment}
+\begin{align*}
+    \dfrac{\partial x}{\partial M} = \dfrac{1}{2} > 0
+\end{align*}
+:::
+
+::: {.fragment}
+[It's positive!]{.hi .align-center}
+:::
+
+:::
+
+::::
+
+::: {.notes}
+C-D will never have an inferior good
+:::
+
+---
+
+## Engel Curves - Using Derivatives
+
+We can show whether a good is normal or not over all income levels by taking the derivative with respect to $M$
+
+<br><br>
+$$\text{if} \;\; \dfrac{\partial x^{*}}{\partial M} > 0 \Rightarrow \text{Normal Good}$$
+
+<br><br>
+
+$$\text{if} \;\; \dfrac{\partial x^{*}}{\partial M} < 0 \Rightarrow \text{Inferior Good}$$
+
+---
+
+## Back to Income Changes
+
+We just saw that we can find whether a good is a normal or inferior by taking the partial derivative of the demand function w.r.t. income 
+
+- By knowing what category the good falls into, we can quickly estimate how demand will react to changes in income
+- But this only tells us up or down, not magnitudes
+<br>
+- To find that, we will look at [elasticities]{.hi}
+
+---
+
+## Elasticities 
+
+They tell us how responsive demand is to income changes (later we will see price changes)
+
+They follow the formula:
+
+$$E_{x^{*},M} = \dfrac{\partial x^{*}}{\partial M} \cdot \dfrac{M}{x^{*}}$$
+
+. . .
+
+There are 3 steps to finding an elasticity
+
+::: {.incremental}
+1. Take the partial derivative of the good w.r.t. $M$
+
+2. Multiply the partial derivative by the ratio of the [input variable]{.hii} to the [response variable]{.hi}
+    - [What is changing]{.hii} to [what we are estimating to chagne]{.hi}
+
+3. Substitute the original demand equation and simplify
+:::
+
+---
+
+## Elasticities - Example
+
+Let the Demand for $x^{*}$ be:
+
+$$x^{*} = \dfrac{M}{P_{x}}$$
+
+> [1 - Take the partial derivative w.r.t. Income]{.h .note}
+
+. . .
+
+\begin{align*}
+    \dfrac{\partial x}{\partial M} = \dfrac{1}{P_{x}}
+\end{align*}
+
+---
+
+## Elasticities - Example
+
+The partial derivative is:
+
+$$\dfrac{\partial x}{\partial M} = \dfrac{1}{P_{x}}$$
+
+> [2 - Multiply the partial derivative by the ratio of input variable to the response variable $\left(\dfrac{M}{x^{*}} \right)$]{.h .note}
+
+. . . 
+
+\begin{align*}
+    E_{x^{*},M} = \dfrac{\partial x^{*}}{\partial M} \cdot \dfrac{M}{x^{*}} \rightarrow \dfrac{1}{P_{x}} \cdot \dfrac{M}{x^{*}}
+\end{align*}
+
+---
+
+## Elasticities - Example 
+
+$$
+E_{x^{*},M} = \dfrac{\partial x^{*}}{\partial M} \cdot \dfrac{M}{x^{*}} \rightarrow \dfrac{1}{P_{x}} \cdot \dfrac{M}{x^{*}}
+$$
+
+> [3 - Substitute the original demand equation in and simplify]{.h .note}
+
+. . .
+
+\begin{align*}
+    E_{x^{*},M} &= \dfrac{1}{P_{x}} \cdot \dfrac{M}{\color{red}{x}} = \dfrac{1}{P_{x}} \cdot \dfrac{M}{\color{red}{\dfrac{M}{P_{x}}}} = \dfrac{1}{P_{x}} \cdot P_{x} = \dfrac{P_{x}}{P_{x}} = 1
+\end{align*}
+
+. . .
+
+So we would say that good $x$ has an Income Elasticity of 1
+
+---
+
+## Elasticities: What do They Mean?
+
+They tell us how to translate a proportional change in $x$ into a proportional change in $y$
+
+So for the elasticity 
+
+$$E_{x,y} = \eta $$
+
+<br>
+If $y$ goes up by $10\%$, $x$ increases by $\eta \cdot 10\%$
+
+Equivalently, if $y$ goes down by $20\%$, $x$ decreases by $\eta \cdot 20\%$
+
+. . .
+
+Elasticities can be
+
+- Positive, negative, zero, or infinite
+
+. . .
+
+When considering Income Elasticities we know that 
+
+- Normal goods have positive elasticities
+
+- Inferior goods have negative elastiticies
+
+---
+
+## Elasticities: Responsiveness
+
+We can describe how responsive goods are in terms of elasiticity
+
+::: {.incremental}
+- If the [**absolute value**]{.h .note} of an elasticity is [greater than 1 $(> 1)$]{.hi} we say that there is an [**elastic**]{.hi} response
+    - $E_{x,M} = 2 \rightarrow M \uparrow 10\%, \; x \uparrow 20\%$
+
+- If the [**absolute value**]{.h .note} of an elasticity is [less than 1 $(<1)$]{.hi} we say that there is an [**inelastic**]{.hi} response 
+    - $E_{x,M} = 0.5 \rightarrow M \uparrow 10\%, \; x \uparrow 5\%$
+
+- If the [**absolute value**]{.h .note} of an elasticity is [equal to 1 $(=1)$]{.hi} we say that the response is [**unit elastic**]{.hi}
+
+- If the elastiscity is [exactly equal to 0]{.hi} we call this [**perfectly inelastic**]{.hi}
+
+- If the elasticity is [infinite $(\infty)$]{.hi} we call this [**perfectly elastic**]{.hi}
+:::
+
+::: {.notes}
+Make drawing of perfectly inelastic and perfectly elastic on whiteboard
+:::
