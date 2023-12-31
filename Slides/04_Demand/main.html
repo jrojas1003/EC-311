@@ -1030,221 +1030,344 @@ Make drawing of perfectly inelastic and perfectly elastic on whiteboard
 
 # Own Price Changes {.inverse .note}
 
-{{< include 042-own-price-changes.qmd >}}-->
+
+---
+name: own price changes 
+---
+
+
+## Price Changes are Important 
+
+Changing the price of a good and seeing what changes that causes is one of the most important types of changes we can consider
+
+- This is what people in the real world most want to know about
+
+. . .
+
+An important thing to have in mind throughout this section is:
+
+- If you hear/read "Demand Curve" or "Elasticity" without specifying if it's about price or income, [**the default is Own-Price Elasticity**]{.h}
+
+---
+
+## Price Changes
+
+Let's recall an important effect of price changes on the Budget Constraint
+
+> [**What happens to the Budget Constraint when then price of a normal good $x$ falls?**]{.h .note}
+
+. . .
+
+:::: {.columns}
+
+::: {.column width="30%"}
+
+[What happens to the slope?]{.hi .align-center}
+
+::: {.fragment}
+$$\dfrac{-P_{x}}{P_{y}} \; \rightarrow \; \downarrow P_{x} \; \rightarrow \; ???$$
+:::
+
+:::
+
+::: {.column width="70%"}
+
+[Graph]{.hi .align-center}
+
+::: {.fragment}
+![](Images/Price-Offer-Curve1.png){fig-align="center" height="400" width="500"}
+:::
+
+:::
+
+::::
+
+---
+
+## Individual Demand 
+
+Similar to the Engel Curve, we can connect these optimal bundles to get an important curve
+
+. . .
+
+![](Images/Price-Offer-Curve2.png){fig-align="center" width="600" height="500"}
+
+This is an [Individual Demand Curve]{.hi} 
+
+---
+
+## Individual Demand Curve
+
+If we clean it up a bit, we get our typical [downward sloping Demand Curve]{.hi}
+
+![](Images/Ind-Demand-Curve.png){fig-align="center" width="550" height="450"}
+
+[Notice I changed the axis slightly: I put Price on the vertical axis and Quantity of $x$ demanded on the horizontal axis]{.hi}
+
+---
+
+## Income Changes (Again) 
+
+If you recall from EC 201 we learned about demand shifters when income increases.
+
+If we repeat this exercise with an increased income we can observe the [Demand Shift]{.hi} 
+
+:::: {.columns}
+
+::: {.column width="50%"}
+![](Images/Demand-Shift1.png)
+:::
+
+::: {.column width="50%"}
+![](Images/Demand-Shift2.png){height="400"}
+:::
+
+::::
+
+---
+
+## Individual Demand (Mathematically)
+
+As we have done before, we also show the [Demand Curve Properties]{.hi} through derivatives!
+
+Let's show that the Demand Curve is downward sloping
+
+. . .
+
+- First, recall that the optimal consumption for a normal good $y$ from a Cobb-Douglas Utility Function is:
+
+$$
+    y^{*} = \dfrac{\beta}{\alpha + \beta} \cdot \dfrac{M}{P_{y}} = \dfrac{\beta M}{\alpha + \beta} \cdot P_{y}^{-1}
+$$
+
+. . .
+
+- Second, we take the [derivative w.r.t. Price]{.hi}
+
+$$
+    \dfrac{\partial y}{\partial P_{y}} = \dfrac{\beta M}{\alpha + \beta} \cdot (-1)P_{y}^{-2} = \dfrac{-\beta M}{\alpha + \beta} \cdot P_{y}^{-2} = \dfrac{-\beta M}{\alpha + \beta} \cdot \dfrac{1}{P_{y}^{2}} < 0 
+$$
+
+::: {.notes}
+C-D behaves as expected, the demand curve is downward sloping
+:::
+
+---
+
+## Price Elasticity
+
+This concept is identical to income elasticity 
+
+I will refer to the [Elasticity of Demand]{.hi} as the [elasticity of $x$ with respect to $P_{x}$]{.hi}
+
+. . .
+
+The formula is
+
+$$
+    E_{x^{*},P_{x}} = \dfrac{\partial x^{*}}{\partial P_{x}} \cdot \dfrac{P_{x}}{x^{*}}  \;\; \text{where} \;\; x^{*} = \dfrac{M}{2P_{x}}
+$$
+
+---
+
+## Elasticity of Demand - Example
+
+Let 
+
+$$
+    E_{x^{*},P_{x}} = \dfrac{\partial x^{*}}{\partial P_{x}} \cdot \dfrac{P_{x}}{x^{*}}  \;\; \text{where} \;\; x^{*} = \dfrac{M}{2P_{x}}
+$$
+
+. . .
+
+> [Find $\;\; \dfrac{\partial x^{*}}{\partial P_{x}}$]{.hi .note}
+
+. . .
+
+$$
+    \dfrac{\partial x^{*}}{\partial P_{x}} = \dfrac{-M}{2P_{x}^{2}}
+$$
+
+. . .
+
+> [Plug in our known values to the elasticity formula]{.hi .note}
+
+. . .
+
+$$
+    E_{x^{*},P_{x}} = \dfrac{-M}{2P_{x}^{2}} \cdot \dfrac{P_{x}}{\color{red}{x}} = \dfrac{-M}{2P_{x}^{2}} \cdot \dfrac{P_{x}}{\color{red}{\dfrac{-M}{2P_{x}^{2}}}} = \dfrac{-P_{x}}{P_{x}} = -1
+$$
+
+---
+
+## Elasticity of Demand - Example 2
+
+$$
+    y^{*} = \dfrac{M}{P_{y}} - 10
+$$
+
+. . .
+
+> [Find $\;\; \dfrac{\partial x^{*}}{\partial P_{x}}$]{.hi .note}
+
+. . .
+
+$$
+    \dfrac{\partial y^{*}}{\partial P_{y}} = \dfrac{-M}{P_{y}^{2}}
+$$
+
+> [Plug in our known values to the elasticity formula]{.hi .note}
+
+. . .
+
+$$
+    E_{y^{*}, P_{y}} = \dfrac{-M}{M - 10 P_{y}}
+$$
+
+---
+
+## Changes in Quantity Demanded 
+
+There are two major driving factors in changes in quantity when price changes: 
+
+::: {.incremental}
+1. Change that results from a change in the relative price of the two goods $\rightarrow$ [Substitution Effect]{.hi}
+2. Change that results from a change in the purchasing power of the consumer's income $\rightarrow$ [Income Effect]{.hi} 
+:::
+
+. . .
+
+However, we [**cannot**]{.hi-red} observe both of these in the real world 
+
+We observed the [**combined**]{.hi-teal} effect of these two 
+
+So we have:
+
+. . .
+
+$$
+    \text{Total Effect} = \text{Substitution Effect} + \text{Income Effect}
+$$
+
+
+
+# Substitution and Income Effect {.inverse .note}
+
+{{< include 043-sub-and-inc-effect.qmd >}}-->
 </section>
 <section>
-<section id="substitution-and-income-effect" class="title-slide slide level1 inverse note center">
-<h1>Substitution and Income Effect</h1>
+<section id="changes-in-another-goods-price" class="title-slide slide level1 inverse note center">
+<h1>Changes in Another Good’s Price</h1>
 
 </section>
-<section id="substitution-effect" class="slide level2 smaller">
-<h2>Substitution effect</h2>
-<p>It is the change in bundle resulting from a change in the relative price of two goods</p>
-<p><span class="hi">The relative price of both goods is simply the slope of the Budget Constraint</span></p>
+<section id="other-price-changes" class="slide level2">
+<h2>Other Price Changes</h2>
+<p>Let’s begin by recalling some important points</p>
 <div>
 <ul>
-<li class="fragment"><p>Suppose that <span class="math inline">\(P_{y}\)</span> decreases by some <span class="math inline">\(\epsilon\)</span> so that <span class="math inline">\(\hat{P_{y}} = P_{y} - \epsilon\)</span></p>
+<li class="fragment"><p>We started by noting that <span class="hi">Demand Functions</span> can be functions of own price, other price, and income <span class="math display">\[
+  y^{*} = f(P_{x}, P_{y}, M)
+\]</span></p></li>
+<li class="fragment"><p>We have covered own price and income, so now we deal with what happens when the price of the other good changes</p>
 <ul>
-<li class="fragment"><p>How would this change the Budget Constraint?</p></li>
-<li class="fragment"><p><span class="math inline">\(\text{Slope: } \dfrac{-P_{x}}{P_{y}} \;\; \rightarrow \;\;\downarrow P_{y} \;\; \rightarrow \;\; \text{Slope gets Steeper}\)</span></p></li>
+<li class="fragment">To do this, we will consider goods that are <span class="hi">Substitutes</span> and <span class="hi">Complements</span></li>
 </ul></li>
 </ul>
 </div>
-<div class="fragment">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="Images/Sub-Effect1.png" width="400" height="300"></p>
-</figure>
-</div>
-</div>
 </section>
-<section id="forcing-no-change-in-relative-income" class="slide level2 smaller">
-<h2>Forcing No Change in Relative Income</h2>
+<section id="substitutes" class="slide level2">
+<h2>Substitutes</h2>
+<p>Let’s review</p>
+<div>
+<ul>
+<li class="fragment">An example of substitute goods are <span class="h">Coke &amp; Pepsi</span></li>
+<li class="fragment">If the price of a substitute increases, quantity demanded of the other good will ???
+<ul>
+<li class="fragment"><span class="hi">Increase</span></li>
+</ul></li>
+<li class="fragment">Now let’s think about derivatives. We say that <span class="math inline">\(x\)</span> is a substitute for <span class="math inline">\(y\)</span> if:</li>
+</ul>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><span class="hi align-center">Change in Relative Income</span> <img data-src="Images/Sub-Effect1.png" data-fig-align="center" height="400"></p>
+<div class="fragment">
+<p><span class="math display">\[
+\dfrac{\partial y^{*}}{\partial P_{x}} \gtreqless 0
+\]</span></p>
+</div>
 </div><div class="column" style="width:50%;">
 <div class="fragment">
-<p><span class="hi align-center">We can try to balance things out</span></p>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="Images/Sub-Effect2.png" height="380"></p>
-</figure>
+<p><span class="math display">\[
+    \dfrac{\partial y^{*}}{\partial P_{x}} &gt; 0
+\]</span></p>
 </div>
 </div>
-</div>
-</div>
-<div class="fragment">
-<blockquote>
-<p>The goal is to find where the consumer <span class="h"><strong>does not</strong></span> feel wealthier or poorer given the change in relative prices</p>
-</blockquote>
-</div>
-</section>
-<section id="substitution-effect-1" class="slide level2">
-<h2>Substitution Effect</h2>
-<blockquote>
-<p><span class="hi note">We want to find where the consumer feels <strong>indifferent</strong> after price changes?</span></p>
-</blockquote>
-<ul>
-<li>We need to find a bundle on the same <span class="hi"><strong>Indifference Curve</strong></span> but using a new Budget Constraint</li>
-</ul>
-<div class="fragment">
-<h3 id="finding-the-substitution-effect">Finding the Substitution Effect</h3>
-<div class="small">
-<ol type="1">
-<li class="fragment">Find the <span class="hi">New Budget Constraint</span></li>
-<li class="fragment">Find the <span class="hi">Hypothetical Budget Constraint</span></li>
-<li class="fragment">Find the <span class="hi">Optimal Bundle under Original Utility and Hypothetical BC</span></li>
-<li class="fragment">Find the <span class="hi">Difference between Hypothetical and Original Bundles</span></li>
-</ol>
 </div>
 </div>
 </section>
-<section id="finding-the-substitution-effect---step-1" class="slide level2">
-<h2>Finding the Substitution Effect - Step 1</h2>
-<p><span class="hi align-center big"><strong>Let’s say <span class="math inline">\(P_{y}\)</span> decreased. Find the New Budget Constraint</strong></span></p>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="Images/Sub-Effect3.png" height="500"></p>
-</figure>
-</div>
-</section>
-<section id="finding-the-substitution-effect---step-2" class="slide level2">
-<h2>Finding the Substitution Effect - Step 2</h2>
-<p><span class="hi align-center big"><strong>Find the Hypothetical Budget Constraint</strong></span></p>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="Images/Sub-Effect4.png" height="500"></p>
-</figure>
-</div>
-<p><span class="hi">We figuratively grab the new BC and shift it over</span></p>
-</section>
-<section id="finding-the-substitution-effect---step-3" class="slide level2">
-<h2>Finding the Substitution Effect - Step 3</h2>
-<p><span class="hi align-center big"><strong>Find the Optimal Bundle under Original Utility and Hypothetical</strong></span></p>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="Images/Sub-Effect5.png" height="500"></p>
-</figure>
-</div>
-</section>
-<section id="finding-the-substitution-effect---step-4" class="slide level2">
-<h2>Finding the Substitution Effect - Step 4</h2>
-<p><span class="hi align-center big"><strong>Find the Difference between Hypothetical and Original Bundles</strong></span></p>
-
-<img data-src="Images/Sub-Effect6.png" class="r-stretch quarto-figure-center"><div class="fragment">
-<p><span class="hi big align-center">The Substitution Effect is the movement from <span class="math inline">\(\; A \;\)</span> to <span class="math inline">\(\; \hat{A} \;\)</span></span></p>
-</div>
-</section>
-<section id="substitution-effect---example" class="slide level2">
-<h2>Substitution Effect - Example</h2>
-<p><span class="hi big align-center">Find the Substitution Effect of the following graph</span></p>
-
-<img data-src="Images/Sub-Effect-Example1.png" class="r-stretch quarto-figure-center"></section>
-<section id="substitution-effect---example-solution" class="slide level2">
-<h2>Substitution Effect - Example Solution</h2>
-<p><span class="hi big align-center">Find the Substitution Effect of the following graph</span></p>
-
-<img data-src="Images/Sub-Effect-Example2.png" class="r-stretch quarto-figure-center"></section>
-<section id="income-effect" class="slide level2 smaller">
-<h2>Income Effect</h2>
-<p>It is the change in bundle resulting from a change in the purchasing power of the consumer’s income</p>
-<ul>
-<li>The relative income (purchasing power) can change even when income does not</li>
-</ul>
-<div class="fragment">
-<blockquote>
-<p><span class="hi">We want to find the change in consumption from an increase in purchasing power if the relative prices were always at the new ratio</span></p>
-</blockquote>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="Images/Inc-Effect1.png" height="350"></p>
-</figure>
-</div>
-</div>
-</section>
-<section id="finding-the-income-effect" class="slide level2">
-<h2>Finding the Income Effect</h2>
+<section id="complements" class="slide level2">
+<h2>Complements</h2>
+<p>Let’s review</p>
 <div>
-<ol type="1">
-<li class="fragment">Find the <span class="hi">New Budget Constraint &amp; the Optimal Bundle</span></li>
-<li class="fragment">Find the <span class="hi">Hypothetical Budget Constraint</span></li>
-<li class="fragment">Find the <span class="hi">Optimal Bundle under Original Utility and Hypothetical Budget Constraint</span></li>
-<li class="fragment">Find the <span class="hi">Difference between Hypothetical and New Bundle</span></li>
-</ol>
+<ul>
+<li class="fragment">An example of complement goods are <span class="h">Coffee Beans &amp; Coffee Creamer</span></li>
+<li class="fragment">If the price of a complement increases, quantity demanded of the other good will ???
+<ul>
+<li class="fragment"><span class="hi">Decrease</span></li>
+</ul></li>
+<li class="fragment">Now let’s think about derivatives. We say that <span class="math inline">\(x\)</span> is a complement for <span class="math inline">\(y\)</span> if:</li>
+</ul>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="fragment">
+<p><span class="math display">\[
+\dfrac{\partial y^{*}}{\partial P_{x}} \gtreqless 0
+\]</span></p>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="fragment">
+<p><span class="math display">\[
+    \dfrac{\partial y^{*}}{\partial P_{x}} &lt; 0
+\]</span></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="do-all-goods-need-to-be-perfect-subs.-or-complements" class="slide level2">
+<h2>Do All Goods Need to be Perfect Subs. or Complements?</h2>
+<p>Goods need not be <span class="hi">perfect complements/substitutes</span></p>
+<p>Their demands can be independent of each other’s prices</p>
+<div class="fragment">
+<ul>
+<li>Cobb-Douglas goods are an example</li>
+</ul>
+<p><span class="math display">\[
+    x^{*} = \dfrac{\alpha}{\alpha + \beta} \cdot \dfrac{M}{P_{x}} \;\; \rightarrow \;\; \dfrac{\partial x{*}}{\partial P_{y}} = 0
+\]</span></p>
 </div>
 <div class="fragment">
+<ul>
+<li>We will not be doing much with other price changes beyond finding out if goods are substitutes or complements and their <span class="hi">Elasticity of Substitution</span></li>
+</ul>
+</div>
+</section>
+<section id="elasticity-of-substitution" class="slide level2">
+<h2>Elasticity of Substitution</h2>
+<p><span class="tiny"><span class="math display">\[E_{x^{*}, P_{y}} = \dfrac{\partial x^{*}}{\partial P_{y}} \cdot \dfrac{P_{y}}{x^{*}} \;\;\;\;\;\; \text{and let } \; x^{*} = \dfrac{M}{P_{y}} - P_{x}\]</span></span></p>
 <p><br></p>
-<blockquote>
-<p><span class="h note">Luckily it is a lot of the same steps so it is not a lot of extra work</span></p>
-</blockquote>
-</div>
-</section>
-<section id="finding-the-income-effect---step-1" class="slide level2">
-<h2>Finding the Income Effect - Step 1</h2>
-<p><span class="hi big align-center">Find the New Budget Constraint &amp; the Optimal Bundle</span></p>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="Images/Inc-Effect2.png" height="500"></p>
-</figure>
-</div>
-</section>
-<section id="finding-the-income-effect---step-2" class="slide level2">
-<h2>Finding the Income Effect - Step 2</h2>
-<p><span class="hi big align-center">Find the Hypothethical Budget Constraint</span></p>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="Images/Inc-Effect3.png" height="500"></p>
-</figure>
-</div>
-</section>
-<section id="finding-the-income-effect---step-3" class="slide level2">
-<h2>Finding the Income Effect - Step 3</h2>
-<p><span class="hi big align-center">Find the Optimal Bundle under Original Utility and Hypothetical Budget Constraint</span></p>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="Images/Inc-Effect4.png" height="490"></p>
-</figure>
-</div>
-</section>
-<section id="finding-the-income-effect---step-4" class="slide level2">
-<h2>Finding the Income Effect - Step 4</h2>
-<p><span class="hi big align-center">Find the Difference Between Hypothetical and New Bundle</span></p>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="Images/Inc-Effect5.png" height="500"></p>
-</figure>
-</div>
-</section>
-<section id="substitution-and-income-effect-summary" class="slide level2">
-<h2>Substitution and Income Effect Summary</h2>
-<p>The <span class="hi-teal">Substitution Effect</span> is the effect of changing the slope of the budget line <span class="hi-teal">without changing the indifference curve you started on</span></p>
-<p>The <span class="hi-purple">Income Effect</span> is the difference between the <span class="hi-teal">Substitution Effect</span> and the <span class="hi-purple">new utility maximizing point</span></p>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="Images/Sub&amp;Inc-Effect.png" height="400"></p>
-</figure>
-</div>
-</section>
-<section id="total-effect" class="slide level2">
-<h2>Total Effect</h2>
-<blockquote>
-<p><span class="hi">Remember: In the real world we can only observe the Total Effect</span></p>
-</blockquote>
-
-<img data-src="Images/Total-Effect.png" class="r-stretch quarto-figure-center"><p><span class="h note">We try to decompose what drives people decisions and that’s how we arrive at the Sub &amp; Inc Effects</span></p>
+<p><span class="hi note">Find the Elasticity and interpret it</span></p>
+<div class="fragment">
+<p><span class="tiny"><span class="math display">\[\begin{align*}
+    E_{x^{*}, P_{y}} &amp;= \dfrac{-M}{P_{y}^{2}} \cdot \dfrac{P_{y}}{\dfrac{M}{P_{y}} - P_{x}} = \dfrac{-M}{P_{y}} \cdot \dfrac{1}{\dfrac{M}{P_{y}} - P_{x}} = \dfrac{-M}{P_{y} \cdot \dfrac{M}{P_{y}} - P_{y}P_{x}} \\ \\
+    &amp;= \dfrac{-M}{M - P_{y}P_{x}} =  \bigg| \dfrac{-M}{M - P_{y}P_{x}} \bigg| &gt; 1 \Rightarrow \text{Elastic}
+\end{align*}\]</span></span></p>
 <!--
-# Changes in Another Good's Price {.inverse .note}
-
-
-
-
-
 # Individual Demand $\Rightarrow$ Market Demand {.inverse .note}
 
 {{< include 045-individual-demand-and-market-demand.qmd >}}-->
 <div class="footer footer-default">
 <p>EC311 - Lecture 04 | Demand</p>
+</div>
 </div>
 </section></section>
     </div>

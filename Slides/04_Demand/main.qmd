@@ -46,17 +46,17 @@ title-slide-attributes:
 
 # Own Price Changes {.inverse .note}
 
-{{< include 042-own-price-changes.qmd >}}-->
+{{< include 042-own-price-changes.qmd >}}
 
 # Substitution and Income Effect {.inverse .note}
 
-{{< include 043-sub-and-inc-effect.qmd >}}
+{{< include 043-sub-and-inc-effect.qmd >}}-->
 
-<!--
 # Changes in Another Good's Price {.inverse .note}
 
 {{< include 044-other-goods-price-change.qmd >}}
-
+    
+<!--
 # Individual Demand $\Rightarrow$ Market Demand {.inverse .note}
 
 {{< include 045-individual-demand-and-market-demand.qmd >}}-->
