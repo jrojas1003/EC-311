@@ -1,0 +1,132 @@
+---
+name: other goods price changes 
+---
+
+## Other Price Changes
+
+Let's begin by recalling some important points
+
+::: {.incremental}
+- We started by noting that [Demand Functions]{.hi} can be functions of own price, other price, and income
+$$
+    y^{*} = f(P_{x}, P_{y}, M)
+$$
+
+- We have covered own price and income, so now we deal with what happens when the price of the other good changes
+
+    - To do this, we will consider goods that are [Substitutes]{.hi} and [Complements]{.hi}
+:::
+
+---
+
+## Substitutes 
+
+Let's review
+
+::: {.incremental}
+- An example of substitute goods are [Coke & Pepsi]{.h} 
+- If the price of a substitute increases, quantity demanded of the other good will ???
+    - [Increase]{.hi}
+- Now let's think about derivatives. We say that $x$ is a substitute for $y$ if: 
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+::: {.fragment}
+$$
+\dfrac{\partial y^{*}}{\partial P_{x}} \gtreqless 0
+$$
+:::
+
+:::
+
+::: {.column width="50%"}
+
+::: {.fragment}
+$$
+    \dfrac{\partial y^{*}}{\partial P_{x}} > 0
+$$  
+:::
+
+:::
+
+::::
+
+:::
+
+---
+
+## Complements
+
+Let's review
+
+::: {.incremental}
+- An example of complement goods are [Coffee Beans & Coffee Creamer]{.h} 
+- If the price of a complement increases, quantity demanded of the other good will ???
+    - [Decrease]{.hi}
+- Now let's think about derivatives. We say that $x$ is a complement for $y$ if: 
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+::: {.fragment}
+$$
+\dfrac{\partial y^{*}}{\partial P_{x}} \gtreqless 0
+$$
+:::
+
+:::
+
+::: {.column width="50%"}
+
+::: {.fragment}
+$$
+    \dfrac{\partial y^{*}}{\partial P_{x}} < 0
+$$  
+:::
+
+:::
+
+::::
+
+:::
+
+---
+
+## Do All Goods Need to be Perfect Subs. or Complements?
+
+Goods need not be [perfect complements/substitutes]{.hi}
+
+Their demands can be independent of each other's prices 
+
+. . .
+
+- Cobb-Douglas goods are an example
+
+$$
+    x^{*} = \dfrac{\alpha}{\alpha + \beta} \cdot \dfrac{M}{P_{x}} \;\; \rightarrow \;\; \dfrac{\partial x{*}}{\partial P_{y}} = 0
+$$
+
+. . .
+
+- We will not be doing much with other price changes beyond finding out if goods are substitutes or complements and their [Elasticity of Substitution]{.hi}
+
+---
+
+## Elasticity of Substitution 
+
+[$$E_{x^{*}, P_{y}} = \dfrac{\partial x^{*}}{\partial P_{y}} \cdot \dfrac{P_{y}}{x^{*}} \;\;\;\;\;\; \text{and let } \; x^{*} = \dfrac{M}{P_{y}} - P_{x}$$]{.tiny}
+
+<br>
+
+[Find the Elasticity and interpret it]{.hi .note}
+
+. . .
+
+[\begin{align*}
+    E_{x^{*}, P_{y}} &= \dfrac{-M}{P_{y}^{2}} \cdot \dfrac{P_{y}}{\dfrac{M}{P_{y}} - P_{x}} = \dfrac{-M}{P_{y}} \cdot \dfrac{1}{\dfrac{M}{P_{y}} - P_{x}} = \dfrac{-M}{P_{y} \cdot \dfrac{M}{P_{y}} - P_{y}P_{x}} \\ \\
+    &= \dfrac{-M}{M - P_{y}P_{x}} =  \bigg| \dfrac{-M}{M - P_{y}P_{x}} \bigg| > 1 \Rightarrow \text{Elastic}
+\end{align*}]{.tiny}
+
