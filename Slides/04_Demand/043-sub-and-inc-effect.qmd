@@ -1,0 +1,205 @@
+---
+name: sub & inc effect
+---
+
+## Substitution effect {.smaller}
+
+It is the change in bundle resulting from a change in the relative price of two goods
+
+[The relative price of both goods is simply the slope of the Budget Constraint]{.hi} 
+
+::: {.incremental}
+- Suppose that $P_{y}$ decreases by some $\epsilon$ so that $\hat{P_{y}} = P_{y} - \epsilon$
+
+    - How would this change the Budget Constraint?
+
+    - $\text{Slope: } \dfrac{-P_{x}}{P_{y}} \;\; \rightarrow \;\;\downarrow P_{y} \;\; \rightarrow \;\; \text{Slope gets Steeper}$
+:::
+
+. . .
+
+![](Images/Sub-Effect1.png){fig-align="center" height="300" width="400"}
+
+---
+
+## Forcing No Change in Relative Income {.smaller}
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+[Change in Relative Income]{.hi .align-center}
+![](Images/Sub-Effect1.png){height="400" fig-align="center"}
+:::
+
+::: {.column width="50%"}
+
+::: {.fragment}
+[We can try to balance things out]{.hi .align-center}
+
+![](Images/Sub-Effect2.png){height="380" fig-align="center"}
+:::
+
+:::
+
+::::
+
+. . .
+
+> The goal is to find where the consumer [**does not**]{.h} feel wealthier or poorer given the change in relative prices
+
+---
+
+## Substitution Effect
+
+> [We want to find where the consumer feels **indifferent** after price changes?]{.hi .note}
+
+- We need to find a bundle on the same [**Indifference Curve**]{.hi} but using a new Budget Constraint
+
+. . .
+
+### Finding the Substitution Effect
+
+::: {.incremental .small}
+1. Find the [New Budget Constraint]{.hi}
+2. Find the [Hypothetical Budget Constraint]{.hi}
+3. Find the [Optimal Bundle under Original Utility and Hypothetical BC]{.hi}
+4. Find the [Difference between Hypothetical and Original Bundles]{.hi}
+:::
+
+---
+
+## Finding the Substitution Effect - Step 1
+
+[**Let's say $P_{y}$ decreased. Find the New Budget Constraint**]{.hi .align-center .big}
+
+![](Images/Sub-Effect3.png){fig-align="center" height="500"}
+
+---
+
+## Finding the Substitution Effect - Step 2
+
+[**Find the Hypothetical Budget Constraint**]{.hi .align-center .big}
+
+![](Images/Sub-Effect4.png){fig-align="center" height="500"}
+
+[We figuratively grab the new BC and shift it over]{.hi} 
+
+---
+
+## Finding the Substitution Effect - Step 3 
+
+[**Find the Optimal Bundle under Original Utility and Hypothetical**]{.hi .align-center .big}
+
+![](Images/Sub-Effect5.png){fig-align="center" height="500"}
+
+---
+
+## Finding the Substitution Effect - Step 4
+
+[**Find the Difference between Hypothetical and Original Bundles**]{.hi .align-center .big} 
+
+![](Images/Sub-Effect6.png){fig-align="center"}
+
+. . .
+
+[The Substitution Effect is the movement from $\; A \;$ to $\; \hat{A} \;$]{.hi .big .align-center}
+
+---
+
+## Substitution Effect - Example
+
+[Find the Substitution Effect of the following graph]{.hi .big .align-center}
+
+![](Images/Sub-Effect-Example1.png){fig-align="center"}
+
+---
+
+## Substitution Effect - Example Solution
+
+[Find the Substitution Effect of the following graph]{.hi .big .align-center}
+
+![](Images/Sub-Effect-Example2.png){fig-align="center"}
+
+---
+
+## Income Effect {.smaller  }
+
+It is the change in bundle resulting from a change in the purchasing power of the consumer's income 
+
+- The relative income (purchasing power) can change even when income does not
+
+. . .
+
+> [We want to find the change in consumption from an increase in purchasing power if the relative prices were always at the new ratio]{.hi} 
+
+![](Images/Inc-Effect1.png){height="350" fig-align="center"}
+
+---
+
+## Finding the Income Effect
+
+::: {.incremental}
+1. Find the [New Budget Constraint & the Optimal Bundle]{.hi}
+2. Find the [Hypothetical Budget Constraint]{.hi} 
+3. Find the [Optimal Bundle under Original Utility and Hypothetical Budget Constraint]{.hi}
+4. Find the [Difference between Hypothetical and New Bundle]{.hi}
+:::
+
+. . .
+
+<br>
+
+> [Luckily it is a lot of the same steps so it is not a lot of extra work]{.h .note}
+
+---
+
+## Finding the Income Effect - Step 1
+
+[Find the New Budget Constraint & the Optimal Bundle]{.hi .big .align-center}
+
+![](Images/Inc-Effect2.png){fig-align="center" height="500"}
+
+--- 
+
+## Finding the Income Effect - Step 2
+
+[Find the Hypothethical Budget Constraint]{.hi .big .align-center}
+
+![](Images/Inc-Effect3.png){fig-align="center" height="500"}
+
+---
+
+## Finding the Income Effect - Step 3
+
+[Find the Optimal Bundle under Original Utility and Hypothetical Budget Constraint]{.hi .big .align-center}
+
+![](Images/Inc-Effect4.png){fig-align="center" height="490"}
+
+---
+
+## Finding the Income Effect - Step 4
+
+[Find the Difference Between Hypothetical and New Bundle]{.hi .big .align-center}
+
+![](Images/Inc-Effect5.png){fig-align="center" height="500"}
+
+---
+
+## Substitution and Income Effect Summary
+
+The [Substitution Effect]{.hi-teal} is the effect of changing the slope of the budget line [without changing the indifference curve you started on]{.hi-teal}
+
+The [Income Effect]{.hi-purple} is the difference between the [Substitution Effect]{.hi-teal} and the [new utility maximizing point]{.hi-purple} 
+
+![](Images/Sub&Inc-Effect.png){fig-align="center" height="400"}
+
+---
+
+## Total Effect
+
+> [Remember: In the real world we can only observe the Total Effect]{.hi}
+
+![](Images/Total-Effect.png){fig-align="center"}
+
+[We try to decompose what drives people decisions and that's how we arrive at the Sub & Inc Effects]{.h .note}
