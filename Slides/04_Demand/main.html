@@ -8,10 +8,10 @@
 <link href="main_files/libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="main_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="main_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.3.361">
+  <meta name="generator" content="quarto-1.4.294">
 
   <meta name="author" content="Jose Rojas-Fallas">
-  <meta name="dcterms.date" content="2023-01-01">
+  <meta name="dcterms.date" content="2024-01-01">
   <title>Demand</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -157,7 +157,8 @@
   }
 
   .callout.callout-titled .callout-body > .callout-content > :last-child {
-    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0;
   }
 
   .callout.callout-titled .callout-icon::before {
@@ -337,7 +338,7 @@ Jose Rojas-Fallas
 </div>
 </div>
 
-  <p class="date">2023</p>
+  <p class="date">2024</p>
 </section>
 <section class="slide level2">
 
@@ -355,7 +356,6 @@ Jose Rojas-Fallas
 </ul></li>
 </ul>
 </div>
-
 <!--
 # Applications of Micro Theory: Demand Functions {.inverse .note}
 
@@ -1465,7 +1465,7 @@ The [Income Effect]{.hi-purple} is the difference between the [Substitution Effe
 
 # Changes in Another Good's Price {.inverse .note}
 
-{{< include 044-other-goods-price-change.qmd >}}-->
+-->
 </section>
 <section>
 <section id="individual-demand-rightarrow-market-demand" class="title-slide slide level1 inverse note center">
@@ -1509,19 +1509,147 @@ The [Income Effect]{.hi-purple} is the difference between the [Substitution Effe
 <h2>Market Demand - Graphically</h2>
 <div class="columns">
 <div class="column" style="width:30%;">
+<p><span class="hi-green">Individual Demand</span></p>
 <p><span class="hi-green"><span class="math display">\[\begin{align*}
 x^{*} &amp;= M - P_{x} \\
 P_{x} &amp;= M - x^{*}
 \end{align*}\]</span></span></p>
-<p><br> <br></p>
-<p><span class="hi-purple"><span class="math display">\[\begin{align*}
+<p><br></p>
+<p><span class="hi-orange">Market Demand</span></p>
+<p><span class="hi-orange"><span class="math display">\[\begin{align*}
 Q_{D} &amp;= 2M - 2P_{x} \\
 2P_{x} &amp;= 2M - Q_{D} \\
 P_{x} &amp;= M - \dfrac{Q_{D}}{2}
 \end{align*}\]</span></span></p>
 </div><div class="column" style="width:70%;">
-
+<div class="fragment">
+<p><img data-src="Images/Market-Demand1.png"></p>
 </div>
+</div>
+</div>
+</section>
+<section id="lets-make-it-more-complicated" class="slide level2">
+<h2>Let’s Make It More Complicated</h2>
+<p>We will call our 2 agents Jose and Maria</p>
+<p>Now we will assume the same demand <span class="math inline">\(x^{*} = M - P_{x}\)</span> but they have different incomes <span class="math inline">\((M)\)</span>:</p>
+<ul>
+<li><p>Jose has <span class="math inline">\(M = 6\)</span></p></li>
+<li><p>Maria has <span class="math inline">\(M = 10\)</span></p></li>
+</ul>
+<p>It is still the case that market demand is the sum of both individuals</p>
+<div class="fragment">
+<p><span class="math display">\[
+    Q_{D} = x^{*}_{J} + x^{*}_{M} = 10 - P_{x} + 6 - P_{x} = 16 - 2P_{x}
+\]</span></p>
+<p><span class="hp align-center">But there is an issue here!</span></p>
+<aside class="notes">
+<p>What is it?</p>
+<p>Once <span class="math inline">\(P_{x} \geq 6\)</span>, Jose demands 0 and only Maria is left in the market</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</div>
+</section>
+<section id="complicated-market-demand" class="slide level2">
+<h2>Complicated Market Demand</h2>
+<div class="columns tiny">
+<div class="column" style="width:30%;">
+<p><span class="h">Individual Demands</span></p>
+<p><span class="blue"><span class="math display">\[\begin{align*}
+x^{*}_{J} &amp;= 6 - P_{x} \\
+P_{x} &amp;= 6 - x^{*}_{J}
+\end{align*}\]</span></span></p>
+<p><span class="hi-green"><span class="math display">\[\begin{align*}
+x^{*}_{M} &amp;= 10 - P_{x} \\
+P_{x} &amp;= 10 - x^{*}_{M}
+\end{align*}\]</span></span></p>
+<p><br></p>
+<p><span class="hi-orange">Market Demand</span></p>
+<p><span class="hi-orange"><span class="math display">\[\begin{align*}
+Q_{D} &amp;= 16 - 2P_{x} \\
+2P_{x} &amp;= 16 - Q_{D} \\
+P_{x} &amp;= 8 - \dfrac{Q_{D}}{2}
+\end{align*}\]</span></span></p>
+</div><div class="column" style="width:70%;">
+<div class="fragment">
+<p><img data-src="Images/Market-Demand2.png"></p>
+</div>
+</div>
+</div>
+</section>
+<section id="market-demand-1" class="slide level2">
+<h2>Market Demand</h2>
+<p>Whenever you add up <span class="h">linear demand curves</span> across individuals with <span class="h">different <span class="math inline">\(P_{x}\)</span> intercepts</span> in the demand curves, you will get a small kink in the market demand function</p>
+<div class="fragment">
+<p><br><br></p>
+<blockquote>
+<p><span class="h note">Note: The only linear demand curves we have are Perfect Substitutes and Quasi-linear so you should be able to identify them</span></p>
+</blockquote>
+</div>
+</section>
+<section id="market-demand---example-2" class="slide level2">
+<h2>Market Demand - Example 2</h2>
+<p>Let there be 2 agents with the following utilities</p>
+<p><span class="math display">\[
+U_{a} = ln(x) + y \;\;\;\; \&amp; \;\;\;\; U_{b} = 2ln(x) + y \;\;\; ; \;\;\; P_{y} = 1
+\]</span></p>
+<blockquote>
+<p><span class="h note">Find the market demand curve (Hint: Find <span class="math inline">\(x_{a}^{*}\)</span> and <span class="math inline">\(x_{b}^{*}\)</span>)</span></p>
+</blockquote>
+<div class="fragment">
+<p><span class="math display">\[\begin{align*}
+    x_{a}^{*} &amp;\; : \; MRS = \dfrac{P_{x}}{P_{y}} \; \rightarrow \; \dfrac{MU_{x}}{MU_{y}} = \dfrac{P_{x}}{1} \; \rightarrow \; \dfrac{1}{x^{*}_{a}} = P_{x} \; \rightarrow \; x^{*}_{a} = \dfrac{1}{P_{x}} \\
+    x_{b}^{*} &amp;\; : \; MRS = \dfrac{P_{x}}{P_{y}} \; \rightarrow \; \dfrac{MU_{x}}{MU_{y}} = \dfrac{P_{x}}{1} \; \rightarrow \; \dfrac{2}{x^{*}_{b}} = P_{x} \; \rightarrow \; x^{*}_{b} = \dfrac{2}{P_{x}}
+\end{align*}\]</span></p>
+</div>
+<div class="fragment">
+<p><span class="math display">\[\begin{align*}
+    Q_{D} &amp;\; : \; x^{*}_{a} + x^{*}_{b} = \dfrac{1}{P_{x}} + \dfrac{2}{P_{x}} = \dfrac{3}{P_{x}} \; \rightarrow \; Q_{D} = \dfrac{3}{P_{x}} \; \rightarrow \; P_{x} = \dfrac{3}{Q_{D}}
+\end{align*}\]</span></p>
+</div>
+</section>
+<section id="market-demand---example-2-graph" class="slide level2">
+<h2>Market Demand - Example 2 Graph</h2>
+<div class="columns tiny">
+<div class="column" style="width:30%;">
+<p><span class="h">Individual Demand Functions</span></p>
+<p><span class="blue"><span class="math display">\[\begin{align*}
+P_{x} = \dfrac{1}{x^{*}_{a}}
+\end{align*}\]</span></span></p>
+<p><span class="hi-green"><span class="math display">\[\begin{align*}
+P_{x} = \dfrac{2}{x^{*}_{b}}
+\end{align*}\]</span></span></p>
+<p><br></p>
+<p><span class="hi-orange">Market Demand Function</span></p>
+<p><span class="hi-orange"><span class="math display">\[\begin{align*}
+P_{x} = \dfrac{3}{Q_{D}}
+\end{align*}\]</span></span></p>
+</div><div class="column" style="width:70%;">
+<div class="fragment">
+<p><img data-src="Images/Market-Demand3.png"></p>
+</div>
+</div>
+</div>
+</section>
+<section id="consumer-theory" class="slide level2">
+<h2>Consumer Theory</h2>
+<p>All we have seen up to now is the basics of <span class="hi">Consumer Theory</span></p>
+<p>A quick example of an application can be:</p>
+<div>
+<ul>
+<li class="fragment">Let’s say you are interested in the demand for energy drinks</li>
+<li class="fragment">You build utility functions for a couple different groups in the market that you believe represent their preferences for energy drinks and other consumption</li>
+<li class="fragment">You solve the maximization problem and understand how the optimal solutions change when inputs change</li>
+<li class="fragment">Then you add up the solutions across groups in the market to measure the relationsihp between price and demand</li>
+</ul>
 </div>
 <div class="footer footer-default">
 <p>EC311 - Lecture 04 | Demand</p>
@@ -1553,7 +1681,6 @@ P_{x} &amp;= M - \dfrac{Q_{D}}{2}
       Reveal.initialize({
 'controlsAuto': true,
 'previewLinksAuto': true,
-'smaller': false,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
@@ -1814,10 +1941,9 @@ P_{x} &amp;= M - \dfrac{Q_{D}}{2}
         // clear code selection
         e.clearSelection();
       });
-      function tippyHover(el, contentFn) {
+      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
         const config = {
           allowHTML: true,
-          content: contentFn,
           maxWidth: 500,
           delay: 100,
           arrow: false,
@@ -1827,8 +1953,17 @@ P_{x} &amp;= M - \dfrac{Q_{D}}{2}
           interactive: true,
           interactiveBorder: 10,
           theme: 'light-border',
-          placement: 'bottom-start'
+          placement: 'bottom-start',
         };
+        if (contentFn) {
+          config.content = contentFn;
+        }
+        if (onTriggerFn) {
+          config.onTrigger = onTriggerFn;
+        }
+        if (onUntriggerFn) {
+          config.onUntrigger = onUntriggerFn;
+        }
           config['offset'] = [0,0];
           config['maxWidth'] = 700;
         window.tippy(el, config); 
