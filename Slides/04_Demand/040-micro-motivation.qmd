@@ -14,7 +14,7 @@ All this abstract math stuff has a purpose:
 
 ---
 
-## Applications 
+## Applications {.smaller}
 
 The models used to estimate demand responses are derived from utility maximization 
 
@@ -59,7 +59,7 @@ Recall how we solve this problem:
 
 ---
 
-## Cobb-Douglas General Solution - Step 1
+## Cobb-Douglas General Solution - Step 1 {.smaller}
 
 $$\max U(x,y) = x^{\alpha}y^{\beta} \;\; \text{s.t.} \;\; P_{x} \cdot x + P_{y} \cdot y = M$$
 
@@ -82,7 +82,7 @@ $$\text{Price Ratio} = \dfrac{P_{x}}{P_{y}}$$
 
 ---
 
-## Cobb-Douglas General Solution - Step 2
+## Cobb-Douglas General Solution - Step 2 {.smaller}
 
 $$\dfrac{\alpha}{\beta} \cdot \dfrac{y}{x} = \dfrac{P_{x}}{P_{y}}$$
 
@@ -98,7 +98,7 @@ $$\dfrac{\alpha}{\beta} \cdot \dfrac{y}{x} = \dfrac{P_{x}}{P_{y}}$$
 
 ---
 
-## Cobb-Douglas General Solution - Step 3
+## Cobb-Douglas General Solution - Step 3 {.smaller}
 
 $$y^{*} = \dfrac{\beta}{\alpha} \cdot \dfrac{P_{x}}{P_{y}} \cdot x \;\; \& \;\; \text{BC: } P_{x} \cdot x + P_{y} \cdot y = M$$
 
@@ -117,7 +117,7 @@ x^{*} &= \dfrac{M}{P_{x}} \cdot \dfrac{\alpha}{\alpha + \beta}
 
 ---
 
-## Cobb-Douglas General Solution - Step 4
+## Cobb-Douglas General Solution - Step 4 {.smaller}
 
 $$x^{*} = \dfrac{M}{P_{x}} \cdot \dfrac{\alpha}{\alpha + \beta}$$
 
