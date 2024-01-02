@@ -68,9 +68,7 @@ The key for these graphs is to internalize the fact that there are infinite amou
 
 ---
 
-## Putting It Together
-
-
+## Putting It Together {.smaller}
 
 :::: {.columns}
 
