@@ -27,25 +27,37 @@ Let's try a basic example: $f(x,y) = x + 2y$
 
 . . .
 
+:::: {.columns}
+
+::: {.column width="50%"}
+
 - What is the [partial derivative of $x \rightarrow \dfrac{df}{dx}$]{.hi}?
     - We act as if [$y$ is a constant]{.hii}
 
-. . .
-
+::: {.fragment}
 $$\dfrac{df}{dx} = 1$$
+:::
 
-. . .
+:::
+
+::: {.column width="50%"}
 
 - What is the [partial derivative of $y \rightarrow \dfrac{df}{dx}$]{.hi}?
     - We act as if [$x$ is a constant]{.hii}
 
+::: {.fragment}
 $$\dfrac{df}{dy} = 2$$
+:::
+
+:::
+
+:::: 
 
 ---
 
 ## Multivariate Derivatives 
 
-### Additively Separable
+[Additively Separable]{.hi .align-center}
 
 $$f(x,y) = ln(x) + 3y$$
 
@@ -73,7 +85,7 @@ $$\dfrac{df}{dy} = 3$$
 
 ## Multivariate Derivatives
 
-### Additively Separable
+[Non-Separable]{.hi .align-center}
 
 $$f(x,y) = x \cdot y$$
 
@@ -104,7 +116,7 @@ $$\dfrac{df}{dy} = x$$
 
 ## Multivariate Derivatives
 
-### Non-Separable
+[Non-Separable]{.hi .align-center}
 
 $$f(x,y) = x^{2} \cdot y^{1/2}$$
 
@@ -138,7 +150,7 @@ $$f(x,y) = x^{2} \cdot y^{1/2}$$
 
 ## Calculus Review
 
-There is a worksheet on Canvas [link this] for you to practice everything in this lecture. 
+There is a worksheet on [Canvas](https://canvas.uoregon.edu/courses/236659/files/17429045?module_item_id=4490335 ) for you to practice everything in this lecture. 
 
 I recommend you complete it to get the practice in
 
