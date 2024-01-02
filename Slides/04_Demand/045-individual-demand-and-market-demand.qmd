@@ -1,0 +1,73 @@
+---
+name: individual demand and market demand
+---
+
+## Up to Now
+
+All the work we have done until now has been to understand and characterize where demand for a good comes from at an [individual level]{.h} 
+
+. . .
+
+<br>
+
+But now, we want to talk about how [markets behave and where prices come from]{.hi} 
+
+<br>
+
+To do so, we need a measure of [Aggregate or Market Demand]{.hi}
+
+---
+
+## Market Demand
+
+We will begin by assuming the following demand function for [ONE]{.hi} consumer in a market
+
+$$
+    x^{*} = f(P_{x},M) = M - P_{x}
+$$
+
+. . .
+
+If I said that this market was made up of 2 consumers with [identical utility functions]{.hi} and incomes how can I get market demand?
+
+. . .
+
+- Add them up
+
+::: {.fragment}
+- Market Demand $(Q_{D})$ is the [sum]{.hi} of all individual demands
+
+$$
+    Q_{D} = x^{*} + x^{*} = 2x^{*} \; \rightarrow \; 2(M - P_{x}) = 2M - 2P_{x}
+$$
+:::
+
+---
+
+## Market Demand - Graphically
+
+:::: {.columns}
+
+::: {.column width="30%"}
+
+[\begin{align*}
+x^{*} &= M - P_{x} \\
+P_{x} &= M - x^{*}
+\end{align*}]{.hi-green}
+
+<br> 
+<br> 
+
+[\begin{align*}
+Q_{D} &= 2M - 2P_{x} \\
+2P_{x} &= 2M - Q_{D} \\
+P_{x} &= M - \dfrac{Q_{D}}{2}
+\end{align*}]{.hi-purple}
+
+::: 
+
+::: {.column width="70%"}
+
+:::
+
+::::
