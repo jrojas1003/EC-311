@@ -10,7 +10,7 @@ Imagine the market for coffee on campus
 
 - On a basic level, [demand for coffee]{.hii} is derived from individual's choosing how to divide their income between coffee and tea
 
-```{r, fig.align='center'}
+```{r supply-demand, fig.align='center'}
 library(ggplot2)
 
 # Create data for the supply and demand curves
@@ -23,14 +23,14 @@ curve_data <- data.frame(quantity, price_supply, price_demand)
 
 # Create the plot
 ggplot(curve_data, aes(x = quantity)) +
-  geom_line(aes(y = price_supply), color = "blue", size = 1, linetype = "solid") +
-  geom_line(aes(y = price_demand), color = "red", size = 1, linetype = "solid") +
+  geom_line(aes(y = price_supply), color = "blue", lwd = 2, linetype = "solid") +
+  geom_line(aes(y = price_demand), color = "red", lwd = 2, linetype = "solid") +
   labs(
     y = "Price",
     x = "Quantity"
   ) +
   theme_minimal() +
-  annotate("text", x = 60, y = 5.6, label = "S", color = "blue", size = 8) +
+  annotate("text", x = 60, y = 5.65, label = "S", color = "blue", size = 8) +
   annotate("text", x = 60, y = 1.3, label = "D", color = "red", size = 8)
 ```
 
@@ -447,7 +447,7 @@ $$U = f(B,S) = 10B + 2S$$
 I like [Beer]{.h}
 
 ::: {.fragment}
-$MU_{B} = 10 > 0$
+$$MU_{B} = 10 > 0$$
 :::
 
 :::
@@ -456,7 +456,7 @@ $MU_{B} = 10 > 0$
 I like [Soda]{.h}
 
 ::: {.fragment}
-$MU_{S} = 2 > 0$
+$$MU_{S} = 2 > 0$$
 :::
 
 :::
@@ -498,7 +498,7 @@ $$U = f(C,M) = C^{1/2}M^{1/2}$$
 
 [Cookies]{.h}
 
-::: {.fragment}
+::: {.fragment .tiny}
 $MU_{c} = \dfrac{1}{2} \cdot C^{-1/2} \cdot M^{1/2}$
 $MU_{cc} = \dfrac{-1}{2} \cdot \dfrac{1}{2} \cdot C^{-1/2 - 1} \cdot M^{1/2}$
 $MU_{cc} = \dfrac{-1}{4} \cdot \dfrac{1}{C^{3/2}} \cdot M^{1/2}$
