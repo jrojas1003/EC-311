@@ -7,7 +7,7 @@ name: Change to Income
 Let's start with a our standard optimized utility graph    
 
 ::: {.fragment}
-![](Images/Inc-Change1.png){fig-align="center" width=600 height=500}
+![](Images/Inc-Change1.png){fig-align="center" width=500 height=400}
 :::
 
 . . .
@@ -27,7 +27,7 @@ With an increase in income, our budget constraint will:
 [Shift Outward]{.hi}
 
 ::: {.fragment}
-![](Images/Inc-Change2.png){fig-align="center" width=600 height=500}
+![](Images/Inc-Change2.png){fig-align="center" width=500 height=400}
 :::
 
 :::
@@ -37,7 +37,7 @@ With an increase in income, our budget constraint will:
 ::: {.fragment}
 [We find the new Maximizing Point]{.hi}
 
-![](Images/Inc-Change3.png){fig-align="center" width=600 height=500}
+![](Images/Inc-Change3.png){fig-align="center" width=500 height=400}
 :::
 
 :::
@@ -82,11 +82,12 @@ No! There are goods we call [Inferior Goods]{.hi-red}
 
 ## Inferior Goods - Graph
 
-Let $y$ be an inferior good, the optimized utility graph would look something like
+[Let $y$ be an inferior good, the optimized utility graph would look something like]{.tiny
+}
 
 :::: {.columns}
 
-::: {.column width="40%"}
+::: {.column width="45%"}
 
 [Maximized Utility]{.hi}
 
@@ -94,9 +95,9 @@ Let $y$ be an inferior good, the optimized utility graph would look something li
 
 :::
 
-::: {.column width="60%"}
+::: {.column width="55%"}
 
-[Increase in Income with Inferior Good $y$]{.hi}
+[Increase in Income & Inferior Good $y$]{.hi}
 
 ::: {.fragment}
 ![](Images/Inferior-Good2.png)
@@ -114,7 +115,7 @@ With an inferior good (let's keep saying $y$) there is a predictable shift when 
 
 . . .
 
-![](Images/Inferior-Good3.png){fig-align="center" height=500 width=600}
+![](Images/Inferior-Good3.png){fig-align="center" height=350 width=450}
 
 The new bundle must be in [this region of the budget]{.hi-purple}
 
@@ -138,9 +139,7 @@ The only other option is to increase your consumption of $y$
 
 . . .
 
-<br>
-
-> In fact, if increasing your income has no effect on how much $x$ you consume, you would still have to increase your consumption of $y$
+> [In fact, if increasing your income has no effect on how much $x$ you consume, you would still have to increase your consumption of $y$]{.h .note}
 
 ---
 
@@ -221,7 +220,7 @@ We've seen that curves slopes can change, so we can ask ourselves:
 
 ---
 
-## Engel Curves - Inferior Goods Always?
+## Engel Curves - Inferior Goods Always? {.smaller}
 
 Think about our Instant Ramen example. When in college, the more money you have, the more you buy Instant Ramen (so it is a normal good). 
 
@@ -229,7 +228,7 @@ But once you graduate and get that promised pay increase from graduating, you bu
 
 . . .
 
-![](Images/Engel-Curve4.png){fig-align="center" height="475" width="525"}
+![](Images/Engel-Curve4.png){fig-align="center" height="450" width="500"}
 
 ---
 
@@ -245,7 +244,7 @@ We can formalize Engel Curves as:
 
 ---
 
-## Engel Curves - Mathematically
+## Engel Curves - Mathematically {.smaller}
 
 Take our Cobb-Douglas example
 
@@ -395,7 +394,7 @@ So we would say that good $x$ has an Income Elasticity of 1
 
 ---
 
-## Elasticities: What do They Mean?
+## Elasticities: What do They Mean? {.smaller}
 
 They tell us how to translate a proportional change in $x$ into a proportional change in $y$
 
