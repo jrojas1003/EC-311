@@ -15,7 +15,7 @@ line_data <- data.frame(x, y)
 
 # Create the line plot
 line_plot <- ggplot(line_data, aes(x, y)) +
-  geom_line(color= "#b45c20") +
+  geom_line(color= "#b45c20", lwd = 2) +
   labs(x = "X", y = "Y") +
   theme_minimal()
 
@@ -30,7 +30,7 @@ We call the slope the [RISE]{.hi} over [RUN]{.hi}
 
 We can write that previous line as a mathematical function:
 
-$$f(x) =  x/2 + 5$$
+$$f(x) =  \dfrac{x}{2} + 5$$
 
 Importantly, the slope for this function is [$1/2$]{.hi} [everywhere]{.hii}
 
@@ -83,7 +83,7 @@ print(line_plot)
 
 ---
 
-## Functions & Slopes
+## Functions & Slopes {.smaller}
 
 The previous functions are called linear functions:
 
