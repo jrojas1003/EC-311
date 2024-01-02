@@ -2,7 +2,7 @@
 name: syllabus 
 ---
 
-## Class Information
+## Class Information {.smaller}
 
 - [**Schedule:**]{.hi} Tuesday & Thursday in Straub 145
 - [**Office Hours:**]{.hi} Thursday from 12:00 to 14:00
