@@ -35,7 +35,6 @@ title-slide-attributes:
 
 :::
 
-<!--
 # Applications of Micro Theory: Demand Functions {.inverse .note}
 
 {{< include 040-micro-motivation.qmd >}}
@@ -54,7 +53,7 @@ title-slide-attributes:
 
 # Changes in Another Good's Price {.inverse .note}
 
-{{< include 044-other-goods-price-change.qmd >}}-->
+{{< include 044-other-goods-price-change.qmd >}}
 
 # Individual Demand $\Rightarrow$ Market Demand {.inverse .note}
 
