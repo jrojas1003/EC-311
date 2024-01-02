@@ -24,7 +24,7 @@ A [Derivative]{.hii} is simply another function that tells us the slope of a fun
 
 ## Intuition
 
-```{r}
+```{r, fig.align='center'}
 library(ggplot2)
 
 # Create time values
@@ -363,7 +363,7 @@ p + geom_hline(yintercept = 5, linetype = "solid", color = "black", linewidth = 
 
 . . .
 
-$y$ does not change as $x$ increases, so the slope is 0
+[$y \;$ does not change as $\; x \;$ increases, so the slope is 0]{.align-center}
 
 ---
 
