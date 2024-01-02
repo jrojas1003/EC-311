@@ -16,7 +16,7 @@ An important thing to have in mind throughout this section is:
 
 ---
 
-## Price Changes
+## Price Changes {.smaller}
 
 Let's recall an important effect of price changes on the Budget Constraint
 
@@ -30,6 +30,8 @@ Let's recall an important effect of price changes on the Budget Constraint
 
 [What happens to the slope?]{.hi .align-center}
 
+<br><br>
+
 ::: {.fragment}
 $$\dfrac{-P_{x}}{P_{y}} \; \rightarrow \; \downarrow P_{x} \; \rightarrow \; ???$$
 :::
@@ -41,7 +43,7 @@ $$\dfrac{-P_{x}}{P_{y}} \; \rightarrow \; \downarrow P_{x} \; \rightarrow \; ???
 [Graph]{.hi .align-center}
 
 ::: {.fragment}
-![](Images/Price-Offer-Curve1.png){fig-align="center" height="400" width="500"}
+![](Images/Price-Offer-Curve1.png){fig-align="center" height="400" width="450"}
 :::
 
 :::
@@ -66,13 +68,13 @@ This is an [Individual Demand Curve]{.hi}
 
 If we clean it up a bit, we get our typical [downward sloping Demand Curve]{.hi}
 
-![](Images/Ind-Demand-Curve.png){fig-align="center" width="550" height="450"}
+![](Images/Ind-Demand-Curve.png){fig-align="center" width="450" height="350"}
 
 [Notice I changed the axis slightly: I put Price on the vertical axis and Quantity of $x$ demanded on the horizontal axis]{.hi}
 
 ---
 
-## Income Changes (Again) 
+## Income Changes (Again) {.smaller}
 
 If you recall from EC 201 we learned about demand shifters when income increases.
 
@@ -85,14 +87,14 @@ If we repeat this exercise with an increased income we can observe the [Demand S
 :::
 
 ::: {.column width="50%"}
-![](Images/Demand-Shift2.png){height="400"}
+![](Images/Demand-Shift2.png){height="420"}
 :::
 
 ::::
 
 ---
 
-## Individual Demand (Mathematically)
+## Individual Demand (Mathematically) {.smaller}
 
 As we have done before, we also show the [Demand Curve Properties]{.hi} through derivatives!
 
@@ -136,7 +138,7 @@ $$
 
 ---
 
-## Elasticity of Demand - Example
+## Elasticity of Demand - Example {.smaller}
 
 Let 
 
@@ -166,7 +168,7 @@ $$
 
 ---
 
-## Elasticity of Demand - Example 2
+## Elasticity of Demand - Example 2 {.smaller}
 
 $$
     y^{*} = \dfrac{M}{P_{y}} - 10
