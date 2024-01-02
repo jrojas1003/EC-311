@@ -174,36 +174,6 @@ $$y = 15 - 3x$$
 
 > [Next, we graph these functions]{.h .note}
 
-<!--
-``` {r perfect-substitutes, fig.align='center'}
-library(ggplot2)
-
-# Create a data frame with x values
-x_values <- seq(-5, 5, by = 0.1)  # Adjust the range of x-values as needed
-
-# Create a data frame with y values for each function
-df <- data.frame(
-  x = x_values,
-  y1 = 6 - 3 * x_values,
-  y2 = 9 - 3 * x_values,
-  y3 = 15 - 3 * x_values
-)
-
-# Plot the functions using ggplot2
-ggplot(df, aes(x)) +
-  geom_line(aes(y = y1), color = "blue", linetype = "solid", size = 1, label = "y = 6 - 3x") +
-  geom_line(aes(y = y2), color = "red", linetype = "dashed", size = 1, label = "y = 9 - 3x") +
-  geom_line(aes(y = y3), color = "green", linetype = "dotted", size = 1, label = "y = 15 - 3x") +
-  labs(x = "Good X",
-       y = "Good Y") +
-  xlim(0,6) + 
-  ylim(0,20) + 
-  theme_minimal() +
-  scale_color_manual(values = c("blue", "red", "green")) +
-  theme(legend.position = c(0.8, 0.2))  # Adjust legend position as needed
-``` 
--->
-
 ---
 
 ## Let's Draw - Perfect Complements
@@ -510,9 +480,7 @@ I drew Cobb-Douglas curves (mostly because they're easier to illustrate these pr
 
 . . .
 
-<br>
-
-- Let's look at the board again
+[Let's look at the board again]{.align-center}
 
 ---
 
@@ -583,16 +551,14 @@ $$U(x,y) = ax + by$$
 
 ::: {.column width="50%"}
 
-2. Find the Indifference Curve and it's slope
+2. Find the IC and it's slope
 
 :::: {.fragment}
 
 \begin{align*}
   \bar{U} &= ax + by \\ 
   \bar{U} - ax &= by \\
-  \dfrac{\bar{U}}{b} - \dfrac{ax}{b} &= y \\
-  \text{Slope} &\text{ is the derivative!} \\
-  \dfrac{\partial y}{\partial x} &= \dfrac{-a}{b}
+  \dfrac{\bar{U}}{b} - \dfrac{ax}{b} &= y   
 \end{align*}
 
 ::::
@@ -600,6 +566,10 @@ $$U(x,y) = ax + by$$
 :::
 
 ::::
+
+. . .
+
+$$\text{Slope is the derivative! } \rightarrow \;\; \dfrac{\partial y}{\partial x} = \dfrac{-a}{b}$$
 
 ---
 
