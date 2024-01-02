@@ -140,7 +140,7 @@ Thinking intuitively, this graph represents:
 
 ---
 
-## Let's Graph A Budget Constraint
+## Let's Graph A Budget Constraint {.smaller}
 
 Following the logic we just did, the budget line will connect two points:
 
@@ -150,32 +150,11 @@ $$(\dfrac{M}{P_{x}}, 0) \text{ and } (0, \dfrac{M}{P_{y}})$$
 
 . . .
 
-```{r budget-line-graph, fig.align='center'}
-# Install and load ggplot2 if not already installed
-# install.packages("ggplot2")
-library(ggplot2)
-
-# Create data for the budget line
-budget_data <- data.frame(x = c(0, 10), y = c(10, 0))
-
-# Create data for the points at intersections
-points_data <- data.frame(x = c(0, 10), y = c(10, 0), label = c("M/Py", "M/Px"))
-
-# Plot the budget line and add points
-ggplot(budget_data, aes(x, y)) +
-  geom_line(color = "blue", lwd = 1.5) +
-  geom_hline(yintercept = 0, linetype = "solid", color = "black", lwd = 2) + 
-  geom_vline(xintercept = 0, linetype = "solid", color = "black", lwd = 2) + 
-  geom_point(data = points_data, aes(x, y), color = "red", size = 5) +
-  geom_text(data = points_data, aes(x, y, label = label), vjust = 1.5, hjust = 1.2, color = "red") +
-  # Customize axes labels and plot title
-  labs(x = "Quantity of X", y = "Quantity of Y") +
-  theme_minimal()
-```
+![](Images/budget-line.png){fig-align="center" width="500" height="400"}
 
 ---
 
-## Interpreting the Slope of the Budget Constraint
+## Interpreting the Slope of the Budget Constraint {.smaller}
 
 The Budget Constraint is the line: 
 
@@ -206,11 +185,11 @@ This leads us to understand the differences between the two:
 
 . . . 
 
-- The [MRS]{.hi-teal} represents how much $y$ you [would be willing to]{.hi-teal} give up in order to get a unit of $x$
+- The [MRS]{.hi-orange} represents how much $y$ you [would be willing to]{.hi-orange} give up in order to get a unit of $x$
 
 . . .
 
-- The [Price Ratio]{.hp} represents how much $y$ you [would have to]{.hp} give up in order to get a unit of $x$
+- The [Price Ratio]{.hi-grey} represents how much $y$ you [would have to]{.hi-grey} give up in order to get a unit of $x$
 
 ---
 
@@ -256,7 +235,7 @@ Income changes affect the [overall amount]{.h} an individual can consume, but ha
 
 ## Changes in Income - Graph
 
-[Back to the board]{.note .realbig .vertical-center}
+![](Images/budget-line-change-in-price-x.png){fig-align="center"}
 
 
 ::: {.notes}
@@ -265,7 +244,7 @@ Income changes affect the [overall amount]{.h} an individual can consume, but ha
 
 ---
 
-## Changes in Prices 
+## Changes in Prices {.smaller}
 
 What happens to the budget if the price of good $x$ $(P_{x})$ increases?
 
@@ -289,7 +268,7 @@ What happens to the budget if the price of good $x$ $(P_{x})$ increases?
 
 ## Changes in Prices - Graph
 
-[Back to the board]{.note .realbig .vertical-center}
+![](Images/budget-line-change-in-price-y.png){fig-align="center"}
 
 
 ::: {.notes}
