@@ -11,7 +11,7 @@
   <meta name="generator" content="quarto-1.4.294">
 
   <meta name="author" content="Jose Rojas-Fallas">
-  <meta name="dcterms.date" content="2023-01-01">
+  <meta name="dcterms.date" content="2024-01-01">
   <title>Calculus Review</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -338,7 +338,7 @@ Jose Rojas-Fallas
 </div>
 </div>
 
-  <p class="date">2023</p>
+  <p class="date">2024</p>
 </section>
 <section class="slide level2">
 
@@ -367,7 +367,7 @@ Jose Rojas-Fallas
 <section id="functions-slopes" class="slide level2">
 <h2>Functions &amp; Slopes</h2>
 <p>We can write that previous line as a mathematical function:</p>
-<p><span class="math display">\[f(x) =  x/2 + 5\]</span></p>
+<p><span class="math display">\[f(x) =  \dfrac{x}{2} + 5\]</span></p>
 <p>Importantly, the slope for this function is <span class="hi"><span class="math inline">\(1/2\)</span></span> <span class="hii">everywhere</span></p>
 <div class="fragment">
 <ul>
@@ -390,7 +390,7 @@ Jose Rojas-Fallas
 
 
 <img data-src="Main_files/figure-revealjs/unnamed-chunk-2-1.png" width="960" class="r-stretch"></section>
-<section id="functions-slopes-2" class="slide level2">
+<section id="functions-slopes-2" class="slide level2 smaller">
 <h2>Functions &amp; Slopes</h2>
 <p>The previous functions are called linear functions:</p>
 <ul>
@@ -439,7 +439,7 @@ Jose Rojas-Fallas
 <section id="intuition" class="slide level2">
 <h2>Intuition</h2>
 
-<img data-src="Main_files/figure-revealjs/unnamed-chunk-3-1.png" width="960" class="r-stretch"><div class="fragment">
+<img data-src="Main_files/figure-revealjs/unnamed-chunk-3-1.png" width="960" class="r-stretch quarto-figure-center"><div class="fragment">
 <p>Initially, the height of the ball is <span class="hi-green">increasing</span> over time</p>
 <p>Eventually, the height of the ball is <span class="hi-red">decreasing</span> over time</p>
 </div>
@@ -662,7 +662,7 @@ Jose Rojas-Fallas
 <p>Important but straightforward <span class="math inline">\(y = f(x) = a\)</span>, where <span class="math inline">\(a\)</span> is a constant</p>
 
 <img data-src="Main_files/figure-revealjs/unnamed-chunk-4-1.png" width="960" class="r-stretch quarto-figure-center"><div class="fragment">
-<p><span class="math inline">\(y\)</span> does not change as <span class="math inline">\(x\)</span> increases, so the slope is 0</p>
+<p><span class="align-center"><span class="math inline">\(y \;\)</span> does not change as <span class="math inline">\(\; x \;\)</span> increases, so the slope is 0</span></p>
 </div>
 </section>
 <section id="log-rule" class="slide level2">
@@ -747,29 +747,34 @@ Jose Rojas-Fallas
 <h2>Multivariate Derivatives</h2>
 <p>Let’s try a basic example: <span class="math inline">\(f(x,y) = x + 2y\)</span></p>
 <div class="fragment">
+<div class="columns">
+<div class="column" style="width:50%;">
 <ul>
 <li>What is the <span class="hi">partial derivative of <span class="math inline">\(x \rightarrow \dfrac{df}{dx}\)</span></span>?
 <ul>
 <li>We act as if <span class="hii"><span class="math inline">\(y\)</span> is a constant</span></li>
 </ul></li>
 </ul>
-</div>
 <div class="fragment">
 <p><span class="math display">\[\dfrac{df}{dx} = 1\]</span></p>
 </div>
-<div class="fragment">
+</div><div class="column" style="width:50%;">
 <ul>
 <li>What is the <span class="hi">partial derivative of <span class="math inline">\(y \rightarrow \dfrac{df}{dx}\)</span></span>?
 <ul>
 <li>We act as if <span class="hii"><span class="math inline">\(x\)</span> is a constant</span></li>
 </ul></li>
 </ul>
+<div class="fragment">
 <p><span class="math display">\[\dfrac{df}{dy} = 2\]</span></p>
+</div>
+</div>
+</div>
 </div>
 </section>
 <section id="multivariate-derivatives-2" class="slide level2">
 <h2>Multivariate Derivatives</h2>
-<h3 id="additively-separable">Additively Separable</h3>
+<p><span class="hi align-center">Additively Separable</span></p>
 <p><span class="math display">\[f(x,y) = ln(x) + 3y\]</span></p>
 <div class="columns">
 <div class="column" style="width:50%;">
@@ -791,7 +796,7 @@ Jose Rojas-Fallas
 </section>
 <section id="multivariate-derivatives-3" class="slide level2">
 <h2>Multivariate Derivatives</h2>
-<h3 id="additively-separable-1">Additively Separable</h3>
+<p><span class="hi align-center">Non-Separable</span></p>
 <p><span class="math display">\[f(x,y) = x \cdot y\]</span></p>
 <div class="columns">
 <div class="column" style="width:50%;">
@@ -816,7 +821,7 @@ Jose Rojas-Fallas
 </section>
 <section id="multivariate-derivatives-4" class="slide level2">
 <h2>Multivariate Derivatives</h2>
-<h3 id="non-separable">Non-Separable</h3>
+<p><span class="hi align-center">Non-Separable</span></p>
 <p><span class="math display">\[f(x,y) = x^{2} \cdot y^{1/2}\]</span></p>
 <div class="columns">
 <div class="column" style="width:50%;">
@@ -844,7 +849,7 @@ Jose Rojas-Fallas
 </section>
 <section id="calculus-review" class="slide level2">
 <h2>Calculus Review</h2>
-<p>There is a worksheet on Canvas [link this] for you to practice everything in this lecture.</p>
+<p>There is a worksheet on <a href="https://canvas.uoregon.edu/courses/236659/files/17429045?module_item_id=4490335">Canvas</a> for you to practice everything in this lecture.</p>
 <p>I recommend you complete it to get the practice in</p>
 <p>This class is roughly 70% doing math and 30% understanding and interpreting said math</p>
 <div class="footer footer-default">
