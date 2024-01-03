@@ -13,13 +13,11 @@ format:
         code-fold: FALSE
 title-slide-attributes: 
   data-background-position: left
----
+--- 
 
-::: {.vertical-center}
+[Chapter 4]{.hi .big}
 
-[Outline]{.hi .big}
-
-### Chapter 4
+[Outline]{.hi}
 
 - Topics 
   - Preferences and Utility (4.1)
@@ -30,7 +28,6 @@ title-slide-attributes:
   - Remember Office Hours on [Thursdays from 12:00 - 14:00 in PLC 523]{.hii}
   - Also feel free to email me your questions at [jrojas2@gmail.com]{.hii}
 
-:::
 
 # Preferences and Utility {.inverse .note}
 

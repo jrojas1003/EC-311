@@ -791,7 +791,7 @@ $$MRS = \dfrac{MU_{x}}{MU_{y}} = \dfrac{ax^{a-1}y^{b}}{bx^{a}y^{b-1}} = \dfrac{a
 
 ## Cobb-Douglas: Keys to Remember
 
-$$MRS = $\dfrac{a}{b} \cdot \dfrac{y}{x}$$
+$$MRS = \dfrac{a}{b} \cdot \dfrac{y}{x}$$
 
 - The MRS is a ratio of $y$ to $x$, multiplied by a constant
 
