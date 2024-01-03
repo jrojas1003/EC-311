@@ -18,8 +18,7 @@ This helps us put the intuition we gained from the graph together with the math
 
 ---
 
-## Why Does This Work?
-
+## Why Does This Work? 
 Let's recall what the [Slope of the IC]{.hi} means:
 
 . . .
@@ -40,7 +39,7 @@ Now recall what the [Slope of the BC]{.hi} means:
 
 ---
 
-## Why Does This Work?
+## Why Does This Work? {.smaller}
 
 Imagine what it would it mean if these two slopes were not equal
 
@@ -104,23 +103,37 @@ Let's draw it!
 
 . . .
 
+:::: {.columns}
+
+::: {.column width="50%"}
+
 If [$\text{Negative MRS } < \text{ Price Ratio}$]{.hi} [**(Point A)**]{.h .note}
 
+::: {.fragment}
 - Graphically, this means that the [IC]{.hi} is [**steeper than**]{.h} the [BC]{.hi}
 
 - Trading away some $y$ for some $x$ moves you down and to the right in the better-than set
+::: 
 
-. . .
+:::
+
+::: {.column width="50%"}
 
 If [$\text{Negative MRS } > \text{ Price Ratio}$]{.hi} [**(Point B)**]{.h .note}
 
+::: {.fragment}
 - Graphically, this means that the [IC]{.hi} is [**flatter than**]{.h} the [BC]{.hi}
 
 - Trading away some $x$ for some $y$ moves you up and to the left in the better-than set
+:::
+
+:::
+
+::::
 
 ---
 
-## Graph Takeaway - Part II
+## Graph Takeaway - Part II {.smaller}
 
 The graph implicitly says:
 
