@@ -17,7 +17,7 @@ title-slide-attributes:
 
 ::: {.vertical-center}
 
-[Outline]{.hi .realbig}
+[Outline]{.hi .big}
 
 ### Chapter 4
 
@@ -27,7 +27,7 @@ title-slide-attributes:
   - Budget Constraints (4.3)
 
 - Other Stuff
-  - Remember Office Hours on [Days and Times]{.hii}
+  - Remember Office Hours on [Thursdays from 12:00 - 14:00 in PLC 523]{.hii}
   - Also feel free to email me your questions at [jrojas2@gmail.com]{.hii}
 
 :::
