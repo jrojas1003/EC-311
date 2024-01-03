@@ -404,32 +404,74 @@ All of the stuff from before can be formalized into the following 3:
 
 ---
 
-## Monotonicity {.vertical-center .realbig}
+## Monotonicity
 
-[I'll draw it on the board and later upload a digital image on Canvas]{.note .realbig}
+[ICs always go from the top left to the bottom right without changing direction]{.hi .align-center}
+
+![](Images/monotinicity1.png){fig-align="center"}
 
 ::: {.notes}
-  Drawing on whiteboard & promise to upload a completed iPad drawing after class
+  Drawing on whiteboard to show how I made it
 :::
 
 ---
 
-## Non-Crossing {.vertical-center .realbig}
+## Monotonicity
 
-[I'll draw it on the board and later upload a digital image on Canvas]{.note .realbig}
+[Additionally, this helps us visualize two important sets of bundles]{.hi .align-center}
+
+![](Images/monotinicity2.png){fig-align="center"}
 
 ::: {.notes}
-  Drawing on whiteboard 
+  Drawing on whiteboard to show how I made it
+:::
+
+---
+
+## Non-Crossing 
+
+[This is the expected behavior of ICs. There are infinitely many, each representing a unique level of Utility]{.hi .align-center}
+
+![](Images/non-crossing1.png){fig-align="center"}
+
+::: {.notes}
+  Drawing on whiteboard to show how I made it 
 ::: 
 
 ---
 
-## Convex {.vertical-center .realbig}
+## Non-Crossing - Logical Contradiction
 
-[I'll draw it on the board and later upload a digital image on Canvas]{.note .realbig}
+[If ICs cross, they are contradictions]{.hi .align-center}
+
+![](Images/non-crossing2.png){fig-align="center"}
 
 ::: {.notes}
-  Drawing on whiteboard
+  Drawing on whiteboard to show how I made it 
+::: 
+
+---
+
+## Convex 
+
+[A balanced combination of two goods are preferred to extreme outcomes]{.hi .align-center}
+
+![](Images/convexity1.png){fig-align="center"}
+
+::: {.notes}
+  Drawing on whiteboard to show how I made it
+:::
+
+---
+
+## Convex 
+
+[Recall the Better-than-set]{.hi .align-center}
+
+![](Images/convexity2.png){fig-align="center"}
+
+::: {.notes}
+  Drawing on whiteboard to show how I made it
 :::
 
 ---
