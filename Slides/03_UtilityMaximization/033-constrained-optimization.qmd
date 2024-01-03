@@ -81,7 +81,7 @@ There is a 4-step approach that we will follow to solve these problems when the 
 
 . . .
 
-::: {.incremental}
+::: {.incremental .tiny}
 1. Calculate the MRS and set it equal to the Price Ratio
 
 2. Re-arrange this equality to isolate one good ($x$ or $y$) as a function of the other (It does not matter which good you choose here). 
@@ -181,23 +181,23 @@ Here I will plug in my known value of $y$ anywhere I find a $y$ in the BC
 
 . . .
 
-\begin{align*}
+[\begin{align*}
     x + 2y &= 12 \\
     x + 2(\dfrac{x}{2}) &= 12 \\
     x + x &= 12 \\
     2x &= 12 \\
     x^{*} &= 6
-\end{align*}
+\end{align*}]{.tiny}
 
 > [Note: I will denote the optimal amount for any good as $x^{*}$ or $y^{*}$ or whatever variable the problem uses]{.h .note}
 
 ---
 
-## 4 - Plug Demand for One Good into Optimality Condition or BC
+## 4 - Plug Demand for One Good into Optimality Condition or BC {.smaller}
 
 $$\text{We found that } x^{*} = 6$$
 
-I'll do it both ways just to show you that it works but you only have to do one (I recommend finding which one is simpler for you):
+I'll do it both ways just to show you that it works but you only have to do one (I recommend finding which one is simpler for you)
 
 :::: {.columns}
 
@@ -536,7 +536,7 @@ The graphs we just saw tell us how to do the math:
 
 ---
 
-## P-Subs Example (Mathematically)
+## P-Subs Example (Mathematically) {.smaller}
 
 $$U(x,y) = 3x + 2y, \; P_{x} = 1, \; P_{y} = 4, \; M = 60$$
 
@@ -605,7 +605,7 @@ When you say that the MRS is less than the Price Ratio, you are also saying that
 
 ---
 
-## Perfect Complements Utility Constrained Optimization 
+## Perfect Complements Utility Constrained Optimization {.smaller}
 
 [Recall: We cannot solve this utility form like the others because there is no MRS]{.h .note}
 
