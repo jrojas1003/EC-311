@@ -435,7 +435,7 @@ $$y = f\left(g(x)\right)$$
 
 ---
 
-## Chain Rule
+## Chain Rule {.smaller}
 
 $$y = \left(x^{3} + 2x\right)^{4}$$
 
