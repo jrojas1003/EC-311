@@ -73,7 +73,7 @@ name: syllabus
 
 --- 
 
-## Grades {.smaller}
+## Grades
 
 :::: {.columns}
 
@@ -105,6 +105,10 @@ name: syllabus
 :::
 
 ::::
+
+--- 
+
+## Grades 
 
 [Participation]{.hi}
 
