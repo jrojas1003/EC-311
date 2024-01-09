@@ -57,7 +57,7 @@ name: syllabus
 - You [MUST]{.h} register for the course through Achieve
 - This is where you will complete your homework 
 - It also gives you access to the digital version of the textbook
-- The course code is [hvnmbg]{.hp}
+- The course code is [xu5rmk]{.hp}
 - Your lowest homework grade will be dropped
 - 1 day grace period (with 5% penalty) $\rightarrow$ no submissions allowed after that
 :::
@@ -67,7 +67,7 @@ name: syllabus
 ::: {.incremental}
 - Weekly quizzes that will help you get accustomed to how test questions will look
 - Roughly 10 questions with only one attempt allowed
-- I will drop your lowest 2 scores
+- Your lowest homework grade will be dropped
 - No late submissions allowed
 :::
 
@@ -83,10 +83,11 @@ name: syllabus
 ::: {.incremental}
 - Achieve Homework (20%)
     - [8 Assignments]{.h }
-    - [Due on Thursdays at 11:59 pm]{.hi-red}
+    - [Due on Mondays of week after they are assigned at 11:59 pm]{.hi-red}
+        - The last assignments will be due on the Saturday before Finals week
 - Canvas Quizzes (15%)
     - [7 Quizzes]{.h}
-    - [Due on Thursdays at 11:59 pm]{.hi-red}
+    - [Due on Mondays of week after they are assigned at 11:59 pm]{.hi-red}
 :::
 
 :::
@@ -105,11 +106,15 @@ name: syllabus
 
 ::::
 
+--- 
+
+## Grades 
+
 [Participation]{.hi}
 
 ::: {.incremental}
-- I'll randomly select someone to answer a questions during lecture 
-    - Being correct is not important, but rather that you attempted it
+- I'll randomly select someone to share their answer to lecture problems 
+   - Being correct is not important, but rather that you attempted it
 - Everyone will eventually be called upon so you cannot escape it
 :::
 

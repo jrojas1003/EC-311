@@ -216,7 +216,7 @@ We use these fundamental pieces of classical economics and build on top of them
 
 <br>
 
-[Note: I'm not attempting to describe the way the world works excatly, but rather give you a strating point for future endeavors]{.note .hi}
+[Note: I'm not attempting to describe the way the world works exactly, but rather give you a strating point for future endeavors]{.note .hi}
 
 ---
 
