@@ -370,6 +370,40 @@ Now find the Marginal Utilities for Peanut Butter and Jelly
 
 $$U = f(P,J) = P^{2} \cdot J$$
 
+. . . 
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+[Peanut Butter]{.hi}
+
+::: {.fragment}
+
+\begin{align*}
+  MU_{P} &= 2P^{2-1} \cdot J = 2PJ \\
+\end{align*}
+
+:::
+
+:::
+
+::: {.column width="50%"}
+
+[Jelly]{.hi}
+
+::: {.fragment}
+
+\begin{align*}
+  MU_{J} &= P^{2} \cdot J^{1-1} = P^{2} \\
+\end{align*}
+
+:::
+
+:::
+
+::::
+
 ---
 
 ## What do Utility Functions even Mean?
