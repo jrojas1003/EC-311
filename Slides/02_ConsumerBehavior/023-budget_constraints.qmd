@@ -36,7 +36,7 @@ $$P_{x} \cdot x + P_{y} \cdot y \leq M$$
 
 . . .
 
-> [Do not let the inequality $leq$ scare you, it just means we can spend less than our total income]{.note .h}
+> [Do not let the inequality $\leq$ scare you, it just means we can spend less than our total income]{.note .h}
 
 . . .
 
