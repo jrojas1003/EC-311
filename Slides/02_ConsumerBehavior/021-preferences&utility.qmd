@@ -299,6 +299,41 @@ $$U(x) = -x^{2} + 12x$$
 [Let's practice:]{.h} 
 What would the optimal consumption amount be if the cost of beer is $2?
 
+. . .
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+[Find the Marginal Benefit]{.hi}
+
+::: {.fragment}
+$$
+MU_{x} = \dfrac{\partial U}{\partial x} = -2x + 12
+$$
+:::
+
+:::
+
+::: {.column width="50%"}
+
+::: {.fragment}
+[Set the MB equal to MC]{.hi}
+:::
+
+::: {.fragment}
+\begin{align*}
+  MB &= MC \\
+  -2x + 12 &= 2 \\
+  2x &= 10 \\
+  x &= 5
+\end{align*}
+:::
+
+:::
+
+::::
+
 ---
 
 ## A Two-Good Problem
@@ -631,7 +666,7 @@ What are Utility Functions?
 
 . . .
 
-- They are a flexible tool that help us describe the relationship between two godos and the utility (happiness) you gain from them
+- They are a flexible tool that help us describe the relationship between two goods and the utility (happiness) you gain from them
 
 . . .
 
@@ -759,7 +794,7 @@ $$MU_{PH} = 0 = MU_{HP}$$
 
 The single most important property of a utility function is that we can measure [**the relative preference for one good over the other**]{.h}
 
-- It measures [how many units of $y$ would you give up to get one more unit of $x$?]{.hi}
+- We can measure [how many units of $y$ would you give up to get one more unit of $x$?]{.hi}
 
   - We call this the [Marginal Rate of Substitution (MRS)]{.hii}
 
@@ -767,7 +802,7 @@ $$MRS = \dfrac{MU_{x}}{MU_{y}}$$
 
 ---
 
-## Marginal Rate of Substition (MRS)
+## Marginal Rate of Substitution (MRS)
 
 Here we are talking about the relative preference of $x$ over $y$, but how?
 
@@ -978,7 +1013,7 @@ These are goods that [**have to be consumed together in an exact proportion**]{.
 
 - MRS is not defined (We cannot take a derivative)
 
-- We can use another form of logic called [No-Waste Condition]{.hi}:
+- We can use the [No-Waste Condition]{.hi}:
 
   - When $a \cdot x < b \cdot y$ you will give up any $y$ you can to get more $x$
 
@@ -994,7 +1029,7 @@ $$U(x,y) = \min \{ \dfrac{x}{2}, \dfrac{y}{4} \}$$
 
 . . .
 
-No-Waste Condition is $\dfrac{x}{2} = \dfrac{y}{4} \rightarrow 4x = 2y \rightarrow 2x = 2$
+No-Waste Condition is $\dfrac{x}{2} = \dfrac{y}{4} \rightarrow 4x = 2y \rightarrow 2x = y$
 
 . . .
 
@@ -1090,7 +1125,7 @@ We will use the following axioms about preferences between bundles to ensure log
 
 ## Completeness 
 
-We say that preferences are always [complete]{.hi}. So when comparing bundles A and B, you can always say:
+We say that preferences are always [complete]{.hi}. So when comparing bundles A and B, you can always say one of the following:
 
 . . .
 

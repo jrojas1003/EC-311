@@ -72,7 +72,7 @@ Of course not, but here is how to think about it in the economics sense:
 
 - Once you allocate your budget, you usually spend all of it
 
-::: {.note}
+::: {.notes}
 The trick is to create the context in which it makes sense that everything gets spent
 :::
 
@@ -82,9 +82,12 @@ The trick is to create the context in which it makes sense that everything gets 
 
 First, we need our two goods from before: Beer ($B$) and Soda ($S$)
 
-Let's label everything properly:
-
 . . .
+
+:::: {.columns}
+
+::: {.column width="50%"}
+[Let's label everything properly:]{.hi}
 
 - $B = \text{Beer}$
 
@@ -96,13 +99,23 @@ Let's label everything properly:
 
 - $M = \$20$
 
-What does the Budget Constraint look like?
+:::
 
-. . .
+::: {.column width="50%"}
 
+::: {.fragment}
+[What does the Budget Constraint look like?]{.hi}
+:::
+
+::: {.fragment}
 $$B \cdot P_{B} + S \cdot P_{S} = M$$
 
 $$4B + 2P = 20$$
+:::
+
+:::
+
+::::
 
 ---
 
@@ -208,6 +221,10 @@ Budgets are not static. Prices and income can change based on market conditions 
 . . .
 
 > [Note - We normally consider what happens when only one of the possible factors change, and hold all others fixed]{.h .note}
+
+::: {.notes}
+If prices increase/decrease by the same amount and in the same direction, and income changes proportionally the choice of goods remains the same!
+:::
 
 ---
 

@@ -26,7 +26,7 @@ title-slide-attributes:
 
 - Other Stuff
   - Remember Office Hours on [Thursdays from 12:00 - 14:00 in PLC 523]{.hii}
-  - Also feel free to email me your questions at [jrojas2@gmail.com]{.hii}
+  - Also feel free to email me your questions at [jrojas2@uoregon.com]{.hii}
 
 
 # Preferences and Utility {.inverse .note}
