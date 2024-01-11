@@ -150,7 +150,7 @@ $$f(x,y) = x^{2} \cdot y^{1/2}$$
 
 ## Calculus Review
 
-There is a worksheet on [Canvas](https://canvas.uoregon.edu/courses/236659/files/17429045?module_item_id=4490335 ) for you to practice everything in this lecture. 
+There is a worksheet on [Canvas](https://canvas.uoregon.edu/courses/236659/files/17824298?module_item_id=4513110) for you to practice everything in this lecture. 
 
 I recommend you complete it to get the practice in
 
