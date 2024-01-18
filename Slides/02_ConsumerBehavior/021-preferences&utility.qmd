@@ -826,7 +826,7 @@ $$MRS = \dfrac{MU_{x}}{MU_{y}} = \dfrac{4}{2} = 2$$
 
 ## Types of Utility Functions
 
-In Economics, we mainly deal with 4 typess of functions, each with its set of properties and tricks
+In Economics, we mainly deal with 4 types of functions, each with its set of properties and tricks
 
 . . .
 
@@ -1017,7 +1017,7 @@ These are goods that [**have to be consumed together in an exact proportion**]{.
 
   - When $a \cdot x < b \cdot y$ you will give up any $y$ you can to get more $x$
 
-  - When $a \cdot x < b \cdot y$ you will give up any $x$ you can to get $y$
+  - When $a \cdot x > b \cdot y$ you will give up any $x$ you can to get $y$
 
 ---
 
@@ -1131,7 +1131,7 @@ We say that preferences are always [complete]{.hi}. So when comparing bundles A 
 
 - I prefer A to B ($A \succeq B$)
 
-- I prefer B to A ($A \succeq B$)
+- I prefer B to A ($B \succeq A$)
 
 - I am indifferent between A and B ($A \sim B$) 
 
