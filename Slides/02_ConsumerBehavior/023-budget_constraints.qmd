@@ -252,7 +252,7 @@ Income changes affect the [overall amount]{.h} an individual can consume, but ha
 
 ## Changes in Income - Graph
 
-![](Images/budget-line-change-in-price-x.png){fig-align="center"}
+![](Images/budget-line-change-in-income.png){fig-align="center"}
 
 
 ::: {.notes}
