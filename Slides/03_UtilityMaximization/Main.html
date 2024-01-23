@@ -8,7 +8,7 @@
 <link href="Main_files/libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="Main_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="Main_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.4.294">
+  <meta name="generator" content="quarto-1.3.361">
 
   <meta name="author" content="Jose Rojas-Fallas">
   <meta name="dcterms.date" content="2024-01-01">
@@ -157,8 +157,7 @@
   }
 
   .callout.callout-titled .callout-body > .callout-content > :last-child {
-    padding-bottom: 0.5rem;
-    margin-bottom: 0;
+    margin-bottom: 0.5rem;
   }
 
   .callout.callout-titled .callout-icon::before {
@@ -342,7 +341,6 @@ Jose Rojas-Fallas
 </section>
 <section class="slide level2">
 
-<div class="vertical-center">
 <p><span class="hi realbig">Outline</span></p>
 <h3 id="chapter-4">Chapter 4</h3>
 <ul>
@@ -355,7 +353,6 @@ Jose Rojas-Fallas
 </ul></li>
 </ul></li>
 </ul>
-</div>
 </section>
 <section>
 <section id="optimal-consumption" class="title-slide slide level1 inverse note center">
@@ -404,20 +401,10 @@ Jose Rojas-Fallas
 <div class="quarto-layout-panel">
 <div class="quarto-layout-row quarto-layout-valign-top">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
 <p><img data-src="Images\Budget-Constraint.png"></p>
-<figcaption>Budget Constraint</figcaption>
-</figure>
-</div>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
 <p><img data-src="Images\Indifference-Curve.png"></p>
-<figcaption>Indifference Curve</figcaption>
-</figure>
-</div>
 </div>
 </div>
 </div>
@@ -941,7 +928,7 @@ Jose Rojas-Fallas
 <div class="fragment">
 <p><span class="math display">\[\begin{align*}
     40 &amp;= 5x \\
-    x^{*} = 8
+    x^{*} &amp;= 8
 \end{align*}\]</span></p>
 </div>
 </section>
@@ -1090,7 +1077,7 @@ Jose Rojas-Fallas
     \dfrac{3}{2} &amp;&gt; \dfrac{1}{4} \\
     \text{MRS} &amp;&gt; \text{Price Ratio}
 \end{align*}\]</span></p>
-<p><span class="hi">Choose only <span class="math inline">\(x\)</span></span></p>
+<p><span class="hi align-center">Choose only <span class="math inline">\(x\)</span></span></p>
 </div>
 </div>
 </div>
@@ -1275,6 +1262,7 @@ Jose Rojas-Fallas
       Reveal.initialize({
 'controlsAuto': true,
 'previewLinksAuto': true,
+'smaller': false,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
@@ -1535,9 +1523,10 @@ Jose Rojas-Fallas
         // clear code selection
         e.clearSelection();
       });
-      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      function tippyHover(el, contentFn) {
         const config = {
           allowHTML: true,
+          content: contentFn,
           maxWidth: 500,
           delay: 100,
           arrow: false,
@@ -1547,17 +1536,8 @@ Jose Rojas-Fallas
           interactive: true,
           interactiveBorder: 10,
           theme: 'light-border',
-          placement: 'bottom-start',
+          placement: 'bottom-start'
         };
-        if (contentFn) {
-          config.content = contentFn;
-        }
-        if (onTriggerFn) {
-          config.onTrigger = onTriggerFn;
-        }
-        if (onUntriggerFn) {
-          config.onUntrigger = onUntriggerFn;
-        }
           config['offset'] = [0,0];
           config['maxWidth'] = 700;
         window.tippy(el, config); 

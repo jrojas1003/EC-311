@@ -15,8 +15,6 @@ title-slide-attributes:
   data-background-position: left
 ---
 
-::: {.vertical-center}
-
 [Outline]{.hi .realbig}
 
 ### Chapter 4
@@ -29,8 +27,6 @@ title-slide-attributes:
 
     - Constrained Optimization
 
-
-:::
 
 # Optimal Consumption {.inverse .note}
 
