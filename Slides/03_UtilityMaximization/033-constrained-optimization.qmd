@@ -373,7 +373,7 @@ We solve for x (notice there is no $y$)
 
 \begin{align*}
     40 &= 5x \\
-    x^{*} = 8
+    x^{*} &= 8
 \end{align*}
 
 ---
@@ -565,7 +565,7 @@ Compare MRS to Price ratio
     \text{MRS} &> \text{Price Ratio}
 \end{align*}
 
-[Choose only $x$]{.hi}
+[Choose only $x$]{.hi .align-center}
 :::
 
 :::
