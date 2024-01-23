@@ -46,9 +46,9 @@ The core question we are attempting to answer is
 
 :::: {layout-ncol=2}
 
-![Budget Constraint](Images\Budget-Constraint.png)
+![](Images\Budget-Constraint.png)
 
-![Indifference Curve](Images\Indifference-Curve.png)
+![](Images\Indifference-Curve.png)
 
 ::::
 
