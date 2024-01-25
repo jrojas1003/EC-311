@@ -1,0 +1,46 @@
+---
+title: "Achieve Homework & Canvas Quiz"
+subtitle: "Chapter 04 - Consumer Behavior"
+author: Jose Rojas-Fallas
+date: last-modified
+date-format: "YYYY"
+format:
+    revealjs:
+        theme: [default, styles.scss]
+        slide-number: true
+        footer: "Achieve Homework Ch. 04 | Consumer Behavior"
+        preview-links: auto
+        code-fold: FALSE
+title-slide-attributes: 
+  data-background-position: left
+--- 
+
+# Most Difficult Achieve Questions {.inverse .note}
+
+---
+
+## Question 04 
+
+![](achieve-images/question-04.png){fig-align="center"}
+
+## Question 06 
+
+![](achieve-images/question-06.png){fig-align="center"}
+
+## Question 07
+
+![](achieve-images/question-07.png){fig-align="center"}
+
+## Question 10
+
+![](achieve-images/question-10.png){fig-align="center"}
+
+# Most Difficult Canvas Quiz Questions {.inverse .note}
+ 
+## Question 06
+
+![](canvas-quiz-images/question-06.png){fig-align="center"}
+
+## Question 09
+
+![](canvas-quiz-images/question-09.png){fig-align="center"}
