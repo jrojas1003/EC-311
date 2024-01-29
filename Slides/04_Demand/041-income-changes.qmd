@@ -143,7 +143,7 @@ The only other option is to increase your consumption of $y$
 
 ---
 
-## Engel Curves
+## Engel Curves {.smaller}
 
 This curve describes the relationship between $M^{*}$ and $y^{*}$, with $M$ on the vertical axis and $y^{*}$ on the horizontal axis 
 
@@ -151,7 +151,7 @@ Let's build this by parts, starting with a bunch of income levels and the associ
 
 . . .
 
-![](Images/Engel-Curve1.png){fig-align="center" height=400 width=600}
+![](Images/Engel-Curve1.png){fig-align="center" height=350 width=500}
 
 [**Notice the axis!**]{.hi .align-center}
 
@@ -207,11 +207,11 @@ We've seen that curves slopes can change, so we can ask ourselves:
 
 ## Engel Curves - Inferior Goods Always?
 
-[Can in be the case that no matter what my current income is, an increase in income will decrease my consumption of a good?]{.hi}
+[Can in be the case that no matter what my current income is, an increase in income will decrease my consumption of a good?]{.hi .align-center}
 
 . . .
 
-[It is impossible!]{.hi}
+[It is impossible!]{.hi .align-center}
 
 ::: {.incremental}
 - Even a good that is usually inferior, or better said, [inferior over common income levels must be a normal good over low enough levels of income]{.hii}
@@ -331,7 +331,7 @@ $$E_{x^{*},M} = \dfrac{\partial x^{*}}{\partial M} \cdot \dfrac{M}{x^{*}}$$
 
 There are 3 steps to finding an elasticity
 
-::: {.incremental}
+::: {.incremental .small}
 1. Take the partial derivative of the good w.r.t. $M$
 
 2. Multiply the partial derivative by the ratio of the [input variable]{.hii} to the [response variable]{.hi}

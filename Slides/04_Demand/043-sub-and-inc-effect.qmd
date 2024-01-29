@@ -81,7 +81,7 @@ It is the change in bundle resulting from a change in the relative price of two 
 
 [**Find the Hypothetical Budget Constraint**]{.hi .align-center .big}
 
-![](Images/Sub-Effect4.png){fig-align="center" height="500"}
+![](Images/Sub-Effect4.png){fig-align="center" height="400"}
 
 [We figuratively grab the new BC and shift it over]{.hi} 
 
@@ -91,7 +91,7 @@ It is the change in bundle resulting from a change in the relative price of two 
 
 [**Find the Optimal Bundle under Original Utility and Hypothetical**]{.hi .align-center .big}
 
-![](Images/Sub-Effect5.png){fig-align="center" height="500"}
+![](Images/Sub-Effect5.png){fig-align="center" height="400"}
 
 ---
 
@@ -123,7 +123,7 @@ It is the change in bundle resulting from a change in the relative price of two 
 
 ---
 
-## Income Effect {.smaller  }
+## Income Effect {.smaller}
 
 It is the change in bundle resulting from a change in the purchasing power of the consumer's income 
 
@@ -174,7 +174,7 @@ It is the change in bundle resulting from a change in the purchasing power of th
 
 [Find the Optimal Bundle under Original Utility and Hypothetical Budget Constraint]{.hi .big .align-center}
 
-![](Images/Inc-Effect4.png){fig-align="center" height="490"}
+![](Images/Inc-Effect4.png){fig-align="center" height="450"}
 
 ---
 

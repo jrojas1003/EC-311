@@ -58,7 +58,7 @@ Similar to the Engel Curve, we can connect these optimal bundles to get an impor
 
 . . .
 
-![](Images/Price-Offer-Curve2.png){fig-align="center" width="600" height="500"}
+![](Images/Price-Offer-Curve2.png){fig-align="center" width="500" height="400"}
 
 This is an [Individual Demand Curve]{.hi} 
 
