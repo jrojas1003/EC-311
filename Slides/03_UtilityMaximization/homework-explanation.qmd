@@ -1,0 +1,30 @@
+---
+title: "Canvas Quiz"
+subtitle: "Chapter 04 - Utility Maximization"
+author: Jose Rojas-Fallas
+date: last-modified
+date-format: "YYYY"
+format:
+    revealjs:
+        theme: [default, styles.scss]
+        slide-number: true
+        footer: "Achieve Homework Ch. 04 | Utility Maximization"
+        preview-links: auto
+        code-fold: FALSE
+title-slide-attributes: 
+  data-background-position: left
+--- 
+
+# Most Difficult Canvas Quiz Questions {.inverse .note}
+ 
+## Question 03
+
+![](canvas-quiz-images/question-03.png){fig-align="center"}
+
+## Question 06
+
+[Using $U(x,y) = x \cdot y^{3}$ and $\left( P_{x}, P_{y} \right) = \left( 2, \frac{1}{2} \right)$. If $M = 40$, what are the utility-maximizing demands $x^{*}$ and $y^{*}$?]{.hi}
+
+## Question 09
+
+![](canvas-quiz-images/question-09.png){fig-align="center"}

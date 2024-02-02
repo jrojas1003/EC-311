@@ -133,7 +133,7 @@ I will refer to the [Elasticity of Demand]{.hi} as the [elasticity of $x$ with r
 The formula is
 
 $$
-    E_{x^{*},P_{x}} = \dfrac{\partial x^{*}}{\partial P_{x}} \cdot \dfrac{P_{x}}{x^{*}}  \;\; \text{where} \;\; x^{*} = \dfrac{M}{2P_{x}}
+    E_{x^{*},P_{x}} = \dfrac{\partial x^{*}}{\partial P_{x}} \cdot \dfrac{P_{x}}{x^{*}} 
 $$
 
 ---
@@ -176,7 +176,7 @@ $$
 
 . . .
 
-> [Find $\;\; \dfrac{\partial x^{*}}{\partial P_{x}}$]{.hi .note}
+> [Find $\;\; \dfrac{\partial y^{*}}{\partial P_{y}}$]{.hi .note}
 
 . . .
 
