@@ -163,7 +163,7 @@ $$
 . . .
 
 $$
-    E_{x^{*},P_{x}} = \dfrac{-M}{2P_{x}^{2}} \cdot \dfrac{P_{x}}{\color{red}{x}} = \dfrac{-M}{2P_{x}^{2}} \cdot \dfrac{P_{x}}{\color{red}{\dfrac{-M}{2P_{x}^{2}}}} = \dfrac{-P_{x}}{P_{x}} = -1
+    E_{x^{*},P_{x}} = \dfrac{-M}{2P_{x}^{2}} \cdot \dfrac{P_{x}}{\color{red}{x}} = \dfrac{-M}{2P_{x}^{2}} \cdot \dfrac{P_{x}}{\color{red}{\dfrac{M}{2P_{x}}}} = \dfrac{-P_{x}}{P_{x}} = -1
 $$
 
 ---
@@ -171,7 +171,7 @@ $$
 ## Elasticity of Demand - Example 2 {.smaller}
 
 $$
-    y^{*} = \dfrac{M}{P_{y}} - 10
+    y^{*} = \dfrac{20}{P_{y}} - 10
 $$
 
 . . .
@@ -181,7 +181,7 @@ $$
 . . .
 
 $$
-    \dfrac{\partial y^{*}}{\partial P_{y}} = \dfrac{-M}{P_{y}^{2}}
+    \dfrac{\partial y^{*}}{\partial P_{y}} = \dfrac{-20}{P_{y}^{2}}
 $$
 
 > [Plug in our known values to the elasticity formula]{.hi .note}
@@ -189,8 +189,88 @@ $$
 . . .
 
 $$
-    E_{y^{*}, P_{y}} = \dfrac{-M}{M - 10 P_{y}}
+    E_{y^{*}, P_{y}} = \dfrac{-20}{20 - 10 P_{y}}
 $$
+
+---
+
+## Elasticity Results
+
+$$
+    E_{y^{*}, P_{y}} = \dfrac{-20}{20 - 10 P_{y}}
+$$
+
+We will allow elasticities to look like functions, with some restrictions:
+
+- The Elasticity is [allowed]{.hi} to depend on the [input variable]{.hi}
+
+    - $P_{y}$ in our current example
+
+- The Elasticity [never depends]{.hi} on the [response variable]{.hi}
+
+    - $y^{*}$ in the current example
+
+---
+
+## Income Change Example
+
+Let's put it all together. Given 
+
+$$
+    U(x,y) = 12 \cdot ln(x) + y
+$$
+
+- Find $x^{*}$ and $y^{*}$
+
+- Draw a graph on the $(x,y)$ plane with 3 ICs and the respective utility maximizing budget constraint
+
+- Draw Engel Curves for both $x^{*}$ and $y^{*}$ 
+
+    - Find the Function, I'll guide us through the graphing
+
+- Use the derivatives with respect to income for both $x^{*}$ and $y^{*}$ and classify the type of good (Normal or Inferior)
+
+- Find the Elasticities of Demand with respect to income for both $x^{*}$ and $y^{*}$ and classify them (Elastic, Inelastic, etc)
+
+---
+
+## Find $x^{*}$ and $y^{*}$ 
+
+$$
+    U(x,y) = 12 \cdot ln(x) + y \;\;\;\; \text{subject to} \;\;\;\; P_{x} \cdot x + P_{y} \cdot y = M
+$$
+
+:::: {.columns}
+
+::: {.column width="50%"}
+[Find MRS and set equal to Price Ratio]{.hi .align-center}
+:::
+
+::: {.column width="50%"}
+[Plug in $\; x^{*} \;$ into BC to find $\; y^{*}$]{.hi .align-center}
+:::
+
+::::
+
+---
+
+##  3 ICs and Their Respective Utility Max BCs
+
+---
+
+## Engel Curve for $x^{*}$ 
+
+---
+
+## Engel Curve for $y^{*}$
+
+---
+
+## Classify Goods as Normal or Inferior
+
+---
+
+## Elasticities of Demand w.r.t Income 
 
 ---
 
