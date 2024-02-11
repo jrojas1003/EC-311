@@ -1,0 +1,74 @@
+---
+title: "Production"
+subtitle: "EC 311 - Intermediate Microeconomics"
+author: Jose Rojas-Fallas
+date: last-modified
+date-format: "YYYY"
+format:
+    revealjs:
+        theme: [default, styles.scss]
+        slide-number: true
+        footer: "EC311 - Lecture 05 | Production"
+        preview-links: auto
+        code-fold: FALSE
+title-slide-attributes: 
+  data-background-position: left
+---
+
+[Outline]{.hi .realbig}
+
+### Chapter 6
+
+- Topics 
+
+    - Producer Theory Basics (6.1)
+
+    - Cost Minimization Problems (6.4)
+
+    - Returns to Scale (6.5) 
+
+## Demand & Now Supply
+
+This course boils down to two main things:
+
+<br><br>
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+[Consumers buy things]{.hi .align-center}
+
+::: {.incremental}
+- We call that [Demand]{.h}
+
+- We just slayed that beast 
+:::
+
+:::
+
+::: {.column width="50%"}
+
+[Firms make things]{.hi .align-center}
+
+::: {.incremental}
+- We call this [Supply]{.h}
+
+- We are about to meet this beast
+:::
+
+:::
+
+::::
+
+# Producer Theory Basics {.inverse .note}
+
+{{< include 051-producer-theory-basics.qmd >}}
+
+# Cost Minimization Problems {.inverse .note}
+
+{{< include 052-cost-minimization.qmd >}}
+
+# Returns to Scale {.inverse .note}
+
+{{< include 053-returns-to-scale.qmd >}}

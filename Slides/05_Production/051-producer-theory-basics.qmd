@@ -1,0 +1,91 @@
+---
+name: producer theory
+---
+
+## Firms: What do They Make? How Do They Make It? Let's Find Out!
+
+Let's determine the role of the firm
+
+::: {.incremental}
+- Firms produce [goods (output)]{.hi} to sell consumers
+
+- To produce [output]{.hi}, firms need [factors of production (inputs)]{.hi} such as [labor and capital]{.hi}
+
+- Firms use a [production process (technology)]{.hi} to transform [inputs]{.hi} into [output]{.hi}
+:::
+
+---
+
+## Firm Productivity
+
+How firms choose to produce things is guided by a similar principle to how individuals consume things
+
+. . . 
+
+<br>
+
+[Marginal Productivity]{.hi}
+
+::: {.incremental}
+- [The impact of one additional factor of production on the total amount produced]{.h}
+
+- Recall that utility is usually diminishing as consumption increases
+
+- Productivity also diminishes as a firm uses more inputs
+:::
+
+---
+
+## The Production Problem
+
+We will begin by making a simplifying assumption to make our lives easier
+
+<br>
+
+Firms will have [2 typical inputs]{.hi}
+
+::: {.incremental}
+- [Labor (L)]{.hi} $\Rightarrow$ Workers
+
+    - The cost of a unit of labor is the [wage $(w)$]{.hi} paid
+
+- [Capital (K)]{.hi} $\Rightarrow$ Factory space, equipment, hardware, etc. 
+
+    - The cost of a unit of capital is the [rental rate or interest rate $(r)$]{.hi}
+:::
+
+---
+
+## Labor Inputs for an Office
+
+![](images/labor-input.jpeg){fig-align="center"}
+
+---
+
+## Capital Inputs for an Office
+
+![](images/capital-input.jpg){fig-align="center"}
+
+---
+
+## Formalizing the Production Problem
+
+Similar to the Budget Constraint from Consumer Theory, we can formalize the firm's costs: 
+
+$$
+    \text{Costs:} \;\; w \cdot L + r \cdot K 
+$$
+
+. . .
+
+<br> 
+
+[Write the costs of a firm that faces a wage of $10 and a rental rate of $12:]{.note .hi .align-center}
+
+. . .
+
+<br> 
+
+$$
+   \text{Costs:} \;\; 10 L + 12 K
+$$
