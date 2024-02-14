@@ -1,0 +1,27 @@
+---
+format:
+    revealjs:
+        theme: [default, styles.scss]
+        slide-number: false
+        footer: "EC311 - Midterm | Notes & Corrections"
+        preview-links: auto
+        code-fold: FALSE
+title-slide-attributes: 
+  data-background-position: left
+---
+
+## Exam Notes & Corrections
+
+[Short Answer Questions]{.hi}
+
+- Points are missprinted on test. The correct amounts should be:
+
+    - Question 11: 8 points
+    - Question 12: 6 points
+    - Question 13: 8 points
+    - Question 14: 8 points
+
+[Using Bathroom Policy]{.hi}
+
+You are free to leave the classroom to use the bathroom at any time. 
+[Please leave your phone on my desk on your way out. Pick it up once you return]{.h}
