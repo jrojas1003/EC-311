@@ -2,4 +2,201 @@
 name: returns to scale
 ---
 
-##
+## Extra Property of the Production Function
+
+The largest mathematical difference between production and utility are [Returns to Scale]{.hi}
+
+With utility we were "measuring" units of happiness or utility
+
+- But what is 1 unit of utility? No clue
+
+. . . 
+
+Production, however, is more easily measured:
+
+One unit of production or $Q$ can be:
+
+- A Ducks jersey
+
+- A Chocolate Bar
+
+- A car
+
+- Etc.
+
+---
+
+## What Are Returns to Scale?
+
+[Returns to Scale]{.hi} will measure the following:
+
+If I [increase my inputs by equal amounts (such that labor and capital increase by some constant $z$)]{.h}, how much does my [output increase by]{.h}?
+
+. . .
+
+There are three possible outcomes:
+
+::: {.incremental}
+- Decreasing Returns to Scale (DRS)
+- Constant Returns to Scale (CRS)
+- Increasing Returns to Scale (IRS)
+:::
+
+---
+
+## Returns to Scale Example
+
+Let's say you run a small business where you make corndogs. You are currently employing 10 [labor hours]{.hi} and 100 [units of capital]{.hi}
+
+All together, these inputs help you produce 20 Corndogs
+
+. . .
+
+Now you double your inputs, such that:
+
+::: {.incremental}
+- Labor Hours $10 \Rightarrow 20$
+- Units of Capital $100 \Rightarrow 200$
+    - Now you produce 30 Corndogs
+:::
+
+. . . 
+
+[What type of Returns to Scale do you experience?](https://wheelofnames.com/){.note .hi .align-center}
+
+. . . 
+
+[Decreasing Returns to Scale]{.hi .align-center}
+
+::: {.notes}
+Wheel link on question
+:::
+
+---
+
+## Returns to Scale: Mathematically
+
+As usual, we can show these concepts mathematically
+
+::: {.fragment}
+- [Decreasing Returns to Scale]{.hi .align-center}
+
+$$
+    F(zL,zK) > z \cdot F(L,K)
+$$
+:::
+
+::: {.fragment}
+- [Constant Returns to Scale]{.hi .align-center}
+
+$$
+    F(zL,zK) = z \cdot F(L,K)
+$$
+:::
+
+::: {.fragment}
+- [Increasing Returns to Scale]{.hi .align-center}
+
+$$
+    F(zL,zK) < z \cdot F(L,K)
+$$
+:::
+
+---
+
+## Let's Prove Returns to Scale
+
+Let your Production Function be $F(L,K) = L^{2}K$ and you increase your inputs by some constant $z$
+
+. . . 
+
+\begin{align*}
+    F(zL,zK) &= (zL)^{2} \cdot zK \\
+    &= \color{red}{z^{2}}L^{2} \cdot \color{red}{z}K \\
+    &= \color{red}{z^{3}} \cdot L^{2} K
+\end{align*}
+
+. . .
+
+[Compare this to what scaling your production function by $\; z \;$ looks like]{.hi .align-center .note}
+
+\begin{align*}
+    z^{3} \cdot L^{2}K > z \cdot L^{2}K
+\end{align*}
+
+. . . 
+
+[We have Increasing Returs to Scale (IRS)]{.hi .align-center}
+
+---
+
+## Returns to Scale Example {.smaller}
+
+Let the Production Function be $F(L,K) = L^{1/4}K^{3/4}$ and you increase your inputs by some constant $z$
+
+[Show what type of Returns to Scale you have](https://wheelofnames.com/){.note .hi}
+
+. . .
+
+\begin{align*}
+    F(zL,zK) &= (zL)^{1/4} (zK)^{3/4} \\ 
+    &= \color{red}{z^{1/4}}L^{1/4} \cdot \color{red}{z^{3/4}}K^{3/4} \\ 
+    &= \color{red}{z^{1/4}}\color{red}{z^{3/4}}L^{1/4}K^{3/4} \\
+    &= \color{red}{z} \cdot L^{1/4}K^{3/4}
+\end{align*}
+
+. . .
+
+[Compare this to what scaling your production function by $\; z \;$ looks like]{.hi .align-center .note}
+
+\begin{align*}
+    z \cdot L^{1/4}K^{3/4} = z \cdot L^{1/4}K^{3/4}
+\end{align*}
+
+. . . 
+
+[We have Constant Returns to Scale (CRS)]{.hi .align-center}
+
+--- 
+
+## Returns to Scale Example
+
+Let the Production Function be $F(L,K) = L^{1/3}K^{1/2}$ and you increase your inputs by some constant $z$
+
+[Show what type of Returns to Scale you have](https://wheelofnames.com/){.note .hi}
+
+. . . 
+
+\begin{align*}
+    F(zL,zK) &= (zL)^{1/3}(zK)^{1/2} \\ 
+    &= \color{red}{z^{1/3}}L^{1/3} \cdot \color{red}{z^{1/2}}K^{1/2} \\ 
+    &= \color{red}{z^{5/6}} \cdot L^{1/3}K^{1/2}
+\end{align*}
+
+. . .
+
+[Compare this to what scaling your production function by $\; z \;$ looks like]{.hi .align-center .note}
+
+\begin{align*}
+    z^{5/6} \cdot L^{1/3}K^{1/2} < z \cdot L^{1/3}K^{1/2}
+\end{align*}
+
+. . . 
+
+[We have Decreasing Returs to Scale (DRS)]{.hi .align-center}
+
+---
+
+## Goal of Cost Minimization
+
+Producers have a target quantity they must achieve
+
+Their goal is to do so in the cheapest form possible using their inputs and their production technology
+
+When choosing quantities, they are also aware of how much their inputs will cost them
+
+All this together means that they will find the [minimum cost line]{.hi} to achieve a target quantity of goods
+
+. . . 
+
+- Later we will find the supply function much like we found the demand function for consumers
