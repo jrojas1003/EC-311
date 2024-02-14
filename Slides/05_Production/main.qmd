@@ -17,7 +17,7 @@ title-slide-attributes:
 
 [Outline]{.hi .realbig}
 
-### Chapter 6
+### Chapter 6   
 
 - Topics 
 
@@ -61,6 +61,7 @@ This course boils down to two main things:
 
 ::::
 
+<!--
 # Producer Theory Basics {.inverse .note}
 
 {{< include 051-producer-theory-basics.qmd >}}
@@ -68,6 +69,7 @@ This course boils down to two main things:
 # Cost Minimization Problems {.inverse .note}
 
 {{< include 052-cost-minimization.qmd >}}
+-->
 
 # Returns to Scale {.inverse .note}
 
