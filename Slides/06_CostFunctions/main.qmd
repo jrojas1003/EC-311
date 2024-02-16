@@ -1,0 +1,34 @@
+---
+title: "Cost Functions"
+subtitle: "EC 311 - Intermediate Microeconomics"
+author: Jose Rojas-Fallas
+date: last-modified
+date-format: "YYYY"
+format:
+    revealjs:
+        theme: [default, styles.scss]
+        slide-number: true
+        footer: "EC311 - Lecture 06 | Cost Functions"
+        preview-links: auto
+        code-fold: FALSE
+title-slide-attributes: 
+  data-background-position: left
+---
+
+[Outline]{.h .realbig}
+
+### Chapter 07
+
+- Topics
+
+    - Cost Curves (7.3)
+
+    - Average and Marginal Costs (7.4)
+
+# Cost Curves
+
+{{< include 061-cost-curves.qmd >}}
+
+# Average & Marginal Costs 
+
+{{< include 062-avg-marginal-costs.qmd >}}
