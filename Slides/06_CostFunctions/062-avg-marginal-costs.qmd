@@ -2,4 +2,313 @@
 name: average and marginal costs
 ---
 
-## Test
+## Decomposing Costs: Average Costs
+
+Although Total, Variable, and Fixed Costs are important to Cost Functions we do not really care for them on their own
+
+What we care about are the [Average of these costs]{.hi}
+
+. . .
+
+Now we will introduce [Average Costs]{.hi} which are quite literally just the average of the previous costs
+
+:::: {.columns}
+
+::: {.column width="33%"}
+[Average Total Costs]{.hi .align-center}
+
+::: {.fragment}
+$$
+    ATC(Q) = \frac{C(Q)}{Q}
+$$
+:::
+
+:::
+
+::: {.column width="33%"}
+[Average Fixed Costs]{.hi .align-center}
+
+::: {.fragment}
+$$
+    AFC(Q) = \frac{FC}{Q}
+$$
+:::
+
+:::
+
+::: {.column width="33%"}
+[Average Variable Costs]{.hi .align-center}
+
+::: {.fragment}
+$$
+    AVC(Q) = \frac{VC(Q)}{Q}
+$$
+:::
+
+:::
+
+::::
+
+---
+
+## Decomposing Costs: Average Costs 
+
+For the following Cost Function
+
+$$
+    C(Q) = Q^{2} + 10 
+$$
+
+[Find ATC, AFC, and AVC](https://wheelofnames.com/){.hi .align-center .note}
+
+. . .
+
+\begin{align*}
+    ATC = Q + \frac{10}{Q} \;\;\;\;\;\;\;\;\;\; AFC = \frac{10}{Q} \;\;\;\;\;\;\;\;\;\; AVC = Q
+\end{align*}
+
+---
+
+## Graphing Cost Functions
+
+Graphing cost functions is very helpful to understanding what is going on and how optimal choices are made
+
+For the Cost Function
+
+$$
+    C(Q) = \frac{1}{3}Q^{3} - Q^{2} + 2Q + 12
+$$
+
+<br>
+We will graph the [MC, AFC, AVC, and ATC]{.hi}
+
+But first we will derive them 
+
+---
+
+## Finding and Graphing Marginal Costs {.smaller}
+
+$$
+    C(Q) = \frac{1}{3}Q^{3} - Q^{2} + 2Q + 12
+$$
+
+[Find the MC](https://wheelofnames.com/){.hi .align-center .note}
+
+. . .
+
+:::: {.columns}
+
+::: {.column width="50%"}
+[The Marginal Cost]{.hi .align-center}
+
+::: {.fragment}
+\begin{align*}
+    MC &= \frac{\partial C(Q)}{\partial Q} = Q^{2} - 2Q + 2
+\end{align*}
+:::
+
+:::
+
+::: {.column width="50%"}
+
+::: {.fragment}
+[Graphing MC]{.hi .align-center}
+
+![](images/marginal-cost-5.png)
+:::
+
+:::
+
+::::
+
+---
+
+## Finding and Graphing Average Fixed Costs {.smaller}
+
+$$
+    C(Q) = \frac{1}{3}Q^{3} - Q^{2} + 2Q + \color{red}{12}
+$$
+
+[Find the AFC](https://wheelofnames.com/){.hi .align-center .note}
+
+. . .
+
+:::: {.columns}
+
+::: {.column width="50%"}
+[The Average Fixed Cost]{.hi .align-center}
+
+::: {.fragment}
+\begin{align*}
+    AFC &= \frac{FC}{\partial Q} = \frac{12}{Q}
+\end{align*}
+:::
+
+:::
+
+::: {.column width="50%"}
+
+::: {.fragment}
+[Graphing AFC]{.hi .align-center}
+
+![](images/average-fixed-cost.png)
+:::
+
+:::
+
+::::
+
+---
+
+## Finding and Graphing Average Variable Costs {.smaller}
+
+$$
+    C(Q) = \color{red}{\frac{1}{3}Q^{3} - Q^{2} + 2Q} + 12
+$$
+
+[Find the AVC](https://wheelofnames.com/){.hi .align-center .note}
+
+. . .
+
+:::: {.columns}
+
+::: {.column width="50%"}
+[The Average Variable Cost]{.hi .align-center}
+
+::: {.fragment}
+\begin{align*}
+    AVC &= \frac{VC}{\partial Q} = \frac{1}{3}Q^{2} - Q + 2
+\end{align*}
+:::
+
+:::
+
+::: {.column width="50%"}
+
+::: {.fragment}
+[Graphing AVC]{.hi .align-center}
+
+![](images/average-variable-cost.png)
+:::
+
+:::
+
+::::
+
+---
+
+## Finding and Graphing Average Total Costs {.smaller}
+
+$$
+    C(Q) = \color{red}{\frac{1}{3}Q^{3} - Q^{2} + 2Q + 12}
+$$
+
+[Find the ATC](https://wheelofnames.com/){.hi .align-center .note}
+
+. . .
+
+:::: {.columns}
+
+::: {.column width="50%"}
+[The Average Total Cost]{.hi .align-center}
+
+::: {.fragment}
+\begin{align*}
+    ATC &= \frac{C(Q)}{Q} = \frac{1}{3}Q^{2} - Q + 2
+\end{align*}
+:::
+
+:::
+
+::: {.column width="50%"}
+
+::: {.fragment}
+[Graphing ATC]{.hi .align-center}
+
+![](images/average-total-cost.png)
+:::
+
+:::
+
+::::
+
+---
+
+## Graphings Costs: All Together
+
+![](images/cost-curves.png){fig-align="center"}
+
+---
+
+## Key Things About Graphing Costs
+
+As always, the scale is not very important
+
+But be sure to get the [most important facts down]{.hi}:
+
+::: {.incremental}
+- They are all convex (open upwards)
+- [AVC]{.hi} is always below the [ATC]{.hi}
+- Where [the curves cross is crucial]{.hi}
+    - The [MC]{.hi} crosses the [AVC]{.hi} and [ATC]{.hi} at their [minimum values]{.hi}
+- As always, label your curves and axis!
+:::
+
+---
+
+## Importance of Average Total & Marginal Cost Relationship {.smaller}
+
+![](images/mc-equals-atc.png){fig-align="center" height="250"}
+
+What is so special about the point where [MC]{.hi} and [ATC]{.hi} cross?
+
+::: {.incremental}
+- It is where the [ATC]{.hi} is at it's minimum value
+- Mathematically, this is where the derivative of [ATC $= 0$]{.hi} 
+    - This implies that the [MC = ATC]{.hi}
+:::
+
+. . .
+
+Let's look at an example that will show us what I mean intuitively
+
+---
+
+## Average Total & Marginal Cost Relationship
+
+Imagine we measure the height of everyone in class and find the average height
+
+Then someone new joins the class
+
+. . .
+
+What happens to the [average height]{.hi} if the new person is [shorter than the average](https://wheelofnames.com/){.hi}?
+
+::: {.incremental}
+- It [decreases]{.hi}
+
+- When the [Marginal Person]{.h} is [shorter than the average]{.hi}, the [average]{.hi} [decreases]{.hi-red}
+
+- When the [Marginal Person]{.h} is [taller than the average]{.hi}, the [average]{.hi} [increases]{.hi-green}
+:::
+
+---
+
+## Average Total & Marginal Cost Relationship
+
+At our sweet spot where [MC = ATC]{.hi} at the minimum of the [ATC]{.hi} we can say:
+
+::: {.incremental}
+- When the [Marginal Cost]{.hi} is less than the [Average Total Cost]{.hi}, the [ATC]{.hi} must be [decreasing]{.hi-red}
+- When the [Marginal Cost]{.hi} is larger than the [Average Total Cost]{.hi}, the [ATC]{.hi} must be [increasing]{.hi-green}
+:::
+
+. . .
+
+Therefore, when [MC = ATC]{.hi}, the [average total cost]{.hi} is switching from [decreasing]{.hi-red} to [increasing]{.hi-green}
+
+. . .
+
+- That is the definition of a minimum
+
+All of this will be useful for our next topic: [Profit Maximization]{.hi}
