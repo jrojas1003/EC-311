@@ -2,4 +2,589 @@
 name: cost curves
 ---
 
-## Test
+## What The Hell Is A Cost Function?
+
+Our goal for the second half of the class is to minimize costs.
+
+We will do this by deriving a [minimzed cost function]{.hi} but what even is it?
+
+Let's begin by introducing some useful notation:
+
+::: {.incremental}
+- The [minimized cost function]{.hi-red} will be [$C^{*}(Q)$]{.hi-red}
+    - This function tells us that for any given quantity $(Q)$, [$C^{*}(Q)$]{.hi-red} represents the cheapest way possible to produce $Q$
+:::
+
+. . .
+
+We will leverage this information:
+
+> [Knowing]{.h .note} [$C^{*}(Q)$]{.hi-red} [means that we do not have to solve the cost minimization problem to figure out how much it will cost you to produce a target quantity]{.h .note}
+
+---
+
+## Cost Functions
+
+The general formula for a [cost function]{.hi-red} is:
+
+$$
+    C^{*}(Q) = wL^{*}(Q) + rK^{*}(Q)
+$$
+
+::: {.incremental}
+To find this we will
+
+- Find the MRST and set it equal to the price ratio
+- Plug into our Q constraint and find a $L^{*}$ and $K^{*}$ in terms of $Q$
+- Find the cost of the optimal $L^{*}$ and $K^{*}$
+:::
+
+. . .
+
+Last lecture we found levels of $L^{*}$ and $K^{*}$ when we knew $Q$. 
+Now we will keep $Q$ as a variable so we can find costs for any possible quantity. 
+
+---
+
+## Cost Function Example - Step 1
+
+Let's say we are faced with the following problem:
+
+$$
+    \min 10L + 10K \;\;\;\; s.t. \;\;\;\; \bar{Q} = f(L,K) = L^{1/4}K^{1/4}
+$$
+
+[We begin by finding the MRTS and set it equal to the Price Ratio](https://wheelofnames.com/){.note .hi .align-center}
+
+. . .
+
+:::: {.columns}
+
+::: {.column width="50%"}
+[MRTS]{.hi .align-center}
+
+::: {.fragment}
+[\begin{align*}
+    \text{MRTS} &= \frac{MU_{L}}{MU_{K}} \\ 
+    &= \frac{1/4 \cdot L^{-3/4}K^{1/4}}{1/4 \cdot L^{1/4}K^{-3/4}} \\ 
+    &= \frac{K^{1/4}K^{3/4}}{L^{1/4}L^{3/4}} =  \frac{K}{L} \\ \\ 
+\end{align*}]{.tiny}
+:::
+
+:::
+
+::: {.column width="50%"}
+[Price Ratio]{.hi .align-center}
+
+::: {.fragment}
+\begin{align*}
+    \frac{w}{r} = \frac{10}{10} = 1
+\end{align*}
+:::
+
+::: {.fragment}
+[Set Them Equal]{.hi .align-center}
+
+\begin{align*}
+    \frac{K}{L} = 1 \rightarrow  K = L
+\end{align*}
+:::
+
+:::
+
+::::
+
+:::: {.notes}
+Wheel link in question
+::::
+
+---
+
+## Cost Function Example - Step 2
+
+$$
+    K = L \;\;\;\; \text{recall:} \;\; \bar{Q} = f(L,K) = L^{1/4}K^{1/4}
+$$
+
+We found our Optimality Condition for $K$ and $L$
+
+[Plug into Q-Constraint to find $\; L^{*}(Q) \;$ and $\; K^{*}(Q) \;$](https://wheelofnames.com/){.note .hi .align-center}
+
+. . .
+
+:::: {.columns}
+
+::: {.column width="50%"}
+[Q-Constraint]{.hi .align-center}
+
+::: {.fragment}
+\begin{align*}
+    Q &= F(L,K) = L^{1/4}\color{red}{K^{1/4}} \\
+    Q &= L^{1/4}\color{red}{L^{1/4}} = L^{1/2} \\ 
+    Q &= L^{1/2} \\
+\end{align*}
+:::
+
+:::
+
+::: {.column width="50%"}
+[Solve for $\; L^{*}(Q) \;$ and $\; K^{*}(Q)$]{.hi .align-center}
+
+::: {.fragment}
+\begin{align*}
+    L^{1/2} &= Q \\
+    (L^{1/2})^{\color{red}{2}} &= Q^{\color{red}{2}} \\
+    L^{*} &= Q^{2} \\ 
+    K^{*} &= Q^{2}
+\end{align*}
+:::
+
+:::
+
+::::
+
+---
+
+## Cost Function Example - Step 3
+
+$$
+    L^{*} = Q^{2} \;\;\; \& \;\;\; K^{*} = Q^{2} \;\;\;\; \text{recall:} \; C(Q) = 10L + 10K
+$$
+
+We found our optimal [Labor]{.hi} and [Capital]{.hi} choices are in terms of $Q$
+
+[Find $\; C^{*}(Q) \;$ using $\; L^{*} \;$ and $\; K^{*}$](https://wheelofnames.com/){.note .hi .align-center}
+
+. . .
+
+\begin{align*}
+    C^{*}(Q) &= 10 \cdot \color{red}{L^{*}(Q)} + 10 \cdot \color{red}{K^{*}(Q)} \\
+    C^{*}(Q) &= 10 \cdot \color{red}{Q^{2}} + 10 \cdot \color{red}{Q^{2}} \\
+    C^{*}(Q) &= 20 \cdot Q^{2}
+\end{align*}
+
+---
+
+## Why Bother With Cost Functions?
+
+To begin, they are very useful in industry
+
+Let's think back to our Ducks jersey example. 
+Nike wants you to make 20,000 jerseys. 
+All you do is turn around and say it will cost 
+
+\begin{align*}
+    C^{*}(Q) &= 20 \cdot Q^{2} \\ 
+    C^{*}(20,000) &= 20 \cdot 20,000^{2} \\ 
+    C^{*}(20,000) &= 20 \cdot 400,000,000 = 8,000,000,000
+\end{align*}
+
+. . . 
+
+But then with Bo Nix being gone, they only need 1,000 jerseys
+
+So you say: That sucks, I thought we were better than just Bo, but okay. It'll cost:
+
+$$
+    C^{*}(1,000) = 20 \cdot 1,000^{2} = 20,000,000
+$$
+
+---
+
+## Why Bother With Cost Functions?
+
+More generally, as the factory manager, you would just share your cost function with Nike and they can:
+
+::: {.incremental}
+- Use it to figure out the optimal number of jerseys tor produce, taking costs of production into account
+- We will introduce profits later
+- This decision is where [Supply]{.hi} will come from
+:::
+
+. . .
+
+But before we can get into [Profit Maximization]{.h}, we will dive deeper into understanding cost functions
+
+---
+
+## What Goes Into Cost Functions?
+
+Beyond wages and rental rates, e[con]{.hi-red}omists think about costs in a different way:
+
+. . .
+
+[We consider ALL foregone alternatives that we could have used our resources in]{.hi .align-center} 
+
+We call this [opportunity cost]{.hi}:
+
+- It is the value of inputs when used for their best alternative use
+
+---
+
+## Opportunity Cost
+
+Let's consider of a non-economics example [Kyler Murray]{.hi}
+
+. . .
+
+:::: {.columns}
+
+::: {.column width="50%"}
+[NFL Quarterback for the AZ Cardinals]{.hi .align-center}
+
+He has a 5yr/ $230,500,000 contract
+
+![](images/kyler-murray-football.jpg){fig-align="center"}
+:::
+
+::: {.column width="50%"}
+
+::: {.fragment}
+[But he also played baseball in college and nearly went pro]{.hi .align-center}
+
+![](images/kyler-murray-baseball.webp){height="400" fig-align="center"}
+:::
+
+:::
+
+::::
+
+---
+
+## Understanding Cost Functions
+
+Knowing what is considered as costs in economics helps us with the theory part of production
+
+- It will play a larger role when we deal with profit maximization
+
+. . .
+
+For now, we can figure out how we expect cost functions to behave:
+
+Assume a generic cost function such that $C = F(Q)$
+
+::: {.incremental}
+- When $Q$ [increases]{.hi} what do we expect to happen to $C$?
+    - They should [INCREASE]{.hi}
+
+- It usually costs more to make more goods
+
+- This means that the first derivative $(C'(Q))$ should be?
+
+    - Positive $\; \rightarrow C'(Q) > 0$
+:::
+
+---
+
+## Derivative of $C(Q)$
+
+The derivative of $C(Q)$ is [very important]{.hi}
+
+So much so that we give it a name: [Marginal Cost (MC)]{.hi}
+
+![](images/marginal-cost-1.png){fig-align="center"}
+
+---
+
+## Marginal Costs
+
+We will add an additional assumption to make our lives easier
+
+[Assume that firms production functions exhibit decreasing returns]{.h .note .align-center}
+
+::: {.incremental}
+- This has a direct implication on our [Marginal Cost curve]{.hi}
+    - $MC(Q)$ will increase as $Q$ increases
+    - It becomes more expensive to make an additional unit as you make more and more
+- So [Decreasing Returns to Scale (DRS)]{.hi} = [Increasing Marginal Costs]{.hi}
+:::
+
+---
+
+## Marginal Cost Curves
+
+![](images/marginal-cost-2.png){fig-align="center"}
+
+---
+
+## Cost of Producing Nothing? {.smaller}
+
+Does it actually cost nothing to make nothing?
+
+We will assume that there exists some form of overhead or [fixed costs]{.hi} associated with producing goods
+
+::: {.incremental}
+- A business pays rent on their warehouse no matter how empty or full it is
+- A restaurant has to purchase a license in order to serve food/alcohol
+:::
+
+. . . 
+
+![](images/marginal-cost-3.png){fig-align="center" height="400"}
+
+---
+
+## How Realistic are Cost Functions?
+
+A good thinker is initially skeptical. So let's cast some doubt on our [Increasing Marginal Cost assumption]{.hi} 
+
+::: {.fragment}
+Isn't producing in bulk sometimes much easier than producing small quantities? 
+
+- The existence of Costco tells us yes
+:::
+
+. . .
+
+::: {.incremental}
+So this is true, but only up to a point
+
+- We are perfectly comforable modeling firms that [initially experience decreasing marginal costs]{.hi} but at a high-enough quantity produced, they [must experience increasing marginal costs]{.hi}
+:::
+
+---
+
+## Initial Decreasing Marginal Costs with Increasing Marginal Costs At High Quantity
+
+![](images/marginal-cost-4.png){fig-align="center"}
+
+---
+
+## Types of Cost Functions - Quadratic
+
+We will be dealing with two types of cost functions: [Quadratic and Cubic]{.hi}: 
+
+:::: {.columns}
+
+::: {.column width="50%"}
+[Quadratic]{.hi .align-center}
+
+::: {.fragment }
+[MC is always increasing]{.h .align-center}
+
+\begin{align*}
+    C(Q) &= Q^{2} + 10 \\
+    \frac{\partial C(Q)}{\partial Q} &= MC = 2Q \\  
+\end{align*}
+:::
+
+::: {.fragment}
+\begin{align*}
+    \frac{\partial MC}{\partial Q} &= 2 > 0
+\end{align*}
+:::
+
+:::
+
+::: {.column width="50%"}
+[How Does the Graph Look?]{.hi .align-center}
+
+::: {.fragment}
+![](images/quadratic-cost-function.png){fig-align="center"}
+:::
+
+:::
+
+::::
+
+---
+
+## Types of Cost Functions - Cubic
+
+:::: {.columns}
+
+::: {.column width="50%"}
+[Cubic]{.hi .align-center}
+
+::: {.fragment}
+[MC is initially decreasing, and eventually increasing]{.h .align-center}
+
+[\begin{align*}
+    C(Q) &= \frac{1}{3}Q^{3} - Q^{2} + 2Q + 12 \\
+    \frac{\partial C(Q)}{\partial Q} &= MC = Q^{2} - 2Q + 2 
+\end{align*}]{.tiny}
+:::
+
+::: {.fragment}
+[\begin{align*}
+    \frac{\partial MC}{\partial Q} &= 2Q - 2
+\end{align*}]{.tiny}
+:::
+
+::: {.fragment}
+[\begin{align*}
+    2Q - 2 &= 0 \\
+    2Q &= 2 \\
+    Q &= 1
+\end{align*}]{.tiny}
+:::
+
+:::
+
+::: {.column width="50%"}
+
+::: {.fragment}
+[When does it switch from (-) to (+)?]{.hi .align-center}
+
+[\begin{align*}
+    Q &< 1 \rightarrow \text{Decreasing} \\
+    Q &> 1 \rightarrow \text{Increasing}
+\end{align*}]{.tiny}
+:::
+
+::: {.fragment}
+![](images/cubic-cost-function.png){fig-align="center"}
+:::
+
+:::
+
+::::
+
+---
+
+## Total Cost
+
+Up to now we have expressed firm's costs as 
+
+$$
+    TC(Q) = w \cdot L^{*}(Q) + r \cdot K^{*}(Q)
+$$
+
+Which let's us know the cheapest way to produce a given target $Q$
+
+. . .
+
+We can also express costs as a function of quantity
+
+$$
+    TC(Q) = f(Q) + F
+$$
+
+Where $F$ is a non-negative constant
+
+[We will split these costs up by type (i.e. More Cost Functions!)]{.hi .align-center}
+
+---
+
+## Decomposing Costs
+
+Costs will fall into one of two categories: 
+
+:::: {.columns}
+
+::: {.column width="50%"}
+[Fixed Costs]{.hi}
+
+::: {.fragment}
+Costs that are paid even if the firm produces nothing $\rightarrow C(0)$
+:::
+
+:::
+
+::: {.column width="50%"}
+[Variable Costs]{.hi}
+
+::: {.fragment}
+Costs that are increasing in the quantity produced (e.g. materials and labor used to produce each unit)
+:::
+
+:::
+
+::::
+
+. . .
+
+In its simplest form, total cost can be written as
+
+$$
+    \text{Total Cost} = \text{Variable Costs} + \text{Fixed Costs}
+$$
+
+---
+
+## Fixed Costs (FC)
+
+These are costs the firm has to pay [even if it produces 0 units of output]{.hi}
+
+- [Also known as the intercept of the Cost Function]{.hi}
+
+$$
+    FC = TC(0) = f(0) + F = F
+$$
+
+. . .
+
+We can find these by setting $Q = 0$
+
+. . .
+
+<br>
+[Find the Fixed Costs for the following Cost Function](https://wheelofnames.com/){.h .align-center .note}
+
+$$
+    C(Q) = Q^{2} + 10
+$$
+
+. . .
+
+$$
+    C(0) = 0^{2} + 10 = 10
+$$
+
+---
+
+## Variable Costs (VC)
+
+These are the increasing costs that the firm pays [for every unit of quantity produced]{.hi}
+
+- [These are costs of producing $Q$, when we ignore all Fixed Costs]{.hi}
+
+\begin{align*}
+    TC(Q) &= VC + FC \\
+    VC &= TC(Q) - FC
+\end{align*}
+
+. . . 
+
+<br>
+[Find the Variable Costs for the following Cost Function](https://wheelofnames.com/){.h .align-center .note}
+
+$$
+    C(Q) = Q^{2} + 10
+$$
+
+. . .
+
+$$
+    VC = Q^{2}
+$$
+
+---
+
+## Decomposing Costs
+
+It is always the case that 
+
+$$ 
+    C(Q) = VC(Q) + FC
+$$
+
+Costs will always be the sum of the variable costs and the fixed cost
+
+. . .
+
+Let's practice:
+
+[Decompose the following Cost Function into FC, VC, and MC](https://wheelofnames.com/){.hi .align-center .note}
+
+$$
+    C(Q) = \frac{1}{3} Q^{3} - Q^{2} + 2Q - 12
+$$
+
+. . . 
+
+[\begin{align*}
+    FC &= 12 \\
+    VC &= \frac{1}{3} Q^{3} - Q^{2} + 2Q \\
+    MC &= Q^{2} - 2Q + 2
+\end{align*}]{.tiny}
