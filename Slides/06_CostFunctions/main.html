@@ -350,11 +350,481 @@ Jose Rojas-Fallas
 <li><p>Average and Marginal Costs (7.4)</p></li>
 </ul></li>
 </ul>
-<!--
-# Cost Curves {.note .inverse}
-
-{{< include 061-cost-curves.qmd >}}-->
 </section>
+<section>
+<section id="cost-curves" class="title-slide slide level1 note inverse center">
+<h1>Cost Curves</h1>
+
+</section>
+<section id="what-the-hell-is-a-cost-function" class="slide level2">
+<h2>What The Hell Is A Cost Function?</h2>
+<p>Our goal for the second half of the class is to minimize costs.</p>
+<p>We will do this by deriving a <span class="hi">minimzed cost function</span> but what even is it?</p>
+<p>Let’s begin by introducing some useful notation:</p>
+<div>
+<ul>
+<li class="fragment">The <span class="hi-red">minimized cost function</span> will be <span class="hi-red"><span class="math inline">\(C^{*}(Q)\)</span></span>
+<ul>
+<li class="fragment">This function tells us that for any given quantity <span class="math inline">\((Q)\)</span>, <span class="hi-red"><span class="math inline">\(C^{*}(Q)\)</span></span> represents the cheapest way possible to produce <span class="math inline">\(Q\)</span></li>
+</ul></li>
+</ul>
+</div>
+<div class="fragment">
+<p>We will leverage this information:</p>
+<blockquote>
+<p><span class="h note">Knowing</span> <span class="hi-red"><span class="math inline">\(C^{*}(Q)\)</span></span> <span class="h note">means that we do not have to solve the cost minimization problem to figure out how much it will cost you to produce a target quantity</span></p>
+</blockquote>
+</div>
+</section>
+<section id="cost-functions" class="slide level2">
+<h2>Cost Functions</h2>
+<p>The general formula for a <span class="hi-red">cost function</span> is:</p>
+<p><span class="math display">\[
+    C^{*}(Q) = wL^{*}(Q) + rK^{*}(Q)
+\]</span></p>
+<div>
+<p>To find this we will</p>
+<ul>
+<li class="fragment">Find the MRST and set it equal to the price ratio</li>
+<li class="fragment">Plug into our Q constraint and find a <span class="math inline">\(L^{*}\)</span> and <span class="math inline">\(K^{*}\)</span> in terms of <span class="math inline">\(Q\)</span></li>
+<li class="fragment">Find the cost of the optimal <span class="math inline">\(L^{*}\)</span> and <span class="math inline">\(K^{*}\)</span></li>
+</ul>
+</div>
+<div class="fragment">
+<p>Last lecture we found levels of <span class="math inline">\(L^{*}\)</span> and <span class="math inline">\(K^{*}\)</span> when we knew <span class="math inline">\(Q\)</span>. Now we will keep <span class="math inline">\(Q\)</span> as a variable so we can find costs for any possible quantity.</p>
+</div>
+</section>
+<section id="cost-function-example---step-1" class="slide level2">
+<h2>Cost Function Example - Step 1</h2>
+<p>Let’s say we are faced with the following problem:</p>
+<p><span class="math display">\[
+    \min 10L + 10K \;\;\;\; s.t. \;\;\;\; \bar{Q} = f(L,K) = L^{1/4}K^{1/4}
+\]</span></p>
+<p><a href="https://wheelofnames.com/" class="note hi align-center">We begin by finding the MRTS and set it equal to the Price Ratio</a></p>
+<div class="fragment">
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="hi align-center">MRTS</span></p>
+<div class="fragment">
+<p><span class="tiny"><span class="math display">\[\begin{align*}
+    \text{MRTS} &amp;= \frac{MU_{L}}{MU_{K}} \\
+    &amp;= \frac{1/4 \cdot L^{-3/4}K^{1/4}}{1/4 \cdot L^{1/4}K^{-3/4}} \\
+    &amp;= \frac{K^{1/4}K^{3/4}}{L^{1/4}L^{3/4}} =  \frac{K}{L} \\ \\
+\end{align*}\]</span></span></p>
+</div>
+</div><div class="column" style="width:50%;">
+<p><span class="hi align-center">Price Ratio</span></p>
+<div class="fragment">
+<p><span class="math display">\[\begin{align*}
+    \frac{w}{r} = \frac{10}{10} = 1
+\end{align*}\]</span></p>
+</div>
+<div class="fragment">
+<p><span class="hi align-center">Set Them Equal</span></p>
+<p><span class="math display">\[\begin{align*}
+    \frac{K}{L} = 1 \rightarrow  K = L
+\end{align*}\]</span></p>
+</div>
+</div>
+</div>
+<aside class="notes">
+<p>Wheel link in question</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</div>
+</section>
+<section id="cost-function-example---step-2" class="slide level2">
+<h2>Cost Function Example - Step 2</h2>
+<p><span class="math display">\[
+    K = L \;\;\;\; \text{recall:} \;\; \bar{Q} = f(L,K) = L^{1/4}K^{1/4}
+\]</span></p>
+<p>We found our Optimality Condition for <span class="math inline">\(K\)</span> and <span class="math inline">\(L\)</span></p>
+<p><a href="https://wheelofnames.com/" class="note hi align-center">Plug into Q-Constraint to find <span class="math inline">\(\; L^{*}(Q) \;\)</span> and <span class="math inline">\(\; K^{*}(Q) \;\)</span></a></p>
+<div class="fragment">
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="hi align-center">Q-Constraint</span></p>
+<div class="fragment">
+<p><span class="math display">\[\begin{align*}
+    Q &amp;= F(L,K) = L^{1/4}\color{red}{K^{1/4}} \\
+    Q &amp;= L^{1/4}\color{red}{L^{1/4}} = L^{1/2} \\
+    Q &amp;= L^{1/2} \\
+\end{align*}\]</span></p>
+</div>
+</div><div class="column" style="width:50%;">
+<p><span class="hi align-center">Solve for <span class="math inline">\(\; L^{*}(Q) \;\)</span> and <span class="math inline">\(\; K^{*}(Q)\)</span></span></p>
+<div class="fragment">
+<p><span class="math display">\[\begin{align*}
+    L^{1/2} &amp;= Q \\
+    (L^{1/2})^{\color{red}{2}} &amp;= Q^{\color{red}{2}} \\
+    L^{*} &amp;= Q^{2} \\
+    K^{*} &amp;= Q^{2}
+\end{align*}\]</span></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="cost-function-example---step-3" class="slide level2">
+<h2>Cost Function Example - Step 3</h2>
+<p><span class="math display">\[
+    L^{*} = Q^{2} \;\;\; \&amp; \;\;\; K^{*} = Q^{2} \;\;\;\; \text{recall:} \; C(Q) = 10L + 10K
+\]</span></p>
+<p>We found our optimal <span class="hi">Labor</span> and <span class="hi">Capital</span> choices are in terms of <span class="math inline">\(Q\)</span></p>
+<p><a href="https://wheelofnames.com/" class="note hi align-center">Find <span class="math inline">\(\; C^{*}(Q) \;\)</span> using <span class="math inline">\(\; L^{*} \;\)</span> and <span class="math inline">\(\; K^{*}\)</span></a></p>
+<div class="fragment">
+<p><span class="math display">\[\begin{align*}
+    C^{*}(Q) &amp;= 10 \cdot \color{red}{L^{*}(Q)} + 10 \cdot \color{red}{K^{*}(Q)} \\
+    C^{*}(Q) &amp;= 10 \cdot \color{red}{Q^{2}} + 10 \cdot \color{red}{Q^{2}} \\
+    C^{*}(Q) &amp;= 20 \cdot Q^{2}
+\end{align*}\]</span></p>
+</div>
+</section>
+<section id="why-bother-with-cost-functions" class="slide level2">
+<h2>Why Bother With Cost Functions?</h2>
+<p>To begin, they are very useful in industry</p>
+<p>Let’s think back to our Ducks jersey example. Nike wants you to make 20,000 jerseys. All you do is turn around and say it will cost</p>
+<p><span class="math display">\[\begin{align*}
+    C^{*}(Q) &amp;= 20 \cdot Q^{2} \\
+    C^{*}(20,000) &amp;= 20 \cdot 20,000^{2} \\
+    C^{*}(20,000) &amp;= 20 \cdot 400,000,000 = 8,000,000,000
+\end{align*}\]</span></p>
+<div class="fragment">
+<p>But then with Bo Nix being gone, they only need 1,000 jerseys</p>
+<p>So you say: That sucks, I thought we were better than just Bo, but okay. It’ll cost:</p>
+<p><span class="math display">\[
+    C^{*}(1,000) = 20 \cdot 1,000^{2} = 20,000,000
+\]</span></p>
+</div>
+</section>
+<section id="why-bother-with-cost-functions-1" class="slide level2">
+<h2>Why Bother With Cost Functions?</h2>
+<p>More generally, as the factory manager, you would just share your cost function with Nike and they can:</p>
+<div>
+<ul>
+<li class="fragment">Use it to figure out the optimal number of jerseys tor produce, taking costs of production into account</li>
+<li class="fragment">We will introduce profits later</li>
+<li class="fragment">This decision is where <span class="hi">Supply</span> will come from</li>
+</ul>
+</div>
+<div class="fragment">
+<p>But before we can get into <span class="h">Profit Maximization</span>, we will dive deeper into understanding cost functions</p>
+</div>
+</section>
+<section id="what-goes-into-cost-functions" class="slide level2">
+<h2>What Goes Into Cost Functions?</h2>
+<p>Beyond wages and rental rates, e<span class="hi-red">con</span>omists think about costs in a different way:</p>
+<div class="fragment">
+<p><span class="hi align-center">We consider ALL foregone alternatives that we could have used our resources in</span></p>
+<p>We call this <span class="hi">opportunity cost</span>:</p>
+<ul>
+<li>It is the value of inputs when used for their best alternative use</li>
+</ul>
+</div>
+</section>
+<section id="opportunity-cost" class="slide level2">
+<h2>Opportunity Cost</h2>
+<p>Let’s consider of a non-economics example <span class="hi">Kyler Murray</span></p>
+<div class="fragment">
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="hi align-center">NFL Quarterback for the AZ Cardinals</span></p>
+<p>He has a 5yr/ $230,500,000 contract</p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/kyler-murray-football.jpg"></p>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="fragment">
+<p><span class="hi align-center">But he also played baseball in college and nearly went pro</span></p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/kyler-murray-baseball.webp" height="400"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="understanding-cost-functions" class="slide level2">
+<h2>Understanding Cost Functions</h2>
+<p>Knowing what is considered as costs in economics helps us with the theory part of production</p>
+<ul>
+<li>It will play a larger role when we deal with profit maximization</li>
+</ul>
+<div class="fragment">
+<p>For now, we can figure out how we expect cost functions to behave:</p>
+<p>Assume a generic cost function such that <span class="math inline">\(C = F(Q)\)</span></p>
+<div>
+<ul>
+<li class="fragment"><p>When <span class="math inline">\(Q\)</span> <span class="hi">increases</span> what do we expect to happen to <span class="math inline">\(C\)</span>?</p>
+<ul>
+<li class="fragment">They should <span class="hi">INCREASE</span></li>
+</ul></li>
+<li class="fragment"><p>It usually costs more to make more goods</p></li>
+<li class="fragment"><p>This means that the first derivative <span class="math inline">\((C'(Q))\)</span> should be?</p>
+<ul>
+<li class="fragment">Positive <span class="math inline">\(\; \rightarrow C'(Q) &gt; 0\)</span></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="derivative-of-cq" class="slide level2">
+<h2>Derivative of <span class="math inline">\(C(Q)\)</span></h2>
+<p>The derivative of <span class="math inline">\(C(Q)\)</span> is <span class="hi">very important</span></p>
+<p>So much so that we give it a name: <span class="hi">Marginal Cost (MC)</span></p>
+
+<img data-src="images/marginal-cost-1.png" class="r-stretch quarto-figure-center"></section>
+<section id="marginal-costs" class="slide level2">
+<h2>Marginal Costs</h2>
+<p>We will add an additional assumption to make our lives easier</p>
+<p><span class="h note align-center">Assume that firms production functions exhibit decreasing returns</span></p>
+<div>
+<ul>
+<li class="fragment">This has a direct implication on our <span class="hi">Marginal Cost curve</span>
+<ul>
+<li class="fragment"><span class="math inline">\(MC(Q)\)</span> will increase as <span class="math inline">\(Q\)</span> increases</li>
+<li class="fragment">It becomes more expensive to make an additional unit as you make more and more</li>
+</ul></li>
+<li class="fragment">So <span class="hi">Decreasing Returns to Scale (DRS)</span> = <span class="hi">Increasing Marginal Costs</span></li>
+</ul>
+</div>
+</section>
+<section id="marginal-cost-curves" class="slide level2">
+<h2>Marginal Cost Curves</h2>
+
+<img data-src="images/marginal-cost-2.png" class="r-stretch quarto-figure-center"></section>
+<section id="cost-of-producing-nothing" class="slide level2 smaller">
+<h2>Cost of Producing Nothing?</h2>
+<p>Does it actually cost nothing to make nothing?</p>
+<p>We will assume that there exists some form of overhead or <span class="hi">fixed costs</span> associated with producing goods</p>
+<div>
+<ul>
+<li class="fragment">A business pays rent on their warehouse no matter how empty or full it is</li>
+<li class="fragment">A restaurant has to purchase a license in order to serve food/alcohol</li>
+</ul>
+</div>
+<div class="fragment">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/marginal-cost-3.png" height="400"></p>
+</figure>
+</div>
+</div>
+</section>
+<section id="how-realistic-are-cost-functions" class="slide level2">
+<h2>How Realistic are Cost Functions?</h2>
+<p>A good thinker is initially skeptical. So let’s cast some doubt on our <span class="hi">Increasing Marginal Cost assumption</span></p>
+<div class="fragment">
+<p>Isn’t producing in bulk sometimes much easier than producing small quantities?</p>
+<ul>
+<li>The existence of Costco tells us yes</li>
+</ul>
+</div>
+<div class="fragment">
+<div>
+<p>So this is true, but only up to a point</p>
+<ul>
+<li class="fragment">We are perfectly comforable modeling firms that <span class="hi">initially experience decreasing marginal costs</span> but at a high-enough quantity produced, they <span class="hi">must experience increasing marginal costs</span></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="initial-decreasing-marginal-costs-with-increasing-marginal-costs-at-high-quantity" class="slide level2">
+<h2>Initial Decreasing Marginal Costs with Increasing Marginal Costs At High Quantity</h2>
+
+<img data-src="images/marginal-cost-4.png" class="r-stretch quarto-figure-center"></section>
+<section id="types-of-cost-functions---quadratic" class="slide level2">
+<h2>Types of Cost Functions - Quadratic</h2>
+<p>We will be dealing with two types of cost functions: <span class="hi">Quadratic and Cubic</span>:</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="hi align-center">Quadratic</span></p>
+<div class="fragment">
+<p><span class="h align-center">MC is always increasing</span></p>
+<p><span class="math display">\[\begin{align*}
+    C(Q) &amp;= Q^{2} + 10 \\
+    \frac{\partial C(Q)}{\partial Q} &amp;= MC = 2Q \\  
+\end{align*}\]</span></p>
+</div>
+<div class="fragment">
+<p><span class="math display">\[\begin{align*}
+    \frac{\partial MC}{\partial Q} &amp;= 2 &gt; 0
+\end{align*}\]</span></p>
+</div>
+</div><div class="column" style="width:50%;">
+<p><span class="hi align-center">How Does the Graph Look?</span></p>
+<div class="fragment">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/quadratic-cost-function.png"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="types-of-cost-functions---cubic" class="slide level2">
+<h2>Types of Cost Functions - Cubic</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="hi align-center">Cubic</span></p>
+<div class="fragment">
+<p><span class="h align-center">MC is initially decreasing, and eventually increasing</span></p>
+<p><span class="tiny"><span class="math display">\[\begin{align*}
+    C(Q) &amp;= \frac{1}{3}Q^{3} - Q^{2} + 2Q + 12 \\
+    \frac{\partial C(Q)}{\partial Q} &amp;= MC = Q^{2} - 2Q + 2
+\end{align*}\]</span></span></p>
+</div>
+<div class="fragment">
+<p><span class="tiny"><span class="math display">\[\begin{align*}
+    \frac{\partial MC}{\partial Q} &amp;= 2Q - 2
+\end{align*}\]</span></span></p>
+</div>
+<div class="fragment">
+<p><span class="tiny"><span class="math display">\[\begin{align*}
+    2Q - 2 &amp;= 0 \\
+    2Q &amp;= 2 \\
+    Q &amp;= 1
+\end{align*}\]</span></span></p>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="fragment">
+<p><span class="hi align-center">When does it switch from (-) to (+)?</span></p>
+<p><span class="tiny"><span class="math display">\[\begin{align*}
+    Q &amp;&lt; 1 \rightarrow \text{Decreasing} \\
+    Q &amp;&gt; 1 \rightarrow \text{Increasing}
+\end{align*}\]</span></span></p>
+</div>
+<div class="fragment">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/cubic-cost-function.png"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="total-cost" class="slide level2">
+<h2>Total Cost</h2>
+<p>Up to now we have expressed firm’s costs as</p>
+<p><span class="math display">\[
+    TC(Q) = w \cdot L^{*}(Q) + r \cdot K^{*}(Q)
+\]</span></p>
+<p>Which let’s us know the cheapest way to produce a given target <span class="math inline">\(Q\)</span></p>
+<div class="fragment">
+<p>We can also express costs as a function of quantity</p>
+<p><span class="math display">\[
+    TC(Q) = f(Q) + F
+\]</span></p>
+<p>Where <span class="math inline">\(F\)</span> is a non-negative constant</p>
+<p><span class="hi align-center">We will split these costs up by type (i.e.&nbsp;More Cost Functions!)</span></p>
+</div>
+</section>
+<section id="decomposing-costs" class="slide level2">
+<h2>Decomposing Costs</h2>
+<p>Costs will fall into one of two categories:</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="hi">Fixed Costs</span></p>
+<div class="fragment">
+<p>Costs that are paid even if the firm produces nothing <span class="math inline">\(\rightarrow C(0)\)</span></p>
+</div>
+</div><div class="column" style="width:50%;">
+<p><span class="hi">Variable Costs</span></p>
+<div class="fragment">
+<p>Costs that are increasing in the quantity produced (e.g.&nbsp;materials and labor used to produce each unit)</p>
+</div>
+</div>
+</div>
+<div class="fragment">
+<p>In its simplest form, total cost can be written as</p>
+<p><span class="math display">\[
+    \text{Total Cost} = \text{Variable Costs} + \text{Fixed Costs}
+\]</span></p>
+</div>
+</section>
+<section id="fixed-costs-fc" class="slide level2">
+<h2>Fixed Costs (FC)</h2>
+<p>These are costs the firm has to pay <span class="hi">even if it produces 0 units of output</span></p>
+<ul>
+<li><span class="hi">Also known as the intercept of the Cost Function</span></li>
+</ul>
+<p><span class="math display">\[
+    FC = TC(0) = f(0) + F = F
+\]</span></p>
+<div class="fragment">
+<p>We can find these by setting <span class="math inline">\(Q = 0\)</span></p>
+</div>
+<div class="fragment">
+<p><br> <a href="https://wheelofnames.com/" class="h align-center note">Find the Fixed Costs for the following Cost Function</a></p>
+<p><span class="math display">\[
+    C(Q) = Q^{2} + 10
+\]</span></p>
+</div>
+<div class="fragment">
+<p><span class="math display">\[
+    C(0) = 0^{2} + 10 = 10
+\]</span></p>
+</div>
+</section>
+<section id="variable-costs-vc" class="slide level2">
+<h2>Variable Costs (VC)</h2>
+<p>These are the increasing costs that the firm pays <span class="hi">for every unit of quantity produced</span></p>
+<ul>
+<li><span class="hi">These are costs of producing <span class="math inline">\(Q\)</span>, when we ignore all Fixed Costs</span></li>
+</ul>
+<p><span class="math display">\[\begin{align*}
+    TC(Q) &amp;= VC + FC \\
+    VC &amp;= TC(Q) - FC
+\end{align*}\]</span></p>
+<div class="fragment">
+<p><br> <a href="https://wheelofnames.com/" class="h align-center note">Find the Variable Costs for the following Cost Function</a></p>
+<p><span class="math display">\[
+    C(Q) = Q^{2} + 10
+\]</span></p>
+</div>
+<div class="fragment">
+<p><span class="math display">\[
+    VC = Q^{2}
+\]</span></p>
+</div>
+</section>
+<section id="decomposing-costs-1" class="slide level2">
+<h2>Decomposing Costs</h2>
+<p>It is always the case that</p>
+<p><span class="math display">\[
+    C(Q) = VC(Q) + FC
+\]</span></p>
+<p>Costs will always be the sum of the variable costs and the fixed cost</p>
+<div class="fragment">
+<p>Let’s practice:</p>
+<p><a href="https://wheelofnames.com/" class="hi align-center note">Decompose the following Cost Function into FC, VC, and MC</a></p>
+<p><span class="math display">\[
+    C(Q) = \frac{1}{3} Q^{3} - Q^{2} + 2Q - 12
+\]</span></p>
+</div>
+<div class="fragment">
+<p><span class="tiny"><span class="math display">\[\begin{align*}
+    FC &amp;= 12 \\
+    VC &amp;= \frac{1}{3} Q^{3} - Q^{2} + 2Q \\
+    MC &amp;= Q^{2} - 2Q + 2
+\end{align*}\]</span></span></p>
+</div>
+</section></section>
 <section>
 <section id="average-marginal-costs" class="title-slide slide level1 note inverse center">
 <h1>Average &amp; Marginal Costs</h1>
