@@ -350,24 +350,243 @@ Jose Rojas-Fallas
 <li><p>Average and Marginal Costs (7.4)</p></li>
 </ul></li>
 </ul>
-</section>
-<section>
-<section id="cost-curves" class="title-slide slide level1 center">
-<h1>Cost Curves</h1>
+<!--
+# Cost Curves {.note .inverse}
 
+{{< include 061-cost-curves.qmd >}}-->
 </section>
-<section id="test" class="slide level2">
-<h2>Test</h2>
-</section></section>
 <section>
-<section id="average-marginal-costs" class="title-slide slide level1 center">
+<section id="average-marginal-costs" class="title-slide slide level1 note inverse center">
 <h1>Average &amp; Marginal Costs</h1>
 
 </section>
-<section id="test-1" class="slide level2">
-<h2>Test</h2>
+<section id="decomposing-costs-average-costs" class="slide level2">
+<h2>Decomposing Costs: Average Costs</h2>
+<p>Although Total, Variable, and Fixed Costs are important to Cost Functions we do not really care for them on their own</p>
+<p>What we care about are the <span class="hi">Average of these costs</span></p>
+<div class="fragment">
+<p>Now we will introduce <span class="hi">Average Costs</span> which are quite literally just the average of the previous costs</p>
+<div class="columns">
+<div class="column" style="width:33%;">
+<p><span class="hi align-center">Average Total Costs</span></p>
+<div class="fragment">
+<p><span class="math display">\[
+    ATC(Q) = \frac{C(Q)}{Q}
+\]</span></p>
+</div>
+</div><div class="column" style="width:33%;">
+<p><span class="hi align-center">Average Fixed Costs</span></p>
+<div class="fragment">
+<p><span class="math display">\[
+    AFC(Q) = \frac{FC}{Q}
+\]</span></p>
+</div>
+</div><div class="column" style="width:33%;">
+<p><span class="hi align-center">Average Variable Costs</span></p>
+<div class="fragment">
+<p><span class="math display">\[
+    AVC(Q) = \frac{VC(Q)}{Q}
+\]</span></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="decomposing-costs-average-costs-1" class="slide level2">
+<h2>Decomposing Costs: Average Costs</h2>
+<p>For the following Cost Function</p>
+<p><span class="math display">\[
+    C(Q) = Q^{2} + 10
+\]</span></p>
+<p><a href="https://wheelofnames.com/" class="hi align-center note">Find ATC, AFC, and AVC</a></p>
+<div class="fragment">
+<p><span class="math display">\[\begin{align*}
+    ATC = Q + \frac{10}{Q} \;\;\;\;\;\;\;\;\;\; AFC = \frac{10}{Q} \;\;\;\;\;\;\;\;\;\; AVC = Q
+\end{align*}\]</span></p>
+</div>
+</section>
+<section id="graphing-cost-functions" class="slide level2">
+<h2>Graphing Cost Functions</h2>
+<p>Graphing cost functions is very helpful to understanding what is going on and how optimal choices are made</p>
+<p>For the Cost Function</p>
+<p><span class="math display">\[
+    C(Q) = \frac{1}{3}Q^{3} - Q^{2} + 2Q + 12
+\]</span></p>
+<p><br> We will graph the <span class="hi">MC, AFC, AVC, and ATC</span></p>
+<p>But first we will derive them</p>
+</section>
+<section id="finding-and-graphing-marginal-costs" class="slide level2 smaller">
+<h2>Finding and Graphing Marginal Costs</h2>
+<p><span class="math display">\[
+    C(Q) = \frac{1}{3}Q^{3} - Q^{2} + 2Q + 12
+\]</span></p>
+<p><a href="https://wheelofnames.com/" class="hi align-center note">Find the MC</a></p>
+<div class="fragment">
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="hi align-center">The Marginal Cost</span></p>
+<div class="fragment">
+<p><span class="math display">\[\begin{align*}
+    MC &amp;= \frac{\partial C(Q)}{\partial Q} = Q^{2} - 2Q + 2
+\end{align*}\]</span></p>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="fragment">
+<p><span class="hi align-center">Graphing MC</span></p>
+<p><img data-src="images/marginal-cost-5.png"></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="finding-and-graphing-average-fixed-costs" class="slide level2 smaller">
+<h2>Finding and Graphing Average Fixed Costs</h2>
+<p><span class="math display">\[
+    C(Q) = \frac{1}{3}Q^{3} - Q^{2} + 2Q + \color{red}{12}
+\]</span></p>
+<p><a href="https://wheelofnames.com/" class="hi align-center note">Find the AFC</a></p>
+<div class="fragment">
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="hi align-center">The Average Fixed Cost</span></p>
+<div class="fragment">
+<p><span class="math display">\[\begin{align*}
+    AFC &amp;= \frac{FC}{\partial Q} = \frac{12}{Q}
+\end{align*}\]</span></p>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="fragment">
+<p><span class="hi align-center">Graphing AFC</span></p>
+<p><img data-src="images/average-fixed-cost.png"></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="finding-and-graphing-average-variable-costs" class="slide level2 smaller">
+<h2>Finding and Graphing Average Variable Costs</h2>
+<p><span class="math display">\[
+    C(Q) = \color{red}{\frac{1}{3}Q^{3} - Q^{2} + 2Q} + 12
+\]</span></p>
+<p><a href="https://wheelofnames.com/" class="hi align-center note">Find the AVC</a></p>
+<div class="fragment">
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="hi align-center">The Average Variable Cost</span></p>
+<div class="fragment">
+<p><span class="math display">\[\begin{align*}
+    AVC &amp;= \frac{VC}{\partial Q} = \frac{1}{3}Q^{2} - Q + 2
+\end{align*}\]</span></p>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="fragment">
+<p><span class="hi align-center">Graphing AVC</span></p>
+<p><img data-src="images/average-variable-cost.png"></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="finding-and-graphing-average-total-costs" class="slide level2 smaller">
+<h2>Finding and Graphing Average Total Costs</h2>
+<p><span class="math display">\[
+    C(Q) = \color{red}{\frac{1}{3}Q^{3} - Q^{2} + 2Q + 12}
+\]</span></p>
+<p><a href="https://wheelofnames.com/" class="hi align-center note">Find the ATC</a></p>
+<div class="fragment">
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="hi align-center">The Average Total Cost</span></p>
+<div class="fragment">
+<p><span class="math display">\[\begin{align*}
+    ATC &amp;= \frac{C(Q)}{Q} = \frac{1}{3}Q^{2} - Q + 2
+\end{align*}\]</span></p>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="fragment">
+<p><span class="hi align-center">Graphing ATC</span></p>
+<p><img data-src="images/average-total-cost.png"></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="graphings-costs-all-together" class="slide level2">
+<h2>Graphings Costs: All Together</h2>
+
+<img data-src="images/cost-curves.png" class="r-stretch quarto-figure-center"></section>
+<section id="key-things-about-graphing-costs" class="slide level2">
+<h2>Key Things About Graphing Costs</h2>
+<p>As always, the scale is not very important</p>
+<p>But be sure to get the <span class="hi">most important facts down</span>:</p>
+<div>
+<ul>
+<li class="fragment">They are all convex (open upwards)</li>
+<li class="fragment"><span class="hi">AVC</span> is always below the <span class="hi">ATC</span></li>
+<li class="fragment">Where <span class="hi">the curves cross is crucial</span>
+<ul>
+<li class="fragment">The <span class="hi">MC</span> crosses the <span class="hi">AVC</span> and <span class="hi">ATC</span> at their <span class="hi">minimum values</span></li>
+</ul></li>
+<li class="fragment">As always, label your curves and axis!</li>
+</ul>
+</div>
+</section>
+<section id="importance-of-average-total-marginal-cost-relationship" class="slide level2 smaller">
+<h2>Importance of Average Total &amp; Marginal Cost Relationship</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/mc-equals-atc.png" height="250"></p>
+</figure>
+</div>
+<p>What is so special about the point where <span class="hi">MC</span> and <span class="hi">ATC</span> cross?</p>
+<div>
+<ul>
+<li class="fragment">It is where the <span class="hi">ATC</span> is at it’s minimum value</li>
+<li class="fragment">Mathematically, this is where the derivative of <span class="hi">ATC <span class="math inline">\(= 0\)</span></span>
+<ul>
+<li class="fragment">This implies that the <span class="hi">MC = ATC</span></li>
+</ul></li>
+</ul>
+</div>
+<div class="fragment">
+<p>Let’s look at an example that will show us what I mean intuitively</p>
+</div>
+</section>
+<section id="average-total-marginal-cost-relationship" class="slide level2">
+<h2>Average Total &amp; Marginal Cost Relationship</h2>
+<p>Imagine we measure the height of everyone in class and find the average height</p>
+<p>Then someone new joins the class</p>
+<div class="fragment">
+<p>What happens to the <span class="hi">average height</span> if the new person is <a href="https://wheelofnames.com/" class="hi">shorter than the average</a>?</p>
+<div>
+<ul>
+<li class="fragment"><p>It <span class="hi">decreases</span></p></li>
+<li class="fragment"><p>When the <span class="h">Marginal Person</span> is <span class="hi">shorter than the average</span>, the <span class="hi">average</span> <span class="hi-red">decreases</span></p></li>
+<li class="fragment"><p>When the <span class="h">Marginal Person</span> is <span class="hi">taller than the average</span>, the <span class="hi">average</span> <span class="hi-green">increases</span></p></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="average-total-marginal-cost-relationship-1" class="slide level2">
+<h2>Average Total &amp; Marginal Cost Relationship</h2>
+<p>At our sweet spot where <span class="hi">MC = ATC</span> at the minimum of the <span class="hi">ATC</span> we can say:</p>
+<div>
+<ul>
+<li class="fragment">When the <span class="hi">Marginal Cost</span> is less than the <span class="hi">Average Total Cost</span>, the <span class="hi">ATC</span> must be <span class="hi-red">decreasing</span></li>
+<li class="fragment">When the <span class="hi">Marginal Cost</span> is larger than the <span class="hi">Average Total Cost</span>, the <span class="hi">ATC</span> must be <span class="hi-green">increasing</span></li>
+</ul>
+</div>
+<div class="fragment">
+<p>Therefore, when <span class="hi">MC = ATC</span>, the <span class="hi">average total cost</span> is switching from <span class="hi-red">decreasing</span> to <span class="hi-green">increasing</span></p>
+</div>
+<div class="fragment">
+<ul>
+<li>That is the definition of a minimum</li>
+</ul>
+<p>All of this will be useful for our next topic: <span class="hi">Profit Maximization</span></p>
 <div class="footer footer-default">
 <p>EC311 - Lecture 06 | Cost Functions</p>
+</div>
 </div>
 </section></section>
     </div>

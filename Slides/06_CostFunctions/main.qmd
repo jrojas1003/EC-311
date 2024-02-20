@@ -25,10 +25,11 @@ title-slide-attributes:
 
     - Average and Marginal Costs (7.4)
 
-# Cost Curves
+<!--
+# Cost Curves {.note .inverse}
 
-{{< include 061-cost-curves.qmd >}}
+{{< include 061-cost-curves.qmd >}}-->
 
-# Average & Marginal Costs 
+# Average & Marginal Costs {.note .inverse} 
 
 {{< include 062-avg-marginal-costs.qmd >}}
