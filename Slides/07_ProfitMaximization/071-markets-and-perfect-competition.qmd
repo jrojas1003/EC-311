@@ -4,3 +4,71 @@ name: markets and perfect competition
 
 ## Market Structures
 
+We will deal with 4 different types of markets
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- [Perfect Competition]{.hi}
+- [Monopoly]{.hi}
+:::
+
+::: {.column width="50%"}
+- [Oligopoly]{.hi}
+- [Monopolistic Competition]{.hi}
+:::
+
+::::
+
+. . .
+
+<br>
+![](images/market-spectrum.png){fig-align="center"}
+
+
+---
+
+## Market Structures - Differences
+
+![](images/market-structures.png){fig-align="center"}
+
+---
+
+## Perfect Competition Assumptions {.smaller}
+
+We will begin with [Perfectly Competitive Markets]{.hi}
+
+And we will set some key assumptions
+
+:::: {.columns}
+
+::: {.column width="33%"}
+::: {.incremental}
+- [Number of Firms:]{.hi} There are a [large number of firms]{.h} in the market
+    - [Any single firm's decisions has no impact on the market equilibrium]{.h}.
+:::
+:::
+
+::: {.column width="33%"}
+::: {.incremental}
+- [Products Sold:]{.hi} All firms make [identical products]{.h} 
+    - This means that [consumers will treat all goods produced as perfect substitutes]{.h}.  
+:::
+:::
+
+::: {.column width="33%"}
+::: {.incremental}
+- [Barriers to Entry:]{.hi} There are [no barriers to entry/exit]{.h} 
+    - This means that any new firm is free to enter the market and start producing/selling without any obstacles. Similarly, any firm that wants to exit the market can do so freely.  
+:::
+:::
+
+::::
+
+. . .
+
+[The key implication from these assumptions is that firms do not have a choice on what price to charge]{.hi-orange .align-center .big}
+
+---
+
+## 
