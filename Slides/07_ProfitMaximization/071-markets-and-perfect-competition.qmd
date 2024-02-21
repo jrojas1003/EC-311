@@ -68,7 +68,3 @@ And we will set some key assumptions
 . . .
 
 [The key implication from these assumptions is that firms do not have a choice on what price to charge]{.hi-orange .align-center .big}
-
----
-
-## 
