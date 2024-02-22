@@ -35,7 +35,7 @@ title-slide-attributes:
 # Finding Supply {.note .inverse}
 
 {{< include 073-finding-supply.qmd >}}
-
+<!--    
 # Zero-Profit Condition {.note .inverse}
 
 {{< include 074-zero-profit-condition.qmd >}}
@@ -47,3 +47,4 @@ title-slide-attributes:
 # Profit as a Function of Factors {.note .inverse}
 
 {{< include 076-profit-function-of-factors.qmd >}}
+-->
