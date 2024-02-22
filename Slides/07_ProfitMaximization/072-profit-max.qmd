@@ -1,0 +1,388 @@
+---
+name: profit maximization
+---
+
+## What We Have Done So Far
+
+We learned where the [Cost Function $C(Q)$]{.hi} comes from
+
+. . .
+
+We also learned about properties of the [Cost Function]{.hi}:
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- Total Costs
+- Variable Costs
+- Fixed Costs
+- Marginal Costs
+:::
+
+::: {.column width="50%"}
+- Average Total Costs
+- Average Fixed Costs
+- Average Variable Costs
+:::
+
+::::
+
+. . .
+
+Now we will put the [Cost Function]{.hi} to work in order to find a firm's [Supply Function]{.hi-orange}
+
+---
+
+## Let's First Ask: What Are Profits? {.smaller}
+
+In Economics, we use the Greek letter $\pi$ (pi) to represent profits
+
+And they follow an intuitive formula: 
+
+$$
+    \pi = \text{Revenue} - \text{Costs}
+$$
+
+We will also make an important distinction between [Accounting Profits]{.hi} and [Economic Profits]{.hi} where the difference comes in the costs
+
+. . .
+
+:::: {.columns}
+
+::: {.column width="50%"}
+[Accounting Profits]{.hi .align-center}
+
+[Accounting Costs]{.h} are the direct costs of operatin a business
+
+These are what we think about when we talk about profits in accounting, finance, etc.
+:::
+
+::: {.column width="50%"}
+[Economic Profits]{.hi .align-center}
+
+[Economic Costs]{.hi-red} will include [Accounting Costs]{.h} and [Opportunity Costs]{.hi}
+
+::: {.fragment}
+- [Opportunity Costs]{.hi} are all foregone benefits from other possible choices once we do make a choice.
+We don't necessarily observe this in the data
+:::
+:::
+
+::::
+
+. . .
+
+[This is important concept once we consider the firm's optimal profits]{.hi .note .align-center .big}
+
+---
+
+## Profits
+
+In simpler words, if I sell [Revenue (R)]{.hi} worth of goods and I had [Costs (C)]{.hi}, the profits are:
+
+$$
+    \pi = R - C
+$$
+
+. . .
+
+Continuing our trend of putting things in terms of $Q$, we get:
+
+$$
+    \pi(Q) = R(Q) - C(Q)
+$$
+
+. . .
+
+- We have already dealt with [Costs as a function of $Q$]{.hi}, that was our [Cost Function $C(Q)$]{.hi}
+
+- Now we will figure out what [Revenue as a function of $Q$]{.hi} is
+
+---
+
+## Revenue
+
+We define [Revenue]{.hi} as:
+
+$$
+    \text{Revenue} = P \cdot Q
+$$
+
+. . .
+
+Plugging this into our Profit function gives us:
+
+\begin{align*}
+    \pi &= \color{red}{\text{Revenue}} - \text{Cost} \\
+    \pi &= \color{red}{P \cdot Q} - \text{Cost}
+\end{align*}
+
+This is where Production is simpler:
+
+::: {.incremental}
+- Profits are a single-variable function
+- This means that the math to maximize profits is straightforward
+- We will just take the derivative and set it equal to zero
+:::
+
+---
+
+## Maximizing Profit
+
+Let's solve this profit maximizing problem in the most general form:
+
+$$
+    \pi = R(Q) - C(Q)
+$$
+
+. . .
+
+[We take the derivative w.r.t. Q and set it equal to zero]{.hi .align-center}
+
+$$
+    \frac{\partial \pi}{\partial Q} = \frac{\partial R(Q)}{\partial Q} - \frac{\partial C(Q)}{\partial Q} = 0
+$$
+
+[These derivatives have their own name]{.hi .align-center}
+
+. . .
+
+$$
+    \text{Marginal Revenue} - \text{Marginal Cost} = 0 
+$$
+
+. . .
+
+$$ 
+    \text{Marginal Revenue} = \text{Marginal Cost}
+$$
+
+---
+
+## Maximizing Profits {.smaller}
+
+[A firm maximizes its profits by finding the Quantity that makes Marginal Revenue equal to Marginal Cost]{.hi .note .align-center}
+
+$$
+    MR(Q) = MC(Q)
+$$
+
+. . . 
+
+We can push this a bit further. We had just found the formula for [Revenue]{.hi}:
+$$
+    R(Q) = P \cdot Q 
+$$
+
+So if we take the derivative of this w.r.t. $Q$ we will find the [Marginal Revenue]{.hi}
+
+. . .
+
+$$
+    \frac{\partial R(Q)}{\partial Q} = MR(Q) = P
+$$
+
+. . .
+
+[Putting it all together gives us the key to finding maximum profits for a perfectly competitive firm:]{.hi .align-center}
+
+$$
+    P = MC(Q)
+$$
+
+---
+
+## Profit Maximizing Condition
+
+[The firm will be at its maximum profit when they meet the condition]{.hi .align-center}
+$$
+    P = MC(Q)
+$$
+
+. . .
+
+From the firm's perspective, this means they sould produce exactly the level of $Q$ at which the [Marginal Cost]{.hi} of producing another unit is equal to the price it is sold at
+
+. . .
+
+Here's an intuitive example. Let's say you earn $5 per unit you produce:
+
+:::: {.columns}
+
+::: {.column width="50%"}
+::: {.incremental}
+- The first unit costs $1 to make
+    - [You would make it!]{.hi}
+- The second unit costs $2 to make
+    - [You make it!]{.hi}
+:::
+:::
+
+::: {.column width="50%"}
+::: {.incremental}
+- The third unit costs $4 to make
+    - [You make it!]{.hi}
+- The fourth one costs $5.01 to make
+    - [You don't make it!]{.hi}
+:::
+:::
+
+::::
+
+---
+
+## Producing to Maximize Profits
+
+So the production decision follows the rules:
+
+::: {.incremental .align-center}
+- When $P > MC$, the firm [Produces More]{.hi}!
+- When $P < MC$, the firm [Does Not Produce]{.hi}
+- When $P = MC$, the firm [is Maximizing Profit]{.hi}
+:::
+
+---
+
+## Quick Math Note
+
+[When the Cost Function is Cubic, the MC Function is Quadratic]{.h .note .align-center}
+
+![](images/mc-price-intersection.png){fig-align="center"}
+
+- This means that [Marginal Revenue]{.hi} will equal [Price]{.hi} at 2 pionts
+
+- The firm will always choose the point of intersection when the [Marginal Curve]{.h} slopes upwards!
+
+---
+
+## Profit Maximization Problem 
+
+Let the Cost Function be
+
+$$
+    C(Q) = Q^{2} + 4Q + 20 \;\;\;\;\; \& \;\;\;\;\; P = 8
+$$
+
+[1 - Find the Profit Function: $\;\; \pi(Q) = R(Q) - C(Q)$](https://wheelofnames.com/){.hi .note .align-center}
+
+. . .
+
+\begin{align*}
+    \pi(Q) &= R(Q) - C(Q) \\ 
+    \pi(Q) &= P \cdot Q - C(Q) \\
+    \pi(Q) &= 8 \cdot Q - (Q^{2} + 4Q + 20) \\
+    \pi(Q) &= 8Q - Q^{2} - 4Q - 20
+\end{align*}
+
+---
+
+## Profit Maximization Problem 
+
+$$
+    \pi(Q) = 8Q - Q^{2} - 4Q - 20
+$$
+
+[2 - Find the optimal $\; Q \;$ to produce for maximum profits: $\;\; \frac{\partial \pi(Q)}{\partial Q} = 0$](https://wheelofnames.com/){.hi .note .align-center}
+
+. . .
+
+\begin{align*}
+    \frac{\partial \pi(Q)}{\partial Q} &= 0 \\
+    8 - 2Q - 4 &= 0 \\
+    2Q &= 4 \\
+    Q^{*} &= 2
+\end{align*}
+
+---
+
+## Another Way to Maximize Profits
+
+Use the fact that [Marginal Cost must equal Price]{.hi}
+
+$$
+    C(Q) = Q^{2} + 4Q + 20 \;\;\;\;\; \& \;\;\;\;\; P = 8
+$$
+
+[1 - Find the Marginal Cost](https://wheelofnames.com/){.hi .note .align-center}
+
+. . .
+
+\begin{align*}
+    MC(Q) = \frac{\partial C(Q)}{\partial Q} = 2Q + 4 
+\end{align*}
+
+. . . 
+
+[2 - Set $\; MC(Q) = MR(Q) = P \;$](https://wheelofnames.com/){.hi .note .align-center}
+
+. . .
+
+[\begin{align*}
+    MC(Q) &= P \\
+    2Q + 4 &= 8 \\
+    2Q &= 4 \\
+    Q^{*} &= 2
+\end{align*}]{.small}
+
+---
+
+## Maximizing Profit
+
+The firm can then use the found optimal quantity, $Q^{*} = 2$, to figure out how much is their maximum profit given their costs and market price
+
+$$
+    \pi(Q) = P \cdot Q - C(Q) \;\;\;\;\; ; \;\;\;\;\; C(Q) = Q^{2} + 4Q + 20 \;\; ; \;\; P = 8
+$$
+
+[Find the Profit of this firm](https://wheelofnames.com/){.hi .note .align-center}
+
+. . .
+
+:::: {.columns}
+
+::: {.column width="50%"}
+[Profits]{.hi .align-center}
+
+::: {.fragment .small}
+\begin{align*}
+    \pi &= P \cdot Q - C(Q) \\
+    \pi &= P \cdot Q - Q^{2} + 4Q + 20 \\
+    \pi &= 8 \cdot 2 - \left( (2)^{2} + 4(2) + 20 \right) \\
+    \pi &= 16 - \left( 4 + 8 + 20 \right) \\
+    \pi &= 16 - 4 - 8 - 20 \\
+    \pi &= -16
+\end{align*}
+:::
+
+:::
+
+::: {.column width="50%"}
+
+::: {.fragment}
+[Profits can be Negative and the optimal choice!]{.hi .align-center}
+
+Note the profits that producing 0 goods yields:
+
+\begin{align*}
+    \pi(0) &= 8(0) - (0)^{2} - 4(0) - 20 \\
+    \pi(0) &= -20
+\end{align*}
+:::
+
+:::
+
+::::
+
+---
+
+## Negative Profits
+
+The previous firm's maximum profit is a loss of $16
+
+::: {.incremental}
+- [Negative Profits]{.hi} can sometimes be the optimal choice 
+
+    - The firm would have lost more if they had produced zero $(\pi(0) = 20)$
+
+- So even though they lost money, producing something was still better than not producing at all!
+:::

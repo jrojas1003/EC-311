@@ -1,0 +1,9 @@
+---
+name: supply functions
+---
+
+## Finding the Firm's Supply Function
+
+Recall that we have assumed that a Perfectly Competitive firm cannot set its price 
+
+- It does not have the power to do so in the market
