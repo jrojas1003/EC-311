@@ -1,0 +1,136 @@
+---
+name: shut-down condition
+---
+
+## Negative Profits
+
+How can we tell whether a firm should produce or shut down?
+
+::: {.incremental}
+- The [Average Total Cost]{.hi} tells us whether a firm makes profits or losses
+    - $P = ATC$ means that $P \cdot Q = ATC(Q^{*}) = C(Q^{*})$
+
+- The [Average Variable Cost]{.hi} tells us whether a firm makes profits or losses, [ignoring fixed costs]{.hi}
+    - $P = AVC$ means that $P \cdot Q = AVC(Q^{*}) \cdot Q = VC(Q^{*})$
+:::
+
+. . .
+
+<br>
+
+If $P = AVC(Q^{*}) \rightarrow$ [The firm makes no gains from producing!]{.hi}
+
+---
+
+## When Do Firms Shut Down? 
+
+If $\text{Revenue} < VC(Q^{*})$, then profits will be less than $-FC$
+
+Let's look at the intuition behind this:
+
+::: {.incremental .small}
+- The firm is making so little revenue, that it is making negative profits
+- If this is true, then the firm is not making enough to even cover their [Fixed Costs]{.hi}. 
+    - The firm cannot even afford to pay their monthly warehouse costs
+- Then it can't pay their labor, can't afford their storefront
+- Why keep going?
+::: 
+
+. . .
+
+[It doesn't. This is when the firm shuts down, takes their ball and goes home]{.hi .align-center}
+
+$$
+    \text{Shutdown Condition: } P < AVC(Q^{*})
+$$
+
+---
+
+## Perfectly Competitive Firm Shutdown Condition
+
+We have the following conditions:
+
+::: {.incremental}
+- If $P = AVC(Q^{*})$, the [firm is indifferent between producing and shutting down]{.hi}
+- If $P < AVC(Q^{*})$, the [firm shuts down]{.hi}
+- If $P > AVC(Q^{*})$, the [firm will produce]{.hi}
+:::
+
+. . .
+
+Recall that [MC = AVC at min{AVC}]{.hi} so it is equivalent to say:
+
+::: {.fragment}
+- $P = \min\{AVC\} \rightarrow$ [firm is indifferent]{.hi}
+- $P < \min\{AVC\} \rightarrow$ [firm shuts down]{.hi}
+- $P > \min\{AVC\} \rightarrow$ [firm produces]{.hi}
+:::
+
+---
+
+## Two Important Conditions
+
+So we have two important conditions that determine things about firms:
+
+<br>
+[Zero-Profit Condition]{.hi .align-center}
+
+::: {.fragment}
+$$
+    P = ATC(Q^{*}) \;\;\; \text{or} \;\;\; P = \min\{ATC(Q^{*}) \}
+$$
+:::
+
+<br>    
+[Shut-Down Condition]{.hi .align-center}
+
+::: {.fragment}
+$$
+    P < AVC(Q^{*}) \;\;\; \text{or} \;\;\; P < \min\{AVC(Q^{*}) \}
+$$
+:::
+
+---
+
+## Two Important Conditions
+
+![](){fig-align="center"}
+
+---
+
+## Effects on the Supply Curve
+
+The [Shut-Down Condition]{.hi} will impact what the [Supply Curve]{.hi} looks like
+
+::: {.incremental}
+- Because the firm will shut down if $P < \min\{AVC\}$, we need to adjust our [Supply Curve]{.hi}
+- Remember we found that the [Supply Curve was the Marginal Cost Curve]{.hi}
+- This is still true, but we are adding our [Shut-Down Condition]{.hi}
+:::
+
+---
+
+## Supply Curve With Shut-Down Condition
+
+![](){fig-align="center"}
+
+---
+
+## "New" Supply Curve
+
+The [Supply Curve]{.hi} will follow:
+
+\begin{equation*}
+\text{Supply Curve} = 
+    \begin{cases}
+        P = MC(Q^{*}) &\text{if} \;\;\; P \geq \min\{AVC(Q^{*})\} \\ \\
+        Q = 0 &\text{if} \;\;\;  P < \min\{AVC(Q^{*})\} 
+    \end{cases}
+\end{equation*}
+
+. . .
+
+<br><br>
+We call this the [Short-Run Supply Curve]{.hi} and we will deal with this in the next lecture
+
+For now, let's think of how profit may look if we think of it in terms of inputs
