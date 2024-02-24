@@ -385,4 +385,6 @@ The previous firm's maximum profit is a loss of $16
     - The firm would have lost more if they had produced zero $(\pi(0) = 20)$
 
 - So even though they lost money, producing something was still better than not producing at all!
+
+- Now that we know how profits work, we can begin to find the supply curve
 :::

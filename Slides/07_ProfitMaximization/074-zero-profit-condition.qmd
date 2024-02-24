@@ -1,0 +1,53 @@
+---
+name: zero profit condition
+---
+
+## When Do Firm's Make Zero Profit?
+
+The Perfectly Competitively firm will make [Zero Profit]{.hi-orange} when
+$$
+    P = ATC(Q^{*})
+$$
+
+How does this work, let's multiply both sides by $Q$
+
+\begin{align*}
+    P \cdot Q &= ATC(Q^{*}) \cdot Q \\
+    \text{Revenue} &= \text{Cost}
+\end{align*}
+
+[We call this the]{.align-center}
+
+[Zero-Profit Condition]{.align-center .hi}
+
+---
+
+## Zero-Profit Condition Equalities
+
+From all the work we've done so far, we know that this point is the intersection of many different things
+
+::: {.incremental}
+- We begin with $P = ATC(Q^{*})$
+- Recall we found that $P = MC(Q^{*})$ at that intersection
+$$
+    P = ATC(Q^{*}) = MC(Q^{*})
+$$
+- Lastly, remember that the [Marginal Cost Curve]{.hi} and the [Average Cost Curve]{.hi} cross at the [minimum of the ATC Curve]{.hi}
+$$
+    P = ATC(Q^{*}) = MC(Q^{*}) = \min\{ATC(Q^{*})\} 
+$$
+:::
+
+---
+
+## Zero-Profit Condition
+
+$$
+    P = ATC(Q^{*}) = MC(Q^{*}) = \min\{ATC(Q^{*})\} 
+$$
+
+This is our [Zero-Profit Condition]{.hi}
+
+. . .
+
+If [Price]{.hi} is equal to the [Marginal Cost]{.hi} at the point where [Marginal Cost is equal to Average Total Cost]{.hi}, then it must also be the point where the [Average Total Cost]{.hi} is at its minimum
