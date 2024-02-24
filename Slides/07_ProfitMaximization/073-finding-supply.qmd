@@ -2,8 +2,343 @@
 name: supply functions
 ---
 
-## Finding the Firm's Supply Function
+## Finding the Firm's Supply Function {.smaller}
 
 Recall that we have assumed that a Perfectly Competitive firm cannot set its price 
 
 - It does not have the power to do so in the market
+    - To be more exact, any changes it makes does not affect the market equilibrium
+
+- So because the firm just looks at the market price $(P)$ and chooses how much to produce, we will model supply as a function of price
+
+- Let's continue to use our previous firm as an example, but we will leave Price as a variable:
+
+. . . 
+
+$$
+    \pi(Q) = P \cdot Q - C(Q) = P \cdot Q - Q^{2} - 4Q - 20
+$$ 
+
+:::: {.columns}
+
+::: {.column width="50%"}
+[Find MC and set equal to Price]{.hi .align-center}
+
+::: {.fragment}
+\begin{align*}
+    MC &= 2Q + 4 \\ \\
+    MC &= P \\
+    2Q + 4 &= P
+\end{align*}
+:::
+
+:::
+
+::: {.column width="50%"}
+[Solve for $\; Q^{*}$]{.hi .align-center}
+
+::: {.fragment}
+\begin{align*}
+    2Q + 4 &= P \\
+    2Q &= P - 4 \\
+    Q^{*} &= \frac{P - 4}{2}
+\end{align*}
+:::
+
+:::
+
+::::
+
+---
+
+## Finding Supply
+
+So our [Supply Function]{.hi} will look like 
+
+$$
+    Q^{*} = f(P)
+$$
+
+This tells us how much a firm will produce as a function of the price
+
+We can also find the [Supply Curve]{.hi}
+
+. . .
+
+This will be what we are able to graph, where [$P$]{.hi} will be on the y-axis
+
+$$
+    P = f(Q^{*})
+$$
+
+We have now created a [Supply Curve]{.hi} that is in the same format as our Demand Curve
+
+---
+
+## Let's See It Graphically {.smaller}
+
+For the [Cost Function]{.hi}
+
+$$
+    C(Q) = \frac{1}{2}Q^{2} + 10Q + 10
+$$
+
+[Find and Draw the MC, AVC, AFC, and ATC]{.hi .align-center}
+
+. . .
+
+:::: {.columns}
+
+::: {.column width="25%"}
+[Marginal Cost]{.hi .align-center}
+
+::: {.fragment}
+$$
+    MC = Q + 10
+$$
+![](images/supply-marginal-cost.png){height="225"}
+:::
+
+:::
+
+::: {.column width="25%"}
+[Average Fixed Cost]{.hi .align-center}
+
+::: {.fragment}
+$$
+    AFC = \frac{10}{Q}
+$$
+![](images/supply-average-fixed-cost.png){height="200"}
+:::
+
+:::
+
+::: {.column width="25%"}
+[Average Variable Cost]{.hi .align-center}
+
+::: {.fragment}
+$$
+    AVC = \frac{1}{2}Q + 10
+$$
+![](images/supply-average-variable-cost.png){height="200"}
+:::
+
+:::
+
+::: {.column width="25%"}
+[Average Total Cost]{.hi .align-center}
+
+::: {.fragment}
+$$
+    ATC = \frac{1}{2}Q + 10Q + \frac{10}{Q}
+$$
+![](images/supply-average-total-cost.png){height="200"}
+:::
+
+:::
+
+::::
+
+---
+
+## Where is Supply?
+
+Let's put it all together
+
+![](images/supply-costs-together.png){fig-align="center"}
+
+---
+
+## Where is Supply?
+
+Okay, so there wasn't an explicit [Supply Curve]{.hi} 
+
+But it is there, we just have to polish it up a bit
+
+Lets add some prices and map out the corresponding optimal quantities
+
+. . .
+
+Using $P = MC$ where $MC = Q + 10$ and $P = 20 , 25 , 30$ the optimal quantities are:
+$$
+    P = MC 
+$$
+
+\begin{align*}
+    20 &= Q + 10 \rightarrow Q = 10 \\
+    25 &= Q + 10 \rightarrow Q = 15 \\
+    30 &= Q + 10 \rightarrow Q = 20 
+\end{align*}
+
+---
+
+## Where is Supply?
+
+:::: {.columns}
+
+::: {.column width="70%"}
+![](images/supply-costs-plus-prices.png){fig-align="center"}
+:::
+
+::: {.column width="30%"}
+
+::: {.fragment}
+The [Marginal Cost Curve]{.hi} maps the market price to the profit maximizing $Q^{*}$
+:::
+::: {.incremental}
+- The [MC Curve]{.hi-green} IS the [Supply Curve]{.hi} for a perfectly competitive firm
+$$
+    P = MC = Q + 10
+$$
+:::
+:::
+
+::::
+
+---
+
+## Finding Profit from a Graph
+
+We can also use this graph to find a firm's profits
+
+We will do this in steps:
+
+::: {.incremental}
+- Find revenue (Recall $\text{Revenue} = P \cdot Q$)
+- Find the firm's total cost using Average Total Costs
+- Use the fact that profit is just the difference between Revenue and Cost
+:::
+
+---
+
+## 1- Finding Revenue
+
+[Assume that $\; P = 30 \;$ in this market]{.align-center} 
+
+[We know that at $\; P = 30 \;$ we have $\; Q = 20\;$]{.align-center}
+
+:::: {.columns}
+
+::: {.column width="30%"}
+<br><br><br>
+\begin{align*} 
+    \text{Revenue} &= P \cdot Q \\
+    \text{Revenue} &= 30 \cdot 20 \\
+    \text{Revenue} &= 600
+\end{align*}
+
+:::
+
+::: {.column width="70%"}
+::: {.fragment}
+![](images/finding-profit-1.png){fig-align="center"}
+:::
+:::
+
+::::
+
+---
+
+## 2 - Finding Costs (Using ATC from Graph) {.smaller}
+
+[Because we do not graph Costs we will use the ATC to find total costs]{.align-center}
+[To find Total Costs, first recall how we found ATC]{.align-center}
+\begin{align*}
+    ATC = \frac{C(Q)}{Q} \;\; \Rightarrow \;\; C(Q) = ATC \cdot Q
+\end{align*}
+
+. . .
+
+[Our Average Total Costs are $\; ATC = \frac{1}{2}Q + 10Q + \frac{10}{Q}$]{.align-center}
+
+:::: {.columns}
+
+::: {.column width="35%"}
+[Find Total Costs when Q = 20](https://wheelofnames.com/){.note .hi .align-center}
+
+::: {.fragment}
+[\begin{align*}
+    C(Q) &= ATC \cdot Q \\
+    C(Q) &= Q \cdot \left(\frac{1}{2}Q + 10 + \frac{10}{Q}\right) \\
+    C(Q) &= \frac{1}{2}Q^{2} + 10Q + 10 \\
+    C(20) &= \frac{1}{2}(20)^{2} + 10(20) + 10
+\end{align*}]{.sub}
+
+$$
+    \text{Costs} = 410
+$$
+:::
+:::
+
+::: {.column width="65%"}
+::: {.fragment}
+![](images/finding-profit-2.png){fig-align="center" height="350"}
+:::
+:::
+
+::::
+
+---
+
+## Finding Profit
+
+[Profit will simply be the difference between these two boxes]{.hi .align-center}
+
+![](images/finding-profit-3.png){fig-align="center"}
+
+---
+
+## Finding Profit
+
+Something imoprtant that we have already mentioned is tha profits can be [Positive]{.hi-green}, [Negative]{.hi-red}, or [Zero]{.hi-orange}
+
+In math terms, this is determined if:
+
+::: {.incremental}
+- When $P > ATC$, the firm has [Positive Profits]{.hi-green}
+- When $P < ATC$, the firm has [Negative Profits]{.hi-red}
+- When $P = ATC$, the firm has [Zero Profits]{.hi-orange}
+:::
+
+---
+
+## Why Would a Firm Ever Want Zero Profits?
+
+We are thinking about [Economic Profits]{.hi}
+
+- Remember this means that we care about [Opportunity Costs]{.hi}
+
+- What this implies is that firms will squeeze their productivity as much as possible
+
+. . .
+
+This is a concept that trips up many non-economist minded folk so its worth expanding on:
+
+\begin{align*}
+    \text{Accounting Profits} = \text{Revenue} - \text{Accounting Costs}
+\end{align*}
+
+[Firms want their Accounting Profits to be positive, its how firms stay in business]{.hi .align-center}
+
+---
+
+## Pushing Economic Profits Down to Zero
+
+\begin{align*}
+    \text{Accounting Profits} = \text{Revenue} - \text{Accounting Costs} > 0 \rightarrow \; :)
+\end{align*}
+
+[Now let's compare this to Economic Profits]{.hi .align-center}
+
+. . .
+
+\begin{align*}
+    \text{Economic Profits} = \text{Revenue} - \left(\text{Accounting Costs} + \text{Opportunity Costs}\right)
+\end{align*}
+
+- Opportunity Costs will push [Economic Profits]{.hi} down as much as possible
+    - This means that the firm will be making their best possible choice
+
+. . .
+
+[Because firms do not want to be in the negative, their maximum Economic Profits will be equal to zero]{.hi .note .align-center .big}
