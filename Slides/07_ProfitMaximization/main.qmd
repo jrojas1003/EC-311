@@ -35,6 +35,7 @@ title-slide-attributes:
 # Finding Supply {.note .inverse}
 
 {{< include 073-finding-supply.qmd >}}
+
 <!--    
 # Zero-Profit Condition {.note .inverse}
 

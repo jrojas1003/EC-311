@@ -12,16 +12,51 @@ title-slide-attributes:
 
 ## Exam Notes & Corrections
 
-[Short Answer Questions]{.hi}
+[Short Answer Question Correction]{.hi .align-center}
 
-- Points are missprinted on test. The correct amounts should be:
+Points are missprinted on test. The correct amounts should be:
 
-    - Question 11: 8 points
-    - Question 12: 6 points
-    - Question 13: 8 points
-    - Question 14: 8 points
+:::: {.columns}
 
-[Using Bathroom Policy]{.hi}
+::: {.column width="50%"}
+- Question 11: 8 points
+- Question 12: 6 points
+:::
+
+::: {.column width="50%"}
+- Question 13: 8 points
+- Question 14: 8 points
+:::
+
+::::
+
+<br>
+
+[Bathroom Policy]{.hi .align-center}
 
 You are free to leave the classroom to use the bathroom at any time. 
-[Please leave your phone on my desk on your way out. Pick it up once you return]{.h}
+[Please leave your phone on my table on your way out. Pick it up once you return]{.h}
+
+---
+
+## Exam Notes & Corrections
+
+[Multi-Part Analysis]{.hi .align-center}
+
+[Question 15]{.h}
+
+- Part A: Remember to label minimum bundle points for each indifference curve
+
+[Question 16]{.h}
+
+Should be [price decrease in sushi rice]{.h}, not increase
+​
+<br>
+
+[Help yourself to a lollipop once you turn in your exam]{.h .align-center}
+
+---
+
+```{=html}
+<iframe width="600" height="250" src="https://time.is/"></iframe>
+```
