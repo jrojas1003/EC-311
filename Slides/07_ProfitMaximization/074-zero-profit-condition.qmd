@@ -51,3 +51,188 @@ This is our [Zero-Profit Condition]{.hi}
 . . .
 
 If [Price]{.hi} is equal to the [Marginal Cost]{.hi} at the point where [Marginal Cost is equal to Average Total Cost]{.hi}, then it must also be the point where the [Average Total Cost]{.hi} is at its minimum
+
+---
+
+## Zero-Profit Condition Example
+
+From just the [Cost Function]{.hi} we can find the [Supply Curve]{.hi} for the firm, and the [Price at which it achieves zero profits]{.hi}
+
+We will do this by:
+
+::: {.incremental}
+1. Finding the Supply Curve
+2. Finding the Optimal Quantity $(Q^{*})$ to produce
+3. Finding the $\pi = 0$ price
+:::
+
+---
+
+## 1 - Find Supply Curve
+
+$$
+    C(Q) = Q^{2} + Q + 81
+$$
+
+[We can find this two ways: 1. Take the Derivative of profits wrt Quantity or 2. Set Margial Curve equal to Price and solve for $P$]{.hi}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+[Find $\; \frac{\partial \pi}{\partial Q} = 0$]{.hi .align-center}
+
+::: {.fragment}
+\begin{align*}
+    \pi &= \text{Revenue} - \text{Cost} \\
+    \pi &= P \cdot Q - (Q^{2} + Q + 81) \\
+    \frac{\partial \pi}{\partial Q} &= P - 2Q - 1 = 0 \\
+    P &= 2Q + 1
+\end{align*}
+:::
+:::
+
+::: {.column width="50%"}
+[Find MC = P and solve for P]{.hi .align-center}
+
+::: {.fragment}
+\begin{align*}
+    P &= MC \\
+    P &= 2Q + 1
+\end{align*}
+:::
+:::
+
+::::
+
+---
+
+## 2 - Find Optimal Quantity
+
+$$
+    P = 2Q + 1
+$$ 
+
+$$
+    \text{Zero-}\pi \text{ Condition}: P = MC = ATC(Q) = \min\{ATC \}
+$$
+
+Using the [Zero-Profit Condition]{.hi} find the optimal Quantity 
+
+:::: {.columns}
+
+::: {.column width="50%"}
+<br><br><br>
+[Set MC = ATC]{.hi .align-center}
+
+:::
+
+::: {.column width="50%"}
+
+::: {.fragment .tiny}
+\begin{align*}
+    MC &= ATC \\
+    2Q + 1 &= Q + 1 + \frac{81}{Q} \\
+    \color{red}{Q \cdot} (2Q + 1) &= \color{red}{Q \cdot} \left(Q + 1 + \frac{81}{\color{red}{Q}}\right) \\
+    2Q^{2} + Q &= Q^{2} + Q + 81 \\
+    Q^{2} &= 81 \\
+    Q^{*} &= 9
+\end{align*}
+:::
+
+:::
+
+::::
+
+---
+
+## 3 - Find the $\pi = 0$ Price
+
+$$
+    Q^{*} = 9
+$$
+
+
+$$
+    \text{Zero-}\pi \text{ Condition}: P = MC = ATC(Q) = \min\{ATC \}
+$$
+
+Using the [Zero-Profit Condition]{.hi} find the [Zero-Profit Price]{.hi}
+
+. . .
+
+:::: {.columns}
+
+::: {.column width="50%"}
+\begin{align*}
+    P &= MC(Q^{*}) \\
+    P &= 2Q + 1 \\
+    P &= 2(9) + 1 \\
+    P &= 19
+\end{align*}
+:::
+
+::: {.column width="50%"}
+<br><br>
+We say that at [P = 19]{.hi} we have [$\pi = 0$]{.hi}
+
+:::
+
+::::
+
+---
+
+## 3 - Alternate Solution
+
+Find $\min \{ATC(Q) \}$
+
+$$
+    ATC(Q) = Q + 1 + \frac{81}{Q}
+$$
+
+:::: {.columns}
+
+::: {.column width="50%"}
+[Find $\; \frac{\partial ATC}{\partial Q} = 0$]{.hi .align-center}
+
+::: {.fragment .tiny}
+\begin{align*}
+    \frac{\partial ATC}{\partial Q} &= 0 \\
+    1 - \frac{81}{Q^{2}} &= 0 \\
+    \frac{81}{Q^{2}} &= 1 \\
+    Q^{*} &= 9
+\end{align*}
+:::
+
+::: 
+
+::: {.column width="50%"}
+[Plug-in $\; Q^{*} \;$ into ATC to find Price]{.hi .align-center}
+
+::: {.fragment .tiny}
+\begin{align*}
+   P &= ATC(Q^{*}) \\
+   P &= \color{red}{Q^{*}} + 1 + \frac{81}{\color{red}{Q^{*}}} \\ 
+   P &= \color{red}{9} + 1 + \frac{81}{\color{red}{9}} \\
+   P &= 10 + 9 \\
+   P &= 19 
+\end{align*}
+:::
+
+:::
+
+::::
+
+---
+
+## That Negative Profit Thing is Still Odd 
+
+Earlier we saw that sometimes it makes sense for firms to continue to operate even when they're making a loss
+
+. . .
+
+This is because the loss is still smaller than the loss from not operating at all
+
+. . .
+
+Then how bad do things have to get for them to [Shut Down]{.hi}?
+
