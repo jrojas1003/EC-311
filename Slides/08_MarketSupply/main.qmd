@@ -1,0 +1,25 @@
+---
+title: "Supply"
+subtitle: "EC 311 - Intermediate Microeconomics"
+author: Jose Rojas-Fallas
+date: last-modified
+date-format: "YYYY"
+format:
+    revealjs:
+        theme: [default, styles.scss]
+        slide-number: true
+        footer: "EC311 - Lecture 07 | Supply"
+        preview-links: auto
+        code-fold: FALSE
+title-slide-attributes: 
+  data-background-position: left
+---
+
+[Outline]{.h .realbig}
+
+### Chapter 08
+
+- Topics
+
+    - Market Structures and Perfect Competition (8.1)
+    - Profit Maximization in Perfect Competition (8.2)
