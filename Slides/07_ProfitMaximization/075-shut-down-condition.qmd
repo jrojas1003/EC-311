@@ -112,11 +112,11 @@ The [Shut-Down Condition]{.hi} will impact what the [Supply Curve]{.hi} looks li
 
 ## Supply Curve With Shut-Down Condition
 
-![](){fig-align="center"}
+![](images/zero-profit-plus-shutdown.png){fig-align="center"}
 
 ---
 
-## "New" Supply Curve
+## "New" Supply Curve {.smaller}
 
 The [Supply Curve]{.hi} will follow:
 
@@ -128,9 +128,12 @@ The [Supply Curve]{.hi} will follow:
     \end{cases}
 \end{equation*}
 
-. . .
+![](images/new-supply-curve.png){fig-align="center"}
 
-<br><br>
+---
+
+## Supply curve
+
 We call this the [Short-Run Supply Curve]{.hi} and we will deal with this in the next lecture
 
 For now, let's think of how profit may look if we think of it in terms of inputs
