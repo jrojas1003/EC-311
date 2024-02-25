@@ -231,7 +231,7 @@ We will do this in steps:
 
 ::: {.column width="70%"}
 ::: {.fragment}
-![](images/finding-profit-1.png){fig-align="center"}
+![](images/finding-profit-1.png){fig-align="center" height="400"}
 :::
 :::
 

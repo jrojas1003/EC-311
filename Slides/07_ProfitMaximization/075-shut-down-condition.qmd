@@ -94,7 +94,7 @@ $$
 
 ## Two Important Conditions
 
-![](){fig-align="center"}
+![](images/zero-profit-plus-shutdown.png){fig-align="center"}
 
 ---
 
@@ -112,7 +112,7 @@ The [Shut-Down Condition]{.hi} will impact what the [Supply Curve]{.hi} looks li
 
 ## Supply Curve With Shut-Down Condition
 
-![](images/zero-profit-plus-shutdown.png){fig-align="center"}
+![](images/new-supply-curve.png){fig-align="center"}
 
 ---
 

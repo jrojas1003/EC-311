@@ -23,7 +23,7 @@ title-slide-attributes:
 
     - Market Structures and Perfect Competition (8.1)
     - Profit Maximization in Perfect Competition (8.2)
-<!--
+
 # Market Structures and Perfect Competition {.note .inverse}
 
 {{< include 071-markets-and-perfect-competition.qmd >}}
@@ -31,16 +31,15 @@ title-slide-attributes:
 # Profit Maximization {.note .inverse}
 
 {{< include 072-profit-max.qmd >}}
--->
+
 # Finding Supply {.note .inverse}
 
 {{< include 073-finding-supply.qmd >}}
 
-
 # Zero-Profit Condition {.note .inverse}
 
 {{< include 074-zero-profit-condition.qmd >}}
-<!--
+
 # Shutting Down {.note .inverse}
 
 {{< include 075-shut-down-condition.qmd >}}
@@ -48,4 +47,3 @@ title-slide-attributes:
 # Profit as a Function of Factors {.note .inverse}
 
 {{< include 076-profit-function-of-factors.qmd >}}
--->

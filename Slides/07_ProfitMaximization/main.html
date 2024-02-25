@@ -347,9 +347,14 @@ Jose Rojas-Fallas
 <li><p>Topics</p>
 <ul>
 <li>Market Structures and Perfect Competition (8.1)</li>
-<li>Profit Maximization in Perfect Competition (8.2) &lt;!– # Market Structures and Perfect Competition {.note .inverse}</li>
+<li>Profit Maximization in Perfect Competition (8.2)</li>
 </ul></li>
 </ul>
+</section>
+<section>
+<section id="market-structures-and-perfect-competition" class="title-slide slide level1 note inverse center">
+<h1>Market Structures and Perfect Competition</h1>
+
 </section>
 <section id="market-structures" class="slide level2">
 <h2>Market Structures</h2>
@@ -414,7 +419,7 @@ Jose Rojas-Fallas
 <div class="fragment">
 <p><span class="hi-orange align-center big">The key implication from these assumptions is that firms do not have a choice on what price to charge</span></p>
 </div>
-</section>
+</section></section>
 <section>
 <section id="profit-maximization" class="title-slide slide level1 note inverse center">
 <h1>Profit Maximization</h1>
@@ -727,7 +732,11 @@ Jose Rojas-Fallas
 <li class="fragment"><p>Now that we know how profits work, we can begin to find the supply curve</p></li>
 </ul>
 </div>
-<p>–&gt; # Finding Supply {.note .inverse}</p>
+</section></section>
+<section>
+<section id="finding-supply" class="title-slide slide level1 note inverse center">
+<h1>Finding Supply</h1>
+
 </section>
 <section id="finding-the-firms-supply-function" class="slide level2 smaller">
 <h2>Finding the Firm’s Supply Function</h2>
@@ -767,7 +776,7 @@ Jose Rojas-Fallas
 </div>
 </div>
 </section>
-<section id="finding-supply" class="slide level2">
+<section id="finding-supply-1" class="slide level2">
 <h2>Finding Supply</h2>
 <p>So our <span class="hi">Supply Function</span> will look like</p>
 <p><span class="math display">\[
@@ -895,7 +904,7 @@ Jose Rojas-Fallas
 <div class="fragment">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/finding-profit-1.png"></p>
+<p><img data-src="images/finding-profit-1.png" height="400"></p>
 </figure>
 </div>
 </div>
@@ -1029,22 +1038,429 @@ Jose Rojas-Fallas
 <p>This is our <span class="hi">Zero-Profit Condition</span></p>
 <div class="fragment">
 <p>If <span class="hi">Price</span> is equal to the <span class="hi">Marginal Cost</span> at the point where <span class="hi">Marginal Cost is equal to Average Total Cost</span>, then it must also be the point where the <span class="hi">Average Total Cost</span> is at its minimum</p>
-<!--
-# Shutting Down {.note .inverse}
+</div>
+</section>
+<section id="zero-profit-condition-example" class="slide level2">
+<h2>Zero-Profit Condition Example</h2>
+<p>From just the <span class="hi">Cost Function</span> we can find the <span class="hi">Supply Curve</span> for the firm, and the <span class="hi">Price at which it achieves zero profits</span></p>
+<p>We will do this by:</p>
+<div>
+<ol type="1">
+<li class="fragment">Finding the Supply Curve</li>
+<li class="fragment">Finding the Optimal Quantity <span class="math inline">\((Q^{*})\)</span> to produce</li>
+<li class="fragment">Finding the <span class="math inline">\(\pi = 0\)</span> price</li>
+</ol>
+</div>
+</section>
+<section id="find-supply-curve" class="slide level2">
+<h2>1 - Find Supply Curve</h2>
+<p><span class="math display">\[
+    C(Q) = Q^{2} + Q + 81
+\]</span></p>
+<p><span class="hi">We can find this two ways: 1. Take the Derivative of profits wrt Quantity or 2. Set Margial Curve equal to Price and solve for <span class="math inline">\(P\)</span></span></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="hi align-center">Find <span class="math inline">\(\; \frac{\partial \pi}{\partial Q} = 0\)</span></span></p>
+<div class="fragment">
+<p><span class="math display">\[\begin{align*}
+    \pi &amp;= \text{Revenue} - \text{Cost} \\
+    \pi &amp;= P \cdot Q - (Q^{2} + Q + 81) \\
+    \frac{\partial \pi}{\partial Q} &amp;= P - 2Q - 1 = 0 \\
+    P &amp;= 2Q + 1
+\end{align*}\]</span></p>
+</div>
+</div><div class="column" style="width:50%;">
+<p><span class="hi align-center">Find MC = P and solve for P</span></p>
+<div class="fragment">
+<p><span class="math display">\[\begin{align*}
+    P &amp;= MC \\
+    P &amp;= 2Q + 1
+\end{align*}\]</span></p>
+</div>
+</div>
+</div>
+</section>
+<section id="find-optimal-quantity" class="slide level2">
+<h2>2 - Find Optimal Quantity</h2>
+<p><span class="math display">\[
+    P = 2Q + 1
+\]</span></p>
+<p><span class="math display">\[
+    \text{Zero-}\pi \text{ Condition}: P = MC = ATC(Q) = \min\{ATC \}
+\]</span></p>
+<p>Using the <span class="hi">Zero-Profit Condition</span> find the optimal Quantity</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><br><br><br> <span class="hi align-center">Set MC = ATC</span></p>
+</div><div class="column" style="width:50%;">
+<div class="fragment tiny">
+<p><span class="math display">\[\begin{align*}
+    MC &amp;= ATC \\
+    2Q + 1 &amp;= Q + 1 + \frac{81}{Q} \\
+    \color{red}{Q \cdot} (2Q + 1) &amp;= \color{red}{Q \cdot} \left(Q + 1 + \frac{81}{\color{red}{Q}}\right) \\
+    2Q^{2} + Q &amp;= Q^{2} + Q + 81 \\
+    Q^{2} &amp;= 81 \\
+    Q^{*} &amp;= 9
+\end{align*}\]</span></p>
+</div>
+</div>
+</div>
+</section>
+<section id="find-the-pi-0-price" class="slide level2">
+<h2>3 - Find the <span class="math inline">\(\pi = 0\)</span> Price</h2>
+<p><span class="math display">\[
+    Q^{*} = 9
+\]</span></p>
+<p><span class="math display">\[
+    \text{Zero-}\pi \text{ Condition}: P = MC = ATC(Q) = \min\{ATC \}
+\]</span></p>
+<p>Using the <span class="hi">Zero-Profit Condition</span> find the <span class="hi">Zero-Profit Price</span></p>
+<div class="fragment">
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="math display">\[\begin{align*}
+    P &amp;= MC(Q^{*}) \\
+    P &amp;= 2Q + 1 \\
+    P &amp;= 2(9) + 1 \\
+    P &amp;= 19
+\end{align*}\]</span></p>
+</div><div class="column" style="width:50%;">
+<p><br><br> We say that at <span class="hi">P = 19</span> we have <span class="hi"><span class="math inline">\(\pi = 0\)</span></span></p>
+</div>
+</div>
+</div>
+</section>
+<section id="alternate-solution" class="slide level2">
+<h2>3 - Alternate Solution</h2>
+<p>Find <span class="math inline">\(\min \{ATC(Q) \}\)</span></p>
+<p><span class="math display">\[
+    ATC(Q) = Q + 1 + \frac{81}{Q}
+\]</span></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="hi align-center">Find <span class="math inline">\(\; \frac{\partial ATC}{\partial Q} = 0\)</span></span></p>
+<div class="fragment tiny">
+<p><span class="math display">\[\begin{align*}
+    \frac{\partial ATC}{\partial Q} &amp;= 0 \\
+    1 - \frac{81}{Q^{2}} &amp;= 0 \\
+    \frac{81}{Q^{2}} &amp;= 1 \\
+    Q^{*} &amp;= 9
+\end{align*}\]</span></p>
+</div>
+</div><div class="column" style="width:50%;">
+<p><span class="hi align-center">Plug-in <span class="math inline">\(\; Q^{*} \;\)</span> into ATC to find Price</span></p>
+<div class="fragment tiny">
+<p><span class="math display">\[\begin{align*}
+   P &amp;= ATC(Q^{*}) \\
+   P &amp;= \color{red}{Q^{*}} + 1 + \frac{81}{\color{red}{Q^{*}}} \\
+   P &amp;= \color{red}{9} + 1 + \frac{81}{\color{red}{9}} \\
+   P &amp;= 10 + 9 \\
+   P &amp;= 19
+\end{align*}\]</span></p>
+</div>
+</div>
+</div>
+</section>
+<section id="that-negative-profit-thing-is-still-odd" class="slide level2">
+<h2>That Negative Profit Thing is Still Odd</h2>
+<p>Earlier we saw that sometimes it makes sense for firms to continue to operate even when they’re making a loss</p>
+<div class="fragment">
+<p>This is because the loss is still smaller than the loss from not operating at all</p>
+</div>
+<div class="fragment">
+<p>Then how bad do things have to get for them to <span class="hi">Shut Down</span>?</p>
+</div>
+</section></section>
+<section>
+<section id="shutting-down" class="title-slide slide level1 note inverse center">
+<h1>Shutting Down</h1>
 
+</section>
+<section id="negative-profits-1" class="slide level2">
+<h2>Negative Profits</h2>
+<p>How can we tell whether a firm should produce or shut down?</p>
+<div>
+<ul>
+<li class="fragment">The <span class="hi">Average Total Cost</span> tells us whether a firm makes profits or losses
+<ul>
+<li class="fragment"><span class="math inline">\(P = ATC\)</span> means that <span class="math inline">\(P \cdot Q = ATC(Q^{*}) = C(Q^{*})\)</span></li>
+</ul></li>
+<li class="fragment">The <span class="hi">Average Variable Cost</span> tells us whether a firm makes profits or losses, <span class="hi">ignoring fixed costs</span>
+<ul>
+<li class="fragment"><span class="math inline">\(P = AVC\)</span> means that <span class="math inline">\(P \cdot Q = AVC(Q^{*}) \cdot Q = VC(Q^{*})\)</span></li>
+</ul></li>
+</ul>
+</div>
+<div class="fragment">
+<p><br></p>
+<p>If <span class="math inline">\(P = AVC(Q^{*}) \rightarrow\)</span> <span class="hi">The firm makes no gains from producing!</span></p>
+</div>
+</section>
+<section id="when-do-firms-shut-down" class="slide level2">
+<h2>When Do Firms Shut Down?</h2>
+<p>If <span class="math inline">\(\text{Revenue} &lt; VC(Q^{*})\)</span>, then profits will be less than <span class="math inline">\(-FC\)</span></p>
+<p>Let’s look at the intuition behind this:</p>
+<div class="small">
+<ul>
+<li class="fragment">The firm is making so little revenue, that it is making negative profits</li>
+<li class="fragment">If this is true, then the firm is not making enough to even cover their <span class="hi">Fixed Costs</span>.
+<ul>
+<li class="fragment">The firm cannot even afford to pay their monthly warehouse costs</li>
+</ul></li>
+<li class="fragment">Then it can’t pay their labor, can’t afford their storefront</li>
+<li class="fragment">Why keep going?</li>
+</ul>
+</div>
+<div class="fragment">
+<p><span class="hi align-center">It doesn’t. This is when the firm shuts down, takes their ball and goes home</span></p>
+<p><span class="math display">\[
+    \text{Shutdown Condition: } P &lt; AVC(Q^{*})
+\]</span></p>
+</div>
+</section>
+<section id="perfectly-competitive-firm-shutdown-condition" class="slide level2">
+<h2>Perfectly Competitive Firm Shutdown Condition</h2>
+<p>We have the following conditions:</p>
+<div>
+<ul>
+<li class="fragment">If <span class="math inline">\(P = AVC(Q^{*})\)</span>, the <span class="hi">firm is indifferent between producing and shutting down</span></li>
+<li class="fragment">If <span class="math inline">\(P &lt; AVC(Q^{*})\)</span>, the <span class="hi">firm shuts down</span></li>
+<li class="fragment">If <span class="math inline">\(P &gt; AVC(Q^{*})\)</span>, the <span class="hi">firm will produce</span></li>
+</ul>
+</div>
+<div class="fragment">
+<p>Recall that <span class="hi">MC = AVC at min{AVC}</span> so it is equivalent to say:</p>
+<div class="fragment">
+<ul>
+<li><span class="math inline">\(P = \min\{AVC\} \rightarrow\)</span> <span class="hi">firm is indifferent</span></li>
+<li><span class="math inline">\(P &lt; \min\{AVC\} \rightarrow\)</span> <span class="hi">firm shuts down</span></li>
+<li><span class="math inline">\(P &gt; \min\{AVC\} \rightarrow\)</span> <span class="hi">firm produces</span></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="two-important-conditions" class="slide level2">
+<h2>Two Important Conditions</h2>
+<p>So we have two important conditions that determine things about firms:</p>
+<p><br> <span class="hi align-center">Zero-Profit Condition</span></p>
+<div class="fragment">
+<p><span class="math display">\[
+    P = ATC(Q^{*}) \;\;\; \text{or} \;\;\; P = \min\{ATC(Q^{*}) \}
+\]</span></p>
+</div>
+<p><br><br>
+<span class="hi align-center">Shut-Down Condition</span></p>
+<div class="fragment">
+<p><span class="math display">\[
+    P &lt; AVC(Q^{*}) \;\;\; \text{or} \;\;\; P &lt; \min\{AVC(Q^{*}) \}
+\]</span></p>
+</div>
+</section>
+<section id="two-important-conditions-1" class="slide level2">
+<h2>Two Important Conditions</h2>
 
+<img data-src="images/zero-profit-plus-shutdown.png" class="r-stretch quarto-figure-center"></section>
+<section id="effects-on-the-supply-curve" class="slide level2">
+<h2>Effects on the Supply Curve</h2>
+<p>The <span class="hi">Shut-Down Condition</span> will impact what the <span class="hi">Supply Curve</span> looks like</p>
+<div>
+<ul>
+<li class="fragment">Because the firm will shut down if <span class="math inline">\(P &lt; \min\{AVC\}\)</span>, we need to adjust our <span class="hi">Supply Curve</span></li>
+<li class="fragment">Remember we found that the <span class="hi">Supply Curve was the Marginal Cost Curve</span></li>
+<li class="fragment">This is still true, but we are adding our <span class="hi">Shut-Down Condition</span></li>
+</ul>
+</div>
+</section>
+<section id="supply-curve-with-shut-down-condition" class="slide level2">
+<h2>Supply Curve With Shut-Down Condition</h2>
 
+<img data-src="images/new-supply-curve.png" class="r-stretch quarto-figure-center"></section>
+<section id="new-supply-curve" class="slide level2 smaller">
+<h2>“New” Supply Curve</h2>
+<p>The <span class="hi">Supply Curve</span> will follow:</p>
+<p><span class="math display">\[\begin{equation*}
+\text{Supply Curve} =
+    \begin{cases}
+        P = MC(Q^{*}) &amp;\text{if} \;\;\; P \geq \min\{AVC(Q^{*})\} \\ \\
+        Q = 0 &amp;\text{if} \;\;\;  P &lt; \min\{AVC(Q^{*})\}
+    \end{cases}
+\end{equation*}\]</span></p>
 
+<img data-src="images/new-supply-curve.png" class="r-stretch quarto-figure-center"></section>
+<section id="supply-curve" class="slide level2">
+<h2>Supply curve</h2>
+<p>We call this the <span class="hi">Short-Run Supply Curve</span> and we will deal with this in the next lecture</p>
+<p>For now, let’s think of how profit may look if we think of it in terms of inputs</p>
+</section></section>
+<section>
+<section id="profit-as-a-function-of-factors" class="title-slide slide level1 note inverse center">
+<h1>Profit as a Function of Factors</h1>
 
-# Profit as a Function of Factors {.note .inverse}
-
-
-
-
--->
+</section>
+<section id="rewriting-profit-using-inputs" class="slide level2 smaller">
+<h2>Rewriting Profit Using Inputs</h2>
+<p>If things are simplified when only thinking about quantity, why do this at all?</p>
+<p>Remember our jersey example, by doing this we can put both the factory’s and Nike’s decision together in one step</p>
+<div class="fragment">
+<div>
+<ul>
+<li class="fragment">Our factors of production are <span class="hi">Labor</span> and <span class="hi">Capital</span></li>
+<li class="fragment">Costs look like: <span class="math inline">\(wL + rK\)</span></li>
+<li class="fragment">Revenue is: <span class="math inline">\(P \cdot Q\)</span></li>
+<li class="fragment">Quantity is determined by: <span class="math inline">\(Q = F(L,K)\)</span></li>
+</ul>
+</div>
+</div>
+<div class="fragment">
+<p>All put together we get:</p>
+<p><span class="math display">\[\begin{align*}
+    \pi &amp;= \text{Revenue} - \text{Cost} \\
+    \pi &amp;= P \cdot \color{red}{Q} - \left( wL + rK \right) \\
+    \pi &amp;= P \cdot \color{red}{F(L,K)} - \left( wL + rK \right)
+\end{align*}\]</span></p>
+</div>
+</section>
+<section id="profit-as-a-function-of-factors-1" class="slide level2">
+<h2>Profit as a Function of Factors</h2>
+<p><span class="math display">\[
+    \pi(L,K) = P \cdot F(L,K) - \left( wL + rK \right)
+\]</span></p>
+<p>Now we can maximize profits by choosing <span class="hi">Labor</span> and <span class="hi">Capital</span></p>
+<p>But notice we do not have a constraint anymore. We put it inside our profits!</p>
+<p>So how do we maximize a function of 2 variables (with no constraint)?</p>
+<div class="fragment">
+<ul>
+<li>We take <span class="hi">both partial derivatives</span> and set them both equal to zero</li>
+</ul>
+</div>
+</section>
+<section id="maximizing-profits-as-a-function-of-factors" class="slide level2">
+<h2>Maximizing Profits as a Function of Factors</h2>
+<p><span class="math display">\[
+    \pi(L,K) = P \cdot F(L,K) - \left( wL + rK \right)
+\]</span></p>
+<p>We will take the derivative of profit wrt <span class="hi">labor</span> and <span class="hi">capital</span></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="hi align-center">Partial wrt Labor</span></p>
+<div class="fragment">
+<p><span class="math display">\[\begin{align*}
+    &amp;\frac{\partial \pi}{\partial L} = 0 \\ \\
+    P \cdot &amp;\color{red}{F_{L}(L,K)} - w = 0 \\ \\
+    P \cdot &amp;\color{red}{MP_{L}} = w
+\end{align*}\]</span></p>
+</div>
+</div><div class="column" style="width:50%;">
+<p><span class="hi align-center">Partial wrt Capital</span></p>
+<div class="fragment">
+<p><span class="math display">\[\begin{align*}
+    &amp;\frac{\partial \pi}{\partial K} = 0 \\ \\
+    P \cdot &amp;\color{red}{F_{K}(L,K)} - r = 0 \\ \\
+    P \cdot &amp;\color{red}{MP_{K}} = r
+\end{align*}\]</span></p>
+</div>
+</div>
+</div>
+</section>
+<section id="important-first-order-conditions" class="slide level2">
+<h2>Important First Order Conditions</h2>
+<p>We got two important conditions from having maximized our profits:</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="math display">\[
+    P \cdot MP_{L} = w
+\]</span></p>
+<div class="fragment">
+<p>The wage <span class="h">must</span> be equal to the <span class="hi">value of the marginal product of labor</span></p>
+</div>
+</div><div class="column" style="width:50%;">
+<p><span class="math display">\[
+    P \cdot MP_{K} = r
+\]</span></p>
+<div class="fragment">
+<p>The rental rate <span class="h">must</span> be equal to the <span class="hi">value of the marginal product of capital</span></p>
+</div>
+</div>
+</div>
+<div class="fragment">
+<p><br><br></p>
+<p><span class="hi note align-center">In simpler words: The firm find where the value of an additional unit of labor/capital is equal to their cost</span></p>
+</div>
+</section>
+<section id="using-factors-of-production" class="slide level2">
+<h2>Using Factors of Production</h2>
+<p>In future Economics courses, you will likely focus on <span class="hi">labor markets</span> and <span class="hi">capital markets</span></p>
+<ul>
+<li><p>When thinking of markets, profit maximization tells us the <span class="hi">demand for labor and capital</span></p>
+<ul>
+<li>We get functions <span class="math inline">\(L^{*}(w,r,P)\)</span> and <span class="math inline">\(K^{*}(w,r,P)\)</span></li>
+</ul></li>
+<li><p>These equations linking wages and rental rates to how Labor and Capital are used under profit maximizing decisions are important</p></li>
+</ul>
+<div class="fragment">
+<p>We will not be doing much with this alternative method of viewing profits but these conditions are <span class="hi">extremely important</span></p>
+<p><span class="hi note align-center">The intuition and logic is crucial. Firms pay what factors are worth and that will be determined by market parameters</span></p>
+</div>
+</section>
+<section id="function-of-factors-example" class="slide level2">
+<h2>Function of Factors Example</h2>
+<p>Let the market wage be 10 <span class="math inline">\((w = 10)\)</span> and the price the firm receives for the product is 5 <span class="math inline">\((P = 5)\)</span></p>
+<p>If your marginal product of labor is <span class="math inline">\(MP_{L} = 8 \cdot L^{-1/2}\)</span></p>
+<p><a href="https://wheelofnames.com/" class="hi note align-center">How much labor should the firm use if it is profit maximizing?</a></p>
+<p><span class="align-center">Recall: <span class="math inline">\(\; w = P \cdot MP_{L}\)</span></span></p>
+<div class="fragment">
+<p><span class="tiny"><span class="math display">\[\begin{align*}
+    w &amp;= P \cdot MP_{L} \\
+    10 &amp;= 5 \cdot 8 \cdot L^{-1/2} \\
+    10 &amp;= 40 \cdot L^{-1/2} \\
+    \frac{1}{4} &amp;= L^{-1/2} \\
+    4 &amp;= L^{1/2} \\
+    16 &amp;= L^{*}
+\end{align*}\]</span></span></p>
+</div>
+</section>
+<section id="function-of-factors-example-1" class="slide level2">
+<h2>Function of Factors Example</h2>
+<p>What if instead we leave wages as an uknown?</p>
+<p><span class="math display">\[
+    w = 5 \cdot 8 \cdot L^{-1/2}
+\]</span></p>
+<div class="fragment">
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="math display">\[\begin{align*}
+    w &amp;= 40 L^{-1/2} \\ \\
+    \frac{w}{40} &amp;= L^{-1/2} \\ \\
+    \frac{40}{w} &amp;= L^{1/2}
+\end{align*}\]</span></p>
+</div><div class="column" style="width:50%;">
+<div class="fragment">
+<p><span class="math display">\[\begin{align*}
+    \left( \frac{40}{w} \right)^{2} &amp;= \left( L^{1/2} \right)^{2} \\ \\
+    L^{*} &amp;= \frac{1600}{w^{2}}
+\end{align*}\]</span></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="function-of-factors-example-2" class="slide level2">
+<h2>Function of Factors Example</h2>
+<p>If we leave <span class="math inline">\(w\)</span> unspecified, these results can have some useful interpretations:</p>
+<p><br></p>
+<div class="fragment">
+<p><span class="math display">\[
+    w = 5 \cdot 8L^{-1/2} \;\;\; \Rightarrow \;\;\; \text{Labor Demand Curve}
+\]</span></p>
+</div>
+<p><br><br></p>
+<div class="fragment">
+<p><span class="math display">\[
+    L^{*} = \frac{1600}{w^{2}} \;\;\; \Rightarrow \;\;\; \text{Labor Demand Function}
+\]</span></p>
+</div>
 <div class="footer footer-default">
 <p>EC311 - Lecture 06 | Profit Maximization</p>
-</div>
 </div>
 </section></section>
     </div>
