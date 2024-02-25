@@ -1,0 +1,218 @@
+---
+name: profit as function of factors
+---
+
+## Rewriting Profit Using Inputs {.smaller}
+
+If things are simplified when only thinking about quantity, why do this at all?
+
+Remember our jersey example, by doing this we can put both the factory's and Nike's decision together in one step
+
+. . .
+
+::: {.incremental}
+- Our factors of production are [Labor]{.hi} and [Capital]{.hi}
+- Costs look like: $wL + rK$
+- Revenue is: $P \cdot Q$
+- Quantity is determined by: $Q = F(L,K)$
+:::
+
+. . .
+
+All put together we get:
+
+\begin{align*}
+    \pi &= \text{Revenue} - \text{Cost} \\
+    \pi &= P \cdot \color{red}{Q} - \left( wL + rK \right) \\
+    \pi &= P \cdot \color{red}{F(L,K)} - \left( wL + rK \right)
+\end{align*}
+
+---
+
+## Profit as a Function of Factors
+
+$$
+    \pi(L,K) = P \cdot F(L,K) - \left( wL + rK \right)
+$$
+
+Now we can maximize profits by choosing [Labor]{.hi} and [Capital]{.hi}
+
+But notice we do not have a constraint anymore. We put it inside our profits!
+
+So how do we maximize a function of 2 variables (with no constraint)?
+
+. . .
+
+- We take [both partial derivatives]{.hi} and set them both equal to zero
+
+---
+
+## Maximizing Profits as a Function of Factors
+
+$$
+    \pi(L,K) = P \cdot F(L,K) - \left( wL + rK \right)
+$$
+
+We will take the derivative of profit wrt [labor]{.hi} and [capital]{.hi} 
+
+:::: {.columns}
+
+::: {.column width="50%"}
+[Partial wrt Labor]{.hi .align-center}
+
+::: {.fragment}
+\begin{align*}
+    &\frac{\partial \pi}{\partial L} = 0 \\ \\
+    P \cdot &\color{red}{F_{L}(L,K)} - w = 0 \\ \\
+    P \cdot &\color{red}{MP_{L}} = w
+\end{align*}
+:::
+:::
+
+::: {.column width="50%"}
+[Partial wrt Capital]{.hi .align-center}
+
+::: {.fragment}
+\begin{align*}
+    &\frac{\partial \pi}{\partial K} = 0 \\ \\
+    P \cdot &\color{red}{F_{K}(L,K)} - r = 0 \\ \\
+    P \cdot &\color{red}{MP_{K}} = r
+\end{align*}
+:::
+:::
+
+::::
+
+---
+
+## Important First Order Conditions
+
+We got two important conditions from having maximized our profits:
+
+:::: {.columns}
+
+::: {.column width="50%"}
+$$
+    P \cdot MP_{L} = w 
+$$
+
+::: {.fragment}
+The wage [must]{.h} be equal to the [value of the marginal product of labor]{.hi}
+:::
+
+:::
+
+::: {.column width="50%"}
+$$
+    P \cdot MP_{K} = r
+$$
+
+::: {.fragment}
+The rental rate [must]{.h} be equal to the [value of the marginal product of capital]{.hi}
+:::
+
+:::
+
+::::
+
+. . .
+
+<br><br>
+
+[In simpler words: The firm find where the value of an additional unit of labor/capital is equal to their cost]{.hi .note .align-center}
+
+---
+
+## Using Factors of Production 
+
+In future Economics courses, you will likely focus on [labor markets]{.hi} and [capital markets]{.hi} 
+
+- When thinking of markets, profit maximization tells us the [demand for labor and capital]{.hi}
+
+    - We get functions $L^{*}(w,r,P)$ and $K^{*}(w,r,P)$
+
+- These equations linking wages and rental rates to how Labor and Capital are used under profit maximizing decisions are important
+
+. . .
+
+We will not be doing much with this alternative method of viewing profits but these conditions are [extremely important]{.hi}
+
+[The intuition and logic is crucial. Firms pay what factors are worth and that will be determined by market parameters]{.hi .note .align-center}
+
+---
+
+## Function of Factors Example
+
+Let the market wage be 10 $(w = 10)$ and the price the firm receives for the product is 5 $(P = 5)$
+
+If your marginal product of labor is $MP_{L} = 8 \cdot L^{-1/2}$
+
+[How much labor should the firm use if it is profit maximizing?](https://wheelofnames.com/){.hi .note .align-center}
+
+[Recall: $\; w = P \cdot MP_{L}$]{.align-center}
+
+. . .
+
+[\begin{align*}
+    w &= P \cdot MP_{L} \\
+    10 &= 5 \cdot 8 \cdot L^{-1/2} \\ 
+    10 &= 40 \cdot L^{-1/2} \\
+    \frac{1}{4} &= L^{-1/2} \\
+    4 &= L^{1/2} \\ 
+    16 &= L^{*}
+\end{align*}]{.tiny}
+
+---
+
+## Function of Factors Example
+
+What if instead we leave wages as an uknown?
+
+$$
+    w = 5 \cdot 8 \cdot L^{-1/2}
+$$
+
+. . .
+
+:::: {.columns}
+
+::: {.column width="50%"}
+\begin{align*}
+    w &= 40 L^{-1/2} \\ \\
+    \frac{w}{40} &= L^{-1/2} \\ \\
+    \frac{40}{w} &= L^{1/2}
+\end{align*}
+:::
+
+::: {.column width="50%"}
+::: {.fragment}
+\begin{align*}
+    \left( \frac{40}{w} \right)^{2} &= \left( L^{1/2} \right)^{2} \\ \\
+    L^{*} &= \frac{1600}{w^{2}}
+\end{align*}
+:::
+:::
+
+::::
+
+---
+
+## Function of Factors Example
+
+If we leave $w$ unspecified, these results can have some useful interpretations:
+
+<br>
+
+::: {.fragment}
+$$
+    w = 5 \cdot 8L^{-1/2} \;\;\; \Rightarrow \;\;\; \text{Labor Demand Curve}
+$$
+:::
+
+<br><br>
+
+::: {.fragment}
+$$
+    L^{*} = \frac{1600}{w^{2}} \;\;\; \Rightarrow \;\;\; \text{Labor Demand Function}
+$$
+:::
