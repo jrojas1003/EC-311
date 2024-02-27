@@ -80,7 +80,7 @@ title-slide-attributes:
 
 ## Midterm Exam Distribution
 
-![](midterm-grade-distribution.jpg){fig-align="center"}
+![](midterm-distribution.png){fig-align="center"}
 
 ---
 
@@ -102,4 +102,4 @@ title-slide-attributes:
 
 ## Projected Course Grade 
 
-![](course-grade-projection.jpg){fig-align="center"}
+![](course-grade-projection.png){fig-align="center"}
