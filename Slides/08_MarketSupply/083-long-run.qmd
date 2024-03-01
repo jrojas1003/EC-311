@@ -383,3 +383,178 @@ $$
 $$
 
 [We want an amount of Quantity and we will use the Zero-Profit Condition]{.hi .note .align-center}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+[Use $\; MC = ATC(Q)$]{.hi .align-center}
+
+::: {.fragment .tiny}
+\begin{align*}
+    ATC(Q) &= MC \\
+    Q + 8 + \frac{100}{Q} &= 2Q + 8 \\
+    Q \cdot \left( Q + 8 + \frac{100}{Q} \right) &= Q \cdot (2Q + 8) \\
+    Q^{2} + 8Q + 100 &= 2Q^{2} + 8Q \\
+    Q^{2} &= 100 \\
+    Q^{*} &= 10 
+\end{align*}
+:::
+
+:::
+
+::: {.column width="50%"}
+[We also need to find $\; P^{*}$]{.hi .align-center}
+
+::: {.fragment .tiny}
+\begin{align*}
+    MC(Q) &= 2Q + 8 \\
+    MC(10) &= 2(10) + 8 \\
+    MC &= 28 \\ \\
+\end{align*}
+:::
+
+::: {.fragment}
+[Use fact that P = MC]{.hi .align-center}
+
+\begin{align*}
+    P = MC = 28
+\end{align*}
+:::
+
+:::
+
+::::
+
+---
+
+## Graph SR & LR Supply, Demand, & Quantity
+
+![](images/demand-shift-example-1.png){fig-align="center"}
+
+---
+
+## A Sudden Shock!!!
+
+Now let's throw a curveball
+
+The market does not exist in isolation, it is affected by the world
+
+Imagine that there is a sudden event that decreases the [Market Price]{.hi} to 20
+
+This raises the following questions:
+
+::: {.incremental}
+- What is the [Short-Run Effect]{.hi} on $Q^{*} \; \Rightarrow \;$ [Individual Firm Supply]{.h}
+- What is the [Short-Run Effect]{.hi} on $Q_{S} \; \Rightarrow \;$ [Market Supply]{.h}
+:::
+
+---
+
+## A Sudden Shock $\; \Rightarrow \;$ P = 20
+
+From our previous work, we know that
+
+$$
+    P = 2Q^{*} + 8
+$$
+
+[We can use this information to find $\;Q^{*}$]{.hi .note .align-center}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+[Individual Firm Supply]{.hi .align-center}
+
+::: {.fragment}
+\begin{align*}
+    P &= 2Q^{*} + 8 \\
+    20 &= 2Q^{*} + 8 \\
+    12 &= 2Q^{*} \\
+    Q^{*} &= 6
+\end{align*}
+:::
+
+:::
+
+::: {.column width="50%"}
+[Market Supply]{.hi .align-center}
+
+::: {.fragment}
+[20 Firms are still in the market]{.hi .align-center}
+
+\begin{align*}
+    Q_{S} &= N \cdot Q^{*} \\
+    Q_{S} &= 20 \cdot 6 \\
+    Q_{S} &= 120
+\end{align*}
+:::
+
+:::
+
+::::
+
+---
+
+## A Sudden Graph!!!
+
+![](images/demand-shock-2.png){fig-align="center"}
+
+---
+
+## Shock Implications on the Long-Run 
+
+We can also ask questions about the [Long-Run]{.hi}
+
+<br><br>
+
+::: {.incremental}
+- What is the [Long-Run Effect]{.hi} on $Q^{*} \; \Rightarrow \;$ [Individual Firm Supply]{.h}
+<br><br><br>
+
+- If we assume that the [Long-Run Effect]{.hi} on $Q_{S}$ means that Market Supply will be equal to 100. How many firms remain in the [Long-Run]{.hi}?
+:::
+
+---
+
+## Long-Run Effects of the Shock
+
+We know for a fact that in the [Long-Run]{.hi} price will return to 28
+
+[What is the effect on individual firm supply?]{.hi .note .align-center}
+
+::: {.fragment}
+[There is NO Long-Run Effect on firm supply]{.hi .align-center}
+
+\begin{align*}
+    Q^{*} = 10
+\end{align*}
+:::
+
+[If we know that $\; Q_{S} = 100 \;$, how many firms are producing in this market?]{.hi .align-center .note}
+
+. . .
+
+:::: {.columns}
+
+::: {.column width="50%"}
+\begin{align*}
+    Q_{S} &= N \cdot Q^{*} \\
+    100 &= N \cdot 10 \\
+    \frac{100}{10} &= N \\
+    N &= 10
+\end{align*}
+:::
+
+::: {.column width="50%"}
+<br><br>
+
+After the price shock, 10 firms exit the market and 10 firms stay
+:::
+
+::::
+
+---
+
+## A Sudden Long-Run Graph!!!
+
+![](images/demand-shock-3.png){fig-align="center"}
