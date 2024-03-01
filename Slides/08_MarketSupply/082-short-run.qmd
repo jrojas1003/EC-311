@@ -1,0 +1,102 @@
+---
+name: short-run supply
+---
+
+## Short-Run vs Long-Run
+
+Previously, we referred to the [Short-Run Supply Curve]{.hi} as the curved created by [P = MC]{.hi}
+
+- We are able to say this is the [short-run]{.h} because over a longer time horizon:
+
+    - Firms will [enter]{.hi-green} or [exit]{.hi-red} the market
+
+. . .
+
+In other words, in the [Long-Run]{.hi}:
+
+::: {.incremental}
+- Firms that are already in the market can choose to [exit the market]{.hi-red} and stop paying the Fixed Costs
+- Additionally, new firms can [enter the market]{.hi-green} and begin to pay the Fixed Costs
+:::
+
+---
+
+## What Makes a Firm Enter or Exit?
+
+[What could determines whether a firm enters or exists the market?]{.hi .note .align-center}
+
+. . .
+
+[PROFITS]{.hi .align-center}
+
+::: {.incremental}
+- We saw how the perfectly competitive firm can be operating optimally and still have negative profits
+    - Some firms will operate at a loss as long as it is less than their Fixed Costs
+- There are also circumstances in which the perfectly competitive firm can behave optimally and make positive profits 
+::: 
+
+. . .
+
+[In either case, the fact that profits are not zero has implications for the Long-Run]{.hi .align-center}
+
+---
+
+## Short-Run to Long-Run: Exit Condition
+
+$$
+    P < \min \{ ATC(Q^{*}) \}
+$$
+
+. . .
+
+:::: {.columns}
+
+::: {.column width="50%"}
+[Short-Run]{.hi .align-center}
+
+::: {.fragment}
+Firms operate at a loss in order to offset some of their [FC]{.hi}
+:::
+:::
+
+::: {.column width="50%"}
+[Long-Run]{.hi .align-center}
+
+::: {.fragment .align-center}
+Firms [exit]{.hi-red} the market
+:::
+:::
+
+::::
+
+---
+
+## Short-Run to Long-Run: Entry Condition?
+
+What happens when we have 
+
+$$
+    P > \min \{ ATC(Q^{*}) \}
+$$
+
+. . .
+
+:::: {.columns}
+
+::: {.column width="50%"}
+[Short-Run]{.hi .align-center}
+
+::: {.fragment}
+Firms will produce and earn a positive economic profit
+:::
+:::
+
+::: {.column width="50%"}
+[Long-Run]{.hi .align-center}
+
+::: {.fragment}
+[New firms (Firms outside the market)]{.hi-green} see these positive profits, and enter the industry to collect these profits themselves
+:::
+:::
+
+::::

@@ -1,0 +1,21 @@
+---
+name: markets
+---
+
+## Market Supply
+
+We will label [Market Supply]{.hi} as $Q_{S}$
+
+And it is obtained in the exact same way as market demand 
+
+. . .
+
+- If you know the $Q^{*}$ of one firm, and there are 10 identical firms, then we get
+
+$$
+    Q_{S} = 10 \cdot Q^{*}
+$$
+
+. . .
+
+But finding market supply is not as interesting as the dynamics between the [Short-Run & Long-Run]{.hi}

@@ -1,0 +1,385 @@
+---
+name: long-run supply
+---
+
+## Profits and Market Feedback
+
+Firms entering or exiting the market has a really important feedback effect
+
+Do your best to recall from EC 201:
+
+[When the number of firms in an industry increases, what effect does this have on the market price?]{.hi .note .align-center}
+
+. . .
+
+:::: {.columns}
+
+::: {.column width="50%"}
+<br><br><br>
+[It DECREASES the price]{.hi .align-center}
+
+:::
+
+::: {.column width="50%"}
+
+::: {.fragment}
+![](images/long-run-firm-entry-effect.png)
+:::
+:::
+
+::::
+
+---
+
+## Profits and Market Feedback
+
+[When the number of firms in an industry decreases, what effect does this have on the market price?]{.hi .note .align-center}
+
+. . . 
+
+:::: {.columns}
+
+::: {.column width="50%"}
+<br><br><br>
+[It INCREASES the price]{.hi .align-center}
+
+:::
+
+::: {.column width="50%"}
+
+::: {.fragment}
+![](images/long-run-firm-exit-effect.png)
+:::
+:::
+
+::::
+
+---
+
+## Long-Run Feedback Effect
+
+The feedback has predictable outcomes that we can organize in our minds
+
+:::: {.columns}
+
+::: {.column width="50%"}
+[$P > \min\{ATC(Q)\}$]{.hi .align-center}
+
+::: {.incremental .tiny}
+1. In the [Short-Run]{.hi}, firms in the market make [positive economic profits]{.hi-green}
+2. In the [Long-Run]{.hi}, new firms enter the market
+3. The market now has [more]{.hi-green} firms, which means there is [more quantity]{.hi-green} produced
+4. This repeats until 
+:::
+
+::: {.fragment}
+$$
+    P = \min\{ATC(Q)\}
+$$
+:::
+:::
+
+::: {.column width="50%"}
+[$P < \min\{ATC(Q)\}$]{.hi .align-center}
+
+::: {.incremental .tiny}
+1. In the [Short-Run]{.hi}, firms in the market make [negative economic profits]{.hi-red}
+2. In the [Long-Run]{.hi}, firms exit the market
+3. The market now has [less]{.hi-red} firms, which means there is [less quantity]{.hi-red} produced
+4. This repeats until
+:::
+
+::: {.fragment}
+$$
+    P = \min\{ATC(Q)\}
+$$
+:::
+
+:::
+
+::::
+
+---
+
+## Long-Run Outcomes
+
+No matter what price is initially, in the [Long-Run]{.hi} we will always return to 
+
+$$
+    P = \min\{ATC(Q)\}
+$$
+
+. . .
+
+[How do shifts in quantity affect market prices?]{.hi .note .align-center}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+[Negative Profits]{.hi-red .align-center}
+
+::: {.fragment}
+- With a decrease in quantity, market prices climb with each firm that leaves until we return to [zero-profits]{.hi}
+:::
+:::
+
+::: {.column width="50%"}
+[Positive Profits]{.hi-green .align-center}
+
+::: {.fragment}
+- With an increase in quantity, market prices decrease with each entering firm until we return to [zero-profits]{.hi}
+:::
+
+:::
+
+::::
+
+---
+
+## Long-Run Outcomes
+
+So if prices in the [Long-Run]{.hi} will always be
+
+$$
+    P = \min\{ATC(Q)\}
+$$
+
+[What does this imply about profits in the Long-Run]{.hi .align-center}
+
+. . .
+
+<br>
+[There are no economic profits in the Long-Run!]{.hi .align-center}
+
+<br><br>
+[But let's be careful with interpreting what this means]{.align-center}
+
+---
+
+## Profits in the Long-Run
+
+Saying there are zero economic profits can be a tricky phrase so let's dive in:
+
+::: {.incremental}
+- It does not mean that the firm is making zero money
+- They have already paid their [Labor (wages)]{.hi} and [Capital (or shareholders if they financed capital through equity, for example)]{.hi}
+- After all responsibilities are dealt with, there are zero profits above and beyond that
+:::
+
+---
+
+## Why Care About the Short-Run?
+
+If we know what happens in the [Long-Run]{.hi}, then why care about the [Short-Run]{.hi}?
+
+. . .
+
+[The Short-Run is where interesting things happen]{.hi .align-center}
+
+::: {.incremental}
+- It is where firms make big money, before competitors can catch up (Think early Tesla days and the EV market)
+- It is where firms lose a lot of money because they are stuck operating at a loss (any restaurant ever)
+- [It is where demand shifts can cause major price distortions]{.hi}
+    - This is an interesting dynamic that we will use to transition to thinking about the market
+:::
+
+---
+
+## Demand Shift Dynamics
+
+Let's imagine the following market:
+
+:::: {.columns}
+
+::: {.column width="30%" .tiny}
+- The [Short-Run]{.hi} market supply curve is $P = Q_{S} + 10$ when $P > 10$
+
+<br>
+
+- Assume that $\min\{ATC(Q)\} = 25$
+
+<br>
+
+- The demand curve is $P = 40 - Q_{D}$
+:::
+
+::: {.column width="70%"}
+
+::: {.fragment}
+![](images/demand-shift-example-1.png){fig-align="center"}
+:::
+:::
+
+::::
+
+---
+
+## Demand Shift Dynamics
+
+Because initial price of 25 is equal to $\min\{ ATC(Q) \}$ and there are no profits
+
+- The market is in its [Long-Run Equilibrium]{.hi} 
+
+. . .
+
+- Now imagine that this product gets much more popular 
+
+    - What do we expect to happen with [Demand]{.hi}?
+
+. . . 
+
+[It should shift to the right (increases)]{.hi .align-center}
+
+---
+
+## Demand Shift Dynamics - Product Got More Popular
+
+![](images/demand-shift-example-2.png){fig-align="center"}
+
+---
+
+## Demand Shift Dynamics
+
+With an increase in [Demand]{.hi}, we see that prices have also increased
+
+::: {.incremental}
+- In the [Short-Run]{.hi}, the [same number of firms produce more and earn positive profits]{.h}
+- In the [Long-Run]{.hi}, [new firms enter the market]{.hi-green}
+    - This increases supply
+:::
+
+---
+
+## Demand Shift Dynamics - Entry of New Firms
+
+![](images/demand-shift-example-3.png){fig-align="center"}
+
+---
+
+## Demand Shift Dynamics
+
+With a Supply increase:
+
+::: {.incremental}
+- The shift of supply [counteracts]{.hi} the increase in Demand and the price returns to $\min\{ATC(Q)\}$
+- However, a lot more good are supplied overall
+    - In the [Long-Run]{.hi}, each firm is supplying the same amount at $Q_{3}$ as they were in the initial equilibrium
+- There are just more firms now
+:::
+
+---
+
+## Long-Run Market Supply Curve
+
+We can graph the Supply Curve in the [Long-Run]{.hi}
+
+It is simply a flat line at $P = \min\{ATC(Q)\}$ 
+
+- The quantity (and the number of firms in the market) is determined by [Demand]{.hi}
+
+---
+
+## Long-Run Market Supply Curve
+
+![](images/long-run-supply-curve.png){fig-align="center"}
+
+---
+
+## Let's Look at an Example
+
+In this example we will:
+
+::: {.incremental}
+- Find the [Short-Run]{.hi} supply cure of the firm
+- Find the market [Short-Run Supply Curve]{.hi} when there are 20 identical firms
+- Find the market [Long-Run Supply Curve]{.hi} 
+- Graph both market supply curves, add demand and quantity, assuming the [Long-Run Equilibrium]{.hi}
+:::
+
+. . .
+
+The Cost Function of a firm is
+
+$$
+    C(Q) = Q^{2} + 8Q + 100
+$$
+
+---
+
+## Short-Run Supply Curve
+
+$$
+    C(Q) = Q^{2} + 8Q + 100
+$$
+
+[Short-Run Supply is $\; P = MC$]{.hi .note .align-center}
+
+. . .
+
+\begin{align*}
+    MC = \frac{\partial C(Q)}{\partial Q} = 2Q + 8
+\end{align*}
+
+[Set P = MC]{.hi .align-center .note}
+
+\begin{align*}
+    P = 2Q + 8
+\end{align*}
+
+---
+
+## Market Short-Run Supply Curve with 20 Identical Firms {.smaller}
+
+$$
+    P = 2Q + 8
+$$
+
+:::: {.columns}
+
+::: {.column width="50%"}
+[First, we find the individual firm supply function]{.hi .align-center}
+
+::: {.fragment}
+\begin{align*}
+    P &= 2Q + 8 \\
+    2Q &= P - 8 \\
+    Q &= \frac{P - 8}{2} 
+\end{align*}
+:::
+
+:::
+
+::: {.column width="50%"}
+[Market Supply Function will be $\; N \cdot Q = Q_{S}$]{.hi .align-center}
+
+::: {.fragment .tiny}
+\begin{align*}
+    Q_{S} &= N \cdot Q \\
+    Q_{S} &= 20 \cdot \left( \frac{P - 8}{2} \right) \\
+    Q_{S} &= 10P - 80
+\end{align*}
+:::
+
+:::
+
+::::
+
+::: {.fragment .tiny}
+[Market Supply Curve Is:]{.hi .align-center}
+
+\begin{align*}
+    Q_{S} &= 10P - 80 \\
+    10P &= Q_{S} + 80 \\
+    P &= \frac{Q_{S}}{10} + 8
+\end{align*}
+:::
+
+---
+
+## Market Long-Run Supply Curve
+
+$$
+   \text{LR-Supply: } P = \min\{ATC(Q)\} \;\;\;\; \& \;\;\;\; C(Q) = Q^{2} + 8Q + 100
+$$
+
+[We want an amount of Quantity and we will use the Zero-Profit Condition]{.hi .note .align-center}
