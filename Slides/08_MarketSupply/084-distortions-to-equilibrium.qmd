@@ -1,0 +1,44 @@
+---
+name: distortions
+---
+
+## Market Shocks Create Distortions
+
+We just saw how shocks to the market distort both the [Short-Run & Long-Run]{.hi} 
+
+The [Long-Run]{.hi} is very robust and is not really impacted by price shocks. But is this always the case? 
+
+. . .
+
+[When will distortions to equilibrium affect the Long-Run Equilibrium Price?]{.hi .align-center}
+
+. . .
+
+To answer that, we remember what determines the [Long-Run Price]{.hi}
+
+::: {.fragment}
+- Minimum Average Total Cost
+:::
+
+::: {.fragment}
+[So a shock will only affect the Long-Run Price if it impacts the Minimum Average Total Cost]{.hi .note .align-center}
+:::
+
+---
+
+## Distortion Example - Oil Industry
+
+What effect will the invention of more [fuel-efficient cars]{.h} have on the price of oil?
+
+. . . 
+
+[None!]{.hi-red} This is a shock to demand and thus the [minimum ATC]{.hi} is unaffected
+
+. . . 
+
+What effect will the invention of more [fuel-efficient cars]{.h} have generally?
+
+::: {.incremental}
+- 
+:::
+

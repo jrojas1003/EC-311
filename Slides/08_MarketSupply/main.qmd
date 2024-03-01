@@ -24,7 +24,7 @@ title-slide-attributes:
     - Perfect Competition: Short-Run (8.3)
     - Perfect Competition: Long-Run (8.4)
 
-# Markets
+# Markets {.inverse .note}
 
 {{< include 081-markets.qmd >}}
 
@@ -35,3 +35,7 @@ title-slide-attributes:
 # Perfect Competition: Long-Run {.inverse .note}
 
 {{< include 083-long-run.qmd >}}
+
+# Distortions to Equilibrium {.inverse .note}
+
+{{< include 084-distortions-to-equilibrium.qmd >}}
