@@ -206,7 +206,93 @@ The [Marginal Cost (and then the Supply Curve)]{.hi} is shifted up by the exact 
 
 ## Per-Unit Taxes
 
+<br><br><br>
+
 In the [Long-Run]{.hi}, firms will leave the market because the [tax induced losses]{.hi-red}
 
 The [Long-Run Equilibrium Price]{.hi} is at exactly the original price, plus the tax
 
+---
+
+## Per-Unit Taxes
+
+![](images/per-unit-tax-3.png){fig-align="center"}
+
+---
+
+## Per-Unit Taxes {.smaller}
+
+Why will the effect on the [Long-Run Price]{.hi} be exactly the size of the tax?
+
+[Because it will be the case that the minimum ATC increased by exactly the tax $\, (\tau)$]{.hi}
+
+. . .
+
+For the [Cost Function]{.hi}
+
+$$
+    C(Q) = Q^{2} + 9 + \tau Q
+$$
+
+We have: 
+
+:::: {.columns}
+
+::: {.column width="50%"}
+[Average Total Cost]{.hi .align-center}
+
+::: {.fragment}
+\begin{align*}
+    ATC &= Q + \frac{9}{Q} + \tau
+\end{align*}
+:::
+
+:::
+
+::: {.column width="50%"}
+
+::: {.fragment}
+[Marginal Cost]{.hi .align-center}
+
+\begin{align*}
+    MC &= 2Q + \tau 
+\end{align*}
+:::
+
+:::
+
+::::
+
+. . .
+
+[We set them equal to each other & the tax cancels out]{.hi .align-center}
+
+\begin{align*}
+    ATC &= MC \\
+    Q + \frac{9}{Q} + \color{red}{\tau} &= 2Q + \color{red}{\tau}
+\end{align*}
+
+---
+
+## Per-Unit Taxes {.smaller}
+
+- So the [New Long-Run Price]{.hi} is exactly the old [Long-Run Price + the Per-Unit Tax]{.hi}
+
+We see this in the previous example:
+
+$$
+    ATC = Q + \frac{9}{Q} + \tau
+$$
+
+. . . 
+
+- Firms receive the same price per unit. We saw that the tax cancels out
+
+\begin{align*}
+    ATC &= MC \\
+    Q + \frac{9}{Q} + \color{red}{\tau} &= 2Q + \color{red}{\tau}
+\end{align*}
+
+. . . 
+
+- Overall quantity in the market is lower because there are fewer firms
