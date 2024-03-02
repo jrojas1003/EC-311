@@ -1,0 +1,39 @@
+---
+title: "Monopoly"
+subtitle: "EC 311 - Intermediate Microeconomics"
+author: Jose Rojas-Fallas
+date: last-modified
+date-format: "YYYY"
+format:
+    revealjs:
+        theme: [default, styles.scss]
+        slide-number: true
+        footer: "EC311 - Lecture 08 | Monopoly"
+        preview-links: auto
+        code-fold: FALSE
+title-slide-attributes: 
+  data-background-position: left
+---
+
+[Outline]{.h .realbig}
+
+### Chapter 09
+
+- Topics
+
+    - Market Power: Barriers to Entry (9.1)
+    - Marginal Revenue (9.2)
+    - Monopoly Profit Maximization (9.3)
+
+
+# Market Power {.inverse .note}
+
+{{< include 091-market-power.qmd >}}
+
+# Marginal Revenue {.inverse .note}
+
+{{< include 092-marginal-revenue.qmd >}}
+
+# Monopoly Profit Maximization {.inverse .note}
+
+{{< include 093-monopoly-profit-max.qmd >}}

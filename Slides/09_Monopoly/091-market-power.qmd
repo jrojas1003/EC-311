@@ -1,0 +1,67 @@
+---
+name: market power
+---
+
+## How Perfect is Perfect?
+
+Up to now, we have assumed that the market is operating under [Perfect Competition]{.h}, but how reasonable of an assumption is this?
+
+::: {.incremental}
+- In some contexts, producers do have to worry about how much they produce because it will direclty impact the market price
+    - Professional Sport Leagues
+        - If they add more games to their seasons, it will likely decrease ticket prices due to higher quantity supplied
+    - Actors/Actresses
+        - If they are selective in the roles they take, they are able to demand higher pay for each one
+:::
+
+. . .
+
+[We call this Imperfect Competition]{.hi-orange .align-center .big}
+
+---
+
+## Imperfect Competition
+
+All firms that have to worry about their quantity produced share something in common:
+
+::: {.incremental}
+- They make something unique (or at elast "locally unique")
+
+- Because their goods cannot be easily obtained elsewhere, one firm's production will impact the price of the market
+    - We are no longer assuming they are perfect substitutes
+:::
+
+. . .
+
+In the extreme case, where a single firm is the sole producer of a unique good, they are called a [Monopoly]{.hi-red}
+
+---
+
+## Monopoly
+
+We will figure out how a [Monopoly Firm (Monopolist)]{.hi-red} chooses how much to produce, and how this implies they set the market price
+
+. . .
+
+[Key Differences Between Competition Structures]{.hi .align-center}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+[Monopolist]{.hi-red .align-center}
+
+::: {.fragment}
+- Choosing the quantity to produce and choosing the market price is the same thing
+:::
+
+:::
+
+::: {.column width="50%"}
+[Perfectly Competitive Firm]{.hi-green .align-center}
+
+::: {.fragment}
+- Has no say on the market price, and only chooses quantity
+:::
+:::
+
+::::
