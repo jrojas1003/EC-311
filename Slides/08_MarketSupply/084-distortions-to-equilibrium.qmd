@@ -39,6 +39,174 @@ What effect will the invention of more [fuel-efficient cars]{.h} have on the pri
 What effect will the invention of more [fuel-efficient cars]{.h} have generally?
 
 ::: {.incremental}
-- 
+- We will see a [decrease]{.hi-red} in price and quantity in the [Short-Run]{.hi}
+- Firms in the oil industry will make [negative profits]{.hi-red}
+- Firms will begin to leave the industry
+- The [Supply Curve]{.hi} shifts to the left and re-establishes the [Long-Run Price]{.hi} with a lower quantity produced
 :::
+
+---
+
+## Distortion Example - Oil Industry
+
+What effect will the invention of [more efficient drilling technology]{.hi} have on the [Long-Run Price]{.hi} of oil?
+
+::: {.incremental}
+- This should lower the [Long-Run Price]{.hi}. Why?
+    - Because this should lower the [Average Total Cost]{.h}
+- This will increase quantity supplied and decrease the market price
+:::
+
+---
+
+## Efficient Drilling Technology Effects on Oil Industry
+
+![](images/oil-industry-1.png){fig-align="center"}
+
+---
+
+## Efficient Drilling Technology Effects on Oil Industry
+
+![](images/oil-industry-2.png){fig-align="center"}
+
+---
+
+## Efficient Drilling Technology Effects on Oil Industry
+
+![](images/oil-industry-3.png){fig-align="center"}
+
+---
+
+## Distortions to Equilibrium
+
+One very specific type of cost change that we want to consider is [Taxation]{.hi-red}
+
+. . .
+
+We will deal with two types of taxes:
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+<br><br><br>
+[LUMP-SUM TAXES]{.hi .big .align-center}
+
+:::
+
+::: {.column width="50%"}
+
+<br><br><br>
+[PER-UNIT TAXES]{.hi .big .align-center}
+
+:::
+
+::::
+
+---
+
+## Lump-Sum Taxes
+
+Under this [tax structure]{.hi} firms have to pay a [One-Time Fee]{.hi-orange} to participate in the market
+
+::: {.incremental}
+- Think licenses, permits, inspections, etc.
+- These will affect a firm's fixed costs
+    - Increasing fixed costs will increase the [Minimum ATC]{.hi}
+    - Decreasing fixed costs will decrease the [Minumum ATC]{.hi}
+:::
+
+---
+
+## Lump-Sum Taxes
+
+[These form of taxes will NOT affect the firm's Marginal Costs]{.hi .align-center}
+
+. . .
+
+[The Short-Run Supply Curve is completely unnafected]{.hi .align-center}
+
+::: {.incremental}
+- Imposing a [Lump-sum Tax]{.hi-orange} will have no [Short-Run Effect]{.hi}
+- In the [Long-Run]{.hi}, firms will leave the industry as it converges to its new [Long-Run Equilibrium]{.hi}
+:::
+
+. . .
+
+<br> 
+
+[Let's look at a brief example]{.hi .align-center}
+
+---
+
+## Lump-Sum Tax Example
+
+
+---
+
+## Per-Unit Taxes {.smaller}
+
+These will affect the firm's marginal costs [DIRECTLY]{.hi}
+
+. . .
+
+Take for example the following firm:
+
+$$
+    C(Q) = Q^{2} + Q + 20
+$$
+
+Where [Marginal Costs]{.hi} are:
+
+$$
+    MC(Q) = 2Q + 1
+$$
+
+. . .
+
+Let's impose the per-unit tax $\tau$ such that the cost function becomes:
+
+$$
+    C(Q) = Q^{2} + Q + 20 + \color{red}{\tau \cdot Q}
+$$
+
+[What is the Marginal Cost after Taxes?]{.hi .note .align-center}
+
+. . .
+
+$$
+    MC = 2Q + 1 + \tau 
+$$
+
+---
+
+## Per-Unit Taxes
+
+![](images/per-unit-tax-1.png){fig-align="center"}
+
+---
+
+## Per-Unit Taxes
+
+![](images/per-unit-tax-2.png){fig-align="center"}
+
+---
+
+## Per-Unit Taxes
+
+The [Marginal Cost (and then the Supply Curve)]{.hi} is shifted up by the exact amount of the tax, so:
+
+::: {.incremental}
+- The [New Price $\; (P_{\tau}^{*}) \;$]{.hi} is the price that consumers pay to the firm 
+- The [New Price $\; (P_{\tau}^{*}) \;$ minus the tax]{.hi} is the price received by the producers [after they pay the tax]{.hi-red}
+- So even though the shift in the [Supply Curve]{.hi} looks like it increased the price, [it brings down the price earned by the firm]{.hi-red}  
+:::
+
+---
+
+## Per-Unit Taxes
+
+In the [Long-Run]{.hi}, firms will leave the market because the [tax induced losses]{.hi-red}
+
+The [Long-Run Equilibrium Price]{.hi} is at exactly the original price, plus the tax
 
