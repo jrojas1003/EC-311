@@ -131,12 +131,6 @@ Under this [tax structure]{.hi} firms have to pay a [One-Time Fee]{.hi-orange} t
 - In the [Long-Run]{.hi}, firms will leave the industry as it converges to its new [Long-Run Equilibrium]{.hi}
 :::
 
-. . .
-
-<br> 
-
-[Let's look at a brief example]{.hi .align-center}
-
 ---
 
 ## Per-Unit Taxes {.smaller}
