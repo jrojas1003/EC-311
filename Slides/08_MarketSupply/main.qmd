@@ -24,7 +24,7 @@ title-slide-attributes:
     - Perfect Competition: Short-Run (8.3)
     - Perfect Competition: Long-Run (8.4)
 
-g
+
 # Markets {.inverse .note}
 
 {{< include 081-markets.qmd >}}
