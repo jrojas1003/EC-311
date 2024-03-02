@@ -139,11 +139,6 @@ Under this [tax structure]{.hi} firms have to pay a [One-Time Fee]{.hi-orange} t
 
 ---
 
-## Lump-Sum Tax Example
-
-
----
-
 ## Per-Unit Taxes {.smaller}
 
 These will affect the firm's marginal costs [DIRECTLY]{.hi}
