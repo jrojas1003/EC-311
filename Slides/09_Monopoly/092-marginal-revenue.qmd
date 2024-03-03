@@ -1,0 +1,164 @@
+---
+name: marginal revenue
+---
+
+## What is a Monopoly's Marginal Revenue?
+
+We find [Marginal Revenue]{.hi} in the same way we have done before, we look at Revenue and take the derivative
+
+Let's look at a general case
+
+. . .
+
+Assume a linear Demand Curve: $\;\;\; P = a - b \cdot Q_{D}$
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+[We first find Revenue]{.hi .align-center}
+
+::: {.fragment .small}
+\begin{align*}
+    R(Q) &= \color{red}{P} \cdot Q_{S} \\
+    R(Q) &= \color{red}{(a - b \cdot Q_{D})} \cdot Q_{S}
+\end{align*}
+:::
+
+::: {.fragment .small}
+[Remember $\; Q_{S} = Q_{D} = Q$]{.hi .align-center}
+
+\begin{align*}
+    R(Q) &= (a - b \cdot Q) \cdot Q \\
+    R(Q) &= aQ - bQ^{2}
+\end{align*}
+:::
+
+:::
+
+::: {.column width="50%"}
+[Find the Derivative]{.hi .align-center}
+
+<br>
+
+::: {.fragment .small}
+\begin{align*}
+    MR(Q) &= \frac{\partial R(Q)}{\partial Q} \\ \\
+    MR(Q) &= a - 2bQ
+\end{align*}
+:::
+
+:::
+
+::::
+
+---
+
+## Monopoly Marginal Revenue {.smaller}
+
+$$
+    \text{Demand: } P = a - b \cdot Q \;\;\;\; ; \;\;\;\; \text{Marginal Revenue: } P = a - 2bQ
+$$
+
+A [Monopolist's Marginal Revenue Curve]{.hi-red} is just like the [Demand Curve]{.hi}, except it is [twice as steep]{.hi}
+
+![](images/monopoly-marginal-revenue.png){fig-align="center"}
+
+---
+
+## How Monopolists Make Their Choices
+
+We know that [Monopolists]{.hi-red} set [MR = MC]{.hi} to maximize profits, but this only tells us the [Quantity]{.hi}
+
+![](images/monopoly-marginal-revenue-3.png){fig-align="center"}
+
+---
+
+## How Monopolists Make Their Choices
+
+To find the [price $P_{M}^{*}$]{.hi} they demand at $Q_{M}^{*}$, we have to take one additional step
+
+We will use the [Demand Curve]{.hi} 
+
+::: {.incremental}
+- The [Monopolist]{.hi-red} chose their quantity while knowing that their choice determines market price [through the Demand Curve]{.hi} 
+:::
+
+---
+
+## How Monopolists Determine Their Market Price
+
+We follow the [Monopoly Quantity]{.hi-red} up to the [Demand Curve]{.hi}
+
+![](images/monopoly-marginal-revenue-4.png){fig-align="center"}
+
+---
+
+## Monopoly Market Equilibrium
+
+To summarize:
+
+::: {.incremental}
+- We use the [Demand Curve]{.hi} to find the [Marginal Revenue Curve]{.hi}
+- The [Monopolist]{.hi-red} produces the [quantity]{.hi-red} determined by setting [MR = MC]{.hi}
+- The [Monopolist Price]{.hi-red} is determined by the [Demand Curve]{.hi} at [$Q_{M}^{*}$]{.hi-red}
+:::
+
+---
+
+## How Does This Compare to Perfect Competition?
+
+We already showed that the [Monopolists]{.hi-red} will produce less and demand a higher price
+
+We can also show this on the same graph, which is useful to visualize what is happening
+
+::: {.incremental}
+- Recall that the [Marginal Cost Curve]{.hi} is the same thing as the [Supply Curve]{.hi} in [Perfect Competition]{.hi-green}
+
+- The [Perfect Competition Price & Quantity]{.hi-green} is where [Demand equals Supply]{.hi}
+:::
+
+---
+
+## Monopoly + Perfect Competition
+
+![](images/monopoly-plus-perfect-competition.png){fig-align="center"}
+
+---
+
+## Why Restrict Quantity?
+
+[Monopolists]{.hi-red} make an active choice to restrict quantity supplied, but why?
+
+::: {.incremental}
+- It makes them higher profits
+:::
+
+. . .
+
+[What about the nice tale of "all firms make zero economic profit in the Long-Run"?]{.hi .align-center}
+
+[Let's address it]{.hi .align-center}
+
+---
+
+## Monopoly Long-Run Profits 
+
+The question is
+
+[Why aren't Monopolies simply eliminated by competition in the Long-Run?]{.hi .align-center}
+
+. . .
+
+There's two exaplanations:
+
+::: {.incremental .small}
+1. [Monopolists]{.hi-red} can only exist when there are [Barriers to Entry]{.hi} that other firms cannot overcome
+    - These tend to be either physical (think infrastructure) or legal (regulatory)
+2. Even when there exist multiple firms in the market, they ["collude"]{.hi} with one another and [act as if they were a monopoly]{.hi} 
+    - We call this a [Cartel]{.hi}
+:::
+
+. . .
+
+[Now let's see how we find profits for a monopoly]{.hi .align-center}
