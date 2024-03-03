@@ -43,6 +43,8 @@ We will figure out how a [Monopoly Firm (Monopolist)]{.hi-red} chooses how much 
 
 . . .
 
+<br><br>
+
 [Key Differences Between Competition Structures]{.hi .align-center}
 
 :::: {.columns}
@@ -65,3 +67,315 @@ We will figure out how a [Monopoly Firm (Monopolist)]{.hi-red} chooses how much 
 :::
 
 ::::
+
+---
+
+## Understanding Monopolies
+
+<br><br>
+
+Contrary to previous lectures, I think this is easier to understand mathematically first, and then graphically
+
+The math will show us how choosing quantity is the same as choosing prices and then we can visualize
+
+---
+
+## Monopoly Profits
+
+The [Monopolist]{.hi-red} profit function looks the same
+
+\begin{align*}
+    \pi &= R(Q) - C(Q) \\
+    \pi &= P \cdot Q - C(Q)
+\end{align*}
+
+But now we have to recognize the [Key Difference]{.hi} I previously mentioned:
+
+::: {.fragment .align-center}
+A [Monopolist]{.hi-red} is not a price-taker.
+:::
+
+::: {.fragment .align-center}
+They are a [Price Setter]{.hi-red}
+:::
+
+---
+
+## Monopoly Setting Quantity
+
+Whatever [Quantity]{.hi} the [Monopolist]{.hi-red} sets will, alongside the [Demand Curve]{.hi}, immediately dtermine the market price
+
+. . .
+
+Take for example the following scenario
+
+Let the [Demand Curve]{.hi} be 
+
+$$
+    P = 100 - Q
+$$
+
+If the [Monopolist]{.hi-red} produces the following quantities, what must prices be?
+
+:::: {.columns}
+
+::: {.column width="50%"}
+[$Q = 60$]{.hi .align-center}
+
+::: {.fragment}
+$$
+    P = 100 - 60 = 40
+$$
+:::
+
+:::
+
+::: {.column width="50%"}
+[$Q = 70$]{.hi .align-center}
+
+::: {.fragment}
+$$
+    P = 100 - 70 = 30
+$$
+:::
+
+:::
+
+::::
+
+---
+
+## Difference in Monopoly Profit Function
+
+So instead of having just [Price $(P)$]{.hi} in their profits, we will substitute it for something else
+
+$$
+    \pi = \color{red}{P} \cdot Q - C(Q) 
+$$
+
+. . .
+
+- The [Monopolist]{.hi-red} will plug in the [Demand Curve]{.hi}
+
+    - This is how we can model the fact that the [Monoplist Firm]{.hi-red} will choose their optimal quantity $Q^{*}$ knowing that their choice will determine $P$
+
+. . .
+
+$$
+    \pi = \color{red}{\text{Demand Curve}} \cdot Q - C(Q)
+$$  
+
+---
+
+## Monopoly Profit - General Case
+
+In the most general form, we have
+
+\begin{align*}
+    \pi &= R(Q) - C(Q) \\
+    \pi &= \color{red}{P} \cdot Q - C(Q)
+\end{align*}
+
+::: {.fragment}
+[Let the Demand Curve be $\; P = f(Q_{D})$]{.hi .align-center}
+\begin{align*}
+    \pi &= \color{red}{f(Q_{D})} \cdot Q_{S} - C(Q_{S})
+\end{align*}
+::: 
+
+::: {.fragment}
+[At Equilibrium we know that $\; Q_{S} = Q_{D} = Q$]{.hi .align-center}
+
+\begin{align*}
+    \pi &= f(Q) \cdot Q - C(Q)
+\end{align*}
+:::
+
+---
+
+## Monopoly Profit - Example
+
+Let a [Monopolist]{.hi-red} face the following Costs and Demand Curve
+
+$$
+    C(Q) = Q^{2} \;\;\;\;\; \& \;\;\;\;\; P = 100 - Q_{D}
+$$
+
+[Find the Profit Function of the Monopolist]{.hi .note .align-center}
+
+[Recall Profit is given by $\; \pi = P \cdot Q - C(Q)$]{.h .note .align-center}
+
+::: {.fragment .small}
+\begin{align*}
+    \pi &= P \cdot Q - C(Q) \\
+    \pi &= (100 - Q_{D}) \cdot Q_{S} - Q_{S}^{2} 
+\end{align*}
+
+[Use fact that $\; Q_{S} = Q_{D} = Q$]{.hi .align-center}
+
+\begin{align*}
+    \pi &= (100 - Q) \cdot Q - Q^{2} \\
+    \pi &= 100Q - Q^{2} - Q^{2} \\
+    \pi &= 100Q - 2Q^{2}
+\end{align*}
+:::
+
+---
+
+## Maximizing Monopoly Profits {.smaller}
+
+Luckily, we maximize their profits the exact same way as before
+
+By finding $Q^{*}$ from $\frac{\partial \pi}{\partial Q} = 0$
+
+$$
+    \pi = 100Q - 2Q^{2} \;\;\;\; \& \;\;\;\; P = 100 - Q
+$$  
+
+[Find the Profit Maximizing Quantity and the Market Price]{.h .note .align-center}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+[Finding Profit Maximizing Quantity]{.hi .align-center}
+
+::: {.fragment}
+\begin{align*}
+    \frac{\partial \pi}{\partial Q} &= 0 \\ \\
+    100 - 4Q &= 0 \\ \\ 
+    40Q &= 100 \\ \\
+    Q^{*}_{M} &= 25
+\end{align*}
+:::
+
+:::
+
+::: {.column width="50%"}
+[Finding Market Price]{.hi .align-center}
+
+<br>
+
+::: {.fragment}
+\begin{align*}
+    P &= 100 - Q^{*}_{M} \\ \\
+    P^{*}_{M} &= 100 - 25 \\ \\
+    P^{*}_{M} &= 75
+\end{align*}
+:::
+
+:::
+
+::::
+
+---
+
+## How Does This Compare to Our Perfectly Competitive Market?
+
+[Let's find and compare what we would have gotten under Perfect Competition]{.small}
+
+:::: {.columns}
+
+::: {.column width="30%"}
+[Monopoly]{.hi-red .align-center}
+
+<br>
+
+\begin{align*}
+    Q^{*}_{M} &= 25 \\ \\
+    P^{*}_{M} &= 75
+\end{align*}
+:::
+
+::: {.column width="70%"}
+[Find Perfectly Competitive Equilibrium]{.hi-green .align-center}
+$$
+    C(Q) = Q^{2} \;\;\; \& \;\;\; P = 100 - Q
+$$
+
+::: {.fragment .small}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+[Find Supply]{.hi .align-center}
+\begin{align*}
+    \frac{\partial \pi}{\partial Q} &= 0 \\
+    P - 2Q &= 0 \\
+    P &= 2Q
+\end{align*}
+:::
+
+::: {.column width="50%"}
+[Set Supply = Demand]{.hi .align-center}
+
+::: {.fragment}
+\begin{align*}
+    2Q &= 100 - Q \\
+    Q^{*}_{PC} &= 33.3 \\
+    P^{*}_{PC} &= 66.7
+\end{align*}
+:::
+
+:::
+
+:::
+
+::::
+
+:::
+
+::::
+
+---
+
+## Monopoly vs Perfect Competition
+
+:::: {.columns}
+
+::: {.column width="50%"}
+[Monopoly Equilibrium]{.hi-red .align-center}
+\begin{align*}
+    Q^{*}_{M} &= 25 \\ \\
+    P^{*}_{M} &= 75
+\end{align*}
+:::
+
+::: {.column width="50%"}
+[Perfect Competition Equilibrium]{.hi-green .align-center}
+\begin{align*}
+    Q^{*}_{PC} &= 33.3 \\ \\
+    P^{*}_{PC} &= 66.7
+\end{align*}
+:::
+
+::::
+
+::: {.incremental}
+- A [Monopoly]{.hi-red} will always charge a [higher price]{.hi-red} and [produce less]{.hi-red} than the [Perfectly Competitive Market]{.hi-green}
+- This will be a recurring trend as we deal with market power
+    - When firms have market power, the equilibrium will always be less than "ideal"
+:::
+
+---
+
+## Monopoly 
+
+[Important Note]{.hi .note .align-center} 
+
+::: {.fragment .align-center}
+A [Monopolist]{.hi-red} maximizes profits by setting [Marginal Revenue = Marginal Cost]{.hi} just like a [Perfectly Competitive Firm]{.hi-green}
+:::
+
+. . .
+
+<br>
+
+The main difference is that a [Monopolist's]{.hi-red} does not equal the market price
+
+Their choice of quantity [will]{.hi} affect their [marginal revenue]{.hi} 
+
+. . .
+
+<br>
+
+[Let's see what a Monopolists Marginal Revenue looks like]{.hi .align-center}
