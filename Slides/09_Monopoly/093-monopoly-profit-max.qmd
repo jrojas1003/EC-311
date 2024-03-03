@@ -1,0 +1,245 @@
+---
+name: monopoly profit maximization
+---
+
+## Monopoly & Perfect Competition Example
+
+No better way to learn than by doing. Let a firm have the following cost function and face the following Demand Curve
+
+$$
+    C(Q) = 2Q^{2} + 2Q \;\;\;\;\; \& \;\;\;\;\; P = 26 - 2Q_{D}
+$$
+
+We will:
+
+::: {.incremental}
+- Find the [Supply Curve]{.hi}, [Market Equilibrium Price]{.hi}, and [Quantity]{.hi} assuming the firm is a [Price Taker]{.hi}
+- Find [Monopoly Price & Quantity]{.hi-red} 
+- Show Profits are higher in the [Monopoly Market]{.hi-red}
+- Graph the found Curves
+- Add the Price, Quantities, & Profits
+:::
+
+---
+
+## Finding Perfect Competition Equilibrium
+
+$$
+    C(Q) = 2Q^{2} + 2Q \;\;\;\;\; \& \;\;\;\;\; P = 26 - 2Q_{D}
+$$
+
+[Find the Perfectly Competitive Market Equilibrium Price and Quantity]{.hi .note .align-center}
+
+[Hint: In Perfect Competition Supply = MC]{.hi .small .align-center}
+
+. . .
+
+:::: {.columns}
+
+::: {.column width="30%"}
+[Find the Supply Curve]{.hi .align-center}
+
+::: {.fragment}
+\begin{align*}
+    P &= MC \\
+    P &= 4Q_{S} + 2
+\end{align*}
+:::
+
+:::
+
+::: {.column width="70%"}
+[Set Supply Equal to Demand]{.hi .align-center}
+[Remember $\; Q_{S} = Q_{D} = Q$]{.hi .small .align-center}
+
+::: {.fragment .small}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+\begin{align*}
+    \text{Supply} &= \text{Demand} \\
+    4Q + 2 &= 26 - 2Q \\
+    6Q &= 24 \\
+    Q^{*}_{PC} &= 4
+\end{align*}
+
+:::
+
+::: {.column width="50%"}
+
+<br>
+
+::: {.fragment}
+\begin{align*}
+    P^{*}_{PC} &= 26 - 2Q^{*} \\
+    P^{*}_{PC} &= 26 - 2(4) \\
+    P^{*}_{PC} &= 18
+\end{align*}
+:::
+
+:::
+
+:::
+
+::::
+
+:::
+
+::::
+
+---
+
+## Finding Monopoly Equilibrium {.smaller}
+
+$$
+    C(Q) = 2Q^{2} + 2Q \;\;\;\;\; \& \;\;\;\;\; P = 26 - 2Q_{D}
+$$
+
+[Find the Monopoly Equilibrium Quantity and Price]{.hi .note .align-center}
+
+[Remember that Monopolists will include the Demand Curve in their Revenue]{.hi .note .align-center}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+[Monopolists Find Quantity from MR = MC]{.hi .align-center}
+
+::: {.fragment .small}
+\begin{align*}
+    R(Q) &= \color{red}{P} \cdot Q \\
+    R(Q) &= \color{red}{(26 - 2Q)} \cdot Q \\
+    R(Q) &= 26Q - 2Q^{2}
+\end{align*}
+
+[Marginal Revenue]{.hi .align-center .tiny}
+
+\begin{align*}
+    MR &= \frac{\partial R(Q)}{\partial Q} \\
+    MR &= 26 - 4Q
+\end{align*}
+:::
+
+:::
+
+::: {.column width="50%"}
+[Set MR = MC]{.hi .align-center}
+
+::: {.fragment}
+\begin{align*}
+    MR &= MC \\
+    26 - 4Q &= 4Q + 2 \\
+    8Q &= 24 \\
+    Q^{*}_{M} &= 3
+\end{align*}
+:::
+
+<br>
+
+::: {.fragment}
+\begin{align*}
+    P^{*}_{M} &= 26 - 2\color{red}{Q^{*}_{M}} \\
+    P^{*}_{M} &= 26 - 2\color{red}{(3)} \\
+    P^{*}_{M} &= 20
+\end{align*}
+:::
+
+:::
+
+::::
+
+---
+
+## Show Profits are Higher in Monopoly Market
+
+$$
+    \pi = P \cdot Q - C(Q)
+$$
+
+[Find both Market Profits and Compare Them]{.hi .note .align-center}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+[Perfect Competition Profits]{.hi .align-center}
+[P = 18 & Q = 4]{.h .align-center .small}
+
+::: {.fragment}
+\begin{align*}
+    \pi_{PC} &= 18 \cdot 4 - 2(4)^{2} - 2(4) \\
+    \pi_{PC} &= 72 - 32 - 8 \\
+    \pi_{PC} &= 32
+\end{align*}
+:::
+
+:::
+
+::: {.column width="50%"}
+[Monopoly Profits]{.hi .align-center}
+[P = 20 & Q = 3]{.h .align-center .small}
+
+::: {.fragment}
+\begin{align*}
+    \pi_{M} &= 20 \cdot 3 - 2(3)^{2} - 2(3) \\
+    \pi_{M} &= 60 - 18 - 6 \\
+    \pi_{M} &= 36 
+\end{align*}
+:::
+
+:::
+
+::::
+
+[Which Market Gives Larger Profits?]{.hi .align-center}
+
+::: {.fragment}
+$$
+    \pi_{PC} \; < \; \pi_{M}
+$$
+:::
+
+---
+
+## Graphing Both Markets
+
+![](images/monopoly-and-perfect-competition-markets.png){fig-align="center"}
+
+---
+
+## Graphing Monopoly Profits
+
+![](images/monopoly-profit.png){fig-align="center"}
+
+---
+
+## Graphing Perfect Competition Profits
+
+![](images/perfect-competition-profit.png){fig-align="center"}
+
+::: {.notes}
+Ask what would we expect in the long-run? 
+Firms enter, prices drop, profit goes down to zero
+:::
+
+---
+
+## Important Equilibrium Graphs
+
+One very important takeaway is to know how Perfectly Competitive Firms and Monopolies graphs look like
+
+:::: {.columns}
+
+::: {.column width="50%"}
+[Monopoly]{.hi .align-center}
+
+![](images/monopoly-equilibrium.png){fig-align="center"}
+:::
+
+::: {.column width="50%"}
+[Perfect Competition]{.hi .align-center}
+
+![](images/perfect-competition-equilibrium.png){fig-align="center"}
+:::
+
+::::
