@@ -1,0 +1,48 @@
+---
+title: "Imperfect Competition"
+subtitle: "EC 311 - Intermediate Microeconomics"
+author: Jose Rojas-Fallas
+date: last-modified
+date-format: "YYYY"
+format:
+    revealjs:
+        theme: [default, styles.scss]
+        slide-number: true
+        footer: "EC311 - Lecture 09 | Imperfect Competition"
+        preview-links: auto
+        code-fold: FALSE
+title-slide-attributes: 
+  data-background-position: left
+---
+
+[Outline]{.h .realbig}
+
+### Chapter 11
+
+- Topics
+
+    - Oligopoly (11.1)
+    - Collusion (11.2)
+    - Bertrand Competition (11.3)
+    - Cournot Competition (11.4)
+    - Stackelber Competition (11.5)
+
+# Oligopoly {.inverse .note}
+
+{{< include 101-oligopoly.qmd >}}
+
+# Collusion {.inverse .note}
+
+{{< include 102-collusion.qmd >}}
+
+# Bertrand Competition {.inverse .note}
+
+{{< include 103-bertrand-competition.qmd >}}
+
+# Cournot {.inverse .note}
+
+{{< include 104-cournot-competition.qmd >}}
+
+# Stackelberg Competition {.inverse .note}
+
+{{< include 105-stackelberg-competition.qmd >}}
