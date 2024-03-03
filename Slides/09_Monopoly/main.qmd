@@ -25,7 +25,6 @@ title-slide-attributes:
     - Marginal Revenue (9.2)
     - Monopoly Profit Maximization (9.3)
 
-
 # Market Power {.inverse .note}
 
 {{< include 091-market-power.qmd >}}
