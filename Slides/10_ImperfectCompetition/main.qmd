@@ -22,24 +22,24 @@ title-slide-attributes:
 - Topics
 
     - Oligopoly (11.1)
-    - Collusion (11.2)
+    - Collusion & Cartels (11.2)
     - Bertrand Competition (11.3)
     - Cournot Competition (11.4)
     - Stackelber Competition (11.5)
 
-# Oligopoly {.inverse .note}
+# Extreme Markets & Imperfect Competition {.inverse .note}
 
-{{< include 101-oligopoly.qmd >}}
+{{< include 101-extreme-markets-imperfect-comp.qmd >}}
 
-# Collusion {.inverse .note}
+# Game Theory {.inverse .note}
 
-{{< include 102-collusion.qmd >}}
+{{< include 102-game-theory.qmd >}}
 
 # Bertrand Competition {.inverse .note}
 
 {{< include 103-bertrand-competition.qmd >}}
 
-# Cournot {.inverse .note}
+# Cournot Competition {.inverse .note}
 
 {{< include 104-cournot-competition.qmd >}}
 

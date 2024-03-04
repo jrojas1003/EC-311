@@ -1,0 +1,65 @@
+---
+name: game theory
+---
+
+## Decision-Making Until Now
+
+We have only studied decisions where one person or one firm were making decisions ["in a vacuum"]{.hi} 
+
+- We specifically addressed what is best for the individual or the firm, [but it never depended on what other people or firms do]{.hi}
+
+. . .
+
+[Monopolies]{.hi-red} were slightly different
+
+::: {.incremental}
+- They maximized porfits, [while taking into account the behavior of the consumers in their market]{.hi}
+
+    - Our models of [Imperfect Competition]{.hi} are going to look similarly, with some modifications
+:::
+
+---
+
+## Game Theory Basics
+
+Let's think of a simple example to illustrate [Game Theory]{.hi}
+
+. . .
+
+Imagine that you manage a gas station. Directly across the street from you is a competing gas station. Also assume that you are the only stations in town
+
+Both of you set your gas prices at he start of the day and only have two choices: 
+
+. . .
+
+:::: {.columns}
+
+::: {.column width="50%"}
+[Set Low Price]{.hi .align-center}
+:::
+
+::: {.column width="50%"}
+[Set High Price]{.hi .align-center}
+
+:::
+
+::::
+
+<br>
+
+::: {.fragment}
+[This means there are four possible outcomes we will consider]{.hi .align-center}
+:::
+
+---
+
+## Game Theory Basics - Gas Station Example
+
+![](images/gas-station-example.png)
+
+[So what should you do?]{.hi .align-center}
+
+---
+
+## Game Theory - Nash Equilibrium
+
