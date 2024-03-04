@@ -1,0 +1,47 @@
+---
+name: extreme markets & imperfect competition
+---
+
+## Up To Now
+
+So far we have talked about [Perfect Competition]{.hi-green} and [Monopoly]{.hi-red}
+
+::: {.incremental}
+- These firms are either [complete price takers]{.hi-green} or [complete price setters]{.hi-red}
+- But these are the extremes, the real world is more nuanced
+    - Neither of our models are likely to be truly realistic, but they do a good job at showing us the ends of our [Competitive Spectrum]{.hi} 
+:::
+
+. . .
+
+![](images/market-spectrum.png){fig-align="center"}
+
+---
+
+## Markets
+
+Most markets are somewhere in-between
+
+::: {.incremental}
+- Firms cannot set market prices by themselves
+- But there are circumstances where there are large firms and are few enough that one single firms choice can impact market prices
+:::
+
+. . .
+
+This is the basics of [Imperfect Competition]{.hi} and what we will be tackling until the end
+
+---
+
+## Imperfect Competition
+
+Firms are still competing but they know who their rivals are and will adopt strategies based on what they think their rivals will do
+
+::: {.incremental .small}
+- In order to model firms in these contexts, we need to learn the very basics about [Game Theory]{.hi}
+    - This is the field of decision-making in situations where actions affect others' outcomes and vice-versa
+- We will keep things simple by only studying interactions between two firms
+    - We call this a [Duopoloy]{.hi}
+- The intuition and approach we will take holds for cases where there are more than 2 firms
+    - This is called an [Oligopoly]{.hi}
+:::
