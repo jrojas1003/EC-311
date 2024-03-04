@@ -26,7 +26,8 @@ title-slide-attributes:
     - Bertrand Competition (11.3)
     - Cournot Competition (11.4)
     - Stackelber Competition (11.5)
-
+    
+<!--
 # Extreme Markets & Imperfect Competition {.inverse .note}
 
 {{< include 101-extreme-markets-imperfect-comp.qmd >}}
@@ -42,6 +43,7 @@ title-slide-attributes:
 # Cartels {.inverse .note}
 
 {{< include 104-cartels.qmd >}}
+-->
 
 # Stackelberg Competition {.inverse .note}
 
