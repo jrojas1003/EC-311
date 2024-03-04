@@ -547,18 +547,301 @@ Jose Rojas-Fallas
 </div>
 </div>
 </section></section>
-<section id="bertrand-competition" class="title-slide slide level1 inverse note center">
-<h1>Bertrand Competition</h1>
-
-</section>
-
+<section>
 <section id="cournot-competition" class="title-slide slide level1 inverse note center">
 <h1>Cournot Competition</h1>
 
 </section>
+<section id="the-man-himself" class="slide level2">
+<h2>The Man Himself</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/antoine-augustin-cournot.jpg"></p>
+</figure>
+</div>
+<p><span class="hi align-center small">Antoine Augustin Cournot (1801 - 1877)</span></p>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>Published his theory of competition in 1838 in his volume of Recherches sur les Principes Mathématiques de la Théorie des Richesses</li>
+<li>Inspired by observing competition in a spring water duopoly</li>
+<li>Joseph Bertrand apparently disliked it and made his own model which we will look at later</li>
+<li>This model is 186 years old</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="cournot-competition-simultaneous-decisions" class="slide level2">
+<h2>Cournot Competition = Simultaneous Decisions</h2>
+<p>This model consists of two firms competing by <span class="hi-orange">Best Responding</span> to one-another’s quantity choices</p>
+<p>We call this a <span class="hi">Cournout Competition or Cornout Equilibrium</span></p>
+<ul>
+<li>Mathematically, this will look like a modified <span class="hi-red">Monopoly</span> with two firms</li>
+</ul>
+<div class="columns">
+<div class="column" style="width:30%;">
+<p><br><br></p>
+<div class="fragment small">
+<p><span class="math display">\[\begin{align*}
+    \pi_{A} &amp;= P \cdot Q_{A} - C(Q_{A}) \\
+    \pi_{B} &amp;= P \cdot Q_{B} - C(Q_{B}) \\
+\end{align*}\]</span></p>
+</div>
+</div><div class="column" style="width:70%;">
+<div class="fragment">
+<p><span class="hi align-center">Price is a function of Market Quantity which is the sum of both firms quantity</span></p>
+</div>
+<div class="fragment">
+<p><span class="math display">\[\begin{align*}
+    P &amp;= f(Q_{S}) = f(Q_{A} + Q_{B})
+\end{align*}\]</span></p>
+<p><span class="h align-center">Which is the Market Demand Curve</span></p>
+</div>
+</div>
+</div>
+</section>
+<section id="cournot-equilibrium---example" class="slide level2">
+<h2>Cournot Equilibrium - Example</h2>
+<p>Let both firms have the following <span class="hi">Cost Functions</span> and <span class="hi">Demand Curve</span></p>
+<p><span class="math display">\[
+    C(Q) = Q^{2} \;\;\;\;\; ; \;\;\;\;\; P = 100 - Q_{D}
+\]</span></p>
+<p><span class="hi">Demand</span> is the sum of both firms produced quantities</p>
+<div class="fragment">
+<p><span class="math display">\[\begin{align*}
+    Q_{D} &amp;= Q_{A} + Q_{B} \\
+\end{align*}\]</span></p>
+</div>
+<div class="fragment">
+<p><span class="hi align-center">Find the Demand Curve</span></p>
+</div>
+<div class="fragment">
+<p><span class="math display">\[\begin{align*}
+    P &amp;= 100 - \color{red}{Q_{D}} \\
+    P &amp;= 100 - \color{red}{(Q_{A} + Q_{B})} \\
+     P &amp;= 100 - Q_{A} - Q_{B}
+\end{align*}\]</span></p>
+</div>
+</section>
+<section id="cournot-equilibrium---profits" class="slide level2">
+<h2>Cournot Equilibrium - Profits</h2>
+<p>We can then write these firms profits using our <span class="hi">updated Demand Curve</span></p>
+<p><span class="math display">\[
+    (P = 100 - Q_{A} - Q_{B})
+\]</span></p>
+<p>Remember profits are written as</p>
+<p><span class="math display">\[
+    \pi = P \cdot Q - C(Q)
+\]</span></p>
+<p><span class="hi align-center">Write both Firm A and Firm B’s Profit Functions</span></p>
+<div class="fragment">
+<p><span class="math display">\[\begin{align*}
+    \pi_{A} &amp;= (100 - Q_{A} - Q_{B}) \cdot Q_{A} - Q_{A}^{2} \\ \\
+    \pi_{B} &amp;= (100 - Q_{A} - Q_{B}) \cdot Q_{B} - Q_{B}^{2}
+\end{align*}\]</span></p>
+</div>
+</section>
+<section id="cournot-equilibrium---best-response-functions" class="slide level2">
+<h2>Cournot Equilibrium - Best Response Functions</h2>
+<p>We find <span class="hi-orange">Best Response Functions</span> because we want to model it in such a way that we can observe responses to any possible quantity levels</p>
+<p>We can find these by finding the profit maximizing quantity of each profit function</p>
+<p><span class="math display">\[
+    \frac{\partial \pi_{i}}{\partial Q_{i}} = 0
+\]</span></p>
+</section>
+<section id="cournot-equilibrium---example-best-response-functions" class="slide level2">
+<h2>Cournot Equilibrium - Example Best Response Functions</h2>
+<p><span class="tiny"><span class="math display">\[\begin{align*}
+    \pi_{A} &amp;= (100 - Q_{A} - Q_{B}) \cdot Q_{A} - Q_{A}^{2} \\ \\
+    \pi_{B} &amp;= (100 - Q_{A} - Q_{B}) \cdot Q_{B} - Q_{B}^{2}
+\end{align*}\]</span></span></p>
+<p><span class="hi note align-center small">Find the Best Response Functions for both firms</span></p>
+<p><span class="hi align-center small">Hint: You only need to do the work for one, the other is symmetric</span></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="hi align-center small">Find <span class="math inline">\(\; \frac{\partial \pi_{A}}{\partial Q_{A}} = 0\)</span></span></p>
+<div class="fragment tiny">
+<p><span class="math display">\[\begin{align*}
+    100 - 2Q_{A} - Q_{B} - 2Q_{A} &amp;= 0 \\
+    4Q_{A} &amp;= 100 - Q_{B} \\
+    Q^{*}_{A} &amp;= \frac{100 - Q_{B}}{4}
+\end{align*}\]</span></p>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="fragment">
+<p><span class="hi align-center">By Symmetry, we know Firm B’s Best Response</span></p>
+<p><span class="math display">\[\begin{align*}
+    Q^{*}_{B} &amp;= \frac{100 - Q_{A}}{4}
+\end{align*}\]</span></p>
+</div>
+</div>
+</div>
+</section>
+<section id="cournot-equilibrium---optimal-quantity" class="slide level2">
+<h2>Cournot Equilibrium - Optimal Quantity</h2>
+<p>Would you believe me if I told you we can get a number for <span class="math inline">\(Q_{A}^{*}\)</span> from this?</p>
+<div class="fragment tiny">
+<p>We have <span class="math inline">\(\; Q^{*}_{A} = \frac{100 - Q_{B}}{4} \;\; \&amp; \;\; Q^{*}_{B} = \frac{100 - Q_{A}}{4}\)</span></p>
+<p><br></p>
+<p><span class="hi align-center small">Find <span class="math inline">\(\; Q^{*}_{A} \;\)</span> by plugging in our <span class="math inline">\(\; Q^{*}_{B} \;\)</span> function</span></p>
+</div>
+<div class="fragment small">
+<p><span class="hi align-center">We solve this by putting one Best Response into the other</span></p>
+<p><span class="math display">\[\begin{align*}
+    Q^{*}_{A} = \frac{100 - \color{red}{Q_{B}}}{4} \\ \\
+    Q^{*}_{A} = \frac{100 - \color{red}{\frac{100 - Q_{A}}{4}}}{4}
+\end{align*}\]</span></p>
+</div>
+</section>
+<section id="cournot-equilibrium---optimal-quantity-1" class="slide level2">
+<h2>Cournot Equilibrium - Optimal Quantity</h2>
+<p><span class="math display">\[
+    Q^{*}_{A} = \frac{100 - \frac{100 - Q_{A}}{4}}{4}
+\]</span></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="hi align-center">Find Optimal Quantity</span></p>
+<div class="fragment">
+<p><span class="math display">\[\begin{align*}
+    4Q^{*}_{A} &amp;= 100 - \frac{100 - Q_{A}^{*}}{4} \\
+    16Q^{*}_{A} &amp;= 400 - (100 - Q_{A}^{*}) \\
+    15Q^{*}_{A} &amp;= 300 \\
+    Q^{*}_{A} &amp;= 20 = Q^{*}_{B}
+\end{align*}\]</span></p>
+</div>
+</div><div class="column" style="width:50%;">
+<p><span class="hi align-center small">Find Market Supply</span></p>
+<div class="fragment small">
+<p><span class="math display">\[\begin{align*}
+    Q_{S} &amp;= Q_{A}^{*} + Q_{B}^{*} \\
+    Q_{S} &amp;= 20 + 20 \\
+    Q_{S} &amp;= 40
+\end{align*}\]</span></p>
+</div>
+<p><span class="hi align-center small">Find Market Price</span></p>
+<div class="fragment small">
+<p><span class="math display">\[\begin{align*}
+    P &amp;= 100 - Q_{D} \\
+    P &amp;= 100 - 40 \\
+    P &amp;= 60
+\end{align*}\]</span></p>
+</div>
+</div>
+</div>
+</section>
+<section id="cournot-equilibrium" class="slide level2">
+<h2>Cournot Equilibrium</h2>
+<p>We just saw that each firm is best responding to the other’s decisions</p>
+<p><span class="align-center">The equilibrium we found is the point where</span></p>
+<p><span class="hi align-center">Both firms are best responding to each other at the same time</span></p>
+<p>Let’s look at a graph of the previous example</p>
+</section>
+<section id="graphing-best-response-functions---firm-a" class="slide level2">
+<h2>Graphing Best Response Functions - Firm A</h2>
+<p><span class="hi-orange align-center">Firm A’s Best Response Function</span></p>
+<div class="columns">
+<div class="column" style="width:30%;">
+<p><br><br></p>
+<p><span class="math display">\[\begin{align*}
+    Q^{*}_{A} &amp;= \frac{100 - Q^{*}_{B}}{4} \\ \\
+    Q^{*}_{A} &amp;= 25 - \frac{Q^{*}_{B}}{4}
+\end{align*}\]</span></p>
+</div><div class="column" style="width:70%;">
+<p><img data-src="images/firm-a-best-response.png"></p>
+</div>
+</div>
+</section>
+<section id="graphing-best-response-functions---firm-b" class="slide level2">
+<h2>Graphing Best Response Functions - Firm B</h2>
+<p><span class="hi-orange align-center">Firm B’s Best Response Function</span></p>
+<div class="columns">
+<div class="column" style="width:30%;">
+<p><br><br></p>
+<p><span class="math display">\[\begin{align*}
+    Q^{*}_{B} &amp;= \frac{100 - Q^{*}_{A}}{4} \\ \\
+    Q^{*}_{B} &amp;= 25 - \frac{Q^{*}_{A}}{4}
+\end{align*}\]</span></p>
+</div><div class="column" style="width:70%;">
+<p><img data-src="images/firm-b-best-response.png"></p>
+</div>
+</div>
+</section>
+<section id="cournot-equilibrium---graph" class="slide level2">
+<h2>Cournot Equilibrium - Graph</h2>
+<p>The <span class="hi">Cournot Equilibrium Quantities</span> are where the <span class="hi-orange">Best Response Functions</span> intersect</p>
 
+<img data-src="images/cournot-equilibrium.png" class="r-stretch quarto-figure-center"></section>
+<section id="where-does-cournot-place-relative-to-other-market-types" class="slide level2">
+<h2>Where Does Cournot Place Relative to Other Market Types?</h2>
+<p>We know how to find <span class="hi-red">Monopolist Equilibriums</span> and <span class="hi-green">Perfectly Competitive Equilibriums</span> from just the <span class="hi">Cost Functions</span></p>
+<p>We can rank outcomes intuitively using what we know about each one:</p>
+<p>Relative to a <span class="hi-red">Monopoly</span></p>
+<div class="fragment">
+<ul>
+<li>Quantity should be higher and price lower because there is <span class="hi">more</span> competition in a <span class="hi">Cournot Duopoly</span></li>
+</ul>
+</div>
+<p>Relative to <span class="hi-green">Perfect Competition</span></p>
+<div class="fragment">
+<ul>
+<li>Quantity should be lower and price higher because there is relatively less competition in a <span class="hi">Cournot Duopoly</span></li>
+</ul>
+</div>
+</section>
+<section id="practice-makes-perfect" class="slide level2">
+<h2>Practice Makes Perfect</h2>
+<p>Let’s find <span class="hi-green">Perfect Competition Equilibrium</span> and compare our results</p>
+<div class="fragment tiny">
+<p><span class="math display">\[
+    \text{Profits: } \pi_{A} = P \cdot Q_{A} - Q_{A}^{2} \;\;\;\; \text{and} \;\;\;\; \pi_{B} = P \cdot Q_{B} - Q_{B}^{2}
+\]</span></p>
+<p><span class="math display">\[
+    \text{Demand: } P = 100 - Q_{D}
+\]</span></p>
+<p><span class="hi align-center">Find the Perfectly Competitive Equilibrium Quantity and Price</span> <span class="hi align-center">Maximize both profits, find optimal quantities, set supply = demand, and find numbers for Quantity and Price</span></p>
+</div>
+<div class="fragment small">
+<div class="columns">
+<div class="column tiny" style="width:33%;">
+<p><span class="math display">\[\begin{align*}
+    \frac{\partial \pi_{A}}{\partial Q_{A}} &amp;= 0 \\
+    P - 2Q_{A} &amp;= 0 \\
+    Q_{A}^{*} &amp;= \frac{P}{2} \\
+    Q_{B}^{*} &amp;= \frac{P}{2}
+\end{align*}\]</span></p>
+</div><div class="column tiny" style="width:33%;">
+<p><span class="math display">\[\begin{align*}
+    Q_{S} &amp;= Q_{A}^{*} + Q_{B}^{*} \\
+    Q_{S} &amp;= \frac{P}{2} + \frac{P}{2} = P
+\end{align*}\]</span></p>
+<p><span class="math display">\[\begin{align*}
+    \text{Supply} &amp;= \text{Demand} \\
+    Q_{S} &amp;= 100 - Q_{D} \\
+    2Q &amp;= 100 \\
+    Q^{*} &amp;= 50  
+\end{align*}\]</span></p>
+</div><div class="column" style="width:33%;">
+
+</div>
+</div>
+</div>
+</section></section>
+<section>
+<section id="cartels" class="title-slide slide level1 inverse note center">
+<h1>Cartels</h1>
+
+</section>
+<section id="section" class="slide level2">
+<h2></h2>
+</section></section>
 <section id="stackelberg-competition" class="title-slide slide level1 inverse note center">
 <h1>Stackelberg Competition</h1>
+
+</section>
+
+<section id="bertrand-competition" class="title-slide slide level1 inverse note center">
+<h1>Bertrand Competition</h1>
 <div class="footer footer-default">
 <p>EC311 - Lecture 09 | Imperfect Competition</p>
 </div>

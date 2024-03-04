@@ -1,0 +1,394 @@
+---
+name: cournot competition
+---
+
+## The Man Himself 
+
+:::: {.columns}
+
+::: {.column width="50%"}
+![](images/antoine-augustin-cournot.jpg){fig-align="center"}
+
+[Antoine Augustin Cournot (1801 - 1877)]{.hi .align-center .small}
+:::
+
+::: {.column width="50%"}
+- Published his theory of competition in 1838 in his volume of Recherches sur les Principes Mathématiques de la Théorie des Richesses
+- Inspired by observing competition in a spring water duopoly
+- Joseph Bertrand apparently disliked it and made his own model which we will look at later
+- This model is 186 years old
+:::
+
+::::
+
+---
+
+## Cournot Competition = Simultaneous Decisions
+
+This model consists of two firms competing by [Best Responding]{.hi-orange} to one-another's quantity choices
+
+We call this a [Cournout Competition or Cornout Equilibrium]{.hi} 
+
+- Mathematically, this will look like a modified [Monopoly]{.hi-red} with two firms 
+
+:::: {.columns}
+
+::: {.column width="30%"}
+
+<br><br>
+
+::: {.fragment .small}
+\begin{align*}
+    \pi_{A} &= P \cdot Q_{A} - C(Q_{A}) \\
+    \pi_{B} &= P \cdot Q_{B} - C(Q_{B}) \\
+\end{align*}
+:::
+
+:::
+
+::: {.column width="70%"}
+
+::: {.fragment}
+[Price is a function of Market Quantity which is the sum of both firms quantity]{.hi .align-center}
+:::
+
+::: {.fragment}
+\begin{align*}
+    P &= f(Q_{S}) = f(Q_{A} + Q_{B})
+\end{align*}
+
+[Which is the Market Demand Curve]{.h .align-center}
+:::
+
+:::
+
+::::
+
+---
+
+## Cournot Equilibrium - Example
+
+Let both firms have the following [Cost Functions]{.hi} and [Demand Curve]{.hi}
+
+$$
+    C(Q) = Q^{2} \;\;\;\;\; ; \;\;\;\;\; P = 100 - Q_{D}
+$$
+
+[Demand]{.hi} is the sum of both firms produced quantities
+
+::: {.fragment}
+\begin{align*}
+    Q_{D} &= Q_{A} + Q_{B} \\
+\end{align*}
+:::
+
+::: {.fragment}
+[Find the Demand Curve]{.hi .align-center}
+:::
+
+::: {.fragment}
+\begin{align*}
+    P &= 100 - \color{red}{Q_{D}} \\
+    P &= 100 - \color{red}{(Q_{A} + Q_{B})} \\
+     P &= 100 - Q_{A} - Q_{B}
+\end{align*}
+:::
+
+---
+
+## Cournot Equilibrium - Profits
+
+We can then write these firms profits using our [updated Demand Curve]{.hi} 
+
+$$
+    (P = 100 - Q_{A} - Q_{B})
+$$
+
+Remember profits are written as
+
+$$
+    \pi = P \cdot Q - C(Q)
+$$
+
+[Write both Firm A and Firm B's Profit Functions]{.hi .align-center}
+
+::: {.fragment}
+\begin{align*}
+    \pi_{A} &= (100 - Q_{A} - Q_{B}) \cdot Q_{A} - Q_{A}^{2} \\ \\
+    \pi_{B} &= (100 - Q_{A} - Q_{B}) \cdot Q_{B} - Q_{B}^{2}
+\end{align*}
+:::
+
+---
+
+## Cournot Equilibrium - Best Response Functions 
+
+We find [Best Response Functions]{.hi-orange} because we want to model it in such a way that we can observe responses to any possible quantity levels
+
+We can find these by finding the profit maximizing quantity of each profit function
+
+$$
+    \frac{\partial \pi_{i}}{\partial Q_{i}} = 0
+$$
+
+---
+
+## Cournot Equilibrium - Example Best Response Functions
+
+[\begin{align*}
+    \pi_{A} &= (100 - Q_{A} - Q_{B}) \cdot Q_{A} - Q_{A}^{2} \\ \\
+    \pi_{B} &= (100 - Q_{A} - Q_{B}) \cdot Q_{B} - Q_{B}^{2}
+\end{align*}]{.tiny }
+
+[Find the Best Response Functions for both firms]{.hi .note .align-center .small}
+
+[Hint: You only need to do the work for one, the other is symmetric]{.hi .align-center .small}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+[Find $\; \frac{\partial \pi_{A}}{\partial Q_{A}} = 0$]{.hi .align-center .small}
+
+::: {.fragment .tiny}
+\begin{align*}
+    100 - 2Q_{A} - Q_{B} - 2Q_{A} &= 0 \\
+    4Q_{A} &= 100 - Q_{B} \\ 
+    Q^{*}_{A} &= \frac{100 - Q_{B}}{4}
+\end{align*}    
+:::
+
+:::
+
+::: {.column width="50%"}
+
+::: {.fragment}
+[By Symmetry, we know Firm B's Best Response]{.hi .align-center}
+
+\begin{align*}
+    Q^{*}_{B} &= \frac{100 - Q_{A}}{4}
+\end{align*}
+:::
+
+:::
+
+::::
+
+---
+
+## Cournot Equilibrium - Optimal Quantity 
+
+Would you believe me if I told you we can get a number for $Q_{A}^{*}$ from this?
+
+::: {.fragment .tiny}
+We have $\; Q^{*}_{A} = \frac{100 - Q_{B}}{4} \;\; \& \;\; Q^{*}_{B} = \frac{100 - Q_{A}}{4}$
+
+<br>
+
+[Find $\; Q^{*}_{A} \;$ by plugging in our $\; Q^{*}_{B} \;$ function]{.hi .align-center .small}
+:::
+
+::: {.fragment .small}
+[We solve this by putting one Best Response into the other]{.hi .align-center}
+
+\begin{align*}
+    Q^{*}_{A} = \frac{100 - \color{red}{Q_{B}}}{4} \\ \\
+    Q^{*}_{A} = \frac{100 - \color{red}{\frac{100 - Q_{A}}{4}}}{4}
+\end{align*}
+:::
+
+---
+
+## Cournot Equilibrium - Optimal Quantity
+
+$$
+    Q^{*}_{A} = \frac{100 - \frac{100 - Q_{A}}{4}}{4}
+$$
+
+:::: {.columns}
+
+::: {.column width="50%"}
+[Find Optimal Quantity]{.hi .align-center}
+
+::: {.fragment}
+\begin{align*}
+    4Q^{*}_{A} &= 100 - \frac{100 - Q_{A}^{*}}{4} \\
+    16Q^{*}_{A} &= 400 - (100 - Q_{A}^{*}) \\ 
+    15Q^{*}_{A} &= 300 \\
+    Q^{*}_{A} &= 20 = Q^{*}_{B} 
+\end{align*}
+:::
+
+:::
+
+::: {.column width="50%"}
+[Find Market Supply]{.hi .align-center .small}
+
+::: {.fragment .small}
+\begin{align*}
+    Q_{S} &= Q_{A}^{*} + Q_{B}^{*} \\ 
+    Q_{S} &= 20 + 20 \\
+    Q_{S} &= 40
+\end{align*}
+:::
+
+[Find Market Price]{.hi .align-center .small}
+
+::: {.fragment .small}
+\begin{align*}
+    P &= 100 - Q_{D} \\
+    P &= 100 - 40 \\
+    P &= 60
+\end{align*}
+:::
+
+:::
+
+::::
+
+---
+
+## Cournot Equilibrium 
+
+We just saw that each firm is best responding to the other's decisions
+
+[The equilibrium we found is the point where]{.align-center} 
+
+[Both firms are best responding to each other at the same time]{.hi .align-center}
+
+Let's look at a graph of the previous example
+
+---
+
+## Graphing Best Response Functions - Firm A
+
+[Firm A's Best Response Function]{.hi-orange .align-center}
+
+:::: {.columns}
+
+::: {.column width="30%"}
+
+<br><br>
+
+\begin{align*}
+    Q^{*}_{A} &= \frac{100 - Q^{*}_{B}}{4} \\ \\
+    Q^{*}_{A} &= 25 - \frac{Q^{*}_{B}}{4}
+\end{align*}
+
+:::
+
+::: {.column width="70%"}
+![](images/firm-a-best-response.png)
+:::
+
+::::
+
+---
+
+## Graphing Best Response Functions - Firm B
+
+[Firm B's Best Response Function]{.hi-orange .align-center}
+
+:::: {.columns}
+
+::: {.column width="30%"}
+
+<br><br>
+
+\begin{align*}
+    Q^{*}_{B} &= \frac{100 - Q^{*}_{A}}{4} \\ \\
+    Q^{*}_{B} &= 25 - \frac{Q^{*}_{A}}{4}
+\end{align*}
+
+:::
+
+::: {.column width="70%"}
+![](images/firm-b-best-response.png)
+:::
+
+::::
+
+---
+
+## Cournot Equilibrium - Graph
+
+The [Cournot Equilibrium Quantities]{.hi} are where the [Best Response Functions]{.hi-orange} intersect
+
+![](images/cournot-equilibrium.png){fig-align="center"}
+
+---
+
+## Where Does Cournot Place Relative to Other Market Types?
+
+We know how to find [Monopolist Equilibriums]{.hi-red} and [Perfectly Competitive Equilibriums]{.hi-green} from just the [Cost Functions]{.hi} 
+
+We can rank outcomes intuitively using what we know about each one:
+
+Relative to a [Monopoly]{.hi-red}
+
+::: {.fragment}
+- Quantity should be higher and price lower because there is [more]{.hi} competition in a [Cournot Duopoly]{.hi}
+:::
+
+Relative to [Perfect Competition]{.hi-green}
+
+::: {.fragment}
+- Quantity should be lower and price higher because there is relatively less competition in a [Cournot Duopoly]{.hi}
+:::
+
+---
+
+## Practice Makes Perfect
+
+Let's find [Perfect Competition Equilibrium]{.hi-green} and compare our results
+
+::: {.fragment .tiny}
+$$
+    \text{Profits: } \pi_{A} = P \cdot Q_{A} - Q_{A}^{2} \;\;\;\; \text{and} \;\;\;\; \pi_{B} = P \cdot Q_{B} - Q_{B}^{2}
+$$
+
+$$
+    \text{Demand: } P = 100 - Q_{D}
+$$
+
+[Find the Perfectly Competitive Equilibrium Quantity and Price]{.hi .align-center}
+[Maximize both profits, find optimal quantities, set supply = demand, and find numbers for Quantity and Price]{.hi .align-center}
+:::
+
+::: {.fragment .small}
+
+:::: {.columns}
+
+::: {.column width="33%" .tiny}
+\begin{align*}
+    \frac{\partial \pi_{A}}{\partial Q_{A}} &= 0 \\
+    P - 2Q_{A} &= 0 \\
+    Q_{A}^{*} &= \frac{P}{2} \\
+    Q_{B}^{*} &= \frac{P}{2}
+\end{align*}
+:::
+
+::: {.column width="33%" .tiny}
+\begin{align*}
+    Q_{S} &= Q_{A}^{*} + Q_{B}^{*} \\
+    Q_{S} &= \frac{P}{2} + \frac{P}{2} = P 
+\end{align*}
+
+\begin{align*}
+    \text{Supply} &= \text{Demand} \\
+    Q_{S} &= 100 - Q_{D} \\
+    2Q &= 100 \\
+    Q^{*} &= 50  
+\end{align*}
+:::
+
+::: {.column width="33%"}
+
+:::
+
+::::
+
+
+
+
+
+:::
