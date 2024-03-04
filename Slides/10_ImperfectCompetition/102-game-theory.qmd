@@ -63,3 +63,99 @@ Both of you set your gas prices at he start of the day and only have two choices
 
 ## Game Theory - Nash Equilibrium
 
+Let's formalize the thought process [Game Theory]{.hi} indicates
+
+Imagine that your competitor chooses to set a [High Price]{.hi}. How should you respond?
+
+::: {.incremental}
+- You can take the entire market and earn 20 by setting a [Low Price]{.hi}
+- This is clearly better than setting a [High Price]{.hi} and sharing the market earning 15
+:::
+
+::: {.fragment}
+
+Now imagine the competitor chose to set a [Low Price]{.hi}. How should you respond?
+
+::: {.incremental}
+- If you do not set a [Low Price]{.hi}, your competitor will take the entire market and you will earn 0
+- Your best response is to also set a [Low Price]{.hi} and earn 10
+:::
+
+:::
+
+---
+
+## Game Theory - Nash Equilibrium
+
+Regardless of what your competitor does, the best thing for you to do is to set a [Low Price]{.hi}
+
+::: {.incremental}
+- Now if you switch perspectives and answer the same questions from your competitor's point of view [You will get the same answer]{.hi}
+- So both of you are responding as you best could, to each other's best decision
+:::
+
+::: {.fragment}
+[This outcome is called a]{.hi .align-center}
+
+[Nash Equilibrium]{.hi-orange .align-center}
+:::
+
+---
+
+## Nash Equilibrium
+
+I will abbreviate [Nash Equilibrium]{.hi-orange} as [NE]{.hi-orange}
+Let's define it formally
+
+A set of choices (one for each player) is a [NE]{.hi-orange} if:
+
+::: {.incremental}
+- Each player's choice maximized their payoff [given the choice of the other player]{.hi-orange}
+- Note that the [NE]{.hi-orange} is not the outcome that maximizes the [total payoffs]{.hi} earned by each player
+    - If both gas stations had set a [High Price]{.hi} they would have each earned 15 for a total of 30
+    - With the outcome we get, both set a [Low Price]{.hi} and earn 10 each for a total of 20
+:::
+
+---
+
+## Nash Equilibrium 
+
+The term [Best Responding]{.hi-orange} is a grat way of thinking about [NE]{.hi-orange} because it sets us up well for integrating it into our model of firm behavior
+
+::: {.incremental}
+- [Firm A]{.hi-red} an come up with a [Best Response]{.hi-orange} to any price that their competitor might set
+- In turn, their competitor, [Firm B]{.hi-bb} can also come up with a [Best Response]{.hi-orange} strategy to any price that [Firm A]{.hi-red} might set
+- The prices at which [Both Firms are simultaneously best responding to one another are the Nash Equilibrium Prices]{.hi}
+:::
+
+---
+
+## Nash Equilibrium in Producer Markets
+
+To put this in terms of our models where firms maximize profit based on their choice of [Quantity $Q$]{.hi}:
+
+::: {.incremental}
+- The [quantities]{.hi} at which [both firms are simultaneously best responding to one another are the Nash Equilibrium quantities]{.hi-orange}
+- The [Market Price]{.hi} is determined by [the Sum of the Quantitites]{.hi}
+:::
+
+::: {.fragment}
+[We are going to be dealing with several models of imperfect competition]{.hi .align-center}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- Cornout Competition
+
+- Cartels 
+:::
+
+::: {.column width="50%"}
+- Stackelberg Competition
+
+- Bertrand Competition
+:::
+
+::::
+
+:::
