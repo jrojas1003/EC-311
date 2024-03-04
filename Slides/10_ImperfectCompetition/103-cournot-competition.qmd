@@ -198,7 +198,7 @@ We have $\; Q^{*}_{A} = \frac{100 - Q_{B}}{4} \;\; \& \;\; Q^{*}_{B} = \frac{100
 
 ---
 
-## Cournot Equilibrium - Optimal Quantity
+## Cournot Equilibrium - Optimal Quantity & Price
 
 $$
     Q^{*}_{A} = \frac{100 - \frac{100 - Q_{A}}{4}}{4}
@@ -237,7 +237,7 @@ $$
 \begin{align*}
     P &= 100 - Q_{D} \\
     P &= 100 - 40 \\
-    P &= 60
+    P^{*} &= 60
 \end{align*}
 :::
 
@@ -368,6 +368,7 @@ $$
 :::
 
 ::: {.column width="33%" .tiny}
+::: {.fragment}
 \begin{align*}
     Q_{S} &= Q_{A}^{*} + Q_{B}^{*} \\
     Q_{S} &= \frac{P}{2} + \frac{P}{2} = P 
@@ -380,15 +381,37 @@ $$
     Q^{*} &= 50  
 \end{align*}
 :::
+:::
 
 ::: {.column width="33%"}
+<br>
 
+::: {.fragment}
+\begin{align*}
+    P^{*} &= 100 - Q^{*} \\
+    P^{*} &= 100 - 50 \\
+    P^{*} &= 50
+\end{align*}
+:::
 :::
 
 ::::
 
+:::
 
+---
 
+## Cournot Equilibrium vs Monopoly
 
+How does [Cournot Competition]{.hi} compare to [Monopoly]{.hi-red}?
 
+There are now two firms so it is not a [Monopoly]{.hi-red} by definition
+
+But we can do some work to make it one
+
+::: {.incremental}
+- Imagine that both firms [collude]{.hi}. In other words, they [cooperatively agree on how much to produce]{.hi}
+- We call this a [Cartel]{.hi-purple}
+
+- We can find how much they produce by "combining" the firms and maximizing profit
 :::
