@@ -35,14 +35,18 @@ title-slide-attributes:
 
 {{< include 102-game-theory.qmd >}}
 
-# Bertrand Competition {.inverse .note}
-
-{{< include 103-bertrand-competition.qmd >}}
-
 # Cournot Competition {.inverse .note}
 
-{{< include 104-cournot-competition.qmd >}}
+{{< include 103-cournot-competition.qmd >}}
+
+# Cartels {.inverse .note}
+
+{{< include 104-cartels.qmd >}}
 
 # Stackelberg Competition {.inverse .note}
 
 {{< include 105-stackelberg-competition.qmd >}}
+
+# Bertrand Competition {.inverse .note}
+
+{{< include 106-bertrand-competition.qmd >}}
