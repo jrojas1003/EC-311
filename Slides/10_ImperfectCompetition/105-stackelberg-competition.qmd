@@ -1,0 +1,65 @@
+---
+name: stackelberg competition
+---
+
+## Competing by Quantity & Timing
+
+Imagine a Farmer's Market. Here you have a stand that sells flowers
+
+::: {.incremental}
+- The competing flower stand next to you always shows up 30 minutes before you do
+
+- By the time you arrive, they have already got their flower displays set up
+    - Their choice can vary on whether they display a large amount of flowers (which depresses market price) or put up a small display (which keeps market price high)
+:::
+
+::: {.fragment}
+[This dynamic introduces timing]{.hi .align-center}
+:::
+
+---
+
+## Stackelberg Competition - Structure
+
+We remain with only two firms
+
+::: {.incremental}
+- We now have a ["Leader"]{.hi-red} and a ["Follower"]{.hi-teal}
+
+- We call this a [Sequential Game]{.hi}
+
+- To solve a [Sequential Game]{.hi}, we first figure out how the [Follower]{.hi-teal} will behave
+
+- We use that information to figure out what the [Leader]{.hi-red} does
+:::
+
+---
+
+## Game Theory Concept - Backwards Induction
+
+This process of working backwards is called [Backwards Induction]{.hi-orange}
+
+But why solve the Stackelberg Model this way?
+
+::: {.incremental}
+- When the [Leader]{.hi-red} is considering how much quantity to produce, they are trying to predict how the [Follower]{.hi-teal} will respond
+- The [Follower]{.hi-teal} is just reacting to an observed choice
+- So we start by figuring out how a [Follower]{.hi-teal} reacts to any choice and then let the [Leader]{.hi-red} make a choice in anticipation of this reaction
+:::
+
+---
+
+## Backwards Induction in Stackelberg
+
+![](images/stackelberg-model.png){fig-align="center"}
+
+---
+
+## Backwards Induction in Stackelberg
+
+![](images/stackelberg-model-solution-method.png){fig-align="center"}
+
+--- 
+
+## The Follower Firm
+

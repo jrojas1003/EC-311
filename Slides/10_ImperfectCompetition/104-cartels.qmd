@@ -2,4 +2,282 @@
 name: cartels
 ---
 
-## 
+## Forming a Cartel {.tiny}
+
+Let's stay with our two firms from earlier. Rather than competing with each other, they decide to [collude]{.hi-purple} and form a [Cartel]{.hi-purple}
+
+The [Cartel's Profits]{.hi-purple} is simply both firm's profit functions summed up
+
+$$
+    \pi_{Cartel} = \pi_{A} + \pi_{B}
+$$
+
+::: {.fragment .tiny}
+Our profits were:
+
+$$
+    \pi_{A} = P \cdot Q_{A} - Q_{A}^{2} \;\;\;\;\; \& \;\;\;\;\; \pi_{B} = P \cdot Q_{B} - Q_{B}^{2} \;\;\; ; \;\;\; P = 100 - Q_{S}
+$$
+:::
+
+::: {.fragment .small}
+[Find the Cartel's Profit function (Do not simplify it)]{.hi .note .align-center}
+:::
+
+::: {.fragment .small}
+\begin{align*}
+    \pi_{Cartel} &= \pi_{A} + \pi_{B} \\
+    \pi_{Cartel} &= (100 - Q_{A} - Q_{B}) \cdot Q_{A} + (100 - Q_{A} - Q_{B}) \cdot Q_{B} - Q_{A}^{2} - Q_{B}^{2} 
+\end{align*}
+:::
+
+---
+
+## Cartel - Maximize Profits
+
+We maximize profits by taking the derivative with respect to both quantities $(Q_{A} \; \& \; Q_{B})$
+
+$$
+    \pi_{Cartel} = (100 - Q_{A} - Q_{B}) \cdot Q_{A} + (100 - Q_{A} - Q_{B}) \cdot Q_{B} - Q_{A}^{2} - Q_{B}^{2}
+$$
+
+[Find the Profit Maximizing Quantities $\; \frac{\partial \pi_{i}}{\partial Q_{i}} = 0$]{.hi .note .align-center}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+[$\frac{\partial \pi_{A}}{\partial Q_{A}} = 0$]{.hi .align-center .tiny}
+
+::: {.fragment .tiny}
+\begin{align*}
+    &100 - 2Q_{A} - Q_{B} - Q_{B} - 2Q_{A} = 0 \\
+    &100 - 4Q_{A} - 2Q_{B} = 0 \\
+    &4Q_{A} = 100 - 2Q_{B} \\
+\end{align*}
+
+\begin{align*}
+    Q_{A}^{*} &= 25 - \frac{1}{2}Q_{B} \\ 
+    Q_{B}^{*} &= 25 - \frac{1}{2}Q_{A}
+\end{align*}
+:::
+
+:::
+
+::: {.column width="50%"}
+
+::: {.fragment .tiny}
+[Plug one into the other]{.hi .align-center .tiny}
+
+\begin{align*}
+    Q_{A} &= 25 - \frac{1}{2}\color{red}{\left(25 - \frac{1}{2}Q_{A} \right)} \\ 
+    Q_{A} &= 25 - \frac{25}{2} + \frac{1}{4}Q_{A} \\ 
+    \frac{3}{4}Q_{A} &= \frac{25}{2} \\
+    Q_{A}^{*} &= \frac{100}{6} = Q_{B}^{*}
+\end{align*}
+:::
+
+:::
+
+::::
+
+---
+
+## Cartel - Maximize Profits (Part 2)
+
+We know 
+
+$$
+    Q_{A}^{*} = \frac{100}{6} \;\;\;\;\; \& \;\;\;\;\; Q_{B}^{*} = \frac{100}{6}
+$$
+
+Now we can find the [Market Quantity and Market Price]{.hi}
+
+:::: {.columns}
+
+::: {.column width="70%"}
+
+[Find Quantity]{.hi .align-center}
+
+::: {.fragment .tiny}
+\begin{align*}
+    Q_{S} = Q_{A} + Q_{B} = \frac{100}{6} + \frac{100}{6} = \frac{100}{3} \approx 16.6
+\end{align*}
+:::
+
+::: {.fragment .tiny}
+[Find Price]{.hi .align-center}
+
+\begin{align*}
+    P = 100 - Q_{S} = 100 - \frac{100}{6} = \frac{200}{3} \approx 66.6
+\end{align*}
+:::
+
+:::
+
+::: {.column width="30%"}
+
+::: {.fragment}
+[Compare this to the Cournot Equilibrium]{.hi .align-center}
+
+\begin{align*}
+    Q_{C} = 40 \\ \\
+    P_{C} = 60
+\end{align*}
+:::
+
+:::
+
+::::
+
+---
+
+## Cartel Results {.tiny}
+
+The [Cartel]{.hi-purple} produces less than the both [Cournot firms]{.hi} combined and demands a higher price
+
+So basically they managed to create a [Monopoly]{.hi-red} by joining the only two firms in the industry
+
+![](images/market-equilibriums.png){fig-align="center"}
+
+---
+
+## Cartel - Joining Both Firms {.tiny}
+
+There is an exception to this approach of combining two firms when we model [Cartel Profits]{.hi-purple}
+
+::: {.fragment}
+Imagine two firms with the following [Cost Functions]{.hi}
+
+\begin{align*}
+    \text{Firm A: } C(Q_{A}) = 10 \cdot Q_{A} \;\;\;\; ; \;\;\;\; \text{Firm B: } C(Q_{B}) = 5 \cdot Q_{B} 
+\end{align*}
+
+[If these firms combine, should we just add their costs together?]{.hi .align-center}
+
+[Think about their Marginal Costs]{.hi .align-center}
+:::
+
+::: {.fragment}
+\begin{align*}
+    \text{Firm A Marginal Costs: } MC = 10 \\ \\
+    \text{Firm B Marginal Costs: } MC = 5
+\end{align*}
+
+They have different constant marignal costs
+
+::: {.incremental}
+- So it will always be cheaper to produce goods using only Firm B
+:::
+
+:::
+
+---
+
+## Cartel - The Exception
+
+If we have two firms, both with [Constant Marginal Costs that are Different]{.hi}:
+
+::: {.incremental}
+- To form a [Cartel]{.hi-purple}, they will simply shut down the firm with the [Higher Marginal Costs]{.hi} and the other firm will become a [Monopolist]{.hi-red}
+
+- If you were to find profits for both firms in the [Cartel]{.hi-purple} you would see that they are higher for both firms than in [Cournot Competition]{.hi}
+:::
+
+::: {.fragment}
+[So why not form Cartels then?]{.hi .align-center}
+
+::: {.incremental}
+- They are usually illegal
+- And more importantly, they are not stable!
+:::
+
+:::
+
+---
+
+## Cartels Are Unstable
+
+Let's jump back to our gas station example
+
+::: {.incremental}
+- You and your competitor have a backroom agreement to sell your gas at $5.00/gallon
+
+- The next day you see your "new business partner" posting a price of $5.00/gallon, what are you tempted to do?
+
+- Post a price of $4.99/gallon!
+:::
+
+::: {.fragment}
+In other words, if you follow through with your [Cartel Agreement]{.hi-purple}
+
+<br>
+
+[It is not your best response for you to follow through also!]{.hi .align-center}
+:::
+
+---
+
+## Cartels - Showing Instability
+
+Jumping back to our [Courtot/Cartel]{.hi} example
+
+The firms split $Q = 100/3$ equally, so $Q_{B} = 100/6$
+
+What is Firm A's [Best Response]{.hi-orange} to $Q_{B} = 100/6$
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+::: {.fragment}
+From the [Cournot Best Response Functions]{.hi-orange} earlier we have:
+
+<br><br>
+
+\begin{align*}
+    Q_{A}^{*} &= \frac{100 - Q_{B}}{4} = 25 - \frac{Q_{B}}{4}
+\end{align*}
+:::
+
+:::
+
+::: {.column width="50%"}
+
+::: {.fragment .small}
+[If we plug in $\; Q_{B} \;$ we get:]{.align-center .hi}
+
+\begin{align*}
+    Q_{A}^{*} &= 25 - \frac{Q_{B}}{4} \\
+    Q_{A}^{*} &= 25 - \frac{\color{red}{\frac{100}{6}}}{4} \\
+    Q_{A}^{*} &= 25 - \frac{25}{6} \\ 
+    Q_{A}^{*} &\approx 21 > \frac{100}{6}
+\end{align*}
+:::
+
+:::
+
+::::
+
+---
+
+## Cartel - Instability
+
+Each firm is tempted to deviate from their [Cartel Agreement]{.hi-purple} and produce more than they agreed to
+
+The firm that deviates will increase their profits
+
+The firm that sticks to the agreement will have lower profits
+
+If both firms deviate from the [Cartel Agreement]{.hi-purple}, then both of them end up with lower profits
+
+---
+
+## Timing Matters
+
+All previous models of quantity competition have firms decide their [Best Responses]{.hi-orange} at the same time, much like playing rock-paper-scissors
+
+We call these [Simultaneous Games]{.hi}
+
+::: {.fragment}
+Now we will look at a model that introduces timing
+:::
