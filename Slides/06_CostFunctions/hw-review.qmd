@@ -1,0 +1,71 @@
+---
+title: "Ch. 7 Homework + Production/Cost Canvas Quiz"
+subtitle: "EC 311 - Intermediate Microeconomics"
+author: Jose Rojas-Fallas
+date: last-modified
+date-format: "YYYY"
+format:
+    revealjs:
+        theme: [default, styles.scss]
+        slide-number: true
+        footer: "EC311 - Homework Review | Ch. 7 + Production/Cost Quiz"
+        preview-links: auto
+        code-fold: FALSE
+title-slide-attributes: 
+  data-background-position: left
+---
+
+# Achieve Homework {.inverse .note}
+
+## Question 03 
+
+::: {.incremental .small}
+Anvi runs a coffee shop that has annual revenues of $300,000, supply costs of $60,000, and employee salaries of $60,000. 
+She has the option of renting out the coffee shop for $80,000 per year, and she has three outside offers from competitors to work as a senior barista at Starbucks (for an annual salary of $30,000), at Simon's coffee house (for an annual salary of $40,000), and at Peet's coffee shop (for an annual salary of $60,000). 
+She can only hold one job at a time. What should Anvi do?
+:::
+
+::: {.fragment}
+- She should rent out her coffee shop and take the job at Starbucks
+- She should rent out her coffee shop and take the job at Simon's
+- She should rent out her coffee shop and take the job at Peet's
+- [She should continue to run her shop]{.hi-red}
+:::
+
+## Question 07 
+
+In the following graph, assuming that firm's fixed cost is non-zero, the firm's total cost curve is given by curve ____. 
+
+![](images/achieve-q7.png){fig-align="center"}
+
+::: {.fragment}
+[Curve C]{.hi .align-center}
+:::
+
+# Canvas Quiz {.inverse .note}
+
+## Question 10 {.smaller}
+
+Imagine that you've got a perfect substitutes production function and currently $MRTS < \frac{w}{r}$. 
+What can you say about the effect on the minimized cost function $C(Q)$ of an increase in the wage?
+
+::: {.fragment}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+[This looks something like]{.hi .align-center}
+
+![](images/canvas-q10.png){height="400" width="500"}
+:::
+
+::: {.column width="50%"}
+
+<br><br><br><br><br>
+[If the MRTS is less than the price ratio, then the firm should use only capital to produce the desired quantity. Therefore, if the wage goes up, it has no effect on the firm’s costs because they aren’t using any labor.]{.hi}
+
+:::
+
+::::
+
+:::
