@@ -8,7 +8,7 @@
 <link href="main_files/libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="main_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="main_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.4.294">
+  <meta name="generator" content="quarto-1.3.361">
 
   <meta name="author" content="Jose Rojas-Fallas">
   <meta name="dcterms.date" content="2024-01-01">
@@ -157,8 +157,7 @@
   }
 
   .callout.callout-titled .callout-body > .callout-content > :last-child {
-    padding-bottom: 0.5rem;
-    margin-bottom: 0;
+    margin-bottom: 0.5rem;
   }
 
   .callout.callout-titled .callout-icon::before {
@@ -354,6 +353,7 @@ Jose Rojas-Fallas
 <li>Stackelber Competition (11.5)</li>
 </ul></li>
 </ul>
+
 <!--
 # Extreme Markets & Imperfect Competition {.inverse .note}
 
@@ -1344,7 +1344,133 @@ Now we will look at a model that introduces timing
 <section id="backwards-induction-in-stackelberg-1" class="slide level2">
 <h2>Backwards Induction in Stackelberg</h2>
 
-<img data-src="images/stackelberg-model-solution-method.png" class="r-stretch quarto-figure-center"></section></section>
+<img data-src="images/stackelberg-model-solution-method.png" class="r-stretch quarto-figure-center"></section>
+<section id="the-follower" class="slide level2">
+<h2>The Follower</h2>
+<p>We have looked at <span class="hi-orange">Best Response Functions</span> before</p>
+<div class="fragment">
+<ul>
+<li><span class="hi-orange">They are the firm’s optimal choice of quantity given their competitor’s chosen quantity. This is how the follower will behave</span></li>
+</ul>
+</div>
+</section>
+<section id="the-leader" class="slide level2">
+<h2>The Leader</h2>
+<p>If the <span class="hi-teal">Follower</span> just reacts to what the <span class="hi-red">Leader</span> does, then what does the <span class="hi-red">Leader</span> do?</p>
+<div>
+<ul>
+<li class="fragment">They will maximize their profit with <span class="hi">full knowledge of the follower’s</span> <span class="hi-orange">Best Response Function</span>
+<ul>
+<li class="fragment">We assume they know it exactly. There are no tricks the <span class="hi-teal">Follower</span> can pull</li>
+</ul></li>
+<li class="fragment">They behave similar to a Monopoly, they will plug in <span class="hi">this knowledge</span> into their profit function before maximizing</li>
+</ul>
+</div>
+</section>
+<section id="stackelberg-competition---example" class="slide level2">
+<h2>Stackelberg Competition - Example</h2>
+<p>We will grab the same two firms from before, where we already know their <span class="hi-orange">Best Response Functions</span></p>
+<p>Let’s also say that <span class="hi-teal">Firm B is the Follower</span> and <span class="hi-red">Firm A is the Leader</span></p>
+<div class="fragment tiny">
+<p><span class="math display">\[
+    \text{Firm B Best Response: } Q^{*}_{B} = \frac{100 - Q_{A}}{4} \;\;\;\; ; \;\;\;\; \pi_{A} = (100 - Q_{A} - Q_{B}) Q_{A} - Q^{2}_{A}
+\]</span></p>
+<p><span class="hi note align-center">Find Firm A’s Profit Function</span></p>
+</div>
+<div class="fragment">
+<p><span class="math display">\[\begin{align*}
+    \pi_{A} = \left(100 - Q_{A} - \color{red}{\frac{100 - Q_{A}}{4}}\right) Q_{A} - Q^{2}_{A}
+\end{align*}\]</span></p>
+</div>
+</section>
+<section id="stackelber---finding-profit-maximizing-quantity-for-the-leader" class="slide level2">
+<h2>Stackelber - Finding Profit Maximizing Quantity for the Leader</h2>
+<div class="tiny">
+<p><span class="math display">\[
+    \pi_{A} = \left(100 - Q_{A} - \color{red}{\frac{100 - Q_{A}}{4}}\right) Q_{A} - Q^{2}_{A}
+\]</span></p>
+</div>
+<div class="columns">
+<div class="column tiny" style="width:50%;">
+<p><span class="hi align-center">Find <span class="math inline">\(\; \frac{\partial \pi_{A}}{\partial Q_{A}} = 0\)</span></span></p>
+<div class="fragment tiny">
+<p><span class="math display">\[
+    100 - 2Q_{A} - 25 + \frac{Q_{A}}{2} - 2Q_{A} = 0
+\]</span></p>
+<p><span class="math display">\[\begin{align*}
+    75 - \frac{3}{2}Q_{A} &amp;= 2Q_{A} \\
+    75 &amp;= \frac{7}{2}Q_{A} \\
+    150 &amp;= 7Q_{A} \\
+    Q^{*}_{A} &amp;\approx 21.5
+\end{align*}\]</span></p>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="fragment">
+<p><span class="hi">Compare this to what we found in Cournot Competition</span></p>
+<p>We had found that <span class="math inline">\(Q_{A} = 20\)</span></p>
+<p>So we have found that the <span class="hi-red">Leader</span> will <span class="hi">produce more</span> than they would have under <span class="hi">Cournot Competition</span></p>
+</div>
+</div>
+</div>
+</section>
+<section id="stackelberg---finding-profit-maximizing-quantity-for-the-follower" class="slide level2 smaller">
+<h2>Stackelberg - Finding Profit Maximizing Quantity for the Follower</h2>
+<p>We said that the <span class="hi-teal">Follower</span> will respond using their <span class="hi-orange">Best Response Function</span></p>
+<div class="small">
+<p><span class="math display">\[
+    Q^{*}_{B} = \frac{100 - Q^{*}_{A}}{4}
+\]</span></p>
+</div>
+<p>And we just found that <span class="math inline">\(\; Q^{*}_{A} \approx 21.5\)</span></p>
+<p><span class="hi note align-center small">Find the Follower’s Profit Maximizing Quantity</span></p>
+<div class="fragment small">
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="math display">\[\begin{align*}
+    Q^{*}_{B} &amp;= \frac{100 - 21.5}{4} \\
+    Q^{*}_{B} &amp;= \frac{78.5}{4} \\
+    Q^{*}_{B} &amp;\approx 19.6
+\end{align*}\]</span></p>
+</div><div class="column" style="width:50%;">
+<div class="fragment">
+<p><span class="hi">Compare this to what we found in Cournot Competition</span></p>
+<p>We had found that <span class="math inline">\(Q_{B} = 20\)</span></p>
+<p>So we have found that the <span class="hi-teal">Follower</span> will <span class="hi">produce less</span> than they would have under <span class="hi">Cournot Competition</span></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="stackelberg---outcomes" class="slide level2">
+<h2>Stackelberg - Outcomes</h2>
+<p><span class="hi">There is a predictable outcome, we can say that relative to the Cournot Competition:</span></p>
+<div>
+<ul>
+<li class="fragment">The <span class="hi-red">Leader</span> will earn <span class="hi">higher profits</span> because they <span class="hi">produce more</span></li>
+<li class="fragment">The <span class="hi-teal">Follower</span> will earn <span class="hi">lower profits</span> because they <span class="hi">produce less</span></li>
+</ul>
+</div>
+<div class="fragment">
+<p>This leads us to the conclusion that</p>
+<p><br></p>
+<p><span class="hi align-center">Stackelberg Competition features a First-Mover Advantage</span></p>
+<p><span class="hi align-center">Being able to go first implies that you can set a higher quantity produced and crowd-out your competition from the market</span></p>
+</div>
+</section>
+<section id="competition-up-to-now" class="slide level2">
+<h2>Competition Up To Now</h2>
+<p>All of these previous forms of competition have modeled firms competing <span class="hi">on choosing quantities</span></p>
+<ul>
+<li>Where the sum of the quantities produced determines the <span class="hi">Market Quantity</span> which determines the <span class="hi">Market Price</span></li>
+</ul>
+<div class="fragment">
+<p>But what if firms can <span class="hi">set prices before they have to produce anything?</span></p>
+<ul>
+<li><p>What if firms can compete based on <span class="hi">their choice of Price</span>?</p></li>
+<li><p>We call these <span class="hi">Bertrand Competition</span></p></li>
+</ul>
+</div>
+</section></section>
 <section id="bertrand-competition" class="title-slide slide level1 inverse note center">
 <h1>Bertrand Competition</h1>
 <div class="footer footer-default">
@@ -1377,6 +1503,7 @@ Now we will look at a model that introduces timing
       Reveal.initialize({
 'controlsAuto': true,
 'previewLinksAuto': true,
+'smaller': false,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
@@ -1637,9 +1764,10 @@ Now we will look at a model that introduces timing
         // clear code selection
         e.clearSelection();
       });
-      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      function tippyHover(el, contentFn) {
         const config = {
           allowHTML: true,
+          content: contentFn,
           maxWidth: 500,
           delay: 100,
           arrow: false,
@@ -1649,17 +1777,8 @@ Now we will look at a model that introduces timing
           interactive: true,
           interactiveBorder: 10,
           theme: 'light-border',
-          placement: 'bottom-start',
+          placement: 'bottom-start'
         };
-        if (contentFn) {
-          config.content = contentFn;
-        }
-        if (onTriggerFn) {
-          config.onTrigger = onTriggerFn;
-        }
-        if (onUntriggerFn) {
-          config.onUntrigger = onUntriggerFn;
-        }
           config['offset'] = [0,0];
           config['maxWidth'] = 700;
         window.tippy(el, config); 
