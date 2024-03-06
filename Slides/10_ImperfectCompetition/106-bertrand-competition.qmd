@@ -1,0 +1,171 @@
+---
+name: bertrand competition
+---
+
+## Competing by Prices
+
+Forget quantities
+
+In [Bertrand Competition]{.hi} firms will compete by setting prices [before they begin production]{.hi}
+
+::: {.incremental}
+- Imagine that the competing firms are [bidding on quantities to be delivered later]{.hi}
+    - Think of like an auction with bids for work being submitted
+
+- This changes the nature of competition substantially
+    - The firm that announces a [Lower Price]{.hi} gets 100% of the market
+:::
+
+---
+
+## Back to the Gas Station
+
+The story we have been telling about the gas station is a perfect example of this
+
+Instead of you running one, let's just call them [Gas Station A]{.hi-red} and [Gas Station B]{.hi-teal} 
+
+::: {.incremental}
+- If [Gas Station A]{.hi-red} advertises a price of $4.00/gallon, what should the manager of [Gas Station B]{.hi-teal} do?
+    - Advertise a price of $3.99/gallon
+- But [Gas Station A]{.hi-red} knows this, so how should they respond?
+    - Advertise a price of $3.98/gallon
+- And the cycle continues
+:::
+
+---
+
+## Is Bertrand a Race to the Bottom?
+
+When duopolies compete through [price-bidding]{.hi}, both firms have an incentive to slightly undercut one another
+
+[But how low will the price go?]{.hi .note .align-center}
+
+::: {.incremental}
+- The Zero-Profit condition tells us
+    - If the [Price]{.hi} ever falls below the MC of the winning firm, they win [but would not want to fulfill it]{.hi}
+:::
+
+::: {.fragment}
+[The Price War continues until P = MC]{.hi .align-center}
+:::
+
+---
+
+## Bertrand Competition - Price Wars
+
+A [Firm's Limit is P = MC]{.hi}
+
+Under [Bertrand Competition]{.hi}, firms that compete will both set price equal to their respective [Marginal Cost]{.hi} 
+
+- This is the [Nash Equilibrium]{.hi-orange}
+
+. . .
+
+[This gives us two possibilities]{.hi .align-center}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+[One Firm has a lower MC]{.hi .align-center}
+
+::: {.fragment}
+The firm with the lower Marginal Costs will obtain the entire market by setting a price just lower than their competitor's MC
+:::
+
+:::
+
+::: {.column width="50%"}
+[Both Firms have the same MC]{.hi .align-center}
+
+::: {.fragment}
+We will see both firms produce in the market and we will get [Price, Quantity and Profit]{.hi} the same as under [Perfect Competition]{.hi-green}
+:::
+
+:::
+
+::::
+
+---
+
+## How Does This Work?
+
+It is the proverbial outrun your friend not the bear
+
+If both Firms have different marginal costs, the most efficient will undercut their competition
+
+There is [No Need]{.hi} for the winner to go any lower than that:
+
+- Recall they also want to make as much profit as possible
+
+---
+
+## Bertrand Competition Example
+
+Let's look at an example that illustrate the previous slide
+
+Let there be two firms in the market. Firm A has cost function [$C(Q_{A}) = 20 Q_{A}$]{.small} and Firm B has cost function [$(C(Q_{B}) = Q_{B}^{2})$]{.small}. Demand in the industry is given by the Demand Curve [$P = 120 - Q$]{.small}
+
+We see that [Firm A]{.hi-red} will be able to price [Firm B]{.hi-teal} out of the market.
+
+<br><br>
+
+::: {.fragment}
+[If Firm A would like to supply 40 units by themselves, what price should they set? What are profits at that point?]{.hi .note .align-center}
+:::
+
+---
+
+## Bertrand Competition Example
+
+[If Firm A would like to supply 40 units by themselves, what price should they set? What are profits at that point?]{.small .hi .note .align-center}
+
+. . .
+
+\begin{align*}
+    \text{From the Demand Curve: } P = 120 - Q = 120 - \color{red}{40} = 80
+\end{align*}
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+[Finding Price to Set]{.hi .align-center}
+
+::: {.fragment .small}
+Firm B has $MC = 2Q_{B}$
+
+They are willing to to supply 40 units at:
+
+\begin{align*}
+    MC(Q_{B}) &= 2Q_{B} \\
+    MC(40) &= 2(40) = 80 \\
+\end{align*}
+
+[Use fact that P = MC]{.hi .align-center}
+
+\begin{align*}
+    P = MC(40) = 80
+\end{align*}
+:::
+
+:::
+
+::: {.column width="50%"}
+
+::: {.fragment}
+[Firm A's Choice]{.hi .align-center}
+
+[Firm A]{.hi-red} knows [Firm B]{.hi-teal} can only lower their price to $80. 
+
+[Firm A]{.hi-red} can set Price equal to \$79.99 and [Firm B]{.hi-teal} becomes unwilling to supply 40 units due to [$P < MC$]{.small}
+:::
+
+::: {.fragment}
+\begin{align*}
+    \pi_{A} = 79.99 \cdot 40 - 40 \cdot 20 \approx 2400
+\end{align*}
+:::
+
+:::
+
+::::
