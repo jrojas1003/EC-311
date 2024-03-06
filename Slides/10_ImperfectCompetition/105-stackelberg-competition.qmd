@@ -61,5 +61,169 @@ But why solve the Stackelberg Model this way?
 
 --- 
 
-## The Follower Firm
+## The Follower 
 
+We have looked at [Best Response Functions]{.hi-orange} before
+
+::: {.fragment}
+- [They are the firm's optimal choice of quantity given their competitor's chosen quantity. This is how the follower will behave]{.hi-orange}
+:::
+
+---
+
+## The Leader
+
+If the [Follower]{.hi-teal} just reacts to what the [Leader]{.hi-red} does, then what does the [Leader]{.hi-red} do?
+
+::: {.incremental}
+- They will maximize their profit with [full knowledge of the follower's]{.hi} [Best Response Function]{.hi-orange}
+    - We assume they know it exactly. There are no tricks the [Follower]{.hi-teal} can pull
+- They behave similar to a Monopoly, they will plug in [this knowledge]{.hi} into their profit function before maximizing
+:::
+
+---
+
+## Stackelberg Competition - Example
+
+We will grab the same two firms from before, where we already know their [Best Response Functions]{.hi-orange}
+
+Let's also say that [Firm B is the Follower]{.hi-teal} and [Firm A is the Leader]{.hi-red}
+
+::: {.fragment .tiny}
+$$
+    \text{Firm B Best Response: } Q^{*}_{B} = \frac{100 - Q_{A}}{4} \;\;\;\; ; \;\;\;\; \pi_{A} = (100 - Q_{A} - Q_{B}) Q_{A} - Q^{2}_{A}
+$$
+
+[Find Firm A's Profit Function]{.hi .note .align-center}
+:::
+
+::: {.fragment}
+\begin{align*}
+    \pi_{A} = \left(100 - Q_{A} - \color{red}{\frac{100 - Q_{A}}{4}}\right) Q_{A} - Q^{2}_{A}
+\end{align*}
+:::
+
+---
+
+## Stackelber - Finding Profit Maximizing Quantity for the Leader
+
+::: {.incremental .tiny}
+$$
+    \pi_{A} = \left(100 - Q_{A} - \color{red}{\frac{100 - Q_{A}}{4}}\right) Q_{A} - Q^{2}_{A}
+$$
+:::
+
+:::: {.columns}
+
+::: {.column width="50%" .tiny}
+[Find $\; \frac{\partial \pi_{A}}{\partial Q_{A}} = 0$]{.hi .align-center}
+
+::: {.fragment .tiny}
+$$
+    100 - 2Q_{A} - 25 + \frac{Q_{A}}{2} - 2Q_{A} = 0
+$$
+
+\begin{align*}
+    75 - \frac{3}{2}Q_{A} &= 2Q_{A} \\
+    75 &= \frac{7}{2}Q_{A} \\
+    150 &= 7Q_{A} \\
+    Q^{*}_{A} &\approx 21.5 
+\end{align*}
+:::
+
+:::
+
+::: {.column width="50%"}
+
+::: {.fragment}
+[Compare this to what we found in Cournot Competition]{.hi}
+
+We had found that $Q_{A} = 20$
+
+So we have found that the [Leader]{.hi-red} will [produce more]{.hi} than they would have under [Cournot Competition]{.hi}
+:::
+
+:::
+
+::::
+
+---
+
+## Stackelberg - Finding Profit Maximizing Quantity for the Follower {.smaller}
+
+We said that the [Follower]{.hi-teal} will respond using their [Best Response Function]{.hi-orange}
+
+::: {.incremental .small}
+$$
+    Q^{*}_{B} = \frac{100 - Q^{*}_{A}}{4}
+$$
+:::
+
+And we just found that $\; Q^{*}_{A} \approx 21.5$
+
+[Find the Follower's Profit Maximizing Quantity]{.hi .note .align-center .small}
+
+::::: {.fragment .small}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+\begin{align*}
+    Q^{*}_{B} &= \frac{100 - 21.5}{4} \\
+    Q^{*}_{B} &= \frac{78.5}{4} \\
+    Q^{*}_{B} &\approx 19.6
+\end{align*}
+:::
+
+::: {.column width="50%"}
+
+::: {.fragment}
+[Compare this to what we found in Cournot Competition]{.hi}
+
+We had found that $Q_{B} = 20$
+
+So we have found that the [Follower]{.hi-teal} will [produce less]{.hi} than they would have under [Cournot Competition]{.hi}
+:::
+
+:::
+
+::::
+
+:::::
+
+---
+
+## Stackelberg - Outcomes
+
+[There is a predictable outcome, we can say that relative to the Cournot Competition:]{.hi}
+
+::: {.incremental}
+- The [Leader]{.hi-red} will earn [higher profits]{.hi} because they [produce more]{.hi}
+- The [Follower]{.hi-teal} will earn [lower profits]{.hi} because they [produce less]{.hi}
+:::
+
+. . .
+
+This leads us to the conclusion that
+
+<br>
+
+[Stackelberg Competition features a First-Mover Advantage]{.hi .align-center}
+
+[Being able to go first implies that you can set a higher quantity produced and crowd-out your competition from the market]{.hi .align-center}
+
+---
+
+## Competition Up To Now
+
+All of these previous forms of competition have modeled firms competing [on choosing quantities]{.hi}
+
+- Where the sum of the quantities produced determines the [Market Quantity]{.hi} which determines the [Market Price]{.hi}
+
+. . .
+
+But what if firms can [set prices before they have to produce anything?]{.hi}
+
+- What if firms can compete based on [their choice of Price]{.hi}?
+
+- We call these [Bertrand Competition]{.hi}
