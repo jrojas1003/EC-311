@@ -52,3 +52,5 @@ title-slide-attributes:
 {{< include 106-bertrand-competition.qmd >}}
 
 {{< include 107-constant-marginal-costs.qmd >}}
+
+# C'est Fini {.inverse .note .align-center}
