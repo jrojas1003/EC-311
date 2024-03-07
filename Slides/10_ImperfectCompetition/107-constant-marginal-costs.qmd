@@ -1,0 +1,348 @@
+---
+name: constant marginal costs
+---
+
+## Duopoly Example
+
+For duopolies, we are going to take a step that will simplify our lives
+
+We are going to introduce [Cosntant Marginal Cost (Linear) Functions]{.hi}
+
+Let's practice what we have learned!
+
+Let there be two firms (A & B) with the following [Cost Functions]{.hi} and facing the [Demand Curve]{.hi}
+
+<br><br>
+
+$$
+    P = 64 - Q \;\;\;\; ; \;\;\;\; C(Q_{B}) = 10Q_{B} \;\; ; \;\; C(Q_{B}) = 4Q_{B}
+$$
+
+---
+
+## Duopoly Example - Cournot Competition
+
+::: {.incremental .small}
+$$
+    P = 64 - Q \;\;\;\; ; \;\;\;\; C(Q_{B}) = 10Q_{B} \;\; ; \;\; C(Q_{B}) = 4Q_{B}
+$$
+::: 
+
+[Find the Best Response Functions for both firms]{.hi .note .align-center .small}
+
+[Recall you find this by finding the profit maximizing quantity]{.hi .note .align-center .small}
+
+. . .
+
+:::: {.columns}
+
+::: {.column width="50%" .tiny}
+\begin{align*}
+    \pi_{B} &= P \cdot Q_{B} - C(Q_{B}) \\
+    \pi_{B} &= (64 - Q_{B} - Q_{B}) Q_{B} - 10Q_{B} 
+\end{align*}
+
+[Find $\; \frac{\partial \pi_{A}}{\partial Q_{A}}$]{.align-center}
+\begin{align*}
+    \frac{\partial \pi_{A}}{\partial Q_{A}} &= 0 \\
+    64 - 2Q_{A} - Q_{B} - 10 &= 0 \\ 
+    2Q_{A} &= 54 - Q_{B} \\
+    Q^{*}_{A} &= 27 - \frac{Q_{B}}{2}
+\end{align*}
+:::
+
+::: {.column width="50%" .tiny}
+\begin{align*}
+    \pi_{B} &= P \cdot Q_{B} - C(Q_{B}) \\
+    \pi_{B} &= (64 - Q_{A} - Q_{B}) Q_{B} - 4Q_{B} 
+\end{align*}
+
+[Find $\; \frac{\partial \pi_{B}}{\partial Q_{B}}$]{.align-center}
+\begin{align*}
+    \frac{\partial \pi_{B}}{\partial Q_{B}} &= 0 \\
+    64 - Q_{A} - 2Q_{B} - 4 &= 0 \\ 
+    2Q_{B} &= 60 - Q_{A} \\
+    Q^{*}_{B} &= 30 - \frac{Q_{A}}{2}
+\end{align*}
+:::
+
+::::
+
+---
+
+## Duopoly Example - Cournot Competition
+
+$$
+    Q^{*}_{A} = 27 - \frac{Q_{B}}{2} \;\;\;\;\; \& \;\;\;\;\; Q^{*}_{B} = 30 - \frac{Q_{A}}{2}
+$$
+
+[Solve for $\; Q_{A}^{*} \;$ and $\; Q_{B}^{*}$]{.hi .align-center}
+
+. . .
+
+:::: {.columns}
+
+::: {.column width="50%" .tiny}
+\begin{align*}
+    Q_{A} &= 27 - \frac{\color{red}{Q_{B}}}{2} \\
+    Q_{A} &= 27 - \left(\frac{\color{red}{30 - \frac{Q_{A}}{2}}}{2} \right) \\
+    2Q_{A} &= 54 - 30 + \frac{Q_{A}}{2} \\
+    \frac{3}{2}Q_{A} &= 24 \\
+    Q_{A}^{*} &= 16
+\end{align*}
+:::
+
+::: {.column width="50%"}
+\begin{align*}
+    Q^{*}_{B} &= 30 - \frac{\color{red}{Q_{A}}}{2} \\
+    Q^{*}_{B} &= 30 - \frac{\color{red}{16}}{2} \\ 
+    Q^{*}_{B} &= 30 - 8 \\
+    Q^{*}_{B} &= 22
+\end{align*}
+:::
+
+::::
+
+---
+
+## Duopoly Example - Cournot Competition
+
+$$
+    Q_{A}^{*} = 16 \;\;\;\;\; \& \;\;\;\;\; Q^{*}_{B} = 22
+$$
+
+[Find Market Quantity and Price]{.hi .note .align-center}
+
+. . .
+
+<br> 
+
+:::: {.columns}
+
+::: {.column width="50%"}
+[Market Quantity]{.hi .align-center}
+
+\begin{align*}
+    Q_{S} &= Q_{A} + Q_{B} \\
+    Q_{S} &= 16 + 22 \\
+    Q_{S} &= 38
+\end{align*}
+:::
+
+::: {.column width="50%"}
+[Market Price]{.hi .align-center}
+
+\begin{align*}
+    P &= 64 - Q_{S} \\
+    P &= 64 - 38 \\
+    P &= 26
+\end{align*}
+:::
+
+::::
+
+---
+
+## Duopoly Example - Cournot Competition
+
+$$
+    P = 26 \;\;\;\; \& \;\;\; Q_{A} = 16 \;\;\;\; \& \;\;\; Q_{B} = 22 \\
+     C(Q_{A}) = 10 \cdot Q_{A}  \;\;\; \&  \;\;\; C(Q_{B}) = 4 \cdot Q_{B} 
+$$
+
+[Find Profits for Each Firm]{.hi .align-center .note}
+
+. . .
+
+:::: {.columns}
+
+::: {.column width="50%"}
+\begin{align*}
+    \pi_{A} &= P \cdot Q_{A} - C(Q_{A}) \\
+    \pi_{A} &= 26 \cdot 16 - 10 \cdot 16 \\
+    \pi_{A} &= 256
+\end{align*}
+:::
+
+::: {.column width="50%"}
+\begin{align*}
+    \pi_{B} &= P \cdot Q_{B} - C(Q_{B}) \\
+    \pi_{B} &= 26 \cdot 22 - 4 \cdot 22 \\
+    \pi_{B} &= 484
+\end{align*}
+:::
+
+::::
+
+---
+
+## Duopoly Example - Stackelberg Competition {.smaller}
+
+Let's now say that [Firm A]{.hi-red} is the [Leader]{.hi-red}
+
+We know that the [Follower's]{.hi-teal} [Best Response Function]{.hi-orange} is given by 
+
+$$
+    Q_{B} = 30 - \frac{Q_{A}}{2}
+$$
+
+If [Firm A's Profits]{.hi-red} are
+
+$$
+    \pi_{A} = (64 - Q_{A} - Q_{B})Q_{A} - 10Q_{A}
+$$
+
+[Find their profit function in Stackelberg Competition where they are the Leader]{.hi .align-center .note}
+
+. . .
+
+\begin{align*}
+    \pi_{A} &= (64 - Q_{A} - \color{red}{Q_{B}})Q_{A} - 10Q_{A} \\
+    \pi_{A} &= (64 - Q_{A} - \color{red}{(30 - \frac{Q_{A}}{2})})Q_{A} - 10Q_{A} \\
+    \pi_{A} &= (34 - Q_{A} + \frac{Q_{A}}{2})Q_{A} - 10 \cdot Q_{A} \\
+    \pi_{A} &= 34Q_{A} - Q_{A}^{2} + \frac{Q_{A}^{2}}{2} - 10 \cdot Q_{A}
+\end{align*}
+
+---
+
+## Duopoly Example - Stackelberg Competition
+
+$$
+    \pi_{A} = 34Q_{A} - Q_{A}^{2} + \frac{Q_{A}^{2}}{2} - 10 \cdot Q_{A} \;\;\;\;\; \& \;\;\;\;\; Q_{B} = 30 - \frac{Q_{A}}{2}
+$$
+
+[Find Profit Maximizing Quantity for Both Firms]{.hi .align-center .note}
+
+. . .
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+\begin{align*}
+    \frac{\partial \pi_{A}}{\partial Q_{A}} &= 0 \\
+    34 - 2Q_{A} + Q_{A} - 10 &= 0 \\
+    Q_{A}^{*} &= 24
+\end{align*}
+:::
+
+::: {.column width="50%"}
+
+::: {.fragment}
+\begin{align*}
+    Q_{B}^{*} &= 30 - \frac{\color{red}{Q_{A}}}{2} \\
+    Q_{B}^{*} &= 30 - \frac{\color{red}{24}}{2} \\
+    Q_{B}^{*} &= 30 - 12 \\
+    Q_{B}^{*} &= 18
+\end{align*}  
+:::
+
+:::
+
+::::
+
+---
+
+## Duopoly Example - Stackelberg Competition
+
+$$
+    Q_{A}^{*} = 24 \;\;\;\;\; \& \;\;\;\;\; Q_{B}^{*} = 18 \\
+    C(Q_{A}) = 10Q_{A} \;\;\;\;\; \& \;\;\;\;\; C(Q_{B}) = 4Q_{A} \\
+    P = 64 - Q_{S}
+$$
+
+[Find Market Supply & Market Price]{.hi .align-center .note}
+
+. . .
+
+:::: {.columns}
+
+::: {.column width="50%"}
+[Market Supply]{.hi .align-center}
+
+\begin{align*}
+    Q_{S} &= Q_{A} + Q_{B} \\
+    Q_{S} &= 24 + 18 \\
+    Q_{S} &= 42 
+\end{align*}
+:::
+
+::: {.column width="50%"}
+[Market Price]{.hi .align-center}
+
+::: {.fragment}
+\begin{align*}
+    P &= 64 - Q_{S} \\
+    P &= 64 - 42 \\
+    P &= 22
+\end{align*}
+:::
+
+:::
+
+::::
+
+---
+
+## Duopoly Example - Stackelberg Competition
+
+Last thing to do is find each firm's profits
+
+$$
+    Q_{A}^{*} = 24 \;\;\;\;\; \& \;\;\;\;\; Q_{B}^{*} = 18 \\
+    C(Q_{A}) = 10Q_{A} \;\;\;\;\; \& \;\;\;\;\; C(Q_{B}) = 4Q_{A} \\
+    P = 22
+$$
+
+. . .
+
+<br>
+
+[Firm Profits]{.hi .align-center}
+
+\begin{align*}
+    \pi_{A} &= 22 \cdot 24 - 10 \cdot 24 = 288 \\
+    \pi_{B} &= 22 \cdot 18 - 4 \cdot 18 = 324
+\end{align*}
+
+---
+
+## Summary of Models
+
+All of the models we have seen are
+
+::: {.incremental}
+- Perfect Competition (Price Taking)
+- Monopoly (Determines Price Through Quantity Choice - 1 Firm)
+- Cournot (Simultaneous Competition By Setting Quantity)
+- Cartels (2 Firms unite and behave like a Monopoly)
+- Stackelberg (Sequential Competition By Setting Quantity)
+- Bertrand (Competing By Setting Price)
+:::
+
+---
+
+## Consumer Perception of Markets
+
+We can think how these markets affect consumers
+
+::: {.incremental}
+- Bertrand and Perfect Competition yield the same outcome and are the [best for consumers]{.hi-green}
+    - Lowest price, highest quantity
+- Monopoly and Cartel are the [worst for consumers]{.hi-red} 
+    - Highest price, lowest quantity
+- Cournot and Stackelberg are somewhere in-between
+    - Stackelberg has slightly better outcomes for consumers 
+:::
+
+---
+
+## Long-Run in Markets
+
+We care about the [Long-Run Equilibriums]{.hi}
+
+::: {.incremental}
+- Firms will only make [Zero-Profits]{.hi} in the [Long-Run Equilibrium]{.hi} under [Perfect Competition]{.hi-green}
+    - We saw that [Bertrand]{.hi} can also produce Zero-Profits under the correct conditions
+- In all forms of [Imperfect Competition]{.hi}, firms manage to prevent entry of other firms in the [Long-Run]{.hi} 
+:::
