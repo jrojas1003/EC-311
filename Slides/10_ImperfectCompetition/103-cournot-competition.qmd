@@ -2,6 +2,7 @@
 name: cournot competition
 ---
 
+<!--
 ## The Man Himself 
 
 :::: {.columns}
@@ -22,6 +23,7 @@ name: cournot competition
 ::::
 
 ---
+-->
 
 ## Cournot Competition = Simultaneous Decisions
 

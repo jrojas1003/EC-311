@@ -8,7 +8,7 @@
 <link href="main_files/libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="main_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="main_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.3.361">
+  <meta name="generator" content="quarto-1.4.294">
 
   <meta name="author" content="Jose Rojas-Fallas">
   <meta name="dcterms.date" content="2024-01-01">
@@ -157,7 +157,8 @@
   }
 
   .callout.callout-titled .callout-body > .callout-content > :last-child {
-    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0;
   }
 
   .callout.callout-titled .callout-icon::before {
@@ -353,238 +354,204 @@ Jose Rojas-Fallas
 <li>Stackelber Competition (11.5)</li>
 </ul></li>
 </ul>
+</section>
+<section>
+<section id="extreme-markets-imperfect-competition" class="title-slide slide level1 inverse note center">
+<h1>Extreme Markets &amp; Imperfect Competition</h1>
 
+</section>
+<section id="up-to-now" class="slide level2">
+<h2>Up To Now</h2>
+<p>So far we have talked about <span class="hi-green">Perfect Competition</span> and <span class="hi-red">Monopoly</span></p>
+<div>
+<ul>
+<li class="fragment">These firms are either <span class="hi-green">complete price takers</span> or <span class="hi-red">complete price setters</span></li>
+<li class="fragment">But these are the extremes, the real world is more nuanced
+<ul>
+<li class="fragment">Neither of our models are likely to be truly realistic, but they do a good job at showing us the ends of our <span class="hi">Competitive Spectrum</span></li>
+</ul></li>
+</ul>
+</div>
+<div class="fragment">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/market-spectrum.png"></p>
+</figure>
+</div>
+</div>
+</section>
+<section id="markets" class="slide level2">
+<h2>Markets</h2>
+<p>Most markets are somewhere in-between</p>
+<div>
+<ul>
+<li class="fragment">Firms cannot set market prices by themselves</li>
+<li class="fragment">But there are circumstances where there are large firms and are few enough that one single firms choice can impact market prices</li>
+</ul>
+</div>
+<div class="fragment">
+<p>This is the basics of <span class="hi">Imperfect Competition</span> and what we will be tackling until the end</p>
+</div>
+</section>
+<section id="imperfect-competition" class="slide level2">
+<h2>Imperfect Competition</h2>
+<p>Firms are still competing but they know who their rivals are and will adopt strategies based on what they think their rivals will do</p>
+<div class="small">
+<ul>
+<li class="fragment">In order to model firms in these contexts, we need to learn the very basics about <span class="hi">Game Theory</span>
+<ul>
+<li class="fragment">This is the field of decision-making in situations where actions affect others’ outcomes and vice-versa</li>
+</ul></li>
+<li class="fragment">We will keep things simple by only studying interactions between two firms
+<ul>
+<li class="fragment">We call this a <span class="hi">Duopoloy</span></li>
+</ul></li>
+<li class="fragment">The intuition and approach we will take holds for cases where there are more than 2 firms
+<ul>
+<li class="fragment">This is called an <span class="hi">Oligopoly</span></li>
+</ul></li>
+</ul>
+</div>
+</section></section>
+<section>
+<section id="game-theory" class="title-slide slide level1 inverse note center">
+<h1>Game Theory</h1>
+
+</section>
+<section id="decision-making-until-now" class="slide level2">
+<h2>Decision-Making Until Now</h2>
+<p>We have only studied decisions where one person or one firm were making decisions <span class="hi">“in a vacuum”</span></p>
+<ul>
+<li>We specifically addressed what is best for the individual or the firm, <span class="hi">but it never depended on what other people or firms do</span></li>
+</ul>
+<div class="fragment">
+<p><span class="hi-red">Monopolies</span> were slightly different</p>
+<div>
+<ul>
+<li class="fragment"><p>They maximized porfits, <span class="hi">while taking into account the behavior of the consumers in their market</span></p>
+<ul>
+<li class="fragment">Our models of <span class="hi">Imperfect Competition</span> are going to look similarly, with some modifications</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="game-theory-basics" class="slide level2">
+<h2>Game Theory Basics</h2>
+<p>Let’s think of a simple example to illustrate <span class="hi">Game Theory</span></p>
+<div class="fragment">
+<p>Imagine that you manage a gas station. Directly across the street from you is a competing gas station. Also assume that you are the only stations in town</p>
+<p>Both of you set your gas prices at he start of the day and only have two choices:</p>
+</div>
+<div class="fragment">
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="hi align-center">Set Low Price</span></p>
+</div><div class="column" style="width:50%;">
+<p><span class="hi align-center">Set High Price</span></p>
+</div>
+</div>
+<p><br></p>
+<div class="fragment">
+<p><span class="hi align-center">This means there are four possible outcomes we will consider</span></p>
+</div>
+</div>
+</section>
+<section id="game-theory-basics---gas-station-example" class="slide level2">
+<h2>Game Theory Basics - Gas Station Example</h2>
+
+<img data-src="images/gas-station-example.png" class="r-stretch"><p><span class="hi align-center">So what should you do?</span></p>
+</section>
+<section id="game-theory---nash-equilibrium" class="slide level2">
+<h2>Game Theory - Nash Equilibrium</h2>
+<p>Let’s formalize the thought process <span class="hi">Game Theory</span> indicates</p>
+<p>Imagine that your competitor chooses to set a <span class="hi">High Price</span>. How should you respond?</p>
+<div>
+<ul>
+<li class="fragment">You can take the entire market and earn 20 by setting a <span class="hi">Low Price</span></li>
+<li class="fragment">This is clearly better than setting a <span class="hi">High Price</span> and sharing the market earning 15</li>
+</ul>
+</div>
+<div class="fragment">
+<p>Now imagine the competitor chose to set a <span class="hi">Low Price</span>. How should you respond?</p>
+<div>
+<ul>
+<li class="fragment">If you do not set a <span class="hi">Low Price</span>, your competitor will take the entire market and you will earn 0</li>
+<li class="fragment">Your best response is to also set a <span class="hi">Low Price</span> and earn 10</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="game-theory---nash-equilibrium-1" class="slide level2">
+<h2>Game Theory - Nash Equilibrium</h2>
+<p>Regardless of what your competitor does, the best thing for you to do is to set a <span class="hi">Low Price</span></p>
+<div>
+<ul>
+<li class="fragment">Now if you switch perspectives and answer the same questions from your competitor’s point of view <span class="hi">You will get the same answer</span></li>
+<li class="fragment">So both of you are responding as you best could, to each other’s best decision</li>
+</ul>
+</div>
+<div class="fragment">
+<p><span class="hi align-center">This outcome is called a</span></p>
+<p><span class="hi-orange align-center">Nash Equilibrium</span></p>
+</div>
+</section>
+<section id="nash-equilibrium" class="slide level2">
+<h2>Nash Equilibrium</h2>
+<p>I will abbreviate <span class="hi-orange">Nash Equilibrium</span> as <span class="hi-orange">NE</span> Let’s define it formally</p>
+<p>A set of choices (one for each player) is a <span class="hi-orange">NE</span> if:</p>
+<div>
+<ul>
+<li class="fragment">Each player’s choice maximized their payoff <span class="hi-orange">given the choice of the other player</span></li>
+<li class="fragment">Note that the <span class="hi-orange">NE</span> is not the outcome that maximizes the <span class="hi">total payoffs</span> earned by each player
+<ul>
+<li class="fragment">If both gas stations had set a <span class="hi">High Price</span> they would have each earned 15 for a total of 30</li>
+<li class="fragment">With the outcome we get, both set a <span class="hi">Low Price</span> and earn 10 each for a total of 20</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="nash-equilibrium-1" class="slide level2">
+<h2>Nash Equilibrium</h2>
+<p>The term <span class="hi-orange">Best Responding</span> is a grat way of thinking about <span class="hi-orange">NE</span> because it sets us up well for integrating it into our model of firm behavior</p>
+<div>
+<ul>
+<li class="fragment"><span class="hi-red">Firm A</span> an come up with a <span class="hi-orange">Best Response</span> to any price that their competitor might set</li>
+<li class="fragment">In turn, their competitor, <span class="hi-bb">Firm B</span> can also come up with a <span class="hi-orange">Best Response</span> strategy to any price that <span class="hi-red">Firm A</span> might set</li>
+<li class="fragment">The prices at which <span class="hi">Both Firms are simultaneously best responding to one another are the Nash Equilibrium Prices</span></li>
+</ul>
+</div>
+</section>
+<section id="nash-equilibrium-in-producer-markets" class="slide level2">
+<h2>Nash Equilibrium in Producer Markets</h2>
+<p>To put this in terms of our models where firms maximize profit based on their choice of <span class="hi">Quantity <span class="math inline">\(Q\)</span></span>:</p>
+<div>
+<ul>
+<li class="fragment">The <span class="hi">quantities</span> at which <span class="hi-orange">both firms are simultaneously best responding to one another are the Nash Equilibrium quantities</span></li>
+<li class="fragment">The <span class="hi">Market Price</span> is determined by <span class="hi">the Sum of the Quantitites</span></li>
+</ul>
+</div>
+<div class="fragment">
+<p><span class="hi align-center">We are going to be dealing with several models of imperfect competition</span></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li><p>Cornout Competition</p></li>
+<li><p>Cartels</p></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<ul>
+<li><p>Stackelberg Competition</p></li>
+<li><p>Bertrand Competition</p></li>
+</ul>
+</div>
+</div>
+</div>
+</section></section>
+<section>
+<section id="cournot-competition" class="title-slide slide level1 inverse note center">
+<h1>Cournot Competition</h1>
 <!--
-# Extreme Markets & Imperfect Competition {.inverse .note}
-
-
----
-name: extreme markets & imperfect competition
----
-
-
-## Up To Now
-
-So far we have talked about [Perfect Competition]{.hi-green} and [Monopoly]{.hi-red}
-
-::: {.incremental}
-- These firms are either [complete price takers]{.hi-green} or [complete price setters]{.hi-red}
-- But these are the extremes, the real world is more nuanced
-    - Neither of our models are likely to be truly realistic, but they do a good job at showing us the ends of our [Competitive Spectrum]{.hi} 
-:::
-
-. . .
-
-![](images/market-spectrum.png){fig-align="center"}
-
----
-
-## Markets
-
-Most markets are somewhere in-between
-
-::: {.incremental}
-- Firms cannot set market prices by themselves
-- But there are circumstances where there are large firms and are few enough that one single firms choice can impact market prices
-:::
-
-. . .
-
-This is the basics of [Imperfect Competition]{.hi} and what we will be tackling until the end
-
----
-
-## Imperfect Competition
-
-Firms are still competing but they know who their rivals are and will adopt strategies based on what they think their rivals will do
-
-::: {.incremental .small}
-- In order to model firms in these contexts, we need to learn the very basics about [Game Theory]{.hi}
-    - This is the field of decision-making in situations where actions affect others' outcomes and vice-versa
-- We will keep things simple by only studying interactions between two firms
-    - We call this a [Duopoloy]{.hi}
-- The intuition and approach we will take holds for cases where there are more than 2 firms
-    - This is called an [Oligopoly]{.hi}
-:::
-
-
-
-# Game Theory {.inverse .note}
-
-
----
-name: game theory
----
-
-
-## Decision-Making Until Now
-
-We have only studied decisions where one person or one firm were making decisions ["in a vacuum"]{.hi} 
-
-- We specifically addressed what is best for the individual or the firm, [but it never depended on what other people or firms do]{.hi}
-
-. . .
-
-[Monopolies]{.hi-red} were slightly different
-
-::: {.incremental}
-- They maximized porfits, [while taking into account the behavior of the consumers in their market]{.hi}
-
-    - Our models of [Imperfect Competition]{.hi} are going to look similarly, with some modifications
-:::
-
----
-
-## Game Theory Basics
-
-Let's think of a simple example to illustrate [Game Theory]{.hi}
-
-. . .
-
-Imagine that you manage a gas station. Directly across the street from you is a competing gas station. Also assume that you are the only stations in town
-
-Both of you set your gas prices at he start of the day and only have two choices: 
-
-. . .
-
-:::: {.columns}
-
-::: {.column width="50%"}
-[Set Low Price]{.hi .align-center}
-:::
-
-::: {.column width="50%"}
-[Set High Price]{.hi .align-center}
-
-:::
-
-::::
-
-<br>
-
-::: {.fragment}
-[This means there are four possible outcomes we will consider]{.hi .align-center}
-:::
-
----
-
-## Game Theory Basics - Gas Station Example
-
-![](images/gas-station-example.png)
-
-[So what should you do?]{.hi .align-center}
-
----
-
-## Game Theory - Nash Equilibrium
-
-Let's formalize the thought process [Game Theory]{.hi} indicates
-
-Imagine that your competitor chooses to set a [High Price]{.hi}. How should you respond?
-
-::: {.incremental}
-- You can take the entire market and earn 20 by setting a [Low Price]{.hi}
-- This is clearly better than setting a [High Price]{.hi} and sharing the market earning 15
-:::
-
-::: {.fragment}
-
-Now imagine the competitor chose to set a [Low Price]{.hi}. How should you respond?
-
-::: {.incremental}
-- If you do not set a [Low Price]{.hi}, your competitor will take the entire market and you will earn 0
-- Your best response is to also set a [Low Price]{.hi} and earn 10
-:::
-
-:::
-
----
-
-## Game Theory - Nash Equilibrium
-
-Regardless of what your competitor does, the best thing for you to do is to set a [Low Price]{.hi}
-
-::: {.incremental}
-- Now if you switch perspectives and answer the same questions from your competitor's point of view [You will get the same answer]{.hi}
-- So both of you are responding as you best could, to each other's best decision
-:::
-
-::: {.fragment}
-[This outcome is called a]{.hi .align-center}
-
-[Nash Equilibrium]{.hi-orange .align-center}
-:::
-
----
-
-## Nash Equilibrium
-
-I will abbreviate [Nash Equilibrium]{.hi-orange} as [NE]{.hi-orange}
-Let's define it formally
-
-A set of choices (one for each player) is a [NE]{.hi-orange} if:
-
-::: {.incremental}
-- Each player's choice maximized their payoff [given the choice of the other player]{.hi-orange}
-- Note that the [NE]{.hi-orange} is not the outcome that maximizes the [total payoffs]{.hi} earned by each player
-    - If both gas stations had set a [High Price]{.hi} they would have each earned 15 for a total of 30
-    - With the outcome we get, both set a [Low Price]{.hi} and earn 10 each for a total of 20
-:::
-
----
-
-## Nash Equilibrium 
-
-The term [Best Responding]{.hi-orange} is a grat way of thinking about [NE]{.hi-orange} because it sets us up well for integrating it into our model of firm behavior
-
-::: {.incremental}
-- [Firm A]{.hi-red} an come up with a [Best Response]{.hi-orange} to any price that their competitor might set
-- In turn, their competitor, [Firm B]{.hi-bb} can also come up with a [Best Response]{.hi-orange} strategy to any price that [Firm A]{.hi-red} might set
-- The prices at which [Both Firms are simultaneously best responding to one another are the Nash Equilibrium Prices]{.hi}
-:::
-
----
-
-## Nash Equilibrium in Producer Markets
-
-To put this in terms of our models where firms maximize profit based on their choice of [Quantity $Q$]{.hi}:
-
-::: {.incremental}
-- The [quantities]{.hi} at which [both firms are simultaneously best responding to one another are the Nash Equilibrium quantities]{.hi-orange}
-- The [Market Price]{.hi} is determined by [the Sum of the Quantitites]{.hi}
-:::
-
-::: {.fragment}
-[We are going to be dealing with several models of imperfect competition]{.hi .align-center}
-
-:::: {.columns}
-
-::: {.column width="50%"}
-- Cornout Competition
-
-- Cartels 
-:::
-
-::: {.column width="50%"}
-- Stackelberg Competition
-
-- Bertrand Competition
-:::
-
-::::
-
-:::
-
-
-
-# Cournot Competition {.inverse .note}
-
-
----
-name: cournot competition
----
-
-
 ## The Man Himself 
 
 :::: {.columns}
@@ -604,694 +571,488 @@ name: cournot competition
 
 ::::
 
----
-
-## Cournot Competition = Simultaneous Decisions
-
-This model consists of two firms competing by [Best Responding]{.hi-orange} to one-another's quantity choices
-
-We call this a [Cournout Competition or Cornout Equilibrium]{.hi} 
-
-- Mathematically, this will look like a modified [Monopoly]{.hi-red} with two firms 
-
-:::: {.columns}
-
-::: {.column width="30%"}
-
-<br><br>
-
-::: {.fragment .small}
-\begin{align*}
-    \pi_{A} &= P \cdot Q_{A} - C(Q_{A}) \\
-    \pi_{B} &= P \cdot Q_{B} - C(Q_{B}) \\
-\end{align*}
-:::
-
-:::
-
-::: {.column width="70%"}
-
-::: {.fragment}
-[Price is a function of Market Quantity which is the sum of both firms quantity]{.hi .align-center}
-:::
-
-::: {.fragment}
-\begin{align*}
-    P &= f(Q_{S}) = f(Q_{A} + Q_{B})
-\end{align*}
-
-[Which is the Market Demand Curve]{.h .align-center}
-:::
-
-:::
-
-::::
 
 ---
-
-## Cournot Equilibrium - Example
-
-Let both firms have the following [Cost Functions]{.hi} and [Demand Curve]{.hi}
-
-$$
-    C(Q) = Q^{2} \;\;\;\;\; ; \;\;\;\;\; P = 100 - Q_{D}
-$$
-
-[Demand]{.hi} is the sum of both firms produced quantities
-
-::: {.fragment}
-\begin{align*}
-    Q_{D} &= Q_{A} + Q_{B} \\
-\end{align*}
-:::
-
-::: {.fragment}
-[Find the Demand Curve]{.hi .align-center}
-:::
-
-::: {.fragment}
-\begin{align*}
-    P &= 100 - \color{red}{Q_{D}} \\
-    P &= 100 - \color{red}{(Q_{A} + Q_{B})} \\
-     P &= 100 - Q_{A} - Q_{B}
-\end{align*}
-:::
-
----
-
-## Cournot Equilibrium - Profits
-
-We can then write these firms profits using our [updated Demand Curve]{.hi} 
-
-$$
-    (P = 100 - Q_{A} - Q_{B})
-$$
-
-Remember profits are written as
-
-$$
-    \pi = P \cdot Q - C(Q)
-$$
-
-[Write both Firm A and Firm B's Profit Functions]{.hi .align-center}
-
-::: {.fragment}
-\begin{align*}
-    \pi_{A} &= (100 - Q_{A} - Q_{B}) \cdot Q_{A} - Q_{A}^{2} \\ \\
-    \pi_{B} &= (100 - Q_{A} - Q_{B}) \cdot Q_{B} - Q_{B}^{2}
-\end{align*}
-:::
-
----
-
-## Cournot Equilibrium - Best Response Functions 
-
-We find [Best Response Functions]{.hi-orange} because we want to model it in such a way that we can observe responses to any possible quantity levels
-
-We can find these by finding the profit maximizing quantity of each profit function
-
-$$
-    \frac{\partial \pi_{i}}{\partial Q_{i}} = 0
-$$
-
----
-
-## Cournot Equilibrium - Example Best Response Functions
-
-[\begin{align*}
-    \pi_{A} &= (100 - Q_{A} - Q_{B}) \cdot Q_{A} - Q_{A}^{2} \\ \\
-    \pi_{B} &= (100 - Q_{A} - Q_{B}) \cdot Q_{B} - Q_{B}^{2}
-\end{align*}]{.tiny }
-
-[Find the Best Response Functions for both firms]{.hi .note .align-center .small}
-
-[Hint: You only need to do the work for one, the other is symmetric]{.hi .align-center .small}
-
-:::: {.columns}
-
-::: {.column width="50%"}
-[Find $\; \frac{\partial \pi_{A}}{\partial Q_{A}} = 0$]{.hi .align-center .small}
-
-::: {.fragment .tiny}
-\begin{align*}
-    100 - 2Q_{A} - Q_{B} - 2Q_{A} &= 0 \\
-    4Q_{A} &= 100 - Q_{B} \\ 
-    Q^{*}_{A} &= \frac{100 - Q_{B}}{4}
-\end{align*}    
-:::
-
-:::
-
-::: {.column width="50%"}
-
-::: {.fragment}
-[By Symmetry, we know Firm B's Best Response]{.hi .align-center}
-
-\begin{align*}
-    Q^{*}_{B} &= \frac{100 - Q_{A}}{4}
-\end{align*}
-:::
-
-:::
-
-::::
-
----
-
-## Cournot Equilibrium - Optimal Quantity 
-
-Would you believe me if I told you we can get a number for $Q_{A}^{*}$ from this?
-
-::: {.fragment .tiny}
-We have $\; Q^{*}_{A} = \frac{100 - Q_{B}}{4} \;\; \& \;\; Q^{*}_{B} = \frac{100 - Q_{A}}{4}$
-
-<br>
-
-[Find $\; Q^{*}_{A} \;$ by plugging in our $\; Q^{*}_{B} \;$ function]{.hi .align-center .small}
-:::
-
-::: {.fragment .small}
-[We solve this by putting one Best Response into the other]{.hi .align-center}
-
-\begin{align*}
-    Q^{*}_{A} = \frac{100 - \color{red}{Q_{B}}}{4} \\ \\
-    Q^{*}_{A} = \frac{100 - \color{red}{\frac{100 - Q_{A}}{4}}}{4}
-\end{align*}
-:::
-
----
-
-## Cournot Equilibrium - Optimal Quantity & Price
-
-$$
-    Q^{*}_{A} = \frac{100 - \frac{100 - Q_{A}}{4}}{4}
-$$
-
-:::: {.columns}
-
-::: {.column width="50%"}
-[Find Optimal Quantity]{.hi .align-center}
-
-::: {.fragment}
-\begin{align*}
-    4Q^{*}_{A} &= 100 - \frac{100 - Q_{A}^{*}}{4} \\
-    16Q^{*}_{A} &= 400 - (100 - Q_{A}^{*}) \\ 
-    15Q^{*}_{A} &= 300 \\
-    Q^{*}_{A} &= 20 = Q^{*}_{B} 
-\end{align*}
-:::
-
-:::
-
-::: {.column width="50%"}
-[Find Market Supply]{.hi .align-center .small}
-
-::: {.fragment .small}
-\begin{align*}
-    Q_{S} &= Q_{A}^{*} + Q_{B}^{*} \\ 
-    Q_{S} &= 20 + 20 \\
-    Q_{S} &= 40
-\end{align*}
-:::
-
-[Find Market Price]{.hi .align-center .small}
-
-::: {.fragment .small}
-\begin{align*}
-    P &= 100 - Q_{D} \\
-    P &= 100 - 40 \\
-    P^{*} &= 60
-\end{align*}
-:::
-
-:::
-
-::::
-
----
-
-## Cournot Equilibrium 
-
-We just saw that each firm is best responding to the other's decisions
-
-[The equilibrium we found is the point where]{.align-center} 
-
-[Both firms are best responding to each other at the same time]{.hi .align-center}
-
-Let's look at a graph of the previous example
-
----
-
-## Graphing Best Response Functions - Firm A
-
-[Firm A's Best Response Function]{.hi-orange .align-center}
-
-:::: {.columns}
-
-::: {.column width="30%"}
-
-<br><br>
-
-\begin{align*}
-    Q^{*}_{A} &= \frac{100 - Q^{*}_{B}}{4} \\ \\
-    Q^{*}_{A} &= 25 - \frac{Q^{*}_{B}}{4}
-\end{align*}
-
-:::
-
-::: {.column width="70%"}
-![](images/firm-a-best-response.png)
-:::
-
-::::
-
----
-
-## Graphing Best Response Functions - Firm B
-
-[Firm B's Best Response Function]{.hi-orange .align-center}
-
-:::: {.columns}
-
-::: {.column width="30%"}
-
-<br><br>
-
-\begin{align*}
-    Q^{*}_{B} &= \frac{100 - Q^{*}_{A}}{4} \\ \\
-    Q^{*}_{B} &= 25 - \frac{Q^{*}_{A}}{4}
-\end{align*}
-
-:::
-
-::: {.column width="70%"}
-![](images/firm-b-best-response.png)
-:::
-
-::::
-
----
-
-## Cournot Equilibrium - Graph
-
-The [Cournot Equilibrium Quantities]{.hi} are where the [Best Response Functions]{.hi-orange} intersect
-
-![](images/cournot-equilibrium.png){fig-align="center"}
-
----
-
-## Where Does Cournot Place Relative to Other Market Types?
-
-We know how to find [Monopolist Equilibriums]{.hi-red} and [Perfectly Competitive Equilibriums]{.hi-green} from just the [Cost Functions]{.hi} 
-
-We can rank outcomes intuitively using what we know about each one:
-
-Relative to a [Monopoly]{.hi-red}
-
-::: {.fragment}
-- Quantity should be higher and price lower because there is [more]{.hi} competition in a [Cournot Duopoly]{.hi}
-:::
-
-Relative to [Perfect Competition]{.hi-green}
-
-::: {.fragment}
-- Quantity should be lower and price higher because there is relatively less competition in a [Cournot Duopoly]{.hi}
-:::
-
----
-
-## Practice Makes Perfect
-
-Let's find [Perfect Competition Equilibrium]{.hi-green} and compare our results
-
-::: {.fragment .tiny}
-$$
-    \text{Profits: } \pi_{A} = P \cdot Q_{A} - Q_{A}^{2} \;\;\;\; \text{and} \;\;\;\; \pi_{B} = P \cdot Q_{B} - Q_{B}^{2}
-$$
-
-$$
-    \text{Demand: } P = 100 - Q_{D}
-$$
-
-[Find the Perfectly Competitive Equilibrium Quantity and Price]{.hi .align-center}
-[Maximize both profits, find optimal quantities, set supply = demand, and find numbers for Quantity and Price]{.hi .align-center}
-:::
-
-::: {.fragment .small}
-
-:::: {.columns}
-
-::: {.column width="33%" .tiny}
-\begin{align*}
-    \frac{\partial \pi_{A}}{\partial Q_{A}} &= 0 \\
-    P - 2Q_{A} &= 0 \\
-    Q_{A}^{*} &= \frac{P}{2} \\
-    Q_{B}^{*} &= \frac{P}{2}
-\end{align*}
-:::
-
-::: {.column width="33%" .tiny}
-::: {.fragment}
-\begin{align*}
-    Q_{S} &= Q_{A}^{*} + Q_{B}^{*} \\
-    Q_{S} &= \frac{P}{2} + \frac{P}{2} = P 
-\end{align*}
-
-\begin{align*}
-    \text{Supply} &= \text{Demand} \\
-    Q_{S} &= 100 - Q_{D} \\
-    2Q &= 100 \\
-    Q^{*} &= 50  
-\end{align*}
-:::
-:::
-
-::: {.column width="33%"}
-<br>
-
-::: {.fragment}
-\begin{align*}
-    P^{*} &= 100 - Q^{*} \\
-    P^{*} &= 100 - 50 \\
-    P^{*} &= 50
-\end{align*}
-:::
-:::
-
-::::
-
-:::
-
----
-
-## Cournot Equilibrium vs Monopoly
-
-How does [Cournot Competition]{.hi} compare to [Monopoly]{.hi-red}?
-
-There are now two firms so it is not a [Monopoly]{.hi-red} by definition
-
-But we can do some work to make it one
-
-::: {.incremental}
-- Imagine that both firms [collude]{.hi}. In other words, they [cooperatively agree on how much to produce]{.hi}
-- We call this a [Cartel]{.hi-purple}
-
-- We can find how much they produce by "combining" the firms and maximizing profit
-:::
-
-
-
-# Cartels {.inverse .note}
-
-
----
-name: cartels
----
-
-
-## Forming a Cartel {.tiny}
-
-Let's stay with our two firms from earlier. Rather than competing with each other, they decide to [collude]{.hi-purple} and form a [Cartel]{.hi-purple}
-
-The [Cartel's Profits]{.hi-purple} is simply both firm's profit functions summed up
-
-$$
-    \pi_{Cartel} = \pi_{A} + \pi_{B}
-$$
-
-::: {.fragment .tiny}
-Our profits were:
-
-$$
-    \pi_{A} = P \cdot Q_{A} - Q_{A}^{2} \;\;\;\;\; \& \;\;\;\;\; \pi_{B} = P \cdot Q_{B} - Q_{B}^{2} \;\;\; ; \;\;\; P = 100 - Q_{S}
-$$
-:::
-
-::: {.fragment .small}
-[Find the Cartel's Profit function (Do not simplify it)]{.hi .note .align-center}
-:::
-
-::: {.fragment .small}
-\begin{align*}
-    \pi_{Cartel} &= \pi_{A} + \pi_{B} \\
-    \pi_{Cartel} &= (100 - Q_{A} - Q_{B}) \cdot Q_{A} + (100 - Q_{A} - Q_{B}) \cdot Q_{B} - Q_{A}^{2} - Q_{B}^{2} 
-\end{align*}
-:::
-
----
-
-## Cartel - Maximize Profits
-
-We maximize profits by taking the derivative with respect to both quantities $(Q_{A} \; \& \; Q_{B})$
-
-$$
-    \pi_{Cartel} = (100 - Q_{A} - Q_{B}) \cdot Q_{A} + (100 - Q_{A} - Q_{B}) \cdot Q_{B} - Q_{A}^{2} - Q_{B}^{2}
-$$
-
-[Find the Profit Maximizing Quantities $\; \frac{\partial \pi_{i}}{\partial Q_{i}} = 0$]{.hi .note .align-center}
-
-:::: {.columns}
-
-::: {.column width="50%"}
-[$\frac{\partial \pi_{A}}{\partial Q_{A}} = 0$]{.hi .align-center .tiny}
-
-::: {.fragment .tiny}
-\begin{align*}
-    &100 - 2Q_{A} - Q_{B} - Q_{B} - 2Q_{A} = 0 \\
-    &100 - 4Q_{A} - 2Q_{B} = 0 \\
-    &4Q_{A} = 100 - 2Q_{B} \\
-\end{align*}
-
-\begin{align*}
-    Q_{A}^{*} &= 25 - \frac{1}{2}Q_{B} \\ 
-    Q_{B}^{*} &= 25 - \frac{1}{2}Q_{A}
-\end{align*}
-:::
-
-:::
-
-::: {.column width="50%"}
-
-::: {.fragment .tiny}
-[Plug one into the other]{.hi .align-center .tiny}
-
-\begin{align*}
-    Q_{A} &= 25 - \frac{1}{2}\color{red}{\left(25 - \frac{1}{2}Q_{A} \right)} \\ 
-    Q_{A} &= 25 - \frac{25}{2} + \frac{1}{4}Q_{A} \\ 
-    \frac{3}{4}Q_{A} &= \frac{25}{2} \\
-    Q_{A}^{*} &= \frac{100}{6} = Q_{B}^{*}
-\end{align*}
-:::
-
-:::
-
-::::
-
----
-
-## Cartel - Maximize Profits (Part 2)
-
-We know 
-
-$$
-    Q_{A}^{*} = \frac{100}{6} \;\;\;\;\; \& \;\;\;\;\; Q_{B}^{*} = \frac{100}{6}
-$$
-
-Now we can find the [Market Quantity and Market Price]{.hi}
-
-:::: {.columns}
-
-::: {.column width="70%"}
-
-[Find Quantity]{.hi .align-center}
-
-::: {.fragment .tiny}
-\begin{align*}
-    Q_{S} = Q_{A} + Q_{B} = \frac{100}{6} + \frac{100}{6} = \frac{100}{3} \approx 16.6
-\end{align*}
-:::
-
-::: {.fragment .tiny}
-[Find Price]{.hi .align-center}
-
-\begin{align*}
-    P = 100 - Q_{S} = 100 - \frac{100}{6} = \frac{200}{3} \approx 66.6
-\end{align*}
-:::
-
-:::
-
-::: {.column width="30%"}
-
-::: {.fragment}
-[Compare this to the Cournot Equilibrium]{.hi .align-center}
-
-\begin{align*}
-    Q_{C} = 40 \\ \\
-    P_{C} = 60
-\end{align*}
-:::
-
-:::
-
-::::
-
----
-
-## Cartel Results {.tiny}
-
-The [Cartel]{.hi-purple} produces less than the both [Cournot firms]{.hi} combined and demands a higher price
-
-So basically they managed to create a [Monopoly]{.hi-red} by joining the only two firms in the industry
-
-![](images/market-equilibriums.png){fig-align="center"}
-
----
-
-## Cartel - Joining Both Firms {.tiny}
-
-There is an exception to this approach of combining two firms when we model [Cartel Profits]{.hi-purple}
-
-::: {.fragment}
-Imagine two firms with the following [Cost Functions]{.hi}
-
-\begin{align*}
-    \text{Firm A: } C(Q_{A}) = 10 \cdot Q_{A} \;\;\;\; ; \;\;\;\; \text{Firm B: } C(Q_{B}) = 5 \cdot Q_{B} 
-\end{align*}
-
-[If these firms combine, should we just add their costs together?]{.hi .align-center}
-
-[Think about their Marginal Costs]{.hi .align-center}
-:::
-
-::: {.fragment}
-\begin{align*}
-    \text{Firm A Marginal Costs: } MC = 10 \\ \\
-    \text{Firm B Marginal Costs: } MC = 5
-\end{align*}
-
-They have different constant marignal costs
-
-::: {.incremental}
-- So it will always be cheaper to produce goods using only Firm B
-:::
-
-:::
-
----
-
-## Cartel - The Exception
-
-If we have two firms, both with [Constant Marginal Costs that are Different]{.hi}:
-
-::: {.incremental}
-- To form a [Cartel]{.hi-purple}, they will simply shut down the firm with the [Higher Marginal Costs]{.hi} and the other firm will become a [Monopolist]{.hi-red}
-
-- If you were to find profits for both firms in the [Cartel]{.hi-purple} you would see that they are higher for both firms than in [Cournot Competition]{.hi}
-:::
-
-::: {.fragment}
-[So why not form Cartels then?]{.hi .align-center}
-
-::: {.incremental}
-- They are usually illegal
-- And more importantly, they are not stable!
-:::
-
-:::
-
----
-
-## Cartels Are Unstable
-
-Let's jump back to our gas station example
-
-::: {.incremental}
-- You and your competitor have a backroom agreement to sell your gas at $5.00/gallon
-
-- The next day you see your "new business partner" posting a price of $5.00/gallon, what are you tempted to do?
-
-- Post a price of $4.99/gallon!
-:::
-
-::: {.fragment}
-In other words, if you follow through with your [Cartel Agreement]{.hi-purple}
-
-<br>
-
-[It is not your best response for you to follow through also!]{.hi .align-center}
-:::
-
----
-
-## Cartels - Showing Instability
-
-Jumping back to our [Courtot/Cartel]{.hi} example
-
-The firms split $Q = 100/3$ equally, so $Q_{B} = 100/6$
-
-What is Firm A's [Best Response]{.hi-orange} to $Q_{B} = 100/6$
-
-:::: {.columns}
-
-::: {.column width="50%"}
-
-::: {.fragment}
-From the [Cournot Best Response Functions]{.hi-orange} earlier we have:
-
-<br><br>
-
-\begin{align*}
-    Q_{A}^{*} &= \frac{100 - Q_{B}}{4} = 25 - \frac{Q_{B}}{4}
-\end{align*}
-:::
-
-:::
-
-::: {.column width="50%"}
-
-::: {.fragment .small}
-[If we plug in $\; Q_{B} \;$ we get:]{.align-center .hi}
-
-\begin{align*}
-    Q_{A}^{*} &= 25 - \frac{Q_{B}}{4} \\
-    Q_{A}^{*} &= 25 - \frac{\color{red}{\frac{100}{6}}}{4} \\
-    Q_{A}^{*} &= 25 - \frac{25}{6} \\ 
-    Q_{A}^{*} &\approx 21 > \frac{100}{6}
-\end{align*}
-:::
-
-:::
-
-::::
-
----
-
-## Cartel - Instability
-
-Each firm is tempted to deviate from their [Cartel Agreement]{.hi-purple} and produce more than they agreed to
-
-The firm that deviates will increase their profits
-
-The firm that sticks to the agreement will have lower profits
-
-If both firms deviate from the [Cartel Agreement]{.hi-purple}, then both of them end up with lower profits
-
----
-
-## Timing Matters
-
-All previous models of quantity competition have firms decide their [Best Responses]{.hi-orange} at the same time, much like playing rock-paper-scissors
-
-We call these [Simultaneous Games]{.hi}
-
-::: {.fragment}
-Now we will look at a model that introduces timing
-:::
-
-
 -->
 </section>
+<section id="cournot-competition-simultaneous-decisions" class="slide level2">
+<h2>Cournot Competition = Simultaneous Decisions</h2>
+<p>This model consists of two firms competing by <span class="hi-orange">Best Responding</span> to one-another’s quantity choices</p>
+<p>We call this a <span class="hi">Cournout Competition or Cornout Equilibrium</span></p>
+<ul>
+<li>Mathematically, this will look like a modified <span class="hi-red">Monopoly</span> with two firms</li>
+</ul>
+<div class="columns">
+<div class="column" style="width:30%;">
+<p><br><br></p>
+<div class="fragment small">
+<p><span class="math display">\[\begin{align*}
+    \pi_{A} &amp;= P \cdot Q_{A} - C(Q_{A}) \\
+    \pi_{B} &amp;= P \cdot Q_{B} - C(Q_{B}) \\
+\end{align*}\]</span></p>
+</div>
+</div><div class="column" style="width:70%;">
+<div class="fragment">
+<p><span class="hi align-center">Price is a function of Market Quantity which is the sum of both firms quantity</span></p>
+</div>
+<div class="fragment">
+<p><span class="math display">\[\begin{align*}
+    P &amp;= f(Q_{S}) = f(Q_{A} + Q_{B})
+\end{align*}\]</span></p>
+<p><span class="h align-center">Which is the Market Demand Curve</span></p>
+</div>
+</div>
+</div>
+</section>
+<section id="cournot-equilibrium---example" class="slide level2">
+<h2>Cournot Equilibrium - Example</h2>
+<p>Let both firms have the following <span class="hi">Cost Functions</span> and <span class="hi">Demand Curve</span></p>
+<p><span class="math display">\[
+    C(Q) = Q^{2} \;\;\;\;\; ; \;\;\;\;\; P = 100 - Q_{D}
+\]</span></p>
+<p><span class="hi">Demand</span> is the sum of both firms produced quantities</p>
+<div class="fragment">
+<p><span class="math display">\[\begin{align*}
+    Q_{D} &amp;= Q_{A} + Q_{B} \\
+\end{align*}\]</span></p>
+</div>
+<div class="fragment">
+<p><span class="hi align-center">Find the Demand Curve</span></p>
+</div>
+<div class="fragment">
+<p><span class="math display">\[\begin{align*}
+    P &amp;= 100 - \color{red}{Q_{D}} \\
+    P &amp;= 100 - \color{red}{(Q_{A} + Q_{B})} \\
+     P &amp;= 100 - Q_{A} - Q_{B}
+\end{align*}\]</span></p>
+</div>
+</section>
+<section id="cournot-equilibrium---profits" class="slide level2">
+<h2>Cournot Equilibrium - Profits</h2>
+<p>We can then write these firms profits using our <span class="hi">updated Demand Curve</span></p>
+<p><span class="math display">\[
+    (P = 100 - Q_{A} - Q_{B})
+\]</span></p>
+<p>Remember profits are written as</p>
+<p><span class="math display">\[
+    \pi = P \cdot Q - C(Q)
+\]</span></p>
+<p><span class="hi align-center">Write both Firm A and Firm B’s Profit Functions</span></p>
+<div class="fragment">
+<p><span class="math display">\[\begin{align*}
+    \pi_{A} &amp;= (100 - Q_{A} - Q_{B}) \cdot Q_{A} - Q_{A}^{2} \\ \\
+    \pi_{B} &amp;= (100 - Q_{A} - Q_{B}) \cdot Q_{B} - Q_{B}^{2}
+\end{align*}\]</span></p>
+</div>
+</section>
+<section id="cournot-equilibrium---best-response-functions" class="slide level2">
+<h2>Cournot Equilibrium - Best Response Functions</h2>
+<p>We find <span class="hi-orange">Best Response Functions</span> because we want to model it in such a way that we can observe responses to any possible quantity levels</p>
+<p>We can find these by finding the profit maximizing quantity of each profit function</p>
+<p><span class="math display">\[
+    \frac{\partial \pi_{i}}{\partial Q_{i}} = 0
+\]</span></p>
+</section>
+<section id="cournot-equilibrium---example-best-response-functions" class="slide level2">
+<h2>Cournot Equilibrium - Example Best Response Functions</h2>
+<p><span class="tiny"><span class="math display">\[\begin{align*}
+    \pi_{A} &amp;= (100 - Q_{A} - Q_{B}) \cdot Q_{A} - Q_{A}^{2} \\ \\
+    \pi_{B} &amp;= (100 - Q_{A} - Q_{B}) \cdot Q_{B} - Q_{B}^{2}
+\end{align*}\]</span></span></p>
+<p><span class="hi note align-center small">Find the Best Response Functions for both firms</span></p>
+<p><span class="hi align-center small">Hint: You only need to do the work for one, the other is symmetric</span></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="hi align-center small">Find <span class="math inline">\(\; \frac{\partial \pi_{A}}{\partial Q_{A}} = 0\)</span></span></p>
+<div class="fragment tiny">
+<p><span class="math display">\[\begin{align*}
+    100 - 2Q_{A} - Q_{B} - 2Q_{A} &amp;= 0 \\
+    4Q_{A} &amp;= 100 - Q_{B} \\
+    Q^{*}_{A} &amp;= \frac{100 - Q_{B}}{4}
+\end{align*}\]</span></p>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="fragment">
+<p><span class="hi align-center">By Symmetry, we know Firm B’s Best Response</span></p>
+<p><span class="math display">\[\begin{align*}
+    Q^{*}_{B} &amp;= \frac{100 - Q_{A}}{4}
+\end{align*}\]</span></p>
+</div>
+</div>
+</div>
+</section>
+<section id="cournot-equilibrium---optimal-quantity" class="slide level2">
+<h2>Cournot Equilibrium - Optimal Quantity</h2>
+<p>Would you believe me if I told you we can get a number for <span class="math inline">\(Q_{A}^{*}\)</span> from this?</p>
+<div class="fragment tiny">
+<p>We have <span class="math inline">\(\; Q^{*}_{A} = \frac{100 - Q_{B}}{4} \;\; \&amp; \;\; Q^{*}_{B} = \frac{100 - Q_{A}}{4}\)</span></p>
+<p><br></p>
+<p><span class="hi align-center small">Find <span class="math inline">\(\; Q^{*}_{A} \;\)</span> by plugging in our <span class="math inline">\(\; Q^{*}_{B} \;\)</span> function</span></p>
+</div>
+<div class="fragment small">
+<p><span class="hi align-center">We solve this by putting one Best Response into the other</span></p>
+<p><span class="math display">\[\begin{align*}
+    Q^{*}_{A} = \frac{100 - \color{red}{Q_{B}}}{4} \\ \\
+    Q^{*}_{A} = \frac{100 - \color{red}{\frac{100 - Q_{A}}{4}}}{4}
+\end{align*}\]</span></p>
+</div>
+</section>
+<section id="cournot-equilibrium---optimal-quantity-price" class="slide level2">
+<h2>Cournot Equilibrium - Optimal Quantity &amp; Price</h2>
+<p><span class="math display">\[
+    Q^{*}_{A} = \frac{100 - \frac{100 - Q_{A}}{4}}{4}
+\]</span></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="hi align-center">Find Optimal Quantity</span></p>
+<div class="fragment">
+<p><span class="math display">\[\begin{align*}
+    4Q^{*}_{A} &amp;= 100 - \frac{100 - Q_{A}^{*}}{4} \\
+    16Q^{*}_{A} &amp;= 400 - (100 - Q_{A}^{*}) \\
+    15Q^{*}_{A} &amp;= 300 \\
+    Q^{*}_{A} &amp;= 20 = Q^{*}_{B}
+\end{align*}\]</span></p>
+</div>
+</div><div class="column" style="width:50%;">
+<p><span class="hi align-center small">Find Market Supply</span></p>
+<div class="fragment small">
+<p><span class="math display">\[\begin{align*}
+    Q_{S} &amp;= Q_{A}^{*} + Q_{B}^{*} \\
+    Q_{S} &amp;= 20 + 20 \\
+    Q_{S} &amp;= 40
+\end{align*}\]</span></p>
+</div>
+<p><span class="hi align-center small">Find Market Price</span></p>
+<div class="fragment small">
+<p><span class="math display">\[\begin{align*}
+    P &amp;= 100 - Q_{D} \\
+    P &amp;= 100 - 40 \\
+    P^{*} &amp;= 60
+\end{align*}\]</span></p>
+</div>
+</div>
+</div>
+</section>
+<section id="cournot-equilibrium" class="slide level2">
+<h2>Cournot Equilibrium</h2>
+<p>We just saw that each firm is best responding to the other’s decisions</p>
+<p><span class="align-center">The equilibrium we found is the point where</span></p>
+<p><span class="hi align-center">Both firms are best responding to each other at the same time</span></p>
+<p>Let’s look at a graph of the previous example</p>
+</section>
+<section id="graphing-best-response-functions---firm-a" class="slide level2">
+<h2>Graphing Best Response Functions - Firm A</h2>
+<p><span class="hi-orange align-center">Firm A’s Best Response Function</span></p>
+<div class="columns">
+<div class="column" style="width:30%;">
+<p><br><br></p>
+<p><span class="math display">\[\begin{align*}
+    Q^{*}_{A} &amp;= \frac{100 - Q^{*}_{B}}{4} \\ \\
+    Q^{*}_{A} &amp;= 25 - \frac{Q^{*}_{B}}{4}
+\end{align*}\]</span></p>
+</div><div class="column" style="width:70%;">
+<p><img data-src="images/firm-a-best-response.png"></p>
+</div>
+</div>
+</section>
+<section id="graphing-best-response-functions---firm-b" class="slide level2">
+<h2>Graphing Best Response Functions - Firm B</h2>
+<p><span class="hi-orange align-center">Firm B’s Best Response Function</span></p>
+<div class="columns">
+<div class="column" style="width:30%;">
+<p><br><br></p>
+<p><span class="math display">\[\begin{align*}
+    Q^{*}_{B} &amp;= \frac{100 - Q^{*}_{A}}{4} \\ \\
+    Q^{*}_{B} &amp;= 25 - \frac{Q^{*}_{A}}{4}
+\end{align*}\]</span></p>
+</div><div class="column" style="width:70%;">
+<p><img data-src="images/firm-b-best-response.png"></p>
+</div>
+</div>
+</section>
+<section id="cournot-equilibrium---graph" class="slide level2">
+<h2>Cournot Equilibrium - Graph</h2>
+<p>The <span class="hi">Cournot Equilibrium Quantities</span> are where the <span class="hi-orange">Best Response Functions</span> intersect</p>
+
+<img data-src="images/cournot-equilibrium.png" class="r-stretch quarto-figure-center"></section>
+<section id="where-does-cournot-place-relative-to-other-market-types" class="slide level2">
+<h2>Where Does Cournot Place Relative to Other Market Types?</h2>
+<p>We know how to find <span class="hi-red">Monopolist Equilibriums</span> and <span class="hi-green">Perfectly Competitive Equilibriums</span> from just the <span class="hi">Cost Functions</span></p>
+<p>We can rank outcomes intuitively using what we know about each one:</p>
+<p>Relative to a <span class="hi-red">Monopoly</span></p>
+<div class="fragment">
+<ul>
+<li>Quantity should be higher and price lower because there is <span class="hi">more</span> competition in a <span class="hi">Cournot Duopoly</span></li>
+</ul>
+</div>
+<p>Relative to <span class="hi-green">Perfect Competition</span></p>
+<div class="fragment">
+<ul>
+<li>Quantity should be lower and price higher because there is relatively less competition in a <span class="hi">Cournot Duopoly</span></li>
+</ul>
+</div>
+</section>
+<section id="practice-makes-perfect" class="slide level2">
+<h2>Practice Makes Perfect</h2>
+<p>Let’s find <span class="hi-green">Perfect Competition Equilibrium</span> and compare our results</p>
+<div class="fragment tiny">
+<p><span class="math display">\[
+    \text{Profits: } \pi_{A} = P \cdot Q_{A} - Q_{A}^{2} \;\;\;\; \text{and} \;\;\;\; \pi_{B} = P \cdot Q_{B} - Q_{B}^{2}
+\]</span></p>
+<p><span class="math display">\[
+    \text{Demand: } P = 100 - Q_{D}
+\]</span></p>
+<p><span class="hi align-center">Find the Perfectly Competitive Equilibrium Quantity and Price</span> <span class="hi align-center">Maximize both profits, find optimal quantities, set supply = demand, and find numbers for Quantity and Price</span></p>
+</div>
+<div class="fragment small">
+<div class="columns">
+<div class="column tiny" style="width:33%;">
+<p><span class="math display">\[\begin{align*}
+    \frac{\partial \pi_{A}}{\partial Q_{A}} &amp;= 0 \\
+    P - 2Q_{A} &amp;= 0 \\
+    Q_{A}^{*} &amp;= \frac{P}{2} \\
+    Q_{B}^{*} &amp;= \frac{P}{2}
+\end{align*}\]</span></p>
+</div><div class="column tiny" style="width:33%;">
+<div class="fragment">
+<p><span class="math display">\[\begin{align*}
+    Q_{S} &amp;= Q_{A}^{*} + Q_{B}^{*} \\
+    Q_{S} &amp;= \frac{P}{2} + \frac{P}{2} = P
+\end{align*}\]</span></p>
+<p><span class="math display">\[\begin{align*}
+    \text{Supply} &amp;= \text{Demand} \\
+    Q_{S} &amp;= 100 - Q_{D} \\
+    2Q &amp;= 100 \\
+    Q^{*} &amp;= 50  
+\end{align*}\]</span></p>
+</div>
+</div><div class="column" style="width:33%;">
+<p><br></p>
+<div class="fragment">
+<p><span class="math display">\[\begin{align*}
+    P^{*} &amp;= 100 - Q^{*} \\
+    P^{*} &amp;= 100 - 50 \\
+    P^{*} &amp;= 50
+\end{align*}\]</span></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="cournot-equilibrium-vs-monopoly" class="slide level2">
+<h2>Cournot Equilibrium vs Monopoly</h2>
+<p>How does <span class="hi">Cournot Competition</span> compare to <span class="hi-red">Monopoly</span>?</p>
+<p>There are now two firms so it is not a <span class="hi-red">Monopoly</span> by definition</p>
+<p>But we can do some work to make it one</p>
+<div>
+<ul>
+<li class="fragment"><p>Imagine that both firms <span class="hi">collude</span>. In other words, they <span class="hi">cooperatively agree on how much to produce</span></p></li>
+<li class="fragment"><p>We call this a <span class="hi-purple">Cartel</span></p></li>
+<li class="fragment"><p>We can find how much they produce by “combining” the firms and maximizing profit</p></li>
+</ul>
+</div>
+</section></section>
+<section>
+<section id="cartels" class="title-slide slide level1 inverse note center">
+<h1>Cartels</h1>
+
+</section>
+<section id="forming-a-cartel" class="slide level2 tiny">
+<h2>Forming a Cartel</h2>
+<p>Let’s stay with our two firms from earlier. Rather than competing with each other, they decide to <span class="hi-purple">collude</span> and form a <span class="hi-purple">Cartel</span></p>
+<p>The <span class="hi-purple">Cartel’s Profits</span> is simply both firm’s profit functions summed up</p>
+<p><span class="math display">\[
+    \pi_{Cartel} = \pi_{A} + \pi_{B}
+\]</span></p>
+<div class="fragment tiny">
+<p>Our profits were:</p>
+<p><span class="math display">\[
+    \pi_{A} = P \cdot Q_{A} - Q_{A}^{2} \;\;\;\;\; \&amp; \;\;\;\;\; \pi_{B} = P \cdot Q_{B} - Q_{B}^{2} \;\;\; ; \;\;\; P = 100 - Q_{S}
+\]</span></p>
+</div>
+<div class="fragment small">
+<p><span class="hi note align-center">Find the Cartel’s Profit function (Do not simplify it)</span></p>
+</div>
+<div class="fragment small">
+<p><span class="math display">\[\begin{align*}
+    \pi_{Cartel} &amp;= \pi_{A} + \pi_{B} \\
+    \pi_{Cartel} &amp;= (100 - Q_{A} - Q_{B}) \cdot Q_{A} + (100 - Q_{A} - Q_{B}) \cdot Q_{B} - Q_{A}^{2} - Q_{B}^{2}
+\end{align*}\]</span></p>
+</div>
+</section>
+<section id="cartel---maximize-profits" class="slide level2">
+<h2>Cartel - Maximize Profits</h2>
+<p>We maximize profits by taking the derivative with respect to both quantities <span class="math inline">\((Q_{A} \; \&amp; \; Q_{B})\)</span></p>
+<p><span class="math display">\[
+    \pi_{Cartel} = (100 - Q_{A} - Q_{B}) \cdot Q_{A} + (100 - Q_{A} - Q_{B}) \cdot Q_{B} - Q_{A}^{2} - Q_{B}^{2}
+\]</span></p>
+<p><span class="hi note align-center">Find the Profit Maximizing Quantities <span class="math inline">\(\; \frac{\partial \pi_{i}}{\partial Q_{i}} = 0\)</span></span></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="hi align-center tiny"><span class="math inline">\(\frac{\partial \pi_{A}}{\partial Q_{A}} = 0\)</span></span></p>
+<div class="fragment tiny">
+<p><span class="math display">\[\begin{align*}
+    &amp;100 - 2Q_{A} - Q_{B} - Q_{B} - 2Q_{A} = 0 \\
+    &amp;100 - 4Q_{A} - 2Q_{B} = 0 \\
+    &amp;4Q_{A} = 100 - 2Q_{B} \\
+\end{align*}\]</span></p>
+<p><span class="math display">\[\begin{align*}
+    Q_{A}^{*} &amp;= 25 - \frac{1}{2}Q_{B} \\
+    Q_{B}^{*} &amp;= 25 - \frac{1}{2}Q_{A}
+\end{align*}\]</span></p>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="fragment tiny">
+<p><span class="hi align-center tiny">Plug one into the other</span></p>
+<p><span class="math display">\[\begin{align*}
+    Q_{A} &amp;= 25 - \frac{1}{2}\color{red}{\left(25 - \frac{1}{2}Q_{A} \right)} \\
+    Q_{A} &amp;= 25 - \frac{25}{2} + \frac{1}{4}Q_{A} \\
+    \frac{3}{4}Q_{A} &amp;= \frac{25}{2} \\
+    Q_{A}^{*} &amp;= \frac{100}{6} = Q_{B}^{*}
+\end{align*}\]</span></p>
+</div>
+</div>
+</div>
+</section>
+<section id="cartel---maximize-profits-part-2" class="slide level2">
+<h2>Cartel - Maximize Profits (Part 2)</h2>
+<p>We know</p>
+<p><span class="math display">\[
+    Q_{A}^{*} = \frac{100}{6} \;\;\;\;\; \&amp; \;\;\;\;\; Q_{B}^{*} = \frac{100}{6}
+\]</span></p>
+<p>Now we can find the <span class="hi">Market Quantity and Market Price</span></p>
+<div class="columns">
+<div class="column" style="width:70%;">
+<p><span class="hi align-center">Find Quantity</span></p>
+<div class="fragment tiny">
+<p><span class="math display">\[\begin{align*}
+    Q_{S} = Q_{A} + Q_{B} = \frac{100}{6} + \frac{100}{6} = \frac{100}{3} \approx 16.6
+\end{align*}\]</span></p>
+</div>
+<div class="fragment tiny">
+<p><span class="hi align-center">Find Price</span></p>
+<p><span class="math display">\[\begin{align*}
+    P = 100 - Q_{S} = 100 - \frac{100}{6} = \frac{200}{3} \approx 66.6
+\end{align*}\]</span></p>
+</div>
+</div><div class="column" style="width:30%;">
+<div class="fragment">
+<p><span class="hi align-center">Compare this to the Cournot Equilibrium</span></p>
+<p><span class="math display">\[\begin{align*}
+    Q_{C} = 40 \\ \\
+    P_{C} = 60
+\end{align*}\]</span></p>
+</div>
+</div>
+</div>
+</section>
+<section id="cartel-results" class="slide level2 tiny">
+<h2>Cartel Results</h2>
+<p>The <span class="hi-purple">Cartel</span> produces less than the both <span class="hi">Cournot firms</span> combined and demands a higher price</p>
+<p>So basically they managed to create a <span class="hi-red">Monopoly</span> by joining the only two firms in the industry</p>
+
+<img data-src="images/market-equilibriums.png" class="r-stretch quarto-figure-center"></section>
+<section id="cartel---joining-both-firms" class="slide level2 tiny">
+<h2>Cartel - Joining Both Firms</h2>
+<p>There is an exception to this approach of combining two firms when we model <span class="hi-purple">Cartel Profits</span></p>
+<div class="fragment">
+<p>Imagine two firms with the following <span class="hi">Cost Functions</span></p>
+<p><span class="math display">\[\begin{align*}
+    \text{Firm A: } C(Q_{A}) = 10 \cdot Q_{A} \;\;\;\; ; \;\;\;\; \text{Firm B: } C(Q_{B}) = 5 \cdot Q_{B}
+\end{align*}\]</span></p>
+<p><span class="hi align-center">If these firms combine, should we just add their costs together?</span></p>
+<p><span class="hi align-center">Think about their Marginal Costs</span></p>
+</div>
+<div class="fragment">
+<p><span class="math display">\[\begin{align*}
+    \text{Firm A Marginal Costs: } MC = 10 \\ \\
+    \text{Firm B Marginal Costs: } MC = 5
+\end{align*}\]</span></p>
+<p>They have different constant marignal costs</p>
+<div>
+<ul>
+<li class="fragment">So it will always be cheaper to produce goods using only Firm B</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="cartel---the-exception" class="slide level2">
+<h2>Cartel - The Exception</h2>
+<p>If we have two firms, both with <span class="hi">Constant Marginal Costs that are Different</span>:</p>
+<div>
+<ul>
+<li class="fragment"><p>To form a <span class="hi-purple">Cartel</span>, they will simply shut down the firm with the <span class="hi">Higher Marginal Costs</span> and the other firm will become a <span class="hi-red">Monopolist</span></p></li>
+<li class="fragment"><p>If you were to find profits for both firms in the <span class="hi-purple">Cartel</span> you would see that they are higher for both firms than in <span class="hi">Cournot Competition</span></p></li>
+</ul>
+</div>
+<div class="fragment">
+<p><span class="hi align-center">So why not form Cartels then?</span></p>
+<div>
+<ul>
+<li class="fragment">They are usually illegal</li>
+<li class="fragment">And more importantly, they are not stable!</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="cartels-are-unstable" class="slide level2">
+<h2>Cartels Are Unstable</h2>
+<p>Let’s jump back to our gas station example</p>
+<div>
+<ul>
+<li class="fragment"><p>You and your competitor have a backroom agreement to sell your gas at $5.00/gallon</p></li>
+<li class="fragment"><p>The next day you see your “new business partner” posting a price of $5.00/gallon, what are you tempted to do?</p></li>
+<li class="fragment"><p>Post a price of $4.99/gallon!</p></li>
+</ul>
+</div>
+<div class="fragment">
+<p>In other words, if you follow through with your <span class="hi-purple">Cartel Agreement</span></p>
+<p><br></p>
+<p><span class="hi align-center">It is not your best response for you to follow through also!</span></p>
+</div>
+</section>
+<section id="cartels---showing-instability" class="slide level2">
+<h2>Cartels - Showing Instability</h2>
+<p>Jumping back to our <span class="hi">Courtot/Cartel</span> example</p>
+<p>The firms split <span class="math inline">\(Q = 100/3\)</span> equally, so <span class="math inline">\(Q_{B} = 100/6\)</span></p>
+<p>What is Firm A’s <span class="hi-orange">Best Response</span> to <span class="math inline">\(Q_{B} = 100/6\)</span></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="fragment">
+<p>From the <span class="hi-orange">Cournot Best Response Functions</span> earlier we have:</p>
+<p><br><br></p>
+<p><span class="math display">\[\begin{align*}
+    Q_{A}^{*} &amp;= \frac{100 - Q_{B}}{4} = 25 - \frac{Q_{B}}{4}
+\end{align*}\]</span></p>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="fragment small">
+<p><span class="align-center hi">If we plug in <span class="math inline">\(\; Q_{B} \;\)</span> we get:</span></p>
+<p><span class="math display">\[\begin{align*}
+    Q_{A}^{*} &amp;= 25 - \frac{Q_{B}}{4} \\
+    Q_{A}^{*} &amp;= 25 - \frac{\color{red}{\frac{100}{6}}}{4} \\
+    Q_{A}^{*} &amp;= 25 - \frac{25}{6} \\
+    Q_{A}^{*} &amp;\approx 21 &gt; \frac{100}{6}
+\end{align*}\]</span></p>
+</div>
+</div>
+</div>
+</section>
+<section id="cartel---instability" class="slide level2">
+<h2>Cartel - Instability</h2>
+<p>Each firm is tempted to deviate from their <span class="hi-purple">Cartel Agreement</span> and produce more than they agreed to</p>
+<p>The firm that deviates will increase their profits</p>
+<p>The firm that sticks to the agreement will have lower profits</p>
+<p>If both firms deviate from the <span class="hi-purple">Cartel Agreement</span>, then both of them end up with lower profits</p>
+</section>
+<section id="timing-matters" class="slide level2">
+<h2>Timing Matters</h2>
+<p>All previous models of quantity competition have firms decide their <span class="hi-orange">Best Responses</span> at the same time, much like playing rock-paper-scissors</p>
+<p>We call these <span class="hi">Simultaneous Games</span></p>
+<div class="fragment">
+<p>Now we will look at a model that introduces timing</p>
+</div>
+</section></section>
 <section>
 <section id="stackelberg-competition" class="title-slide slide level1 inverse note center">
 <h1>Stackelberg Competition</h1>
@@ -1471,12 +1232,414 @@ Now we will look at a model that introduces timing
 </ul>
 </div>
 </section></section>
+<section>
 <section id="bertrand-competition" class="title-slide slide level1 inverse note center">
 <h1>Bertrand Competition</h1>
+
+</section>
+<section id="competing-by-prices" class="slide level2">
+<h2>Competing by Prices</h2>
+<p>Forget quantities</p>
+<p>In <span class="hi">Bertrand Competition</span> firms will compete by setting prices <span class="hi">before they begin production</span></p>
+<div>
+<ul>
+<li class="fragment">Imagine that the competing firms are <span class="hi">bidding on quantities to be delivered later</span>
+<ul>
+<li class="fragment">Think of like an auction with bids for work being submitted</li>
+</ul></li>
+<li class="fragment">This changes the nature of competition substantially
+<ul>
+<li class="fragment">The firm that announces a <span class="hi">Lower Price</span> gets 100% of the market</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="back-to-the-gas-station" class="slide level2">
+<h2>Back to the Gas Station</h2>
+<p>The story we have been telling about the gas station is a perfect example of this</p>
+<p>Instead of you running one, let’s just call them <span class="hi-red">Gas Station A</span> and <span class="hi-teal">Gas Station B</span></p>
+<div>
+<ul>
+<li class="fragment">If <span class="hi-red">Gas Station A</span> advertises a price of $4.00/gallon, what should the manager of <span class="hi-teal">Gas Station B</span> do?
+<ul>
+<li class="fragment">Advertise a price of $3.99/gallon</li>
+</ul></li>
+<li class="fragment">But <span class="hi-red">Gas Station A</span> knows this, so how should they respond?
+<ul>
+<li class="fragment">Advertise a price of $3.98/gallon</li>
+</ul></li>
+<li class="fragment">And the cycle continues</li>
+</ul>
+</div>
+</section>
+<section id="is-bertrand-a-race-to-the-bottom" class="slide level2">
+<h2>Is Bertrand a Race to the Bottom?</h2>
+<p>When duopolies compete through <span class="hi">price-bidding</span>, both firms have an incentive to slightly undercut one another</p>
+<p><span class="hi note align-center">But how low will the price go?</span></p>
+<div>
+<ul>
+<li class="fragment">The Zero-Profit condition tells us
+<ul>
+<li class="fragment">If the <span class="hi">Price</span> ever falls below the MC of the winning firm, they win <span class="hi">but would not want to fulfill it</span></li>
+</ul></li>
+</ul>
+</div>
+<div class="fragment">
+<p><span class="hi align-center">The Price War continues until P = MC</span></p>
+</div>
+</section>
+<section id="bertrand-competition---price-wars" class="slide level2">
+<h2>Bertrand Competition - Price Wars</h2>
+<p>A <span class="hi">Firm’s Limit is P = MC</span></p>
+<p>Under <span class="hi">Bertrand Competition</span>, firms that compete will both set price equal to their respective <span class="hi">Marginal Cost</span></p>
+<ul>
+<li>This is the <span class="hi-orange">Nash Equilibrium</span></li>
+</ul>
+<div class="fragment">
+<p><span class="hi align-center">This gives us two possibilities</span></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="hi align-center">One Firm has a lower MC</span></p>
+<div class="fragment">
+<p>The firm with the lower Marginal Costs will obtain the entire market by setting a price just lower than their competitor’s MC</p>
+</div>
+</div><div class="column" style="width:50%;">
+<p><span class="hi align-center">Both Firms have the same MC</span></p>
+<div class="fragment">
+<p>We will see both firms produce in the market and we will get <span class="hi">Price, Quantity and Profit</span> the same as under <span class="hi-green">Perfect Competition</span></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="how-does-this-work" class="slide level2">
+<h2>How Does This Work?</h2>
+<p>It is the proverbial outrun your friend not the bear</p>
+<p>If both Firms have different marginal costs, the most efficient will undercut their competition</p>
+<p>There is <span class="hi">No Need</span> for the winner to go any lower than that:</p>
+<ul>
+<li>Recall they also want to make as much profit as possible</li>
+</ul>
+</section>
+<section id="bertrand-competition-example" class="slide level2">
+<h2>Bertrand Competition Example</h2>
+<p>Let’s look at an example that illustrate the previous slide</p>
+<p>Let there be two firms in the market. Firm A has cost function <span class="small"><span class="math inline">\(C(Q_{A}) = 20 Q_{A}\)</span></span> and Firm B has cost function <span class="small"><span class="math inline">\((C(Q_{B}) = Q_{B}^{2})\)</span></span>. Demand in the industry is given by the Demand Curve <span class="small"><span class="math inline">\(P = 120 - Q\)</span></span></p>
+<p>We see that <span class="hi-red">Firm A</span> will be able to price <span class="hi-teal">Firm B</span> out of the market.</p>
+<p><br><br></p>
+<div class="fragment">
+<p><span class="hi note align-center">If Firm A would like to supply 40 units by themselves, what price should they set? What are profits at that point?</span></p>
+</div>
+</section>
+<section id="bertrand-competition-example-1" class="slide level2">
+<h2>Bertrand Competition Example</h2>
+<p><span class="small hi note align-center">If Firm A would like to supply 40 units by themselves, what price should they set? What are profits at that point?</span></p>
+<div class="fragment">
+<p><span class="math display">\[\begin{align*}
+    \text{From the Demand Curve: } P = 120 - Q = 120 - \color{red}{40} = 80
+\end{align*}\]</span></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="hi align-center">Finding Price to Set</span></p>
+<div class="fragment small">
+<p>Firm B has <span class="math inline">\(MC = 2Q_{B}\)</span></p>
+<p>They are willing to to supply 40 units at:</p>
+<p><span class="math display">\[\begin{align*}
+    MC(Q_{B}) &amp;= 2Q_{B} \\
+    MC(40) &amp;= 2(40) = 80 \\
+\end{align*}\]</span></p>
+<p><span class="hi align-center">Use fact that P = MC</span></p>
+<p><span class="math display">\[\begin{align*}
+    P = MC(40) = 80
+\end{align*}\]</span></p>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="fragment">
+<p><span class="hi align-center">Firm A’s Choice</span></p>
+<p><span class="hi-red">Firm A</span> knows <span class="hi-teal">Firm B</span> can only lower their price to $80.</p>
+<p><span class="hi-red">Firm A</span> can set Price equal to $79.99 and <span class="hi-teal">Firm B</span> becomes unwilling to supply 40 units due to <span class="small"><span class="math inline">\(P &lt; MC\)</span></span></p>
+</div>
+<div class="fragment">
+<p><span class="math display">\[\begin{align*}
+    \pi_{A} = 79.99 \cdot 40 - 40 \cdot 20 \approx 2400
+\end{align*}\]</span></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="duopoly-example" class="slide level2">
+<h2>Duopoly Example</h2>
+<p>For duopolies, we are going to take a step that will simplify our lives</p>
+<p>We are going to introduce <span class="hi">Cosntant Marginal Cost (Linear) Functions</span></p>
+<p>Let’s practice what we have learned!</p>
+<p>Let there be two firms (A &amp; B) with the following <span class="hi">Cost Functions</span> and facing the <span class="hi">Demand Curve</span></p>
+<p><br><br></p>
+<p><span class="math display">\[
+    P = 64 - Q \;\;\;\; ; \;\;\;\; C(Q_{B}) = 10Q_{B} \;\; ; \;\; C(Q_{B}) = 4Q_{B}
+\]</span></p>
+</section>
+<section id="duopoly-example---cournot-competition" class="slide level2">
+<h2>Duopoly Example - Cournot Competition</h2>
+<div class="small">
+<p><span class="math display">\[
+    P = 64 - Q \;\;\;\; ; \;\;\;\; C(Q_{B}) = 10Q_{B} \;\; ; \;\; C(Q_{B}) = 4Q_{B}
+\]</span></p>
+</div>
+<p><span class="hi note align-center small">Find the Best Response Functions for both firms</span></p>
+<p><span class="hi note align-center small">Recall you find this by finding the profit maximizing quantity</span></p>
+<div class="fragment">
+<div class="columns">
+<div class="column tiny" style="width:50%;">
+<p><span class="math display">\[\begin{align*}
+    \pi_{B} &amp;= P \cdot Q_{B} - C(Q_{B}) \\
+    \pi_{B} &amp;= (64 - Q_{B} - Q_{B}) Q_{B} - 10Q_{B}
+\end{align*}\]</span></p>
+<p><span class="align-center">Find <span class="math inline">\(\; \frac{\partial \pi_{A}}{\partial Q_{A}}\)</span></span> <span class="math display">\[\begin{align*}
+    \frac{\partial \pi_{A}}{\partial Q_{A}} &amp;= 0 \\
+    64 - 2Q_{A} - Q_{B} - 10 &amp;= 0 \\
+    2Q_{A} &amp;= 54 - Q_{B} \\
+    Q^{*}_{A} &amp;= 27 - \frac{Q_{B}}{2}
+\end{align*}\]</span></p>
+</div><div class="column tiny" style="width:50%;">
+<p><span class="math display">\[\begin{align*}
+    \pi_{B} &amp;= P \cdot Q_{B} - C(Q_{B}) \\
+    \pi_{B} &amp;= (64 - Q_{A} - Q_{B}) Q_{B} - 4Q_{B}
+\end{align*}\]</span></p>
+<p><span class="align-center">Find <span class="math inline">\(\; \frac{\partial \pi_{B}}{\partial Q_{B}}\)</span></span> <span class="math display">\[\begin{align*}
+    \frac{\partial \pi_{B}}{\partial Q_{B}} &amp;= 0 \\
+    64 - Q_{A} - 2Q_{B} - 4 &amp;= 0 \\
+    2Q_{B} &amp;= 60 - Q_{A} \\
+    Q^{*}_{B} &amp;= 30 - \frac{Q_{A}}{2}
+\end{align*}\]</span></p>
+</div>
+</div>
+</div>
+</section>
+<section id="duopoly-example---cournot-competition-1" class="slide level2">
+<h2>Duopoly Example - Cournot Competition</h2>
+<p><span class="math display">\[
+    Q^{*}_{A} = 27 - \frac{Q_{B}}{2} \;\;\;\;\; \&amp; \;\;\;\;\; Q^{*}_{B} = 30 - \frac{Q_{A}}{2}
+\]</span></p>
+<p><span class="hi align-center">Solve for <span class="math inline">\(\; Q_{A}^{*} \;\)</span> and <span class="math inline">\(\; Q_{B}^{*}\)</span></span></p>
+<div class="fragment">
+<div class="columns">
+<div class="column tiny" style="width:50%;">
+<p><span class="math display">\[\begin{align*}
+    Q_{A} &amp;= 27 - \frac{\color{red}{Q_{B}}}{2} \\
+    Q_{A} &amp;= 27 - \left(\frac{\color{red}{30 - \frac{Q_{A}}{2}}}{2} \right) \\
+    2Q_{A} &amp;= 54 - 30 + \frac{Q_{A}}{2} \\
+    \frac{3}{2}Q_{A} &amp;= 24 \\
+    Q_{A}^{*} &amp;= 16
+\end{align*}\]</span></p>
+</div><div class="column" style="width:50%;">
+<p><span class="math display">\[\begin{align*}
+    Q^{*}_{B} &amp;= 30 - \frac{\color{red}{Q_{A}}}{2} \\
+    Q^{*}_{B} &amp;= 30 - \frac{\color{red}{16}}{2} \\
+    Q^{*}_{B} &amp;= 30 - 8 \\
+    Q^{*}_{B} &amp;= 22
+\end{align*}\]</span></p>
+</div>
+</div>
+</div>
+</section>
+<section id="duopoly-example---cournot-competition-2" class="slide level2">
+<h2>Duopoly Example - Cournot Competition</h2>
+<p><span class="math display">\[
+    Q_{A}^{*} = 16 \;\;\;\;\; \&amp; \;\;\;\;\; Q^{*}_{B} = 22
+\]</span></p>
+<p><span class="hi note align-center">Find Market Quantity and Price</span></p>
+<div class="fragment">
+<p><br></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="hi align-center">Market Quantity</span></p>
+<p><span class="math display">\[\begin{align*}
+    Q_{S} &amp;= Q_{A} + Q_{B} \\
+    Q_{S} &amp;= 16 + 22 \\
+    Q_{S} &amp;= 38
+\end{align*}\]</span></p>
+</div><div class="column" style="width:50%;">
+<p><span class="hi align-center">Market Price</span></p>
+<p><span class="math display">\[\begin{align*}
+    P &amp;= 64 - Q_{S} \\
+    P &amp;= 64 - 38 \\
+    P &amp;= 26
+\end{align*}\]</span></p>
+</div>
+</div>
+</div>
+</section>
+<section id="duopoly-example---cournot-competition-3" class="slide level2">
+<h2>Duopoly Example - Cournot Competition</h2>
+<p><span class="math display">\[
+    P = 26 \;\;\;\; \&amp; \;\;\; Q_{A} = 16 \;\;\;\; \&amp; \;\;\; Q_{B} = 22 \\
+     C(Q_{A}) = 10 \cdot Q_{A}  \;\;\; \&amp;  \;\;\; C(Q_{B}) = 4 \cdot Q_{B}
+\]</span></p>
+<p><span class="hi align-center note">Find Profits for Each Firm</span></p>
+<div class="fragment">
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="math display">\[\begin{align*}
+    \pi_{A} &amp;= P \cdot Q_{A} - C(Q_{A}) \\
+    \pi_{A} &amp;= 26 \cdot 16 - 10 \cdot 16 \\
+    \pi_{A} &amp;= 256
+\end{align*}\]</span></p>
+</div><div class="column" style="width:50%;">
+<p><span class="math display">\[\begin{align*}
+    \pi_{B} &amp;= P \cdot Q_{B} - C(Q_{B}) \\
+    \pi_{B} &amp;= 26 \cdot 22 - 4 \cdot 22 \\
+    \pi_{B} &amp;= 484
+\end{align*}\]</span></p>
+</div>
+</div>
+</div>
+</section>
+<section id="duopoly-example---stackelberg-competition" class="slide level2 smaller">
+<h2>Duopoly Example - Stackelberg Competition</h2>
+<p>Let’s now say that <span class="hi-red">Firm A</span> is the <span class="hi-red">Leader</span></p>
+<p>We know that the <span class="hi-teal">Follower’s</span> <span class="hi-orange">Best Response Function</span> is given by</p>
+<p><span class="math display">\[
+    Q_{B} = 30 - \frac{Q_{A}}{2}
+\]</span></p>
+<p>If <span class="hi-red">Firm A’s Profits</span> are</p>
+<p><span class="math display">\[
+    \pi_{A} = (64 - Q_{A} - Q_{B})Q_{A} - 10Q_{A}
+\]</span></p>
+<p><span class="hi align-center note">Find their profit function in Stackelberg Competition where they are the Leader</span></p>
+<div class="fragment">
+<p><span class="math display">\[\begin{align*}
+    \pi_{A} &amp;= (64 - Q_{A} - \color{red}{Q_{B}})Q_{A} - 10Q_{A} \\
+    \pi_{A} &amp;= (64 - Q_{A} - \color{red}{(30 - \frac{Q_{A}}{2})})Q_{A} - 10Q_{A} \\
+    \pi_{A} &amp;= (34 - Q_{A} + \frac{Q_{A}}{2})Q_{A} - 10 \cdot Q_{A} \\
+    \pi_{A} &amp;= 34Q_{A} - Q_{A}^{2} + \frac{Q_{A}^{2}}{2} - 10 \cdot Q_{A}
+\end{align*}\]</span></p>
+</div>
+</section>
+<section id="duopoly-example---stackelberg-competition-1" class="slide level2">
+<h2>Duopoly Example - Stackelberg Competition</h2>
+<p><span class="math display">\[
+    \pi_{A} = 34Q_{A} - Q_{A}^{2} + \frac{Q_{A}^{2}}{2} - 10 \cdot Q_{A} \;\;\;\;\; \&amp; \;\;\;\;\; Q_{B} = 30 - \frac{Q_{A}}{2}
+\]</span></p>
+<p><span class="hi align-center note">Find Profit Maximizing Quantity for Both Firms</span></p>
+<div class="fragment">
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="math display">\[\begin{align*}
+    \frac{\partial \pi_{A}}{\partial Q_{A}} &amp;= 0 \\
+    34 - 2Q_{A} + Q_{A} - 10 &amp;= 0 \\
+    Q_{A}^{*} &amp;= 24
+\end{align*}\]</span></p>
+</div><div class="column" style="width:50%;">
+<div class="fragment">
+<p><span class="math display">\[\begin{align*}
+    Q_{B}^{*} &amp;= 30 - \frac{\color{red}{Q_{A}}}{2} \\
+    Q_{B}^{*} &amp;= 30 - \frac{\color{red}{24}}{2} \\
+    Q_{B}^{*} &amp;= 30 - 12 \\
+    Q_{B}^{*} &amp;= 18
+\end{align*}\]</span></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="duopoly-example---stackelberg-competition-2" class="slide level2">
+<h2>Duopoly Example - Stackelberg Competition</h2>
+<p><span class="math display">\[
+    Q_{A}^{*} = 24 \;\;\;\;\; \&amp; \;\;\;\;\; Q_{B}^{*} = 18 \\
+    C(Q_{A}) = 10Q_{A} \;\;\;\;\; \&amp; \;\;\;\;\; C(Q_{B}) = 4Q_{A} \\
+    P = 64 - Q_{S}
+\]</span></p>
+<p><span class="hi align-center note">Find Market Supply &amp; Market Price</span></p>
+<div class="fragment">
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="hi align-center">Market Supply</span></p>
+<p><span class="math display">\[\begin{align*}
+    Q_{S} &amp;= Q_{A} + Q_{B} \\
+    Q_{S} &amp;= 24 + 18 \\
+    Q_{S} &amp;= 42
+\end{align*}\]</span></p>
+</div><div class="column" style="width:50%;">
+<p><span class="hi align-center">Market Price</span></p>
+<div class="fragment">
+<p><span class="math display">\[\begin{align*}
+    P &amp;= 64 - Q_{S} \\
+    P &amp;= 64 - 42 \\
+    P &amp;= 22
+\end{align*}\]</span></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="duopoly-example---stackelberg-competition-3" class="slide level2">
+<h2>Duopoly Example - Stackelberg Competition</h2>
+<p>Last thing to do is find each firm’s profits</p>
+<p><span class="math display">\[
+    Q_{A}^{*} = 24 \;\;\;\;\; \&amp; \;\;\;\;\; Q_{B}^{*} = 18 \\
+    C(Q_{A}) = 10Q_{A} \;\;\;\;\; \&amp; \;\;\;\;\; C(Q_{B}) = 4Q_{A} \\
+    P = 22
+\]</span></p>
+<div class="fragment">
+<p><br></p>
+<p><span class="hi align-center">Firm Profits</span></p>
+<p><span class="math display">\[\begin{align*}
+    \pi_{A} &amp;= 22 \cdot 24 - 10 \cdot 24 = 288 \\
+    \pi_{B} &amp;= 22 \cdot 18 - 4 \cdot 18 = 324
+\end{align*}\]</span></p>
+</div>
+</section>
+<section id="summary-of-models" class="slide level2">
+<h2>Summary of Models</h2>
+<p>All of the models we have seen are</p>
+<div>
+<ul>
+<li class="fragment">Perfect Competition (Price Taking)</li>
+<li class="fragment">Monopoly (Determines Price Through Quantity Choice - 1 Firm)</li>
+<li class="fragment">Cournot (Simultaneous Competition By Setting Quantity)</li>
+<li class="fragment">Cartels (2 Firms unite and behave like a Monopoly)</li>
+<li class="fragment">Stackelberg (Sequential Competition By Setting Quantity)</li>
+<li class="fragment">Bertrand (Competing By Setting Price)</li>
+</ul>
+</div>
+</section>
+<section id="consumer-perception-of-markets" class="slide level2">
+<h2>Consumer Perception of Markets</h2>
+<p>We can think how these markets affect consumers</p>
+<div>
+<ul>
+<li class="fragment">Bertrand and Perfect Competition yield the same outcome and are the <span class="hi-green">best for consumers</span>
+<ul>
+<li class="fragment">Lowest price, highest quantity</li>
+</ul></li>
+<li class="fragment">Monopoly and Cartel are the <span class="hi-red">worst for consumers</span>
+<ul>
+<li class="fragment">Highest price, lowest quantity</li>
+</ul></li>
+<li class="fragment">Cournot and Stackelberg are somewhere in-between
+<ul>
+<li class="fragment">Stackelberg has slightly better outcomes for consumers</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="long-run-in-markets" class="slide level2">
+<h2>Long-Run in Markets</h2>
+<p>We care about the <span class="hi">Long-Run Equilibriums</span></p>
+<div>
+<ul>
+<li class="fragment">Firms will only make <span class="hi">Zero-Profits</span> in the <span class="hi">Long-Run Equilibrium</span> under <span class="hi-green">Perfect Competition</span>
+<ul>
+<li class="fragment">We saw that <span class="hi">Bertrand</span> can also produce Zero-Profits under the correct conditions</li>
+</ul></li>
+<li class="fragment">In all forms of <span class="hi">Imperfect Competition</span>, firms manage to prevent entry of other firms in the <span class="hi">Long-Run</span></li>
+</ul>
+</div>
 <div class="footer footer-default">
 <p>EC311 - Lecture 09 | Imperfect Competition</p>
 </div>
-</section>
+</section></section>
     </div>
   </div>
 
@@ -1503,7 +1666,6 @@ Now we will look at a model that introduces timing
       Reveal.initialize({
 'controlsAuto': true,
 'previewLinksAuto': true,
-'smaller': false,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
@@ -1764,10 +1926,9 @@ Now we will look at a model that introduces timing
         // clear code selection
         e.clearSelection();
       });
-      function tippyHover(el, contentFn) {
+      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
         const config = {
           allowHTML: true,
-          content: contentFn,
           maxWidth: 500,
           delay: 100,
           arrow: false,
@@ -1777,8 +1938,17 @@ Now we will look at a model that introduces timing
           interactive: true,
           interactiveBorder: 10,
           theme: 'light-border',
-          placement: 'bottom-start'
+          placement: 'bottom-start',
         };
+        if (contentFn) {
+          config.content = contentFn;
+        }
+        if (onTriggerFn) {
+          config.onTrigger = onTriggerFn;
+        }
+        if (onUntriggerFn) {
+          config.onUntrigger = onUntriggerFn;
+        }
           config['offset'] = [0,0];
           config['maxWidth'] = 700;
         window.tippy(el, config); 
