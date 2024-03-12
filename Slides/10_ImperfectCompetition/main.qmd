@@ -25,7 +25,7 @@ title-slide-attributes:
     - Collusion & Cartels (11.2)
     - Bertrand Competition (11.3)
     - Cournot Competition (11.4)
-    - Stackelber Competition (11.5)
+    - Stackelberg Competition (11.5)
     
 # Extreme Markets & Imperfect Competition {.inverse .note}
 
