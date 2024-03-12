@@ -108,7 +108,7 @@ $$
 ## Duopoly Example - Cournot Competition
 
 $$
-    Q_{A}^{*} = 16 \;\;\;\;\; \& \;\;\;\;\; Q^{*}_{B} = 22
+    Q_{A}^{*} = 16 \;\;\;\;\; \& \;\;\;\;\; Q^{*}_{B} = 22 \;\;\;\;\; \& \;\;\;\;\; P = 64 - Q
 $$
 
 [Find Market Quantity and Price]{.hi .note .align-center}
