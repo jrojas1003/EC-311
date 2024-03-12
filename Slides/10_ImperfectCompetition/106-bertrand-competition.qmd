@@ -103,9 +103,9 @@ There is [No Need]{.hi} for the winner to go any lower than that:
 
 Let's look at an example that illustrate the previous slide
 
-Let there be two firms in the market. Firm A has cost function [$C(Q_{A}) = 20 Q_{A}$]{.small} and Firm B has cost function [$(C(Q_{B}) = Q_{B}^{2})$]{.small}. Demand in the industry is given by the Demand Curve [$P = 120 - Q$]{.small}
+Let there be two firms in the market. Firm A has cost function [$C(Q_{A}) = 20 Q_{A}$]{.small} and Firm B has cost function [$(CQ_{B}) = Q_{B}^{2}$]{.small}. Demand in the industry is given by the Demand Curve [$P = 120 - Q$]{.small}
 
-We see that [Firm A]{.hi-red} will be able to price [Firm B]{.hi-teal} out of the market.
+We say that [Firm A]{.hi-red} will be able to price [Firm B]{.hi-teal} out of the market.
 
 <br><br>
 
