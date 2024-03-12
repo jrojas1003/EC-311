@@ -92,7 +92,7 @@ $$
 \end{align*}
 :::
 
-::: {.column width="50%"}
+::: {.column width="50%" .tiny}
 \begin{align*}
     Q^{*}_{B} &= 30 - \frac{\color{red}{Q_{A}}}{2} \\
     Q^{*}_{B} &= 30 - \frac{\color{red}{16}}{2} \\ 
