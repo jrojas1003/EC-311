@@ -70,13 +70,13 @@ $$
 
 ---
 
-## Duopoly Example - Cournot Competition
+## Duopoly Example - Cournot Competition {.smaller}
 
 $$
     Q^{*}_{A} = 27 - \frac{Q_{B}}{2} \;\;\;\;\; \& \;\;\;\;\; Q^{*}_{B} = 30 - \frac{Q_{A}}{2}
 $$
 
-[Solve for $\; Q_{A}^{*} \;$ and $\; Q_{B}^{*}$]{.hi .align-center}
+[Solve for $\; Q_{A}^{*} \;$ and $\; Q_{B}^{*}$]{.hi .align-center .small}
 
 . . .
 
