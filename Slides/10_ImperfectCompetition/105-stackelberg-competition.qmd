@@ -105,7 +105,7 @@ $$
 
 ---
 
-## Stackelber - Finding Profit Maximizing Quantity for the Leader
+## Stackelberg - Finding Profit Maximizing Quantity for the Leader
 
 ::: {.incremental .tiny}
 $$
