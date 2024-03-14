@@ -2,4 +2,4 @@
 .Rhistory
 .RData
 .Ruserdata
-Grades/
+dir_to_ignore/Grades
